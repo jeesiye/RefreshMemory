@@ -9,17 +9,17 @@ ubuntu上使用`apt`安装的mysql,初次安装成功后,无法登录.
 
 之后退出,使用root和更改的密码尝试登录.  
 
-以下截图是`mysql14.14`的`debian.cnf`配置文件:  
+以下是`mysql14.14`的`debian.cnf`配置文件:  
 ```shell
 # Automatically generated for Debian scripts. DO NOT TOUCH!
 [client]
 host     = localhost
 user     = debian-sys-maint
-password = 7nylPwBGxpjUniSH
+password = ****************
 socket   = /var/run/mysqld/mysqld.sock
 [mysql_upgrade]
 host     = localhost
 user     = debian-sys-maint
-password = 7nylPwBGxpjUniSH
+password = ****************
 socket   = /var/run/mysqld/mysqld.sock
 ```  
