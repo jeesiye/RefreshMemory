@@ -1,5 +1,3 @@
----
-
 #### 记录日志的方法:  
 - `log`方法:手动指定级别的简单消息记录;  
 - `logp`方法:带有类名和方法名;  
@@ -68,4 +66,55 @@ public void config(java.util.function.Supplier<java.lang.String>);
 public void fine(java.util.function.Supplier<java.lang.String>);
 public void finer(java.util.function.Supplier<java.lang.String>);
 public void finest(java.util.function.Supplier<java.lang.String>);
+```  
+
+---
+
+#### 访问器相关的方法
+
+```java
+public static final java.util.logging.Logger getGlobal();
+public static java.util.logging.Logger getLogger(java.lang.String);
+public static java.util.logging.Logger getLogger(java.lang.String, java.lang.String);
+public static java.util.logging.Logger getAnonymousLogger();
+public static java.util.logging.Logger getAnonymousLogger(java.lang.String);
+public java.util.ResourceBundle getResourceBundle();
+public java.lang.String getResourceBundleName();
+public java.util.logging.Filter getFilter();
+public java.util.logging.Level getLevel();
+public java.lang.String getName();
+public java.util.logging.Handler[] getHandlers();
+public boolean getUseParentHandlers();
+public java.util.logging.Logger getParent();
+```  
+
+---
+
+#### 修改器相关的方法
+
+```java
+public void setFilter(java.util.logging.Filter) throws java.lang.SecurityException;
+public void setLevel(java.util.logging.Level) throws java.lang.SecurityException;
+public void setUseParentHandlers(boolean);
+public void setResourceBundle(java.util.ResourceBundle);
+public void setParent(java.util.logging.Logger);
+```  
+
+---
+
+#### 其他方法
+
+```java
+public boolean isLoggable(java.util.logging.Level);
+public void addHandler(java.util.logging.Handler) throws java.lang.SecurityException;
+public void removeHandler(java.util.logging.Handler) throws java.lang.SecurityException;
+```  
+
+---
+
+#### 包含的内部类
+
+```java
+java.util.logging.Logger$LoggerBundle
+java.util.logging.Logger$SystemLoggerHelper
 ```  
