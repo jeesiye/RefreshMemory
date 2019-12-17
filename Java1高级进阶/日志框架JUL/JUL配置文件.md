@@ -1,8 +1,17 @@
+涉及的类有:  
+- `java.util.logging.LogManager`  
+- `java.util.logging.Handler`  
+- `java.util.logging.Filter`  
+- `java.util.logging.Formatter`
+
+---
+
 JUL配置文件的定位:  
 - 加载配置文件的顺序:  
   1. `java.util.logging.config.class`系统属性指向的文件;  
   1. `java.util.logging.config.file`系统属性指向的文件;  
   1. `$java.home/lib/logging.properties`属性配置文件;  
+     补充:此点在JDK8上验证的,无聊看了JDK13的是`$java.home/config/logging.properties`  
   1. 具体加载的策略参见`LogManager.readConfiguration()`方法.  
 - 关于系统属性`java.home`的位置:  
   - 安装JDK时配置的宿主机的环境变量`JAVA_HOME`,但指向的是`$JAVA_HOME/jre`目录.  
@@ -73,7 +82,6 @@ JUL配置文件的定位:
 - 涉及`Logger`的构造器,以及`LogManager`的静态块.  
 - 具体顺序,待定整理.仅作标记,后续补充.  
 
-
 ---
 
 关于配置文件.  
@@ -81,3 +89,10 @@ JUL配置文件的定位:
 其中有两个全局属性应当关注,`handler`和`config`.  
 `config`属性,在`LogManager.readConfiguration()`进行处理了.  
 具体过程处理,待定整理,后续补充.  
+
+---
+
+`java.util.logging.Handler`,日志处理器,主要作用是对于接手到的日志消息,采取如何处理的策略.  
+内置了两个比较常用的实现类:  
+- 一个是将日志消息转储到文件中的处理器`java.util.logging.FileHandler`;  
+- 一个是将日志消息转储到控制台的处理器`java.util.logging.ConsoleHandler`;  
