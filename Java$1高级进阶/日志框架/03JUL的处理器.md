@@ -73,3 +73,12 @@ private void configure() {
     }                                                                                                  
 }                                                                                                      
 ```  
+由上可得出以下总结(在配置文件中的配置`key`值的含义):  
+- `java.util.logging.FileHandler.pattern`:日志文件命名模式,默认是`%h/java%u.log`;  
+- `java.util.logging.FileHandler.limit`:日志文件存储的最大字节数,默认是0表示不限制;  
+- `java.util.logging.FileHandler.count`:循环记录中的阀值表示日志的数目,默认是1表示不循环;  
+- `java.util.logging.FileHandler.append`:是追加记录,还是每次启动新建日志文件,默认是`false`表示新建;  
+- `java.util.logging.FileHandler.level`:日志记录的级别开关,默认是记录所有的日志;  
+- `java.util.logging.FileHandler.filter`:日志记录的过滤器类,默认为`null`;  
+- `java.util.logging.FileHandler.formatter`:日志记录的格式化类,默认是`SimpleFormatter`;  
+- `java.util.logging.FileHandler.encoding`:日志记录的字符编码,默认是`null`;  
