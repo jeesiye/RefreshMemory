@@ -3,7 +3,7 @@ JUL配置文件的定位:
   1. `java.util.logging.config.class`系统属性指向的文件;  
   1. `java.util.logging.config.file`系统属性指向的文件;  
   1. `$java.home/lib/logging.properties`属性配置文件;  
-  1. 按照以上的顺序加载,一旦加载成功便返回,不会再继续搜索加载下一个文件.  
+  1. 具体加载的策略参见`LoggerManager.readConfiguration()`方法.  
 - 关于系统属性`java.home`的位置:  
   - 安装JDK时配置的宿主机的环境变量`JAVA_HOME`,但指向的是`$JAVA_HOME/jre`目录.  
   - 使用语句`System.getProperty("java.home")`可查看.  
