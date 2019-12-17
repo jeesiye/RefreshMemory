@@ -1,8 +1,4 @@
-涉及的类有:  
-- `java.util.logging.LogManager`  
-- `java.util.logging.Handler`  
-- `java.util.logging.Filter`  
-- `java.util.logging.Formatter`
+`java.util.logging.LogManager`
 
 ---
 

@@ -1,10 +1,12 @@
-使用JUL:  
-1. 使用JUL输出日志;  
-1. JUL的本地化操作;
+基本使用JUL:  
+- 输出指定级别的日志;  
+- 本地化配置实现;
 
 ---
 
-使用JUL记录日志(步骤简单分为两步):  
+#### 输出日志
+
+使用JUL记录日志(简单分为两个步骤):  
 - 创建`java.util.logging.Logger`的实例,该引用声明为静态的,防止被GC回收.  
 - 使用`Logger`的输出日志方法,至于记录的级别参考`$java.home/lib/logging.properties`配置文件,以及`java.util.logging.Level`常规类.  
 
@@ -24,6 +26,8 @@ public class App {
 ```  
 
 ---
+
+#### 结合使用本地化工具包
 
 JUL的可以结合本地化操作.  
 步骤如下:  
