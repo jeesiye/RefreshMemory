@@ -67,3 +67,17 @@ JUL配置文件的定位:
   ```  
 
 ---
+
+关于`Logger`的实例化过程.  
+- 在方法块中,断点标记`Logger.getLogger("package-name");`,然后调式.  
+- 涉及`Logger`的构造器,以及`LogManager`的静态块.  
+- 具体顺序,待定整理.仅作标记,后续补充.  
+
+
+---
+
+关于配置文件.  
+具体查看`LogManager`的API介绍.  
+其中有两个全局属性应当关注,`handler`和`config`.  
+`config`属性,在`LogManager.readConfiguration()`进行处理了.  
+具体过程处理,待定整理,后续补充.  
