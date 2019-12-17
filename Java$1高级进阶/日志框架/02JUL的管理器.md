@@ -2,6 +2,8 @@
 
 ---
 
+#### 负责读取日志框架的配置文件
+
 JUL配置文件的定位:  
 - 加载配置文件的顺序:  
   1. `java.util.logging.config.class`系统属性指向的文件;  
@@ -87,8 +89,3 @@ JUL配置文件的定位:
 具体过程处理,待定整理,后续补充.  
 
 ---
-
-`java.util.logging.Handler`,日志处理器,主要作用是对于接手到的日志消息,采取如何处理的策略.  
-内置了两个比较常用的实现类:  
-- 一个是将日志消息转储到文件中的处理器`java.util.logging.FileHandler`;  
-- 一个是将日志消息转储到控制台的处理器`java.util.logging.ConsoleHandler`;  
