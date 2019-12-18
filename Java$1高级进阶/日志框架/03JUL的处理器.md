@@ -82,3 +82,12 @@ private void configure() {
 - `java.util.logging.FileHandler.filter`:日志记录的过滤器类,默认为`null`;  
 - `java.util.logging.FileHandler.formatter`:日志记录的格式化类,默认是`SimpleFormatter`;  
 - `java.util.logging.FileHandler.encoding`:日志记录的字符编码,默认是`null`;  
+
+日志记录文件的变量:  
+- `%h`:表示系统变量`user.home`的值;  
+- `%t`:表示的是宿主机临时目录的值;  
+- `%u`:解决冲突的唯一编号值;  
+- `%g`:循环记录中自动生成的数值,若没有会自动后缀;  
+- `%%`:表示字符`%`;  
+
+_以上关于配置文件中的键值以及变量,在`FileHandler`类的DOC说明中明确提出!_  
