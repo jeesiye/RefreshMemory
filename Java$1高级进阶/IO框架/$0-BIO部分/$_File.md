@@ -1,14 +1,26 @@
-### 行为概述:  
+#### 规范:  
 - 无序列表  
 - 分类  
 - 无方法签名
 
-### 源码解析(部分):  
+---  
+#### 解析(部分):  
+汇总:无序列表,按先后列出;  
+- `java.io.File.File(String)`  
+- `java.io.File.getAbsolutePath()`  
 
-#### 构造函数:  
+---  
+解析构造函数的执行过程:  
+- 此操作是依赖具体平台实现的jar包的(当前环境是unix);  
+- 大体分为三个步骤处理(不论是参数是单独的路径,还是父子路径,还是URI路径,基本思路一致):  
+  - 对构造函数的参数合法性的校验;  
+  - 对参数路径进行标准化处理(不排除传入合法的但野路子的路径),并把结果赋予给内置属性`File.path:String`;  
+  - 判断接收的路径是绝对路径(1)还是相对路径(0),把结果赋予给内置属性`File.prefixLength:int`;  
+- 真正底层实现真实操作的是接口`FileSystem`,每个平台有不同的实现;  
 
 ```java
 // java.io.File.File(String)
+// 其他重载的构造函数,思路一致,不予整理  
 public File(String pathname) {
     // (1)检查路径参数是否为null
     if (pathname == null) {
@@ -111,7 +123,33 @@ public int prefixLength(String pathname) {
 }
 ```  
 
-### 结构概览:  
+---  
+获取绝对路径的函数:`File.getAbsolutePath()`:  
+- 若当前对象的内置属性`path`是绝对路径,则直接返回;  
+- 若是相对路径,则前缀路径是从系统属性`$user.dir`开始的;  
+```java
+// java.io.File.getAbsolutePath()
+public String getAbsolutePath() {
+    // 把当前File的实例给传递进去
+    return fs.resolve(this);
+}
+
+// java.io.FileSystem.resolve(File)
+public abstract String resolve(File f);
+
+// 方法动态绑定机制,定位该方法:  
+// java.io.UnixFileSystem.resolve(File)
+public String resolve(File f) {
+    // 若是绝对路径直接返回
+    if (isAbsolute(f)) return f.getPath();
+    // 若不是,路径从$user.dir开始,拼接后返回  
+    return resolve(System.getProperty("user.dir"), f.getPath());
+}
+```  
+
+
+---  
+#### 结构概览:  
 ```java
 public class java.io.File implements java.io.Serializable, java.lang.Comparable<java.io.File> {
   public static final char separatorChar;
