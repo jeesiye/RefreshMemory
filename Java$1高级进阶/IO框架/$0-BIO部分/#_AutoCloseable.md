@@ -1,11 +1,12 @@
-### 行为规范:  
+#### 规范:  
 `java.lang.AutoCloseable`:(JDK7)自动关闭  
 - 约定该接口的实现者有自动关闭资源流的功能,即`try-with-resources`语句;  
 - 基于BIO的操作,推荐使用;  
 - 基于NIO的操作,没有必要使用;  
 - 在jdk8中,大多数的BIO操作都是支持`try-with-resources`语句;  
 
-### 源码解析(部分):  
+---  
+#### 解析(部分):  
 无!  
 对该接口唯一方法实现的doc说明:  
 - 关于内部的实现细节:  
@@ -19,7 +20,8 @@
   - 前者的实现不要求幂等性,后者的实现要求幂等性;  
   - 虽然没有要求,但还是推荐以具有幂等性的方式实现;  
 
-### 结构概览  
+---  
+#### 结构:  
 ```java
 public interface java.lang.AutoCloseable {
   public abstract void close() throws java.lang.Exception;
