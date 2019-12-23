@@ -103,6 +103,7 @@
       }
   }
   ```  
+- 至于其他重载构造器,思路一直,不予赘述;  
 - 字节输入流读取方法,三个重载的`read`方法:  
   - `read(byte[], int, int)`调用的是本地方法,参openjdk8最终调用的是`readBytes`函数;  
   - `read(byte[])`:内部调用重载的方法`read(byte[], int, int)`;  
@@ -207,6 +208,8 @@
   System.out.println(in.read());// out:10
   System.out.println(in.read());// out:-1
   ```  
+- 关于`getFD`方法,不予赘述;  
+- 关于`getChannel`方法,涉及nio,在该模块中解释,此处不解释;  
 
 ---  
 #### 结构:  
