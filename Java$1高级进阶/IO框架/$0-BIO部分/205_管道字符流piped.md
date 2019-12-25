@@ -26,7 +26,7 @@ public class java.io.PipedWriter extends java.io.Writer {
   public void close() throws java.io.IOException;
 }
 ```  
-但线程简单使用(正确方式应当在多线程下测试):  
+单线程简单使用(正确方式应当在多线程下测试):  
 ```java
 PipedReader in = new PipedReader();
 PipedWriter out = new PipedWriter();
