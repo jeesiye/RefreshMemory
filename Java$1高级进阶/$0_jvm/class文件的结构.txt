@@ -204,3 +204,32 @@ ACC_ABSTRACT           0x0400      标记抽象修饰(抽象类和接口此值�
 ACC_SYNTHETIC          0x1000      标记代码不是由用户代码产生的
 ACC_ANNOTATION         0x2000      标记注解修饰
 ACC_ENUM               0x4000      标记枚举修饰
+
+
+
+
++-------------------------------------------------+
+| 类索引,父类索引,接口索引集合
++-------------------------------------------------+
+
+java.lang.Object的父类索引?
+  (1)Object的父类索引是不存在的,因为它是所有类的超类;
+  (2)Object的super_class的索引值为0;
+
+类索引和父类索引的结构
+this_class
+    u2  index; // 1)指示常量池中有效的索引值  2)必须是CONSTANT_Class_info结构;
+
+super_class
+    u2  index; // 1)指示常量池中有效的索引值  2)必须是CONSTANT_Class_info结构;
+
+接口索引集合的结构
+interfaces_count
+    u2  bytes; // 指示接口索引的个数;
+interface[count]
+    u2  index; // 1)指示常量池中有效的索引值;  2)必须是CONTANT_Class_info结构;
+    ...
+
+接口索引的注意事项:
+  (1)接口的索引区别于常量池的索引,是从0开始计数的;
+  (2)接口索引的个数是 count-1 个;
