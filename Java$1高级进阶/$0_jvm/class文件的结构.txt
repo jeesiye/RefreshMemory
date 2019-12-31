@@ -6,6 +6,7 @@
 (1)class文件=无符号数+表
 (2)表=无符号数和可能的表
 (3)classfile=unsigned_number+table(unsigned_number[,table])
+(4)无符号数在这里用u1,u2,u4,u8表示;
 
 class文件的10种组成类型:
 (1)魔数和版本
@@ -66,27 +67,39 @@ u2 major_version;   表示主版本
 (3)把这个索引值置位为0来表示;
 
 
-什么是标志tag?
+什么是标志位tag?
 (1)u1类型的标志位;
 (2)指示常量的类型;
 (3)JDK7之前有11种常量类型;
 (4)JDK7开始新增3种,总计15种常量类型;
 (5)在常量池中它们出现的顺序是没有规律的;
 
-15种常量类型
-Contant Pool Tag{
-  CONTANT_Utf8[1];  // utf8编码的字符串
-  CONTANT_Integer[3]; // 整型字面量
-  CONTANT_Float[4]; // 单精度字面量
-  CONTANT_Long[5];  // 长整型字面量
-  CONTANT_Double[6];  // 双精度字面量
-  CONTANT_Class[7]; // 类或接口的符号引用
-  CONTANT_String[8];  // 字符串字面量
-  CONTANT_Filedref[9];  // 字段的符号引用
-  CONTANT_Methodref[10];  // 方法的符号引用
-  CONTANT_InterfaceMethodref[11]; // 接口方法的符号引用
-  CONTANT_NameAndType[12];  // 字段或方法的部分符号引用
-  CONTANT_MethodHandle[15]; // 方法句柄
-  CONTANT_MethodType[16]; // 方法类型
-  CONTANT_InvokeDynamic[18];  // 动态方法调用点
+常量类型中的项(item)占用字节数的类型规律?
+  (1) tag的类型始终为u1;代表具体的常量类型;
+  (2) index的类型始终为u2;指示常量池的索引值;
+  (3) length的类型为u2;指示占用的字节个数;
+        1) 常量的类型中只有CONSTANT_Utf8中的项存在length;
+        2) 其占用字节数类型是u2;
+  (4) bytes的类型不固定;指示占用多少个字节;
+        1) CONSTANT_Utf8中的bytes是u1;具体值受其中的项length约束;
+        2) CONSTANT_Integer和CONSTANT_Float中的bytes是u4;
+        3) CONSTANT_Long和CONSTANT_Double中的bytes是u8;
+
+
+15种常量分类(classify)及其标志位(tag)
+Constant Pool Tag_And_Classify{
+  u1[1]  CONSTANT_Utf8;  // utf8编码的字符串
+  u1[3]  CONSTANT_Integer;  // 整型字面量
+  u1[4]  CONSTANT_Float;  // 单精度字面量
+  u1[5]  CONSTANT_Long;  // 长整型字面量
+  u1[6]  CONSTANT_Double;  // 双精度字面量
+  u1[7]  CONSTANT_Class;  // 类或接口的符号引用
+  u1[8]  CONSTANT_String;  // 字符串的字面量
+  u1[9]  CONSTANT_Fieldref;  // 字段的符号引用
+  u1[10] CONSTANT_Methodref;  // 方法的符号引用
+  u1[11] CONSTANT_InterfaceMethodref;  // 接口方法的符号引用
+  u1[12] CONSTANT_NameAndType;  // 字段或方法的部分的符号引用
+  u1[15] CONSTANT_MethodHandle;  // 方法句柄;
+  u1[16] CONSTANT_MethodType;  // 方法类型
+  u1[18] CONSTANT_InvokeDynamic;  // 动态方法的调用点
 }
