@@ -1,0 +1,124 @@
++-------------------------------------------------+
+| 常量池constant_pool
++-------------------------------------------------+
+
+常量池的基本类型?
+  (1)字面量(Literal)和符号引用(Symbolic References);
+  (2)字面量有:utf8编码,整型,单精度,长整型,双精度,字符串;
+  (3)符号引用有:类或接口,字段,方法,接口方法,字段或方法的部分;
+
+常量池的计数为什么从1开始?
+  (1)特定的情况;
+  (2)某些指向常量池的索引值的数据,不再需要引用常量池的项目;
+  (3)把这个索引值置位为0来表示;
+
+
+什么是标志位tag?
+  (1)u1类型的标志位;
+  (2)指示常量的类型;
+  (3)JDK7之前有11种常量类型;
+  (4)JDK7开始新增3种,总计15种常量类型;
+  (5)在常量池中它们出现的顺序是没有规律的;
+
+常量类型中的项(item)占用字节数的类型规律?
+  (1) tag的类型始终为u1;代表具体的常量类型;
+  (2) index的类型始终为u2;指示常量池的索引值;
+  (3) length的类型为u2;指示占用的字节个数;
+        1) 常量的类型中只有CONSTANT_Utf8中的项存在length;
+        2) 其占用字节数类型是u2;
+  (4) bytes的类型不固定;指示占用多少个字节;
+        1) CONSTANT_Utf8中的bytes是u1;具体值受其中的项length约束;
+        2) CONSTANT_Integer和CONSTANT_Float中的bytes是u4;
+        3) CONSTANT_Long和CONSTANT_Double中的bytes是u8;
+
+常量类型的标志位的助记规律?
+  (1)1
+  (2)3~12
+  (3)15,16,18
+
+
+15种常量分类(classify)及其标志位(tag)
+Constant Pool Tag_And_Classify{
+    u1[1]  CONSTANT_Utf8;  // utf8编码的字符串
+    u1[3]  CONSTANT_Integer;  // 整型字面量
+    u1[4]  CONSTANT_Float;  // 单精度字面量
+    u1[5]  CONSTANT_Long;  // 长整型字面量
+    u1[6]  CONSTANT_Double;  // 双精度字面量
+    u1[7]  CONSTANT_Class;  // 类或接口的符号引用
+    u1[8]  CONSTANT_String;  // 字符串的字面量
+    u1[9]  CONSTANT_Fieldref;  // 字段的符号引用
+    u1[10] CONSTANT_Methodref;  // 方法的符号引用
+    u1[11] CONSTANT_InterfaceMethodref;  // 接口方法的符号引用
+    u1[12] CONSTANT_NameAndType;  // 字段或方法的部分的符号引用
+    u1[15] CONSTANT_MethodHandle;  // 方法句柄;
+    u1[16] CONSTANT_MethodType;  // 方法类型
+    u1[18] CONSTANT_InvokeDynamic;  // 动态方法的调用点
+}
+
+
+15种常量类型的结构
+Constant Pool Classify{
+    CONSTANT_Utf8_info{
+        u1  tag;  // 指示utf8编码的字符串(CONSTANT_Utf8),标志位是1;
+        u2  length;  // 指示字符串占用的字节个数;
+        u1  bytes;  // 指示有多少个字节,受length约束;(由此字符串最大占用65535个字节,约等64K)
+    }
+    CONSTANT_Integer_info{
+        u1  tag;  // 指示整型字面量(CONSTANT_Integer),标志位是3;
+        u4  bytes;  // 高位在前存储的int值;
+    }
+    CONSTANT_Float_info{
+        u1  tag;  // 指示单精度字面量(CONSTANT_Float),标志位是4;
+        u4  bytes;  // 高位在前存储的float值;
+    }
+    CONSTANT_Long_info{
+        u1  tag;  // 指示长整型的字面量(CONSTANT_Long),标志位是5;
+        u8  bytes;  // 高位在前存储的long值;
+    }
+    CONSTANT_Double_info{
+        u1  tag;  // 指示双精度的字面量(CONSTANT_Double),标志位是6;
+        u8  bytes;  // 高位在前存储的double值;
+    }
+    CONSTANT_Class_info{
+        u1  tag;  // 指示类或接口的符号引用(CONSTANT_Class),标志位是7;
+        u2  index;  // 指示常量池中项的索引值;
+    }
+    CONSTANT_String_info{
+        u1  tag;  // 指示字符串字面量的符号引用(CONSTANT_String),标志位是8;
+        u2  index;  // 指示常量池中项的索引值;
+    }
+    CONSTANT_Fieldref_info{
+        u1  tag;  // 指示字段的符号引用(CONSTANT_Fieldref),标志位是9;
+        u2  index;  // 指示常量池中项的索引值,通常指向CONSTANT_Class_info;
+        u2  index;  // 指示常量池中项的索引值,通常指向CONSTANT_NameAndType_info;
+    }
+    CONSTANT_Methodref_info{
+        u1  tag;  // 指示方法的符号引用(CONSTANT_Methodref),标志位是10;
+        u2  index;  // 指示常量池中项的索引值,通常指向CONSTANT_Class_info;
+        u2  index;  // 指示常量池中项的索引值,通常指向CONSTANT_NameAndType_info;
+    }
+    CONSTANT_InterfaceMethodref_info{
+        u1  tag;  // 指示接口方法的符号引用(CONSTANT_InterfaceMethodref),标志位是11;
+        u2  index;  // 指示常量池中项的索引值,通常指向CONSTANT_Class_info;
+        u2  index;  // 指示常量池中项的索引值,通常指向CONSTANT_NameAndType_info;
+    }
+    CONSTANT_NameAndType_info{
+        u1  tag;  // 指示字段或方法的部分符号引用(CONSTANT_NameAndType_info),标志位是12;
+        u2  index;  // 指示常量池中项的索引值,表示的是字段或方法的名称常量;(多次测试,类型为CONSTANT_Utf8_info,不保证)
+        u2  index;  // 指示常量池中项的索引值,表示的是字段或方法的描述符常量;(多次测试,类型为CONSTANT_Utf8_info,不保证)
+    }
+    CONSTANT_MethodHandle_info{
+        u1  tag;  // 指示方法句柄(CONSTANT_MethodHandle),标志位是15;[JDK7]
+        u1  reference_kind;  // 取值的范围有限定; 1 <= x <= 9
+        u2  reference_index;  // 必须是常量池中有效的索引值;
+    }
+    CONSTANT_MethodType_info{
+        u1  tag;  // 指示方法类型(CONSTANT_MethodType),标志位是16;[JDK7]
+        u2  descriptor_index;  // 1)必须是常量池中的有效索引值;  2)必须是常量类型CONSTANT_Utf8;
+    }
+    CONSTANT_InvokeDynamic_info{
+        u1  tag;  // 指示动态方法的调用点(CONSTANT_InvokeDynamic),表示为是18;[JDK7]
+        u2  bootstrap_method_attr_index;  // 必须是当前class文件中引导方法表的bootstrap_methods[]数组的有效引用;
+        u2  name_and_type_index;  // 1)必须是常量池中的有效索引值;  2)必须是常量类型CONSTANT_NameAndType;
+    }
+}

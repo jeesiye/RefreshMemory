@@ -113,3 +113,17 @@ attribute_info{
 (22) RuntimeVisibleTypeAnnotations + RuntimeInvisibleTypeAnnotations
       位置: FileClass / field_info / method_info
       class文件: 52.0
+
+
++-------------------------------------------------------------------------+
+|                           SourceFile属性表
++-------------------------------------------------------------------------+
+SourceFile_attribute{
+    u2  attribute_name_index;  // 1)指示常量池中有效的索引;2)必须是CONSTANT_Utf8_info结构,以表示字符串`SourceFile`;
+    u4  attribute_length;  // 该项的值必须是2!
+    u2  sourcefile_index;  // 1)指示常量池中有效的索引;2)必须是CONSTANT_Utf8_info结构,以表示字符串;
+}
+注意事项:
+    (1) 可选的定长属性;
+    (2) 位于ClassFile结构的属性表中;
+    (3) 一个ClassFile结构的属性表中最多只能包含一个SourceFile属性;
