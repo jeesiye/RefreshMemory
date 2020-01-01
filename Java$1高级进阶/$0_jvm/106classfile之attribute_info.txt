@@ -1,0 +1,49 @@
++-------------------------------------------------------------------------+
+|                              属性表集合
++-------------------------------------------------------------------------+
+
+属性表的存在位置?
+  (1)class文件中;
+  (2)字段表中;
+  (3)方法表中;
+
+属性表的注意事项?
+  (1) 属性名称必须具有唯一性;
+  (2) 用户可自定义添加属性到属性表中;
+  (3) 各属性表的排序不是严格约束的;
+  (4) jvm会自动忽略掉无法识别的属性;
+
+属性表的通用格式
+attribute_info{
+    u2  attribute_name_index;  // 1)指示常量池中有效的索引;  2)必须是Class_Utf8_info结构;
+    u4  attribute_length;  // 指示其后跟随的信息字节的长度(即占用多个字节);
+    u1  info[attribute_length];  // 受attribute_length的约束
+}
+
+预置属性的三种分类(jvms8)?
+    1. 对Java虚拟机正确解读class文件起到关键作用的5个属性:
+        (1) ConstantValue
+        (2) Code
+        (3) StackMapTable
+        (4) Exceptions
+        (5) BootstrapMethods
+    2. 对JavaSE平台的类库正确解读class文件起到关键作用的12个属性;
+        (1)   InnerClasses
+        (2)   EnclosingMethod
+        (3)   Synthetic
+        (4)   Signature
+        (5)   RuntimeVisibleAnnotations
+        (6)   RuntimeInvisibleAnnotations
+        (7)   RuntimeVisibleParameterAnnotations
+        (8)   RuntimeInvisibleParameterAnnotations
+        (9)   RuntimeVisibleTypeAnnotations
+        (10)  RuntimeInvisibleTypeAnnotations
+        (11)  AnnotationDefault
+        (12)  MethodParameters
+    3. 对Java虚拟机或JavaSE平台类库能够正确解读class文件虽然不起关键作用,但却可以作为使用工具来使用的6个属性:
+        (1) SourceFile
+        (2) SourceDebugExtension
+        (3) LineNumberTable
+        (4) LocalVariableTable
+        (5) LocalVariableTypeTable
+        (6) Deprecated
