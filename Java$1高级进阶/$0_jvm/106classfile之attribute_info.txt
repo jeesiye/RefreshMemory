@@ -3,9 +3,10 @@
 +-------------------------------------------------------------------------+
 
 属性表的存在位置?
-  (1)class文件中;
-  (2)字段表中;
-  (3)方法表中;
+  (1) ClassFile
+  (2) filed_info
+  (3) method_info
+  (4) Code_attribute
 
 属性表的注意事项?
   (1) 属性名称必须具有唯一性;
@@ -47,3 +48,68 @@ attribute_info{
         (4) LocalVariableTable
         (5) LocalVariableTypeTable
         (6) Deprecated
+
+
++-------------------------------------------------------------------------+
+|             预置属性表概览(jvms8/按属性应该出现的位置排序)
++-------------------------------------------------------------------------+
+(1) SourceFile
+      位置: ClassFile
+      class文件: 45.3
+(2) InnerClasses
+      位置: ClassFile
+      class文件: 45.3
+(3) EnclosingMethod
+      位置: ClassFile
+      class文件: 49.0
+(4) SourceDebugExtension
+      位置: ClassFile
+      class文件: 49.0
+(5) BootstrapMethods
+      位置: ClassFile
+      class文件: 51.0
+(6) ConstantValue
+      位置: field_info
+      class文件: 45.3
+(7) Code
+      位置: method_info
+      class文件: 45.3
+(8) Exceptions
+      位置: method_info
+      class文件: 45.3
+(9) RuntimeVisibleVariableAnnotations + RuntimeInvisbleVariableAnnotations
+      位置: method_info
+      class文件: 49.0
+(11) AnnotationDefault
+      位置: method_info
+      class文件: 49.0
+(12) MethodParameters
+      位置: method_info
+      class文件: 52.0
+(13) Synthetic
+      位置: ClassFile / field_info / method_info
+      class文件: 45.3
+(14) Deprecated
+      位置: ClassFile / field_info / method_info
+      class文件: 45.3
+(15) Signature
+      位置: ClassFile / field_info / method_info
+      class文件: 49.0
+(16) RuntimeVisibleAnnotations + RuntimeInvisibleAnnotations
+      位置: ClassFile / field_info / method_info
+      class文件: 49.0
+(18) LineNumberTable
+      位置: Code
+      class文件: 45.3
+(19) LocalVariableTable
+      位置: Code
+      class文件: 45.3
+(20) LocalVariableTypeTable
+      位置: Code
+      class文件: 49.0
+(21) StackMapTable
+      位置: Code
+      class文件: 50.0
+(22) RuntimeVisibleTypeAnnotations + RuntimeInvisibleTypeAnnotations
+      位置: FileClass / field_info / method_info
+      class文件: 52.0
