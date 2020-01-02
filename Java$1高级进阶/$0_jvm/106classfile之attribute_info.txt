@@ -254,21 +254,237 @@ Code_attribute {
     u2  max_locals;  // 1)指示当前方法引用的局部变量表中的局部变量个数;2)包含调用此方法时用于传递参数的局部变量;
     u4  code_length;  // 1)指示当前方法的code[]数组的长度;2)该值必须大于0;3)当前方法的code[]数组不能为空;
     u1  code[code_length];  // 指示实现当前方法的jvm代码的实际字节内容;
-    u2  exception_table_length;
-    {  u2 start_pc;
-       u2 end_pc;
-       u2 handler_pc;
-       u2 catch_type;
-    } exception_table[exception_table_length];
-    u2  attributes_count;
-    attribute_info  attributes[attributes_count];
+    u2  exception_table_length;  // 指示exception_table[]数组的长度;
+    {  u2  start_pc;  // 指示当前code[]数组中某一指令操作码的有效索引;
+       u2  end_pc;  // 1)指示当前code[]数组中的某一指令操作码的有效索引;2)最大索引值是code[]数组的长度;
+       u2  handler_pc; // 1)指示当前code[]数组中的某一指令操作码的有效索引;2)表示的是异常处理器的起点;
+       u2  catch_type;  // 1)指示常量池中的有效索引;2)必须是CONSTANT_Class_inf结构;3)表示当前异常处理器要捕获的异常类型;
+    } exception_table[exception_table_length];  // 1)该数组中的每个元素指示code[]中的一个异常处理器;2)该数组的次序是规范强制的;
+    u2  attributes_count;  // 指示attributes[]数组的长度;
+    attribute_info  attributes[attributes_count]; // 1)指示属性表集合;2)必须是attribute_info结构;
 }
 
 表中项解释的补充?
     1. max_locals项的特殊情况?
         (1) long和double类型的局部变量的最大索引是max_locals-2;
         (2) 其他类型的局部变量的最大索引是max_locals-1;
+    2. code[]项?
+        当一台可按字节寻址的机制,把code[]数组读入到内存时,若code[]数组的第一个字节是按照4字节边界对齐的;那么
+        tableswitch和lookupswitch指令的32位偏移量,也是按照4字节长度对齐的.
+    3. start_pc和end_pc项?
+        (1) 这两个项指明了异常处理器在code[]数组中的有效范围;
+            也就是说当pc寄存器的计数范围在[start_pc,end_pc)时,异常处理器就会生效;
+        (2) end_pc项,本身并不在异常处理器的有效范围的!
+            这点属于jvm历史上的一个设计缺陷;
+            a) 若jvm中某个方法的code属性长度刚好是65535个字节,并且以一个字节长度的指令结束,那么这个指令将不能被异常处理器处理;
+            b) 编译器通过限制任何方法,实例初始化方法,静态初始化方法的项code[]数组的长度不能大于65534来解决该bug;
+    4. catch_type项?
+        (1) 该项的值不能为0;
+            a) 如果该项的值为0,那么会导致在所有异常抛出时,都会调用这个异常处理器;
+            b) 这种现象可以用于实现finally语句;
+    5. attributes[]项?
+        (1) attributes[]数组中可包含的属性,可以是任意本文所述的23种属性表;
+        (2) attributes[]数组中可包含的属性,也可以是自定义的属性表,即非预置的属性;
 
+注意事项?
+    (1) Code属性中包含了某个方法,实例初始化方法,类或接口初始化方法的jvm指令及其相关的辅助信息;
+    (2) 可选的变长属性;
+    (3) 位于method_info结构的属性表中;
+    (4) 若方法声明为native或abstract,那么method_info结构的属性表中,不能有Code属性;
+    (5) 若是方法声明为非native或abstract,那么method_info结构的属性表中,有且仅有一个Code属性;
+
+
+
++-------------------------------------------------------------------------+
+|                         (8) Exceptions属性表
++-------------------------------------------------------------------------+
+Exceptions_attribute {
+    u2   attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`Exceptions`;
+    u4   attribute_length;  // 指示当前属性的长度,不包含之前的u2和本身的u4;
+    u2   number_of_exceptions;  // 指示exception_index_table[]数组的长度;
+    u2   exception_index_table[number_of_exceptions];  // 1)指示当前方法要抛出异常的类的类型;2)指示常量池的有效索引;3)必须是CONSTANT_Class_info结构;
+}
+
+注意事项?
+    (1) 指示一个方法要抛出的受检查型的异常;
+    (2) 可选的变长属性;
+    (3) 位于method_info结构的属性表中;
+    (4) 一个method_info结构的属性表中只能有0个或1个Exceptions属性;
+
+方法抛出异常需要满足的条件?
+    条件?
+        (1) 抛出的异常是RuntimeException类或其子类的实例;
+        (2) 抛出的异常是Error类或其子类的实例;
+        (3) 抛出的是在exception_index_table[]数组中声明的异常类或其子类的实例;
+    谁来检查该限制?
+        jvm不会检查该限制,是由编译器负责强制检查的.
+
+
+
++-------------------------------------------------------------------------+
+|         (9) RuntimeVisibleParameterAnnotations属性表
++-------------------------------------------------------------------------+
+RuntimeVisibleParameterAnnotations_attribute {
+    u2  attribute_name_index;  // 1)指示常量池中的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeVisibleParameterAnnotations`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u1  num_parameters;  // 指示parameter_annnotations[]数组的长度;
+    {  u2  num_annotations;  // 指示annotations[]数组的长度;
+       annotation  annotations[num_annotations];  // 指示标注在parameter_annotation[]数组中某个形式参数上的可见运行时注解;
+    } parameter_annotations[num_parameters];  // 该数组的每个元素,都表示一个形式参数的所有运行时可见的注解;
+}
+
+表中项解释的补充?
+    parameter_annotations[]项?
+        1) parameter_annotations[]数组中的第i项,指示的方法描述符中的第i个形式参数;
+        2) 说白了,就是方法列表中第i个参数的参数注解;
+
+注意事项?
+    (1) 指示当前方法的形式参数上声明的可见运行时注解;
+    (2) 是可选的变长属性;
+    (3) 位于method_info结构的属性表中;
+    (4) 一个method_info结构的属性表中,只能有0个或1个RuntimeVisibleParameterAnnotations属性;
+
+
++-------------------------------------------------------------------------+
+|           (10) RuntimeInvisibleParameterAnnotations属性表
++-------------------------------------------------------------------------+
+RuntimeInvisibleParameterAnnotations_attribute {
+    u2  attribute_name_index;  // 1)指示常量池中有效的索引值;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeInvisibleParameterAnnotations`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u1  num_parameters;  // 指示parameter_annotations[]数组的长度;
+    {  u2  num_annotations;  // 指示annotations[]数组的长度;
+       annotation  annotations[num_annotations];  // 指示标注在parameter_annotations[]数组中某个形式参数上的不可见运行时注解;
+    } parameter_annotations[num_parameters];  // 该数组的每个元素,都表示某个形式参数上的所有不可见运行时注解;
+}
+
+注意事项?
+    (1) 指示当前方法的形式参数上声明的不可见运行时注解;
+    (2) 是可选的变长属性;
+    (3) 位于method_info结构的属性表中;
+    (4) 一个method_info结构的属性表中,只能有0个或1个RuntimeInvisibleParameterAnnotations属性;
+
+RuntimmeVisibleParameterAnnotations和RuntimeInvisibleParameterAnnotations区别?
+    (1) 前者是运行时可见的参数注解,后者是运行时不可见的;
+    (2) 主要依据是是否能被反射的API访问;
+
+
+
++-------------------------------------------------------------------------+
+|                       (11) AnnotationDefault属性表
++-------------------------------------------------------------------------+
+AnnotationDefault_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`AnnotationDefault`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    element_value  default_value;  // 指示外围method_info结构所描述的注解类型元素的默认值;
+}
+
+注意事项?
+    (1) 指示注解中元素的默认值;
+    (2) 可选的变长属性;
+    (3) 位于method_info结构(该结构用于表示注解类型中的元素时)中;
+    (4) 在method_info结构中,只能有0个或1个AnnotationDefault属性;
+
+
+
++-------------------------------------------------------------------------+
+|                     (12) MethodParameters属性表
++-------------------------------------------------------------------------+
+MethodParameters_attribute {
+    u2  attribute_name_index;  // 1)指示常量池中的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`MethodParameters`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u1  parameters_count;  // 指示parameters[]数组的长度;
+    {  u2  name_index;  // 1)指示常量池中的有效索引;2)必须是CONSTANT_Utf8_info结构;3)用以代表某个形式参数(非限定名称);
+       u2  access_flags;  // 指示当前这个形式参数的访问标志;
+    } parameters[parameters_count];  // 指示当前方法的参数描述符的集合;
+}
+
+表中项解释补充?
+    1. parameter_count项?
+        所表示的个数,指的是当前方法的参数描述符的个数;
+    2. name_index项?
+        (1) 该项的值是可以为0的;
+        (2) 若该项的值是0,表示的是parameters[]数组中的这个元素,描述的是个没有名称的形式参数;
+    3. access_flags项?
+        (1) ACCESS_FINAL
+            指示这个参数是使用final修饰的;
+        (2) ACCESS_SYNTHETIC
+            指示这个参数没有显式或隐式的声明在方法中,而是由编译器生成的;
+        (3) ACCESS_MANDATED
+            指示这个参数是隐式的声明在方法中的,Java基础中通常概念的隐式参数this;
+
+注意事项?
+    (1) 指示记录形式参数有关的信息,比如方法名称,参数描述符等;
+    (2) 可选的变长属性;
+    (3) 位于method_info结构的属性表中;
+    (4) 一个method_info结构的属性表中,只能有0个或1个MethodParameters属性;
+
+
+
++-------------------------------------------------------------------------+
+|                        (13) Synthetic属性表
++-------------------------------------------------------------------------+
+Synthetic_attribute {
+    u2  attribute_name_index;  // 1)指示常量池中有效的索引值;2)必须是CONSTANT_Utf8_info结构;3)值必须是`Synthetic`;
+    u4  attribute_length;  // 该项的值固定是0;
+}
+
+历史?
+    该属性是在JDK1.1中,为了支持内部类或接口而引入的.
+
+注意事项?
+    (1) 指示当前属性所属的外部结构是由编译器自动生成的;
+    (2) 可选的定长属性;
+    (3) 位于ClassFile,field_info,method_info结构的属性表中;
+
+特殊场景?
+    (1) 若一个类成员没有在源文件中出现,则必须带有Syncthetic属性,或者设置ACC_SYNTHETIC访问标志;
+    (2) 有唯一例外的情况,就是由编译器自动生成的方法;
+          a) Java语言中默认的无参构造器;
+          b) 类的初始化函数;
+          c) Enum#values和Enum#valueOf函数;
+
+
+
++-------------------------------------------------------------------------+
+|                    (14) Deprecated属性表
++-------------------------------------------------------------------------+
+Deprecated_attribute {
+    u2  attribute_name_index;  // 1)指示常量池中有效的索引值;2)必须是CONSTANT_Utf8_info结构;3)值必须是`Deprecated`;
+    u4  attribute_length;  // 该值固定为0;
+}
+
+注意事项?
+    (1) 指示该属性所属的外围结构是弃用,不支持使用的;
+    (2) 是可选的定长属性;
+    (3) 位于ClassFile,field_info,method_info结构的属性表中;
+    (4) 类,接口,方法,字段中都可以带有Deprecated属性;
+
+
+
++-------------------------------------------------------------------------+
+|                          (15) Signature属性表
++-------------------------------------------------------------------------+
+Signature_attribute {
+    u2  attribute_name_index;  // 1)指示常量池中的有效索引值;2)必须是CONSTANT_Utf8_info结构;3)值必须是`Siguature`;
+    u4  attribute_length;  // 该值固定为2;
+    u2  signature_index;  // 1)指示常量池中的有效索引;2)必须是CONSTANT_Utf8_info结构;3)指示类签名,方法类型签名,字段类型签名;
+}
+
+表中项解释补充?
+    signature_index项?
+      (1) 该项具体表示何种签名,主要判断当前属性所属的外围结构,是ClassFile,还是field_info,还是method_info;
+      (2) Oracel的hotspot的实现,在加载类或链接类的时候,并不检查Signature属性;
+          JavaSE的某些类库中能够查询类,接口,构造器,方法,字段的反省签名,而Signature属性的正确性正是由这些类库检查的;
+          这些方法有如下几个(非全部):
+                  a) java.lang.Class#getGenericSuperclass函数;
+                  b) java.lang.reflect.Executable#toGenericString函数;
+
+注意事项:
+    (1) 存在泛型机制的前提下,指示类,接口,构造器,方法,字段中类型变量或参数化类型的泛型签名;
+    (2) 可选的定长属性;
+    (3) 位于ClassFile,field_info,method_info结构的属性表中;
+
+什么是签名signature?
 
 
 +-------------------------------------------------------------------------+
