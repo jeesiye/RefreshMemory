@@ -484,8 +484,232 @@ Signature_attribute {
     (2) 可选的定长属性;
     (3) 位于ClassFile,field_info,method_info结构的属性表中;
 
-什么是签名signature?
 
 
 +-------------------------------------------------------------------------+
+|               (16) RuntimeVisibleAnnotations属性表
 +-------------------------------------------------------------------------+
+RuntimeVisibleAnnotations_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeVisibleAnnotations`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2  num_annotations;  // 指示annotations[]数组的长度;
+    annotation  annotations[num_annotations];  // 指示添加在声明上的可见的运行时注解的数组;
+}
+annotation {
+    u2  type_index;  //1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)表示一个字段描述符,也就是注解类型;
+    u2  num_element_value_pairs;  // 指示element_value_pairs[]数组的长度,存储元素是注解中的键值对;
+    {  u2 element_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)指示键值对中的key,也就是注解中元素的名称值;
+       element_value value;  // 指示键值对中的value,也就是注解中元素的名称对应的值;
+    } element_value_pairs[num_element_value_pairs];
+}
+element_value {
+    u1  tag;  // 1)指示键值对中value值的类型;2)使用ASCII字符来表示;3)见补充表;
+    union  {
+        u2  const_value_index;  // 1)指示常量池的有效索引;2)常量类型必须与表中的tag项对应;3)表明该键值对中的value是原始类型或String类型;
+        {   u2 type_name_index;  // 2)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)表示一个有效的字段描述符;
+            u2 const_name_index;  // 2)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)表示当前element_value结构所表示的枚举类常量的简单名称;
+        } enum_const_value;  // 指示键值对中的value是枚举类常量;
+        u2  class_info_index;  // 1)指示键值对的value是个类字面量;2)见项的补充;
+        annotation  annotation_value;  // 1)指示键值对中的value本身也是个注解;2)那它的内部又是一个annotation项的结构;
+        {   u2 num_values;  // 指示当前element_value结构所表示的数组的长度;
+            element_value  values[num_values];  // 指示当前element_value结构所表示的数组的元素;
+        } array_value;  // 指示键值对中的value是个数组;
+    } value;  // value指示键值对中的值,此值是个联合体;
+}
+
+补充表?
+element_value项中的tag项参考表
+-------------------------------------------------------------------------------------
+  tag项  |          类型            |  value中联合体中的项        |  常量类型
+-------------------------------------------------------------------------------------
+  B           byte                    const_value_index          CONSTANT_Integer
+  C           char                    const_value_index          CONSTANT_Integer
+  D           double                  const_value_index          CONSTANT_Double
+  F           float                   const_value_index          CONSTANT_Float
+  I           int                     const_value_index          CONSTANT_Integer
+  J           long                    const_value_index          CONSTANT_Long
+  S           short                   const_value_index          CONSTANT_Integer
+  Z           boolean                 const_value_index          CONSTANT_Integer
+  s           String                  const_value_index          CONSTANT_Utf8
+  e           Enum Type               enum_const_value           Not Applicable
+  c           Class                   class_info_index           Not Applicable
+  @           Annotation Type         annotation_value           Not Applicable
+  [           Array_Type              array_value                Not Applicable
+-------------------------------------------------------------------------------------
+
+class_info_index项的补充?
+    (1) 指示常量池的有效索引;
+    (2) 必须是CONSTANT_Utf8_info结构;
+    (3) 用以表示返回描述符;
+        返回描述符给出了,与当前element_value结构表示的类字面量相对应的类型;
+    (4) 字面量与类型的关系如下:
+        a) 如果字面量是C.class,而且C是类或者接口或者数组类型的名字,那么对应的类型就是C;
+             常量池中的返回描述符会是ObjectType或者ArrayType.
+             比如类的字面量是Object.class,返回类型是Object,返回描述符是Ljava.lang.Object;
+        b) 如果字面量是p.class,而且p是原始类型的名字,那么对应的类型就是p;
+             常量池中的返回描述符会是BaseType字符(B/S/I/J/F/D/C/Z).
+             比如类的字面量是boolean.class,返回类型是boolean,返回描述符是Z;
+        c) 如果字面量是void.class,那么对应的返回类型是void;
+             常量池中的返回描述符会是V(大写的);
+             比如类的字面量是void.class,返回类型是void,返回描述符是V;
+
+注意事项?
+    (1) 指示添加在类声明,字段声明,方法声明上可见的运行时注解;
+    (2) 可选的变长属性;
+    (3) 位于ClassFile,field_info,method_info结构的属性表中;
+    (4) 在ClassFile,field_info,method_info结构的属性表中,只能有0个或1个RuntimeVisibleAnnotations属性;
+
+
+
++-------------------------------------------------------------------------+
+|                 (17) RuntimeInvisibleAnnotations属性表
++-------------------------------------------------------------------------+
+RuntimeInvisibleAnnotations_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeInvisibleAnnotations`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2  num_annotations;  // 1)指示annotations[]数组的长度;2)表示当前属性中可见的运行时注解的个数;
+    annotation  annotations[num_annotations];  // 指示当前属性可见的运行时注解的数组;
+}
+annotation项的详细解释和结构,参见属性RuntimeVisibleAnnotations中的同等属性;
+annotation项中的element_value项的详细解释和结构,参见对应属性RuntimeVisibleAnnotation中的同等属性;
+
+注意事项?
+    (1) 表示添加在类声明,字段声明,方法声明上不可见的运行时注解;
+    (2) 是可选的变长属性;
+    (3) 位于ClassFile,field_info,method_info结构的属性表中;
+    (4) ClassFile,field_info,method_info结构的属性表中,只能有0个或1个RuntimeInvisibleAnnotations属性;
+
+RuntimeVisibleAnnotations和RuntimeInvisibleAnnotations属性的区别?
+    (1) 一个是运行时可见的是属性,一个是不可见的;
+    (2) 可见的运行时属性,是可以被反射API访问的;
+
+
+
++-------------------------------------------------------------------------+
+|                       (18) LineNumberTable属性表
++-------------------------------------------------------------------------+
+LineNumberTable_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`LineNumberTable`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2  line_number_table_length;  // 指示line_number_table[]数组的长度
+    {  u2  start_pc;  //1) 指示源文件中的新的行号的起点;2)必须是code[]数组中的有效索引;
+       u2  line_number;  // 指示源文件中对应的行号;
+    } line_number_table[line_number_table_length];  // 指示源文件的行号会在code[]数组中的哪个指令处发生变化;
+}
+
+注意事项?
+    (1) 指示源文件对应的行号所表示的内容,对应于jvm中code[]数组中的哪一部分;
+    (2) 可选的变长属性;
+    (3) 位于Code结构的属性表中;
+    (4) Code结构中的属性LineNumberTable可以按照任意的顺序出现;
+    (5) Code结构的项attributes表中,可以有不止一个LineNumberTable属性,对应于源文件中的同一行;
+        也就是说多个LineNumberTable属性结合起来可以表示源文件中的同一行代码,属性和源文件的代码行之间不必有一一对应的关系;
+
+
+
++-------------------------------------------------------------------------+
+|                 (19) LineVariableTable属性表
++-------------------------------------------------------------------------+
+LocalVariableTable_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`LocalVariableTable`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2  local_variable_table_length;  // 指示local_variable_table[]数组的长度;
+    {  u2  start_pc;  // Code[]数组中的起始索引(包含该索引元素);
+       u2  length;  // 1) Code[]数组中范围的长度;2)结束索引是start_pc+length(不包含该索引元素);3)即Code[start_pc,start_pc+length);
+       u2  name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)表示一个非限定名,指代这个局部变量;
+       u2  descriptor_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)表示源文件中局部变量类型的字段描述符;
+       u2  index;  // 指示当前栈帧的局部变量表的索引;
+    } local_variable_table[local_variable_table_length];
+}
+
+表中项的补充?
+    1. local_variable_table[]项?
+        (1) 以偏移量的形式给出了Code[]数组中的某个范围,当局部变量在这个范围的时候,它是有值的;
+        (2) 此项还给出了局部变量在当前帧的局部变量表中的索引;
+    2. local_variable_table[]项中的项start_pc和length?
+        (1) 指示Code[]数组中的范围,即Code[start_pc,start_pc+length);
+        (2) start_pc必须是Code[]数组中的有效索引,且该索引处必须是一条指令的操作码;
+        (3) start_pc+length的值,有两种情况:
+              a) 若是Code[]数组中的有效索引,其索引处必须是一条指令的操作码;
+              b) 也可以是刚超过Code[]数组末尾的首个索引值;
+    3. local_variable_table[]项中的项index?
+        (1) 若索引处的局部变量是long或double类型,则占用index和index+1两个位置;
+        (2) 若是其他类型,则占用index这一个位置;
+
+注意事项?
+    (1) 调试器在执行方法的过程中,用该属性可以确定局部变量的值;
+    (2) 可选的变长属性;
+    (3) 位于Code结构的属性表中;
+    (4) Code结构中可以有多个LocalVariableTable属性,且可以按照任意顺序出现;
+    (5) Code结构的attributes表的每个局部变量中,最多只能有一个LocalVariableTable属性;
+
+
+
++-------------------------------------------------------------------------+
+|                 (20) LocalVariableTypeTable属性表
++-------------------------------------------------------------------------+
+LocalVariableTypeTable_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`LocalVariableTypeTable`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2  local_variable_type_table_length;  // 指示local_variable_type_table[]数组的长度;
+    {  u2  start_pc;  // 参考LocalVariableTable属性的项start_pc所有释义;
+       u2  length;  // 参考LocalVariableTable属性的项length所有释义;
+       u2  name_index;  // 参考LocalVariableTable属性的项name_index所有释义;
+       u2  signature_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)表示源文件中局部变量类型的字段签名;
+       u2  index;  // 参考LocalVariableTable属性的项index所有释义;
+    } local_variable_type_table[local_variable_type_table_length];  // 参考LocalVariableTable属性的项local_variable_table[]所有释义;
+}
+
+注意事项?
+    (1) 调试器在执行方法的过程中,用该属性来确定局部变量的值;
+    (2) 可选的变长属性;
+    (3) 位于Code结构的属性表中;
+    (4) Code结构中可以有多个LocalVariableTypeTable属性,且可以按照任意顺序出现;
+    (5) Code结构的attributes表的每个局部变量中,最多只能有一个LocalVariableTypeTable属性;
+
+LocalVariableTable和LocalVariableTypeTable属性的区别?
+    前者提供的是描述符信息,后者提供的是签名信息;
+
+
+
++-------------------------------------------------------------------------+
+|                     (21) StackMapTable属性表
++-------------------------------------------------------------------------+
+StackMapTable_attribute {
+    u2 attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`StackMapTable`;
+    u4 attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2 number_of_entries;
+    stack_map_frame entries[number_of_entries];
+}
+
+
++-------------------------------------------------------------------------+
+|              (22) RuntimeVisibleTypeAnnotations属性表
++-------------------------------------------------------------------------+
+RuntimeVisibleTypeAnnotations_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeVisibleTypeAnnotations`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2  num_annotations;
+    type_annotation annotations[num_annotations];
+}
+
+注意事项?
+    (1) 表示标注在类声明,字段声明,方法声明上,所使用到的类型上的,可见的运行时注解;
+        以及标注在对应方法体中某个表达式,所使用到的类型上的,可见的运行时注解;
+        以及标注在泛型类,泛型接口,泛型方法,泛型构造器的,类型参数上的,可见的运行时注解;
+    (2) 只有属性表的上级结构或上级属性中,所对应的声明或表达式加了注解的类型时,该属性表才能包含RuntimeVisibleTypeAnnotations属性;
+    (3) 可选的变长属性;
+    (4) 位于ClassFile,field_info,method_info,Code结构的属性表中;
+    (5) ClassFile,field_info,method_info,Code结构的属性表中,最多只能有1个RuntimeVisibleTypeAnnotations属性;
+
+
+
++-------------------------------------------------------------------------+
+|              (23) RuntimeInvisibleTypeAnnotations属性表
++-------------------------------------------------------------------------+
+RuntimeInvisibleTypeAnnotations_attribute {
+    u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeInvisibleTypeAnnotations`;
+    u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
+    u2  num_annotations;
+    type_annotation annotations[num_annotations];
+}
