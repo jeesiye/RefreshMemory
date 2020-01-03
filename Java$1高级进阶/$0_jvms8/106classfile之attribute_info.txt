@@ -689,9 +689,34 @@ StackMapTable_attribute {
 RuntimeVisibleTypeAnnotations_attribute {
     u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeVisibleTypeAnnotations`;
     u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
-    u2  num_annotations;
-    type_annotation annotations[num_annotations];
+    u2  num_annotations;  // 指示annotations[]数组的长度;
+    type_annotation annotations[num_annotations];  // 标注在声明或表达式上,使用的类型上,可见的运行时注解的集合数组;
 }
+type_annotation {  // 1)该结构的前3项指示注解所在的精确位置;2)后3项指示注解的类型及其键值对;
+    u1  target_type;  // 指示注解的目标是何种类;
+    union {
+        type_parameter_target;
+        supertype_target;
+        type_parameter_bound_target;
+        empty_target;
+        method_formal_parameter_target;
+        throws_target;
+        localvar_target;
+        catch_target;
+        offset_target;
+        type_argument_target;
+    } target_info;
+    type_path  target_path;
+    u2  type_index;
+    u2  num_element_value_pairs;
+    {  u2 element_name_index;
+       element_value value;
+    } element_value_pairs[num_element_value_pairs];
+}
+
+
+
+
 
 注意事项?
     (1) 表示标注在类声明,字段声明,方法声明上,所使用到的类型上的,可见的运行时注解;
