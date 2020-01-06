@@ -85,7 +85,9 @@ java.nio.file.FileSystems : 1)抽象工厂类; 2)对外提供3种获取fs实例�
        查看器 : watchservice
        存储器 : filestore
        查询器 : userprincipallookupservice
+       访问器 : filevisitor(此处未出现)
        视图集 : attributeview
+
 
 
 
