@@ -9,9 +9,16 @@ FileSystems 抽象工厂类的开放方法概览表
 ---------------------------------------------------------------------------------------------------------------------
   方法                        |  释义
 ---------------------------------------------------------------------------------------------------------------------
-  getDefault : this             获取默认的FileSystem实例(查看内部类FileSystem$DefaultFileSystemHolder);
-  getFileSystem : this          根据URI获取FileSystem实例(查看抽象类的static方法FileSystemProvider#installedProviders函数)
-  newFileSystem : this          可选指定三种配置项获取FilSystem实例
+  getDefault : FileSystem       获取默认的FileSystem实例
+                                \+ 默认的URI的schema是FILE方案;
+                                \+ 实际使用的是内部类:FileSystems$DefaultFileSystemHolder;
+                                   1) 获取的是该内部类的静态属性;
+                                   2) 使用的是懒加载的方式(static域,加载时期才会创建);
+  getFileSystem : FileSystem    根据URI获取FileSystem实例
+                                \+ 内部大致处理步骤如下:
+                                    1) 使用static函数,FileSystemProvider#instanlledProviders获取fs列表;
+                                    2) 比对URI的schema,若匹配使用对应的fsp创建fs的实例;
+  newFileSystem : FileSystem    可选指定三种配置项获取FilSystem实例
                                 \+ 即: a)URI; b)文件系统的env配置; c)指定类加载器(classloader)
                                 \+ 根据参数列表的不同,重载了3个方法;
                                 \+ 大概处理步骤可以分为两步:
