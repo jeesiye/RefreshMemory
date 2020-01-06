@@ -1,0 +1,4 @@
+什么是BIO,NIO,AIO?
+    1. BIO(java blocking IO),同步阻塞读取IO库,JDK1;
+    2. NIO(java non-blocking IO),同步非阻塞读取IO库,JDK4;
+    3. AIO(java asynchronized IO),异步非阻塞读取IO库,JDK7;
