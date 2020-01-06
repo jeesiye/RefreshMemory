@@ -705,7 +705,7 @@ type_annotation {  // 1)该结构的前3项指示注解所在的精确位置;2)�
         catch_target;
         offset_target;
         type_argument_target;
-    } target_info;  // 指示本条注解添加在声明或表达式中的哪个类型上面;
+    } target_info;  // 1)指示本条注解添加在声明或表达式中的哪个类型上面;2)具体含义见type_info结构体详解;
     type_path  target_path;  // 指示本条注解添加在,由target_info所指出的类型的,哪一部分上面;
     u2  type_index;  // 参见RuntimeVisibleAnnotations属性表中的annotation结构;
     u2  num_element_value_pairs;  // 参见RuntimeVisibleAnnotations属性表中的annotation结构;
@@ -760,7 +760,74 @@ target_type值所在的RuntimeVisibleTypeAnnotations属性应该出现的位置(
 (11)     0x40~0x4B     Code              局部变量声明,资源变量声明,异常参数声明,以及表达式中所用到的类型;
 -------------------------------------------------------------------------------------------------------------------------
 
+type_info结构体详解:
+    1. type_parameter_target{  // 指示本条注解添加在泛型类,泛型接口,泛型方法,泛型构造器的第i个类型参数上面;
+           u1  type_parameter_index;  // 如果该值为0,那就表示该注解添加在首个类型参数上面;
+       }
+    2. supertype_target{  // 指示该注解添加在类声明,或接口声明的extends,implements子句的类型上面;
+           u2  supertype_index;  // 1)该值是65535,指示添加在类声明的extends子句中的超类上面;2)其他值则对应ClassFile接口的interfaces[]数组的索引;
+       }
+    3. type_parameter_bound_target{  // 指示该注解添加在泛型类,泛型接口,泛型方法,泛型构造器的第i个类型参数的第i个界限上面;
+           u1  type_parameter_index;  // 1)指示第几个类型参数;2)值是0表示首个;
+           u1  bound_index;  // 1)指示第几个界限;2)值是0表示首个;
+       }
+       补充:该属性不会指示界限的类型,具体的可以在Signature属性中查找;
+    4. empty_target{  // 指示添加在字段声明,方法的返回值类型,新构造的对象类型或是方法或是构造器的接受者类型上面;
+       }
+       补充:由于这些位置上都只会出现一个类型,所以当target_info联合体表示的是empty_target时,不需要再给出类型语境中每个类型的信息;
+    5. formal_parameter_target{  // 指示添加在方法,构造器,lambda表达式中形式参数声明的类型上面;
+           u1  formal_parameter_index;  // 指示形式参数中的索引,规则是从0开始计算的;
+       }
+       补充:该项不会记录标注的形式参数类型的本身,若想查看,可通过RuntimeVisibleTypeAnnotations属性外围的method_info结构中,的方法描述符查看;
+    6. throw_target{  // 指示该注解添加在方法或构造器中的,throw子句的第i个类型上面;
+           u2  throw_type_index;  // 该值表示的索引,对应着method_info结构的Exceptions属性里的,exception_index_table[]数组的索引;
+       }
+    7. localvar_target{  // 指示添加在局部变量声明中的类型上面的注解;也包括try-with-resources语句中的资源变量;
+           u2  table_length;  // 指示table[]数组的长度;
+           {  u2  start_pc;  // 指示Code数组范围的开始索引;
+              u2  length;  // 指示Code数组范围的长度,即Code[start_pc,start_pc+length);
+              u2  index;  // 1)指示当前局部变量,在当前帧的局部变量表的索引;2)如果是double或long类型,则占用index和index+1这两个字节;
+           } table[table_length];  // 1)指示当前变量Code[]数组的某一范围内有值;2)指示在当前帧的局部变量表的索引;
+       }
+       // 补充:该项没有记录标注类型的信息,具体查看可从LocalVariableTable属性中查找;
+    8. catch_target{  // 指示添加在异常参数的第i个参数类型上面;
+           u2  exception_Table_index;  // 该值表示索引,对应这RuntimeVisibleTypeAnnotations属性外围的Code属性中的,exception_table[]数组的索引;
+       }
+    9. offset_target{  // 指示添加在:1)instanceof表达式的类型上;2)new表达式的类型上;3)方法引用表达式`::`符号前面的类型上面;
+           u2  offset;  // 指示相对应的字节码指令在Code[]数组中的偏移量;
+       }
+    10.type_argument_target{  // 1)指示类型转换表达式第i个类型上;2)new,显式构造器,方法调用,方法引用表达式中显式类型参数的第i个类型上;
+           u2  offset;  // 指示相对应的字节码指令在Code[]数组中的偏移量;
+           u1  type_argument_index;  // 1)指示添加在类型转换操作符内的哪个类型上;2)或者参数列表中的第i个参数类型上;
+       }
 
+
+type_path {  // 关于type_path的结构体示例,查看jvms8中的,存在详细示例;
+    u1  path_length;  // 指示path[]数组的长度;
+    {  u1 type_path_kind;
+       u1 type_argument_index;
+    } path[path_length];
+}
+type_path项?
+  1. 该项主要指示了类型中的哪一部分添加了注解;
+  2. 注解可能会直接添加到该类型本身,但如果此类型是个引用类型的化,那么注解还可以添加在该类型的其他位置上面:
+     a) 如果声明或表达式中用到了数组类型T[],那么注解可以添加在它的任何组件类型上面,这其中也包括该数组类型的元素类型;
+     b) 如果声明或表达式中用到了嵌套类型T1.T2,那么注解既可以添加在顶级类型的名称上面,也可以添加在任何成员类型的名称上面;
+     c) 如果声明或表达式中用到了参数化类型T<A>或T<? extends A>或T<? super A>,那么注解既可以添加在类型参数上,
+        也可以添加在任何通配符类型参数的边界上;
+  3. 详细示例,见jvms8中举例;
+type_path_kind项取值含义表
+-----------------------------------------------------------------------------------------
+  值      |  含义
+-----------------------------------------------------------------------------------------
+  0          注解位于数组类型的深处;
+  1          注解位于嵌套类型的深处;
+  2          注解添加在某个参数化类型中,某个通配符类型参数的边界上;
+  3          注解添加在某个参数化类型中,某个类型参数上;
+-----------------------------------------------------------------------------------------
+type_argument_index的取值约束?
+  1. 若type_path_kind的值是0或1或2,那么type_argument_index的值就是0;
+  1. 若type_path_kind的值是3,那么type_argument_index值就是参数类型中,那个带有注解的类型的索引序列(相对于参数化类型中的类型而言),计算从0开始;
 
 
 注意事项?
@@ -780,6 +847,15 @@ target_type值所在的RuntimeVisibleTypeAnnotations属性应该出现的位置(
 RuntimeInvisibleTypeAnnotations_attribute {
     u2  attribute_name_index;  // 1)指示常量池的有效索引;2)必须是CONSTANT_Utf8_info结构;3)值必须是`RuntimeInvisibleTypeAnnotations`;
     u4  attribute_length;  // 指示当前属性的长度,不包含前面的u2和本身的u4;
-    u2  num_annotations;
+    u2  num_annotations;  // 指示annotations[]数组的长度;
     type_annotation annotations[num_annotations];
-}
+}// 补充:其余具体项的含义及其结构,参考RuntimeVisibleTypeAnnotations属性中对应的项及其结构释义;
+
+注意事项?
+    (1) 表示标注在类声明,字段声明,方法声明上,所使用到的类型上的,不可见的运行时注解;
+        以及标注在对应方法体中某个表达式,所使用到的类型上的,不可见的运行时注解;
+        以及标注在泛型类,泛型接口,泛型方法,泛型构造器的,类型参数上的,不可见的运行时注解;
+    (2) 只有属性表的上级结构或上级属性中,所对应的声明或表达式加了注解的类型时,该属性表才能包含RuntimeVisibleTypeAnnotations属性;
+    (3) 可选的变长属性;
+    (4) 位于ClassFile,field_info,method_info,Code结构的属性表中;
+    (5) ClassFile,field_info,method_info,Code结构的属性表中,最多只能有1个RuntimeVisibleTypeAnnotations属性;
