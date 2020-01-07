@@ -48,7 +48,30 @@
 +------------------------------------------------------------------------------+
 |  java.nio.file.SimpleFileVisitor解析
 +------------------------------------------------------------------------------+
-该类是个简单的实现类,采用了装饰模式;
+1. 该类是个简单的实现类;
+2. 基本上每个方法所做的事情大致一致,合法性校验,CONTINUE继续处理;
+3. 若使用nio中的访问器,可简单的实现该类;
+
+
 
 +------------------------------------------------------------------------------+
+|  访问器的简单实例
 +------------------------------------------------------------------------------+
+新建目录并新建文件(执行者应当属于root组);
+```
+FileVisitor<Path> fv = new SimpleFileVisitor<Path>() {
+	@Override
+	public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+		if (dir.toString().equals("/home"))
+			Files.createDirectory(dir.resolve("test"));
+		return FileVisitResult.CONTINUE;
+	}
+	@Override
+	public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+		Path path = Files.createFile(Paths.get("/home/test/files.txt"));
+		print(path);
+		return FileVisitResult.TERMINATE;
+	}
+};
+Path path = Files.walkFileTree(Paths.get("/home"), fv);
+```
