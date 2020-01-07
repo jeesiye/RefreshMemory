@@ -1,0 +1,41 @@
++------------------------------------------------------------------------------+
+|  java.nio.file.PathMatcher
++------------------------------------------------------------------------------+
+1. 这是一个函数式接口;
+2. JDK7新增的,标记有注解@FunctionalInterface;
+3. 使用匹配器有两种方式;
+       a) 通过工厂类来获取默认配置的匹配器;
+          FileSystem#getPathMatcher函数;
+          该匹配器支持glob和regex语法;
+       b) 通过lambda来自定义匹配器;
+          path -> {return false};
+
+
+
++------------------------------------------------------------------------------+
+|  实例演示两种匹配器的使用方式
++------------------------------------------------------------------------------+
+1. 使用类库提供的匹配器;
+```
+PathMatcher pm = FileSystems.getDefault().getPathMatcher("glob:*.txt");
+Path path = Paths.get("abc.txt");
+boolean bool = pm.matches(path);
+print(bool); // out : true
+```
+2. 使用自定义的匹配器
+```
+PathMatcher pm = path -> {
+	if (path.toString().contains(".txt"))
+		return true;
+	return false;
+};
+Path path = Paths.get("abc.txt");
+boolean bool = pm.matches(path);
+print(bool); // out : true
+```
+
+
+
++------------------------------------------------------------------------------+
+|  FileSystem#getPathMatcher函数的glob语法小计
++------------------------------------------------------------------------------+

@@ -3,6 +3,7 @@
 +------------------------------------------------------------------------------+
 1. java.nio.file.FileVisitor<T> : 访问接口规范;
 2. java.nio.file.SimpleFileVisitor<T> : 内置的简单实现类使用;
+3. java.nio.file.FileVisitResult : 访问器中回调函数执行与否的枚举常量;
 
 
 
@@ -75,3 +76,11 @@ FileVisitor<Path> fv = new SimpleFileVisitor<Path>() {
 };
 Path path = Files.walkFileTree(Paths.get("/home"), fv);
 ```
+
+
+
++------------------------------------------------------------------------------+
+|  访问器使用到的地方
++------------------------------------------------------------------------------+
+1. java.nio.file.Files.walkFileTree(Path, FileVisitor<? super Path>)
+2. java.nio.file.Files.walkFileTree(Path, Set<FileVisitOption>, int, FileVisitor<? super Path>)
