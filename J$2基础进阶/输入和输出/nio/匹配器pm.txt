@@ -16,26 +16,62 @@
 |  实例演示两种匹配器的使用方式
 +------------------------------------------------------------------------------+
 1. 使用类库提供的匹配器;
-```
-PathMatcher pm = FileSystems.getDefault().getPathMatcher("glob:*.txt");
-Path path = Paths.get("abc.txt");
-boolean bool = pm.matches(path);
-print(bool); // out : true
-```
+    ```
+    PathMatcher pm = FileSystems.getDefault().getPathMatcher("glob:*.txt");
+    Path path = Paths.get("abc.txt");
+    boolean bool = pm.matches(path);
+    print(bool); // out : true
+    ```
 2. 使用自定义的匹配器
-```
-PathMatcher pm = path -> {
-	if (path.toString().contains(".txt"))
-		return true;
-	return false;
-};
-Path path = Paths.get("abc.txt");
-boolean bool = pm.matches(path);
-print(bool); // out : true
-```
+    ```
+    PathMatcher pm = path -> {
+    	if (path.toString().contains(".txt"))
+    		return true;
+    	return false;
+    };
+    Path path = Paths.get("abc.txt");
+    boolean bool = pm.matches(path);
+    print(bool); // out : true
+    ```
 
 
 
 +------------------------------------------------------------------------------+
 |  FileSystem#getPathMatcher函数的glob语法小计
++------------------------------------------------------------------------------+
+1. 补充说明,此种语法使用于FileSystem#getPathMatcher函数获取的匹配器的;
+   若是自定义的,则可以匹配语法,也可以使用regex库中的语法;
+2. 使用方式一般在遍历目录树的时候进行匹配判断;
+3. 语法规范的格式是`syntax:pattern`;
+       支持的语法有glob和regex;
+       格式为:`glob:pattern`或者`regex:pattern`;
+       在UnixFileSystem的实现中,前缀的部分是必须的!
+4. 以下是glob的语法;
+   1) 完整的规范参考FileSystem#getPathMatcher函数的doc说明;
+   2) glob模式支持的符号有:
+        *        表示一个字符(character)或者一个路径部件,且不跨越目录边界(即只能表示一层目录);
+        **       表示一个字符或一个路径部件,且可跨越目录边界(即可表示多层目录);
+        ?        只能匹配一个字符或者一个路径部件;
+        \        通用的转义字符;
+        []       包含匹配表达式;匹配表达式中的任意指定的一个字符;(注意匹配规则是单个字符!)
+                     0) 符号`,`表示罗列指定的候选匹配集;
+                          比如"10".matcher("glob:[0,1]"),结果是false;
+                          比如"0".matcher("glob:[0,1]"),结果是true;
+                     a) 符号`-`表示连续,比如[0-9]表示包含匹配数字;
+                          比如"123".matcher("glob:[0-9]"),结果是false;
+                          比如"1".matcher("glob:[0-9]"),结果是true;
+                     b) 符号`!`表达式排除,比如[!0]表示包含非零的数字;
+                     c) 符号`* ? \`表示其自身;
+                     d) 符号`-`若出现在第一个位置处或者出现在符号`!`后面,表示自身;
+                          比如"glob:[-]"
+                          比如"glob:[!-]"
+                     e) 符号`!`若出现在符号`!`后面,表示自身;
+                          比如"glob:[!!]"
+        {}       组合表达式,其内部支持以上的所有符号,但具体规则有待考量;(注意不能嵌套本身)
+                    具体用法和regex的类似;
+                    比如`glob:[a-z]*[0-9]{9}`,则可以匹配a123;
+
+
+
++------------------------------------------------------------------------------+
 +------------------------------------------------------------------------------+
