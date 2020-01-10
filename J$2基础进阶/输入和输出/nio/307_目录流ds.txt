@@ -41,9 +41,36 @@
        1) 不添加过滤条件,直接遍历指定目录路径的所有文件;
        2) 使用glob语法进行过滤遍历指定目录;
        3) 使用DirectoryStream$Filter接口来自定义过滤条件,遍历指定目录;
+3. 基于当前jdk的实现,使用Files工具类获取的目录流实例,是SecureDirectoryStream的子类;
+       1) 即UnixSecureDirectoryStream的实例;
+       2) 事实上是可以这么做的:
+            if(ds instanceof SecureDirectoryStream) sds = (SecureDirectoryStream) ds;
 
 
 
 +------------------------------------------------------------------------------+
 |  简单示例
 +------------------------------------------------------------------------------+
+1. 默认的遍历指定的目录路径;
+     ```
+     Path path = Paths.get("/home");
+     DirectoryStream<Path> ds = Files.newDirectoryStream(path);
+     ds.iterator().forEachRemaining(var -> print(var));
+     ```
+2. 使用内部类DirectoryStream$Filter自定义过滤方式;
+     ```
+     Path path = Paths.get("/home");
+     Filter<Path> filter = var -> {
+     	if (var.toString().contains(".txt"))
+     		return true;
+     	return false;
+     };
+     DirectoryStream<Path> ds = Files.newDirectoryStream(path, filter);
+     ds.iterator().forEachRemaining(var -> print(var));
+     ```
+3. 使用glob语法过滤;
+     ```
+     Path path = Paths.get("/home");
+     DirectoryStream<Path> ds = Files.newDirectoryStream(path, "glob:*.txt");
+     ds.iterator().forEachRemaining(var -> print(var));
+     ```
