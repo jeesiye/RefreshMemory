@@ -64,9 +64,9 @@ release            释放当前的文件信道的锁;
 acquiredBy
 channel
 close
-isShared
 overlaps
 position
+isShared
 size
 toString
 -----------------------------------------------------------------------------------------------------------------------------
