@@ -1,9 +1,18 @@
-涉及类概览
+主要类概览
 -----------------------------------------------------------------------------------------------------------------------------
 A:java.nio.channels.SelectableChannel
 A:java.nio.channels.AbstractSelectableChannel
 A:java.nio.channels.Selector
 A:java.nio.channels.SelectionKey
+-----------------------------------------------------------------------------------------------------------------------------
+波及类概览
+-----------------------------------------------------------------------------------------------------------------------------
+A:java.nio.channels.spi.SelectorProvider
+A:java.nio.channels.DatagramChannel
+A:java.nio.channels.SercerSocketChannel
+A:java.nio.channels.SocketChannel
+A:java.nio.channels.Pipe$SinkChannel
+A:java.nio.channels.Pipe$SourceChannel
 -----------------------------------------------------------------------------------------------------------------------------
 
 1. A:java.nio.channels.SelectableChannel(选择信道行为规范)
