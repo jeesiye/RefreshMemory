@@ -1,0 +1,80 @@
+1. java.nio.file.Files
+-----------------------------------------------------------------------------------------------------------------------------
+createDirectories <p2> : Path                               创建新目录(父目录不存在则创建);
+createDirectory <p2> : Path                                 创建新目录;
+createFile <p2> : Path                                      创建一个文件;
+createLink <p2> : Path                                      创建一个硬链接;
+createSymbolicLink <p3> : Path                              创建一个符号链接;
+createTempDirectory <p2> : Path                             创建临时目录;
+createTempDirectory <p3> : Path                             \
+createTempFile <p3> : Path                                  创建临时文件;
+createTempFile <p4> : Path                                  \
+-----------------------------------------------------------------------------------------------------------------------------
+newBufferedReader <p1> : BufferedReader                     创建输入缓冲字符流;
+newBufferedReader <p2> : BufferedReader                     \
+newBufferedWriter <p2> : BufferedWriter                     创建输出缓冲字符流;
+newBufferedWriter <p3> : BufferedWriter                     \
+newByteChannel <p2> : SeekableByteChannel                   创建信道;
+newByteChannel <p3> : SeekableByteChannel                   \
+newDirectoryStream <p1> : DirectoryStream                   创建目录流;
+newDirectoryStream <p2> : DirectoryStream                   \
+newInputStream <p2> : InputStream                           创建输入字符流;
+newOutputStream <p2> : OutputStream                         创建输出字符流;
+-----------------------------------------------------------------------------------------------------------------------------
+copy <p2> : long                                            复制文件;
+copy <p3> : Path                                            \
+copy <p3> : long                                            \
+delete <p1> : void                                          删除文件;
+deleteIfExists <p1> : boolean                               删除文件(如果文件存在);
+move <p3> : Path                                            移动文件;
+-----------------------------------------------------------------------------------------------------------------------------
+walk <p2> : Stream                                          配合访问器使用(filevisitor)(目录树);
+walk <p3> : Stream                                          \
+walkFileTree <p2> : Path                                    \
+walkFileTree <p4> : Path                                    \
+find <p4> : Stream                                          查找操作;
+lines <p1> : Stream                                         行模式;
+lines <p2> : Stream                                         \
+list <p1> : Stream                                          路径列表;
+-----------------------------------------------------------------------------------------------------------------------------
+setAttribute <p4> : Path                                    设置属性;
+setLastModifiedTime <p2> : Path                             设置最后修改时间;
+setOwner <p2> : Path                                        设置所有者;
+setPosixFilePermissions <p2> : Path                         设置posix权限;
+getAttribute <p3> : Object                                  获取属性;
+getFileAttributeView <p3> : FileAttributeView               获取属性集;
+getFileStore <p1> : FileStore                               获取存储器(filestore);
+getLastModifiedTime <p2> : FileTime                         获取最后修改时间;
+getOwner <p2> : UserPrincipal                               获取所有者;
+getPosixFilePermissions <p2> : Set                          获取posix权限;
+-----------------------------------------------------------------------------------------------------------------------------
+isDirectory <p2> : boolean                                  是否为目录;
+isExecutable <p1> : boolean                                 是否可执行;
+isHidden <p1> : boolean                                     是否隐藏;
+isReadable <p1> : boolean                                   是否是只读;
+isRegularFile <p2> : boolean                                是否是常规文件;
+isSameFile <p2> : boolean                                   是否和指定文件相同;
+isSymbolicLink <p1> : boolean                               是否是符号链接;
+isWritable <p1> : boolean                                   是否是可写;
+exists <p2> : boolean                                       是否存在;
+notExists <p2> : boolean                                    是否不存在;
+-----------------------------------------------------------------------------------------------------------------------------
+probeContentType <p1> : String                              查看文件的文本类型;
+size <p1> : long                                            查看文件的大小;
+-----------------------------------------------------------------------------------------------------------------------------
+readAllBytes <p1> : byte[]                                  读取内容;
+readAllLines <p1> : List                                    \(行读取模式);
+readAllLines <p2> : List                                    \
+readAttributes <p3> : BasicFileAttributes                   读取属性集;
+readAttributes <p3> : Map                                   \
+readSymbolicLink <p1> : Path                                读取符号连接;
+write <p3> : Path                                           写入内容;
+write <p4> : Path                                           \
+-----------------------------------------------------------------------------------------------------------------------------
+
+2. 临时目录在哪里?
+    1) 参考系统属性的键值对,java.io.tmpdir;(unix系统是/tmp);
+    2) unix的实现在java.nio.file.TempFileHelper.tmpdir中;
+
+3. 什么是符号链接和硬连接?
+    参考unix中的概念;

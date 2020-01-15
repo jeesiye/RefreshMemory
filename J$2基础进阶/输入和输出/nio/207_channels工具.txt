@@ -1,0 +1,13 @@
+1. L:java.nio.channels.Channels(信道中的工具类)
+-----------------------------------------------------------------------------------------------------------------------------
+newChannel <p1> : ReadableByteChannel
+newChannel <p1> : WritableByteChannel
+newInputStream <p1> : InputStream
+newOutputStream <p1> : OutputStream
+newReader <p2> : Reader
+newReader <p3> : Reader
+newWriter <p2> : Writer
+newWriter <p3> : Writer
+-----------------------------------------------------------------------------------------------------------------------------
+2. 实现形式不是很复杂,直接查看源码.
+3. 如无特殊的情况,用此工具集创建的对象,和使用对应的信道类创建的对象,都是同一个类型的;

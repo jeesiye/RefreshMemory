@@ -1,0 +1,76 @@
+主要类概览
+-----------------------------------------------------------------------------------------------------------------------------
+A:java.nio.channels.AsynchronousChannelGroup
+A:java.nio.channels.AsynchronousFileChannel
+A:java.nio.channels.AsynchronousServerSocketChannel
+A:java.nio.channels.AsynchronousSocketChannel
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+1. A:java.nio.channels.AsynchronousChannelGroup
+-----------------------------------------------------------------------------------------------------------------------------
+awaitTermination <p2> : boolean
+isShutdown <p0> : boolean
+isTerminated <p0> : boolean
+provider <p0> : AsynchronousChannelProvider
+shutdown <p0> : void
+shutdownNow <p0> : void
+withCachedThreadPool <p2> : AsynchronousChannelGroup
+withFixedThreadPool <p2> : AsynchronousChannelGroup
+withThreadPool <p1> : AsynchronousChannelGroup
+-----------------------------------------------------------------------------------------------------------------------------
+
+2. A:java.nio.channels.AsynchronousFileChannel
+-----------------------------------------------------------------------------------------------------------------------------
+force <p1> : void
+lock <p0> : Future
+lock <p2> : void
+lock <p3> : Future
+lock <p5> : void
+open <p2> : AsynchronousFileChannel
+open <p4> : AsynchronousFileChannel
+read <p2> : Future
+read <p4> : void
+size <p0> : long
+truncate <p1> : AsynchronousFileChannel
+tryLock <p0> : FileLock
+tryLock <p3> : FileLock
+write <p2> : Future
+write <p4> : void
+-----------------------------------------------------------------------------------------------------------------------------
+
+3. A:java.nio.channels.AsynchronousServerSocketChannel
+-----------------------------------------------------------------------------------------------------------------------------
+accept <p0> : Future
+accept <p2> : void
+bind <p1> : AsynchronousServerSocketChannel
+bind <p2> : AsynchronousServerSocketChannel
+getLocalAddress <p0> : SocketAddress
+open <p0> : AsynchronousServerSocketChannel
+open <p1> : AsynchronousServerSocketChannel
+provider <p0> : AsynchronousChannelProvider
+setOption <p2> : AsynchronousServerSocketChannel
+-----------------------------------------------------------------------------------------------------------------------------
+
+4. A:java.nio.channels.AsynchronousSocketChannels
+-----------------------------------------------------------------------------------------------------------------------------
+bind <p1> : AsynchronousSocketChannel
+connect <p1> : Future
+connect <p3> : void
+getLocalAddress <p0> : SocketAddress
+getRemoteAddress <p0> : SocketAddress
+open <p0> : AsynchronousSocketChannel
+open <p1> : AsynchronousSocketChannel
+provider <p0> : AsynchronousChannelProvider
+read <p1> : Future
+read <p3> : void
+read <p5> : void
+read <p7> : void
+setOption <p2> : AsynchronousSocketChannel
+shutdownInput <p0> : AsynchronousSocketChannel
+shutdownOutput <p0> : AsynchronousSocketChannel
+write <p1> : Future
+write <p3> : void
+write <p5> : void
+write <p7> : void
+-----------------------------------------------------------------------------------------------------------------------------
