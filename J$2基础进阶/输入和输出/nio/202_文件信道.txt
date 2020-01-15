@@ -2,28 +2,27 @@
    1) A:java.nio.channels.FileChannel              文件信道行为抽象;
    2) E:java.nio.channels.FileChannel$MapMode      map转换内存映射文件时配置项;
    3) A:java.nio.channels.FileLock                 文件信道加锁行为抽象;
-
-
+   4) A:java.nio.MappedByteBuffer                  内存映射文件(属于buffer部分);
 
 2. A:java.nio.channels.FileChannel 函数简述
 -----------------------------------------------------------------------------------------------------------------------------
-open <p2> : FileChannel                    创建FileChannel对象;
-open <p3> : FileChannel
+open <p2> : FileChannel                    ----|-->创建FileChannel对象;
+open <p3> : FileChannel                    ----|
 map <p3> : MappedByteBuffer                创建MappedByteBuffer对象;
 -----------------------------------------------------------------------------------------------------------------------------
-lock <p0> : FileLock                       信道加锁;
-lock <p3> : FileLock
-tryLock <p0> : FileLock                    尝试加锁;
-tryLock <p3> : FileLock
+lock <p0> : FileLock                       ----|-->信道加锁;
+lock <p3> : FileLock                       ----|
+tryLock <p0> : FileLock                    ----|-->尝试加锁;
+tryLock <p3> : FileLock                    ----|
 -----------------------------------------------------------------------------------------------------------------------------
-read <p1> : int                            读取
-read <p1> : long
-read <p2> : int
-read <p3> : long
-write <p1> : int                           写入
-write <p1> : long
-write <p2> : int
-write <p3> : long
+read <p1> : int                            ----|-->读取
+read <p1> : long                               |
+read <p2> : int                                |
+read <p3> : long 　　　　　　　　　　　　　　　 ----|
+write <p1> : int                           ----|-->写入
+write <p1> : long                              |
+write <p2> : int                               |
+write <p3> : long                          ----|
 transferFrom <p3> : long                   从ReadableByteBuffer中读取到信道;
 transferTo <p3> : long                     从信道中写入到WritableByteBuffer;
 -----------------------------------------------------------------------------------------------------------------------------
@@ -34,8 +33,6 @@ force <p1> : void                          强制刷新(更改同步至存储设
 truncate <p1> : FileChannel                截断操作;
 -----------------------------------------------------------------------------------------------------------------------------
 
-
-
 3. E:java.nio.channels.FileChannel$MapMode 枚举实例简述
 -----------------------------------------------------------------------------------------------------------------------------
 PRIVATE                   私有映射模式(写时复制);
@@ -43,30 +40,18 @@ READ_ONLY                 只读映射模式;
 READ_WRITE                读写映射模式;
 -----------------------------------------------------------------------------------------------------------------------------
 
-
 4. A:java.nio.channels.FileLock 函数简述
 -----------------------------------------------------------------------------------------------------------------------------
-acquiredBy <P0> : Channel
-channel <P0> : FileChannel
+acquiredBy <P0> : Channel                  返回创建此锁的信道;
+channel <P0> : FileChannel                 返回创建此锁的文件信道;
 -----------------------------------------------------------------------------------------------------------------------------
-close <P0> : void
-release <P0> : void
+close <P0> : void                          释放锁;---|
+release <P0> : void                        释放锁;---|--->等价
 -----------------------------------------------------------------------------------------------------------------------------
-isShared <P0> : boolean
-isValid <P0> : boolean
-position <P0> : long
-size <P0> : long
-overlaps <P2> : boolean
-toString <P0> : String
------------------------------------------------------------------------------------------------------------------------------
-acquiredBy
-channel
-close              释放当前lock;
-release            释放当前lock;
-overlaps           是否超出锁定区域;
-position           锁定区域第一个字节的pos值;
-isValid            当前lock是否是合法的;
-isShared           是否是共享锁;
-size               信道加锁的长度;
-toString
+isShared <P0> : boolean                    是共享锁,还是排他锁;
+isValid <P0> : boolean                     是否合法;
+position <P0> : long                       查询当前pos值;
+size <P0> : long                           查询加锁的长度;
+overlaps <P2> : boolean                    查询指定范围是否合法;
+toString <P0> : String                     \
 -----------------------------------------------------------------------------------------------------------------------------
