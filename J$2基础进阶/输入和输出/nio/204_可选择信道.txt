@@ -1,0 +1,93 @@
+涉及类概览
+-----------------------------------------------------------------------------------------------------------------------------
+A:java.nio.channels.SelectableChannel
+A:java.nio.channels.AbstractSelectableChannel
+A:java.nio.channels.Selector
+A:java.nio.channels.SelectionKey
+-----------------------------------------------------------------------------------------------------------------------------
+
+1. A:java.nio.channels.SelectableChannel(选择信道行为规范)
+-----------------------------------------------------------------------------------------------------------------------------
+register <p2> : SelectionKey                           ----|-->给信道注册一个选择器;
+register <p3> : SelectionKey                           ----|
+configureBlocking <p1> : SelectableChannel             更改此信道的阻塞模式;
+-----------------------------------------------------------------------------------------------------------------------------
+isBlocking <p0> : boolean                              查看信道是否是阻塞的;
+isRegistered <p0> : boolean                            查看信道是否注册了选择器;
+-----------------------------------------------------------------------------------------------------------------------------
+blockingLock <p0> : Object                             返回configureBlocking和register函数处理中加锁的监视器对象regLock;
+keyFor <p1> : SelectionKey                             查找指定的选择器;
+provider <p0> : SelectorProvider                       获取注册选择器的提供程序;
+validOps <p0> : int                                    获取合法的配置项(参考SelectionKey);
+-----------------------------------------------------------------------------------------------------------------------------
+
+2. A:java.nio.channels.AbstractSelectionChannel
+     1) 继承自SelectableChannel;
+     2) 对SelectableChannel预处理实现,便于管道和网络信道的实现;
+     3) 管道信道和网络信道都属于选择信道的范畴;
+           a)基于udp的网络信道:DatagramChannel;
+           b)基于tcp的网络信道:ServerSocketChannel和SocketChannel;
+           c)基于Pipe的管道信道:Pipe$SinkChannel和Pipe$SourceChannel;
+
+3. A:java.nio.channels.Selector
+-----------------------------------------------------------------------------------------------------------------------------
+keys <p0> : Set                                  获取密匙集的集合;
+selectedKeys <p0> : Set                          选择密匙集中指定的一组密匙;
+-----------------------------------------------------------------------------------------------------------------------------
+select <p0> : int                                无限期阻塞;选择一组密匙准备IO操作;
+select <p1> : int                                指定时间阻塞;选择一组密匙准备IO操作;
+selectNow <p0> : int                             不阻塞;选择一组密匙准备IO操作;
+wakeup <p0> : Selector                           使得第一个选择操作立刻返回;
+-----------------------------------------------------------------------------------------------------------------------------
+open <p0> : Selector                             创建一个多路复用器;
+provider <p0> : SelectorProvider                 获取创建当前对象的提供程序对象;
+-----------------------------------------------------------------------------------------------------------------------------
+close <p0> : void                                关闭该选择器;
+isOpen <p0> : boolean                            查看当前选择器是否已经打开;
+-----------------------------------------------------------------------------------------------------------------------------
+3.1 Selector表示什么?
+        表示SelectableChannel的一个多路复用器对象;
+3.2 如何创建Selector对象?
+        1) 用函数Selector#open创建;
+        2) 使用复用选择器的提供程序的openSelector函数创建(package:java.nio.channels.spi);
+           selector的提供程序通过SelectableChannel#provider函数获得;
+           当前java.nio.channels库中可用的类有如下几个:
+               a) DatagramChannel;
+               b) ServerSocketChannel和SocketChannel;
+               c) Pipe$SinkChannel和Pipe$SourceChannel;
+3.3 选择器保存三组选择键;
+        1) 新建的选择器中,三组选择键都是空的;
+        2) a)密匙集,表示选择器的当前信道中注册的键,调用函数keys返回;
+           b)一组密匙,密匙集中的子集,调用函数selectedKeys返回;
+           c)取消的密匙集,表示已经取消但未被注销的密匙的集合,此密匙集不可直接被访问;
+
+4. A:java.nio.channels.SelectionKey
+-----------------------------------------------------------------------------------------------------------------------------
+OP_ACCEPT                                  等待接受操作;
+OP_CONNECT                                 等待连接操作;
+OP_READ                                    读取操作;
+OP_WRITE                                   写入操作;
+-----------------------------------------------------------------------------------------------------------------------------
+attach <p1> : Object                       把对象绑定到此键;
+attachment <p0> : Object                   获取此键的绑定对象;
+cancel <p0> : void                         取消此键,而非注销;
+-----------------------------------------------------------------------------------------------------------------------------
+interestOps <p0> : int                     查看当前的兴趣值;
+interestOps <p1> : SelectionKey            设置当前的兴趣值,是否合法查看具体类的validOps函数;
+readyOps <p0> : int                        查看当前的即用操作值;
+-----------------------------------------------------------------------------------------------------------------------------
+channel <p0> : SelectableChannel           返回创建此键的选择信道;
+selector <p0> : Selector                   返回创建此键的选择器;
+-----------------------------------------------------------------------------------------------------------------------------
+isAcceptable <p0> : boolean                是否是等待接受的;
+isConnectable <p0> : boolean               是否是等待连接的;
+isReadable <p0> : boolean                  是否是读取的;
+isWritable <p0> : boolean                  是否是写入的;
+isValid <p0> : boolean                     此键是否是合法的;
+-----------------------------------------------------------------------------------------------------------------------------
+4.1 SelectionKey中的操作值,其实是和对应的实现类对应的;
+        1) DatagramChannel对应着read和write操作;
+        2) ServerSocketChannel对应着accept操作;
+        3) SocketChannel对应着connect,read,write操作;
+        4) Pipe$SinkChannel对应着write操作;
+        5) Pipe$SourceChannel对应着read操作;
