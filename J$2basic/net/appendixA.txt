@@ -1,0 +1,73 @@
+interfaces
+-----------------------------------------------------------------------------------------------------------------------------
+ContentHandlerFactory                                              处理MIME工厂;
+URLStreamHandlerFactory                                            url流协议处理工厂;
+DatagramSocketImplFactory                                          udp套接字实现工厂;
+-----------------------------------------------------------------------------------------------------------------------------
+CookiePolicy                                                       cookie规则;
+CookieStore                                                        cookie存储;
+FileNameMap                                                        MIME名称映射;
+ProtocolFamily                                                     协议簇;
+SocketOption                                                       套接字选项;
+SocketOptions                                                      内置实现;
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+classes
+-----------------------------------------------------------------------------------------------------------------------------
+InetAddress [L]                                                    网络规范;
+Inet4Address [FL]                                                  IPv4协议的地址;
+Inet6Address [FL]                                                  IPv6协议的地址;
+SocketAddress [A]                                                  无协议附件的socket地址;
+InetSocketAddress [L]                                              套接字地址;
+-----------------------------------------------------------------------------------------------------------------------------
+InetfaceAddress [L]                                                网络接口地址;
+NetworkInterface [FL]                                              网络接口;
+-----------------------------------------------------------------------------------------------------------------------------
+URI [FL]                                                           \
+URL [FL]                                                           \
+URLDecoder [L]                                                     url解码器;
+URLEncoder [L]                                                     url编码器;
+URLConnection [A]                                                  url连接对象;
+HttpURLConnection [A]                                              支持http协议的url连接对象;
+JarURLConnection [A]                                               连接jar文件的对象(URL方式);
+URLPermission [FL]                                                 url许可;
+URLClassLoader [L]                                                 url的类加载器;
+URLStreamHandler [A]                                               url流协议处理器;
+-----------------------------------------------------------------------------------------------------------------------------
+CacheRequest [A]                                                   请求缓存;
+CacheResoponse [A]                                                 响应缓存;
+ResponseCache [A]                                                  基于url的响应缓存实现;
+SecureResponseCache [A]                                            安全的响应缓存实现;
+-----------------------------------------------------------------------------------------------------------------------------
+CookieHandler [A]                                                  cookie处理对象;
+CookieManager [L]                                                  创建CookieHandler对象;
+HttpCookie [FL]                                                    cookie对象;
+-----------------------------------------------------------------------------------------------------------------------------
+Authenticator [A]                                                  网络连接认证对象;
+PasswordAuthentication [FL]                                        密码认证;
+Proxy [L]                                                          代理对象;
+ProxySelector [A]                                                  代理选择器;
+IDN [FL]                                                           支持DNS和ASCII的转换工具;
+NetPermission [FL]                                                 网络许可;
+ContentHandler [A]                                                 MIME处理对象;
+-----------------------------------------------------------------------------------------------------------------------------
+DatagramPacket [FL]                                                udp数据包;
+DatagramSocket [L]                                                 udp套接字;
+DatagramSocketImpl [A]                                             udp套接字实现基类;
+Socket [L]                                                         套接字;
+MulticastSocket [L]                                                多播套接字;
+ServerSocket [L]                                                   套接字服务;
+SocketImpl [A]                                                     socket实现的基类;
+SocketPermission [FL]                                              socket许可;
+StandardSocketOption [FL]                                          标准的socket选项;
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+enums
+-----------------------------------------------------------------------------------------------------------------------------
+Authentication$RequestorType                                       请求实体类型;
+Proxy$Type                                                         代理类型;
+StandardProtocolFamily                                             协议类型;
+-----------------------------------------------------------------------------------------------------------------------------
