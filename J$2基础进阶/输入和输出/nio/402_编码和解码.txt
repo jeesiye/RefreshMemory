@@ -8,16 +8,14 @@ L:java.nio.file.charset.CoderResult
 
 1. A:java.nio.file.charset.CharsetDecoder
 -----------------------------------------------------------------------------------------------------------------------------
-averageCharsPerByte <P0> : float
-charset <P0> : Charset
-decode <P1> : CharBuffer
-decode <P3> : CoderResult
-flush <P1> : CoderResult
-maxCharsPerByte <P0> : float
-replaceWith <P1> : CharsetDecoder
-replacement <P0> : String
-reset <P0> : CharsetDecoder
+decode <P1> : CharBuffer                                      解码;
+decode <P3> : CoderResult                                     \
+flush <P1> : CoderResult                                      刷新;
+reset <P0> : CharsetDecoder                                   复位;
+charset <P0> : Charset                                        返回创建当前解码器的字符集对象;
 -----------------------------------------------------------------------------------------------------------------------------
+replaceWith <P1> : CharsetDecoder                             修改解码器的替换值;
+replacement <P0> : String                                     查看当前解码器的替换值;
 onMalformedInput <P1> : CharsetDecoder                        设置错误处理方式(错误格式输入);
 malformedInputAction <P0> : CodingErrorAction                 查看错误处理方式(错误格式输入);
 onUnmappableCharacter <P1> : CharsetDecoder                   设置错误处理方式(不可映射字符);
@@ -27,24 +25,29 @@ isAutoDetecting <P0> : boolean                                该解码器是否
 detectedCharset <P0> : Charset                                查看该解码器检测到的字符集;(不支持抛出异常)
 isCharsetDetected <P0> : boolean                              该解码器是否检测到字符集;(不支持抛出异常)
 -----------------------------------------------------------------------------------------------------------------------------
+averageCharsPerByte <P0> : float                              平均值(字节输入);
+maxCharsPerByte <P0> : float                                  最大值(字节输入);
+-----------------------------------------------------------------------------------------------------------------------------
 
 2. A:java.no.file.charset.CharsetEncoder
 -----------------------------------------------------------------------------------------------------------------------------
-encode <P1> : ByteBuffer
-encode <P3> : CoderResult
-averageBytesPerChar <P0> : float
-canEncode <P1> : boolean
-charset <P0> : Charset
-flush <P1> : CoderResult
-isLegalReplacement <P1> : boolean
-malformedInputAction <P0> : CodingErrorAction
-maxBytesPerChar <P0> : float
-onMalformedInput <P1> : CharsetEncoder
-onUnmappableCharacter <P1> : CharsetEncoder
-replaceWith <P1> : CharsetEncoder
-replacement <P0> : byte[]
-reset <P0> : CharsetEncoder
-unmappableCharacterAction <P0> : CodingErrorAction
+encode <P1> : ByteBuffer                                      编码;
+encode <P3> : CoderResult                                     \
+canEncode <P1> : boolean                                      支持编码与否;
+flush <P1> : CoderResult                                      刷新;
+reset <P0> : CharsetEncoder                                   重置;
+charset <P0> : Charset                                        返回创建此编码器的字符集;
+-----------------------------------------------------------------------------------------------------------------------------
+isLegalReplacement <P1> : boolean                             是否是合法的替换值;
+replaceWith <P1> : CharsetEncoder                             修改替换值;
+replacement <P0> : byte[]                                     查看替换值;
+malformedInputAction <P0> : CodingErrorAction                 修改错误处理方式(错误输入字符);
+onMalformedInput <P1> : CharsetEncoder                        查看错误处理方式(错误输入字符);
+onUnmappableCharacter <P1> : CharsetEncoder                   修改错误处理方式(不可映射字符);
+unmappableCharacterAction <P0> : CodingErrorAction            查看错误处理方式(不可映射字符);
+-----------------------------------------------------------------------------------------------------------------------------
+averageBytesPerChar <P0> : float                              平均值(字节输入);
+maxBytesPerChar <P0> : float                                  最大值(字节输入);
 -----------------------------------------------------------------------------------------------------------------------------
 
 3. L:java.nio.file.charset.CodingErrorAction
@@ -56,16 +59,16 @@ REPORT             输出编码错误信息;通过返回CoderResult对象或抛�
 
 4. L:java.nio.file.charset.CoderResult
 -----------------------------------------------------------------------------------------------------------------------------
-length <P0> : int
-throwException <P0> : void
-malformedForLength <P1> : CoderResult
-unmappableForLength <P1> : CoderResult
+length <P0> : int                                 错误输入的长度;
+throwException <P0> : void                        与当前错误对应的异常;
+malformedForLength <P1> : CoderResult             创建错误处理对象(给定长度,错误输入字符);
+unmappableForLength <P1> : CoderResult            创建错误处理对象(给定长度,不可映射字符);
 -----------------------------------------------------------------------------------------------------------------------------
-isError <P0> : boolean
-isMalformed <P0> : boolean
-isOverflow <P0> : boolean
-isUnderflow <P0> : boolean
-isUnmappable <P0> : boolean
+isError <P0> : boolean                            错误与否;
+isMalformed <P0> : boolean                        错误输入与否;
+isUnmappable <P0> : boolean                       不可映射与否;
+isOverflow <P0> : boolean                         上溢与否;
+isUnderflow <P0> : boolean                        下溢与否;
 -----------------------------------------------------------------------------------------------------------------------------
-toString <P0> : String
+toString <P0> : String                            \
 -----------------------------------------------------------------------------------------------------------------------------
