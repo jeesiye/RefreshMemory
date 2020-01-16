@@ -1,0 +1,27 @@
+L:java.net.NetworkInterface
+-----------------------------------------------------------------------------------------------------------------------------
+getByIndex <P1> : NetworkInterface                                 给定索引,获取网络接口对象;
+getByInetAddress <P1> : NetworkInterface                           给定网络地址,获取网络接口对象;
+getByName <P1> : NetworkInterface                                  根据名称,获取网络接口对象;
+getNetworkInterfaces <P0> : Enumeration                            获取网络接口集;
+-----------------------------------------------------------------------------------------------------------------------------
+getName <P0> : String                                              获取名称;
+getDisplayName <P0> : String                                       获取网络接口的显示名称;
+getIndex <P0> : int                                                获取网络接口的索引;
+getHardwareAddress <P0> : byte[]                                   获取mac地址;
+getMTU <P0> : int                                                  获取MTU值(最大传输单元);
+getInetAddresses <P0> : Enumeration                                获取接口地址集;
+getInterfaceAddresses <P0> : List                                  获取网络接口集;
+getParent <P0> : NetworkInterface                                  获取父接口;
+getSubInterfaces <P0> : Enumeration                                获取子接口集;
+-----------------------------------------------------------------------------------------------------------------------------
+isUp <P0> : boolean                                                是否启动;
+isLoopback <P0> : boolean                                          回环地址与否;
+isPointToPoint <P0> : boolean                                      是否点对点的连接;
+isVirtual <P0> : boolean                                           是否是虚拟接口;
+supportsMulticast <P0> : boolean                                   是否支持多播;
+-----------------------------------------------------------------------------------------------------------------------------
+hashCode <P0> : int
+equals <P1> : boolean
+toString <P0> : String
+-----------------------------------------------------------------------------------------------------------------------------
