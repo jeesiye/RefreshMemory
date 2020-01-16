@@ -5,7 +5,7 @@
 - 因为是使用聚合的方式内置顶层基类的;  
 - _涉及使用的常规类_:  
   - `BufferedInputStream`和`BufferedOutputStream`  
-  - `DataInputStream`和`DataoutputStream`  
+  - `DataInputStream`和`DataOutputStream`  
   - `PushbackInputStream`  
   - `PrintStream`  
 
