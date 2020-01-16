@@ -2,3 +2,7 @@ policy  :  规则
 authentication  :  认证
 protocol  :  协议
 multicast  :  多播
+permission  : 许可
+fragment  :  片段(uri)
+authority  :  身份认证(uri)
+raw  : 未处理的(uri)

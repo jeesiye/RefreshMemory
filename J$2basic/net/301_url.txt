@@ -1,0 +1,37 @@
+L:java.net.URI
+-----------------------------------------------------------------------------------------------------------------------------
+compareTo <P1> : int
+create <P1> : URI
+equals <P1> : boolean
+getAuthority <P0> : String
+getFragment <P0> : String
+getHost <P0> : String
+getPath <P0> : String
+getPort <P0> : int
+getQuery <P0> : String
+getRawAuthority <P0> : String
+getRawFragment <P0> : String
+getRawPath <P0> : String
+getRawQuery <P0> : String
+getRawSchemeSpecificPart <P0> : String
+getRawUserInfo <P0> : String
+getScheme <P0> : String
+getSchemeSpecificPart <P0> : String
+getUserInfo <P0> : String
+hashCode <P0> : int
+isAbsolute <P0> : boolean
+isOpaque <P0> : boolean
+normalize <P0> : URI
+parseServerAuthority <P0> : URI
+relativize <P1> : URI
+resolve <P1> : URI
+toASCIIString <P0> : String
+toString <P0> : String
+toURL <P0> : URL
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+L:java.net.URL
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
