@@ -1,0 +1,11 @@
+1. I:java.util.stream.BaseStream
+-----------------------------------------------------------------------------------------------------------------------------
+close <p0> : void
+isParallel <p0> : boolean
+iterator <p0> : Iterator
+onClose <p1> : BaseStream
+parallel <p0> : BaseStream
+sequential <p0> : BaseStream
+spliterator <p0> : Spliterator
+unordered <p0> : BaseStream
+-----------------------------------------------------------------------------------------------------------------------------
