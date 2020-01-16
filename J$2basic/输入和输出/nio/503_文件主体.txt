@@ -1,0 +1,10 @@
+1. A:java.nio.file.attribute.UserPrincipalLookupService(主体查询服务)
+-----------------------------------------------------------------------------------------------------------------------------
+lookupPrincipalByGroupName <p1> : GroupPrincipal              查询给定名称的群组主体;
+lookupPrincipalByName <p1> : UserPrincipal                    查询给定名称的所有者主体;
+-----------------------------------------------------------------------------------------------------------------------------
+1.1 如何创建该实例?
+        通过FileSystem.getUserPrincipalLookupService函数创建;
+
+2. I:java.nio.file.attribute.UserPrincipal(标记接口)(所有者主体)
+3. I:java.nio.file.attribute.GroupPrincipal(标记接口)(群组主体)
