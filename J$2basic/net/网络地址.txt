@@ -24,11 +24,11 @@ getCanonicalHostName <p0> : String                     获取规范化的主机�
 -----------------------------------------------------------------------------------------------------------------------------
 isReachable <p1> : boolean                             测试当前地址是否可达;
 isReachable <p3> : boolean                             \
-isAnyLocalAddress <p0> : boolean                       通配符地址与否;
-isLinkLocalAddress <p0> : boolean                      链接地址与否;
-isLoopbackAddress <p0> : boolean                       回环地址与否;
+isAnyLocalAddress <p0> : boolean                       是否`任播`地址;
+isLinkLocalAddress <p0> : boolean                      是否链接地址;
+isLoopbackAddress <p0> : boolean                       是否回环地址;
 isSiteLocalAddress <p0> : boolean                      是否是`本地站点地址`;
-isMulticastAddress <p0> : boolean                      是否是多播/组播地址;
+isMulticastAddress <p0> : boolean                      是否`多播`地址;
 isMCGlobal <p0> : boolean                              检查多播地址是否有实例程序(全局范围);
 isMCLinkLocal <p0> : boolean                           \(链路范围);
 isMCNodeLocal <p0> : boolean                           \(节点范围);

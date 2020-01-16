@@ -8,13 +8,13 @@ null
 
 L:java.net.InetSocketAddress
 -----------------------------------------------------------------------------------------------------------------------------
-getAddress <p0> : InetAddress
-getPort <p0> : int
-getHostName <p0> : String
-getHostString <p0> : String
+getAddress <p0> : InetAddress                                获取地址;
+getPort <p0> : int                                           获取端口;
+getHostName <p0> : String                                    获取主机名;
+getHostString <p0> : String                                  获取string形式的主机;
 -----------------------------------------------------------------------------------------------------------------------------
-createUnresolved <p2> : InetSocketAddress
-isUnresolved <p0> : boolean
+createUnresolved <p2> : InetSocketAddress                    创建一个未解析的套接字地址;
+isUnresolved <p0> : boolean                                  当前地址解析与否;
 -----------------------------------------------------------------------------------------------------------------------------
 hashCode <p0> : int
 equals <p1> : boolean
