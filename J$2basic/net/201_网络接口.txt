@@ -1,9 +1,9 @@
 L:java.net.NetworkInterface
 -----------------------------------------------------------------------------------------------------------------------------
-getByIndex <P1> : NetworkInterface                                 给定索引,获取网络接口对象;
-getByInetAddress <P1> : NetworkInterface                           给定网络地址,获取网络接口对象;
-getByName <P1> : NetworkInterface                                  根据名称,获取网络接口对象;
-getNetworkInterfaces <P0> : Enumeration                            获取网络接口集;
+getByIndex <P1> : NetworkInterface                                 给定索引,获取网络接口对象;(static)
+getByInetAddress <P1> : NetworkInterface                           给定网络地址,获取网络接口对象;(static)
+getByName <P1> : NetworkInterface                                  根据名称,获取网络接口对象;(static)
+getNetworkInterfaces <P0> : Enumeration                            获取网络接口集;(static)
 -----------------------------------------------------------------------------------------------------------------------------
 getName <P0> : String                                              获取名称;
 getDisplayName <P0> : String                                       获取网络接口的显示名称;
