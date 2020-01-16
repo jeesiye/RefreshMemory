@@ -1,0 +1,82 @@
+主要类概览
+-----------------------------------------------------------------------------------------------------------------------------
+L:java.net.InetAddress
+L:java.net.Inet4Address
+L:java.net.Inet6Address
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+L:java.net.InetAddress
+-----------------------------------------------------------------------------------------------------------------------------
+getAllByName <p1> : InetAddress[]                      获取网络地址;(static)
+getByAddress <p1> : InetAddress                        \
+getByAddress <p2> : InetAddress                        \
+getByName <p1> : InetAddress                           \
+-----------------------------------------------------------------------------------------------------------------------------
+getLocalHost <p0> : InetAddress                        获取本地地址;(static)
+getLoopbackAddress <p0> : InetAddress                  获取回环地址;(static)
+-----------------------------------------------------------------------------------------------------------------------------
+getAddress <p0> : byte[]                               获取主机地址;
+getHostAddress <p0> : String                           \
+getHostName <p0> : String                              获取主机名称;
+getCanonicalHostName <p0> : String                     获取规范化的主机名称;
+-----------------------------------------------------------------------------------------------------------------------------
+isReachable <p1> : boolean                             测试当前地址是否可达;
+isReachable <p3> : boolean                             \
+isAnyLocalAddress <p0> : boolean                       通配符地址与否;
+isLinkLocalAddress <p0> : boolean                      链接地址与否;
+isLoopbackAddress <p0> : boolean                       回环地址与否;
+isSiteLocalAddress <p0> : boolean                      是否是`本地站点地址`;
+isMulticastAddress <p0> : boolean                      是否是多播/组播地址;
+isMCGlobal <p0> : boolean                              检查多播地址是否有实例程序(全局范围);
+isMCLinkLocal <p0> : boolean                           \(链路范围);
+isMCNodeLocal <p0> : boolean                           \(节点范围);
+isMCOrgLocal <p0> : boolean                            \(组织范围);
+isMCSiteLocal <p0> : boolean                           \(站点范围);
+-----------------------------------------------------------------------------------------------------------------------------
+hashCode <p0> : int
+equals <p1> : boolean
+toString <p0> : String
+-----------------------------------------------------------------------------------------------------------------------------
+
+L:java.net.Inet4Address(对InetAddress重写部分方法,如下;)
+-----------------------------------------------------------------------------------------------------------------------------
+getAddress <p0> : byte[]
+getHostAddress <p0> : String
+isAnyLocalAddress <p0> : boolean
+isLinkLocalAddress <p0> : boolean
+isLoopbackAddress <p0> : boolean
+isMulticastAddress <p0> : boolean
+isSiteLocalAddress <p0> : boolean
+isMCGlobal <p0> : boolean
+isMCLinkLocal <p0> : boolean
+isMCNodeLocal <p0> : boolean
+isMCOrgLocal <p0> : boolean
+isMCSiteLocal <p0> : boolean
+hashCode <p0> : int
+equals <p1> : boolean
+-----------------------------------------------------------------------------------------------------------------------------
+
+L:java.net.Inet6Address
+-----------------------------------------------------------------------------------------------------------------------------
+getScopeId <p0> : int                                       获取scopeID或null;
+getScopedInterface <p0> : NetworkInterface                  获取网络接口;
+-----------------------------------------------------------------------------------------------------------------------------
+getAddress <p0> : byte[]
+getByAddress <p3> : Inet6Address
+getHostAddress <p0> : String
+isAnyLocalAddress <p0> : boolean
+isIPv4CompatibleAddress <p0> : boolean
+isLinkLocalAddress <p0> : boolean
+isLoopbackAddress <p0> : boolean
+isMulticastAddress <p0> : boolean
+isSiteLocalAddress <p0> : boolean
+isMCGlobal <p0> : boolean
+isMCLinkLocal <p0> : boolean
+isMCNodeLocal <p0> : boolean
+isMCOrgLocal <p0> : boolean
+isMCSiteLocal <p0> : boolean
+hashCode <p0> : int
+equals <p1> : boolean
+-----------------------------------------------------------------------------------------------------------------------------
