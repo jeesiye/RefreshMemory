@@ -23,4 +23,5 @@ certificates                                                       证书(connec
 manifest                                                           清单(connection)
 cipher                                                             密码(cache)
 direct                                                             直接的(proxy)
+absence                                                            缺席的(proxy)
 -----------------------------------------------------------------------------------------------------------------------------
