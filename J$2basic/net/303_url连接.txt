@@ -135,3 +135,17 @@ setInstanceFollowRedirects <p1> : void                             设置instanc
 setChunkedStreamingMode <p1> : void                                启动http请求体的流式传输;(不知道内容的长度)
 setFixedLengthStreamingMode <p1> : void                            启动http请求体的流式传输;(预先知道内容的长度)
 -----------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.JarURLConnection
+-----------------------------------------------------------------------------------------------------------------------------
+getJarEntry <p0> : JarEntry                                        获取jar的条目;
+getJarFile <p0> : JarFile                                          获取连接的jar文件;
+getJarFileURL <p0> : URL                                           获取连接jar文件的url对象;
+-----------------------------------------------------------------------------------------------------------------------------
+getEntryName <p0> : String                                         获取条目的名称;
+getAttributes <p0> : Attributes                                    获取所有的属性集;
+getMainAttributes <p0> : Attributes                                获取主要的属性集;
+getManifest <p0> : Manifest                                        获取manifes;
+getCertificates <p0> : Certificate[]                               获取证书集;
+-----------------------------------------------------------------------------------------------------------------------------
