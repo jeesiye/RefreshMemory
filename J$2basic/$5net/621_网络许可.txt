@@ -1,0 +1,4 @@
+FL:java.net.NetPermission
+1. 是安全包中java.security.BasicPermission的实现类;
+2. 仅定义了构造的方式,其余未添加多余的函数;
+3. 注意和URLPermission是没有直接关系的;
