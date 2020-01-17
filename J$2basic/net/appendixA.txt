@@ -38,7 +38,7 @@ URLStreamHandler [A]                                               url流协议�
 CacheRequest [A]                                                   请求缓存;
 CacheResoponse [A]                                                 响应缓存;
 ResponseCache [A]                                                  基于url的响应缓存实现;
-SecureResponseCache [A]                                            安全的响应缓存实现;
+SecureCacheResponse [A]                                            安全的响应缓存实现;
 -----------------------------------------------------------------------------------------------------------------------------
 CookieHandler [A]                                                  cookie处理对象;
 CookieManager [L]                                                  创建CookieHandler对象;
