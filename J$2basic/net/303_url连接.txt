@@ -64,44 +64,51 @@ toString <p0> : String                                             \
 
 A:java.net.HttpURLConnection(内置状态字段)
 -----------------------------------------------------------------------------------------------------------------------------
+1xx                                                                信息(服务器成功接收到请求,需要请求者继续执行操作);
+2xx                                                                成功(请求被服务端成功接收并处理);
+3xx                                                                重定向(需要进一步操作以完成请求);
+4xx                                                                客户端逻辑错误;
+5xx                                                                服务端内部错误;
 -----------------------------------------------------------------------------------------------------------------------------
-HTTP_OK                                                            200(请求成功,一般用于get和post);
-HTTP_CREATED                                                       201(已创建,请求成功,并创建了资源);
-HTTP_ACCEPTED                                                      202(接受请求,但未处理完成);
-HTTP_NOT_AUTHORITATIVE                                             203(非授权的信息,请求成功,返回meta不在原始服务器上,而是副本);
-HTTP_NO_CONTENT                                                    204(服务器成功处理,但未返回任何内容);
+http_ok                                                            200(请求成功,一般用于get和post);
+http_created                                                       201(已创建,请求成功,并创建了资源);
+http_accepted                                                      202(接受请求,但未处理完成);
+http_not_authoritative                                             203(非授权的信息,请求成功,返回meta不在原始服务器上,而是副本);
+http_no_content                                                    204(服务器成功处理,但未返回任何内容);
+http_reset                                                         205(服务器成功处理,重置浏览器表单域);
+http_partial                                                       206(服务器成功处理了部分get请求);
 -----------------------------------------------------------------------------------------------------------------------------
-HTTP_BAD_GATEWAY
-HTTP_BAD_METHOD
-HTTP_BAD_REQUEST
-HTTP_CLIENT_TIMEOUT
-HTTP_CONFLICT
-HTTP_ENTITY_TOO_LARGE
-HTTP_FORBIDDEN
-HTTP_GATEWAY_TIMEOUT
-HTTP_GONE
-HTTP_INTERNAL_ERROR
-HTTP_LENGTH_REQUIRED
-HTTP_MOVED_PERM
-HTTP_MOVED_TEMP
-HTTP_MULT_CHOICE
-HTTP_NOT_ACCEPTABLE
-HTTP_NOT_FOUND
-HTTP_NOT_IMPLEMENTED
-HTTP_NOT_MODIFIED
-HTTP_PARTIAL
-HTTP_PAYMENT_REQUIRED
-HTTP_PRECON_FAILED
-HTTP_PROXY_AUTH
-HTTP_REQ_TOO_LONG
-HTTP_RESET
-HTTP_SEE_OTHER
-HTTP_SERVER_ERROR
-HTTP_UNAUTHORIZED
-HTTP_UNAVAILABLE
-HTTP_UNSUPPORTED_TYPE
-HTTP_USE_PROXY
-HTTP_VERSION
+http_mult_choice                                                   300(请求的资源可包含多个位置);
+http_moved_perm                                                    301(请求的资源已经被永久移动到新的uri);
+http_moved_temp                                                    302(请求的资源被临时的移动了);
+http_see_other                                                     303(查看其他的地址);
+http_not_modified                                                  304(请求的资源未被修改,涉及查看浏览器缓存);
+http_use_proxy                                                     305(请求的资源必须使用代理才能访问);
+-----------------------------------------------------------------------------------------------------------------------------
+http_bad_request                                                   400(服务端无法理解客户端的请求语法);
+http_unauthorized                                                  401(请求要求用户的身份认证);
+http_payment_required                                              402(保留,将来使用);
+http_forbidden                                                     403(服务端理解客户端的请求,但拒绝处理请求);
+http_not_found                                                     404(未找到请求的资源);
+http_bad_method                                                    405(客户端请求的方法是被禁止的);
+http_not_acceptable                                                406(服务端无法根据客户端的请求特性完成请求);
+http_proxy_auth                                                    407(请求者应当使用代理进行身份认证);
+http_client_timeout                                                408(等待客户端发出请求的时间超时);
+http_conflict                                                      409(put请求,服务端处理请求时发生了冲突);
+http_gone                                                          410(客户端请求的资源不存在,以前存在的);
+http_length_required                                               411(无法处理不带content-length的请求);
+http_precon_failed                                                 412(请求信息的先决条件错误);
+http_entity_too_large                                              413(请求的实体过大);
+http_req_too_long                                                  414(请求的uri过长);
+http_unsupported_type                                              415(无法处理附带媒体格式的请求);
+-----------------------------------------------------------------------------------------------------------------------------
+http_server_error                                                  500(服务端内部错误,无法处理请求);(弃用)
+http_internal_error                                                500(替代品);
+http_not_implemented                                               501(服务器不支持请求的功能);
+http_bad_gateway                                                   502(充当网关或代理的服务器,从远端服务器接收到无效的请求);
+http_unavailable                                                   503(服务端暂时无法处理请求,延时信息在Retry-After标志上);
+http_gateway_timeout                                               504(充当网关或代理的服务器,未及时的从远端服务器上获取请求);
+http_version                                                       505(服务器不支持http请求协议的版本);
 -----------------------------------------------------------------------------------------------------------------------------
 
 

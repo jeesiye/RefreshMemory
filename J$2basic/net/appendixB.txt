@@ -9,5 +9,14 @@ authority                                                          身份认证(
 raw                                                                未处理的(uri)
 specific                                                           特定的(uri)
 opaque                                                             不透明的(uri)
-expires                                                            有效期
+expires                                                            有效期(connection)
+interaction                                                        交互(connection)
+authoritative                                                      有授权的(connection)
+partial                                                            局部的(connection)
+choice                                                             选择(connection)
+perm                                                               置换(connection)
+payment                                                            支付(connection)
+forbidden                                                          禁止(connection)
+conflict                                                           冲突(connection)
+gone                                                               不存在的,死去的(connection)
 -----------------------------------------------------------------------------------------------------------------------------
