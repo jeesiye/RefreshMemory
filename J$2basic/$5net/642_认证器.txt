@@ -1,0 +1,14 @@
+A:java.net.Authenticator(全部static函数)
+-----------------------------------------------------------------------------------------------------------------------------
+setDefault <P1> : void                                             服务端设置默认的身份认证器;
+requestPasswordAuthentication <P5> : PasswordAuthentication        要求向系统注册的认证器提供密码;
+requestPasswordAuthentication <P6> : PasswordAuthentication        \
+requestPasswordAuthentication <P8> : PasswordAuthentication        \
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.PasswordAuthentication
+-----------------------------------------------------------------------------------------------------------------------------
+getUserName <P0> : String                                          获取用户名;
+getPassword <P0> : char[]                                          获取用户密码;
+-----------------------------------------------------------------------------------------------------------------------------
