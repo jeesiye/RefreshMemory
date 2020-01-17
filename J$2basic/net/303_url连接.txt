@@ -1,0 +1,130 @@
+A:java.net.URLConnection
+-----------------------------------------------------------------------------------------------------------------------------
+guessContentTypeFromName <p1> : String                             查询url中的file的MIME类型;(static)
+guessContentTypeFromStream <p1> : String                           查询流的类型;(static)
+getDefaultAllowUserInteraction <p0> : boolean                      查询该协议是否允许用户交互;(static)
+getDefaultRequestProperty <p1> : String                            获取指定的默认的请求属性值;(static)
+getFileNameMap <p0> : FileNameMap                                  获取MIME映射对象;(static)
+setDefaultAllowUserInteraction <p1> : void                         设置是否该协议允许用户交互的默认配置;(static)
+setDefaultRequestProperty <p2> : void                              设置默认的请求属性;(static)
+setFileNameMap <p1> : void                                         设置MIME名称映射对象;
+setContentHandlerFactory <p1> : void                               设置流协议处理工厂;
+-----------------------------------------------------------------------------------------------------------------------------
+addRequestProperty <p2> : void                                     添加请求属性;
+connect <p0> : void                                                连接操作;
+-----------------------------------------------------------------------------------------------------------------------------
+getAllowUserInteraction <p0> : boolean                             查看该协议是否允许用户交互;
+getDefaultUseCaches <p0> : boolean                                 查询该协议是否默认支持缓存;
+getUseCaches <p0> : boolean                                        查看当前连接是否配置了支持缓存;
+-----------------------------------------------------------------------------------------------------------------------------
+getContent <p0> : Object                                           获取连接的对象
+getContent <p1> : Object                                           \
+getPermission <p0> : Permission                                    获取许可对象;
+getURL <p0> : URL                                                  获取此连接的url对象;
+getConnectTimeout <p0> : int                                       获取连接的超时时间;
+getReadTimeout <p0> : int                                          获取读取超时的值;
+getRequestProperties <p0> : Map                                    获取请求属性集;
+getRequestProperty <p1> : String                                   获取指定的请求属性;
+-----------------------------------------------------------------------------------------------------------------------------
+getInputStream <p0> : InputStream                                  获取读取此连接的输入流;
+getOutputStream <p0> : OutputStream                                获取写入此连接的输出流;
+getContentEncoding <p0> : String                                   获取content-encoding值;
+getContentLength <p0> : int                                        获取content-length值;
+getContentLengthLong <p0> : long                                   \
+getContentType <p0> : String                                       获取content-type的值;
+getDate <p0> : long                                                获取date标志的值;
+getDoInput <p0> : boolean                                          获取doInput标志的值;
+getDoOutput <p0> : boolean                                         获取doOutput标志的值;
+getExpiration <p0> : long                                          获取expires(有效期)标志的值;
+getIfModifiedSince <p0> : long                                     获取ifModifiedSince标志的值;
+getLastModified <p0> : long                                        获取last-modified标志的值;
+-----------------------------------------------------------------------------------------------------------------------------
+getHeaderField <p1> : String                                       请求头字段的相关操作;
+getHeaderFieldDate <p2> : long                                     \
+getHeaderFieldInt <p2> : int                                       \
+getHeaderFieldKey <p1> : String                                    \
+getHeaderFieldLong <p2> : long                                     \
+getHeaderFields <p0> : Map                                         \
+-----------------------------------------------------------------------------------------------------------------------------
+setRequestProperty <p2> : void                                     设置请求属性;
+setAllowUserInteraction <p1> : void                                设置是否允许用户交互;
+setConnectTimeout <p1> : void                                      设置连接的超时时间;
+setReadTimeout <p1> : void                                         设置读取超时的时间;
+setDefaultUseCaches <p1> : void                                    设置是否默认支持缓存;
+setUseCaches <p1> : void                                           设置是否使用缓存;
+-----------------------------------------------------------------------------------------------------------------------------
+setDoInput <p1> : void                                             设置doInput标志的值;
+setDoOutput <p1> : void                                            设置doOutput标志的值;
+setIfModifiedSince <p1> : void                                     设置ifModifiedSince标志的值;
+-----------------------------------------------------------------------------------------------------------------------------
+toString <p0> : String                                             \
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+A:java.net.HttpURLConnection(内置状态字段)
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+HTTP_OK                                                            200(请求成功,一般用于get和post);
+HTTP_CREATED                                                       201(已创建,请求成功,并创建了资源);
+HTTP_ACCEPTED                                                      202(接受请求,但未处理完成);
+HTTP_NOT_AUTHORITATIVE                                             203(非授权的信息,请求成功,返回meta不在原始服务器上,而是副本);
+HTTP_NO_CONTENT                                                    204(服务器成功处理,但未返回任何内容);
+-----------------------------------------------------------------------------------------------------------------------------
+HTTP_BAD_GATEWAY
+HTTP_BAD_METHOD
+HTTP_BAD_REQUEST
+HTTP_CLIENT_TIMEOUT
+HTTP_CONFLICT
+HTTP_ENTITY_TOO_LARGE
+HTTP_FORBIDDEN
+HTTP_GATEWAY_TIMEOUT
+HTTP_GONE
+HTTP_INTERNAL_ERROR
+HTTP_LENGTH_REQUIRED
+HTTP_MOVED_PERM
+HTTP_MOVED_TEMP
+HTTP_MULT_CHOICE
+HTTP_NOT_ACCEPTABLE
+HTTP_NOT_FOUND
+HTTP_NOT_IMPLEMENTED
+HTTP_NOT_MODIFIED
+HTTP_PARTIAL
+HTTP_PAYMENT_REQUIRED
+HTTP_PRECON_FAILED
+HTTP_PROXY_AUTH
+HTTP_REQ_TOO_LONG
+HTTP_RESET
+HTTP_SEE_OTHER
+HTTP_SERVER_ERROR
+HTTP_UNAUTHORIZED
+HTTP_UNAVAILABLE
+HTTP_UNSUPPORTED_TYPE
+HTTP_USE_PROXY
+HTTP_VERSION
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+A:java.net.HttpURLConnection(对外函数)
+-----------------------------------------------------------------------------------------------------------------------------
+disconnect <p0> : void                                             断开连接;
+getResponseCode <p0> : int                                         获取响应码;
+getResponseMessage <p0> : String                                   获取响应消息;
+getPermission <p0> : Permission                                    获取许可对象;
+-----------------------------------------------------------------------------------------------------------------------------
+getErrorStream <p0> : InputStream                                  获取连接失败的错误流;
+getHeaderFieldDate <p2> : long                                     请求头字段相关的操作;
+getHeaderFieldKey <p1> : String                                    \
+getHeaderField <p1> : String                                       \
+-----------------------------------------------------------------------------------------------------------------------------
+usingProxy <p0> : boolean                                          查询是否使用了代理;
+getRequestMethod <p0> : String                                     获取请求的方法类型;
+setRequestMethod <p1> : void                                       设置请求方法的类型;
+getFollowRedirects <p0> : boolean                                  查询是否支持重定向;
+setFollowRedirects <p1> : void                                     设置是否允许支持重定向;
+getInstanceFollowRedirects <p0> : boolean                          获取instanceFollowRedirects标志的值;
+setInstanceFollowRedirects <p1> : void                             设置instanceFollowRedirects标志的值;
+setChunkedStreamingMode <p1> : void                                启动http请求体的流式传输;(不知道内容的长度)
+setFixedLengthStreamingMode <p1> : void                            启动http请求体的流式传输;(预先知道内容的长度)
+-----------------------------------------------------------------------------------------------------------------------------

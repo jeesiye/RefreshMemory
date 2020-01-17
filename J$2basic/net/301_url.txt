@@ -1,37 +1,80 @@
-L:java.net.URI
+1. L:java.net.URI
 -----------------------------------------------------------------------------------------------------------------------------
-compareTo <P1> : int
-create <P1> : URI
-equals <P1> : boolean
-getAuthority <P0> : String
-getFragment <P0> : String
-getHost <P0> : String
-getPath <P0> : String
-getPort <P0> : int
-getQuery <P0> : String
-getRawAuthority <P0> : String
-getRawFragment <P0> : String
-getRawPath <P0> : String
-getRawQuery <P0> : String
-getRawSchemeSpecificPart <P0> : String
-getRawUserInfo <P0> : String
-getScheme <P0> : String
-getSchemeSpecificPart <P0> : String
-getUserInfo <P0> : String
-hashCode <P0> : int
-isAbsolute <P0> : boolean
-isOpaque <P0> : boolean
-normalize <P0> : URI
-parseServerAuthority <P0> : URI
-relativize <P1> : URI
-resolve <P1> : URI
-toASCIIString <P0> : String
-toString <P0> : String
-toURL <P0> : URL
+create <P1> : URI                                                  创建URI对象;
 -----------------------------------------------------------------------------------------------------------------------------
+normalize <P0> : URI                                               规格化处理;
+parseServerAuthority <P0> : URI                                    尝试解析身份认证的组件;
+relativize <P1> : URI                                              给定uri,获取相对的uri;
+resolve <P1> : URI                                                 给定uri,获取解析后的uri;
+-----------------------------------------------------------------------------------------------------------------------------
+isOpaque <P0> : boolean                                            是否不透明的;
+isAbsolute <P0> : boolean                                          是否绝对的;
+toASCIIString <P0> : String                                        转换为ascii字符串;
+toURL <P0> : URL                                                   转换为url形式;
+-----------------------------------------------------------------------------------------------------------------------------
+getScheme <P0> : String                                            获取方案名称;
+getHost <P0> : String                                              获取主机;
+getPort <P0> : int                                                 获取端口;
+-----------------------------------------------------------------------------------------------------------------------------
+getSchemeSpecificPart <P0> : String                                返回解码方案的特定部分;
+getRawSchemeSpecificPart <P0> : String                             返回未处理的解码方案的特定部分;
+getUserInfo <P0> : String                                          返回用户信息;
+getRawUserInfo <P0> : String                                       \
+getAuthority <P0> : String                                         获取身份认证;
+getRawAuthority <P0> : String                                      \
+-----------------------------------------------------------------------------------------------------------------------------
+getPath <P0> : String                                              获取路径;
+getRawPath <P0> : String                                           \
+getQuery <P0> : String                                             获取查询字符串;
+getRawQuery <P0> : String                                          \
+getFragment <P0> : String                                          获取片段ID;
+getRawFragment <P0> : String                                       \
+-----------------------------------------------------------------------------------------------------------------------------
+compareTo <P1> : int                                               \
+hashCode <P0> : int                                                \
+equals <P1> : boolean                                              \
+toString <P0> : String                                             \
+-----------------------------------------------------------------------------------------------------------------------------
+1.1 uri的标准格式
+      [协议名]://[用户名]:[密码]@[服务器地址]:[服务器端口号]/[路径]?[查询字符串]#[片段ID]
 
 
 
-L:java.net.URL
+2. L:java.net.URL
 -----------------------------------------------------------------------------------------------------------------------------
+setURLStreamHandlerFactory <p1> : void                             设置url流协议处理对象;
+openStream <p0> : InputStream                                      打开流;
 -----------------------------------------------------------------------------------------------------------------------------
+openConnection <p0> : URLConnection                                打开连接;
+openConnection <p1> : URLConnection                                \
+sameFile <p1> : boolean                                            给定url,是否为同一个;
+toExternalForm <p0> : String                                       转换为字符串的url;
+toURI <p0> : URI                                                   转换为uri;
+-----------------------------------------------------------------------------------------------------------------------------
+getProtocol <p0> : String                                          获取协议名称;
+getHost <p0> : String                                              获取主机名;
+getPort <p0> : int                                                 获取端口;
+getDefaultPort <p0> : int                                          获取默认的端口;
+getAuthority <p0> : String                                         获取身份认证;
+getFile <p0> : String                                              获取文件名;
+getPath <p0> : String                                              获取url中的部分路径;
+getQuery <p0> : String                                             获取查询部分;
+getRef <p0> : String                                               获取锚;
+getUserInfo <p0> : String                                          获取用户信息;
+getContent <p0> : Object                                           获取内容;
+getContent <p1> : Object                                           \
+-----------------------------------------------------------------------------------------------------------------------------
+hashCode <p0> : int                                                \
+equals <p1> : boolean                                              \
+toString <p0> : String                                             \
+-----------------------------------------------------------------------------------------------------------------------------
+2.2 url的标准格式
+      //<用户名>:<密码>@<主机>:<端口>/<url路径>
+    1) ftp
+      <cwd1>/<cwd2>/.../<cwdN>/<name>;type=<typecode>
+      默认端口是21;
+    2) http
+      http://<host>:<port>/<path>?<searchpart>
+      默认端口是80;
+    3) files
+      file://<host>/<path>
