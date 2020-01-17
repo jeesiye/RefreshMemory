@@ -1,0 +1,19 @@
+I:java.net.FileNameMap
+-----------------------------------------------------------------------------------------------------------------------------
+getContentTypeFor <P1> : String                                    获取给定名称的MIME;
+-----------------------------------------------------------------------------------------------------------------------------
+
+1. MIME映射器如何的获取?
+     使用url连接器来获取;
+     URLConnection有内置的静态方法来获取FileNameMap对象;
+     即static函数,URLConnection#getFileNameMap;
+2. 简单示例;
+```
+FileNameMap fileNameMap = URLConnection.getFileNameMap();
+Assert.assertNotNull(fileNameMap);
+printl(fileNameMap);
+printl(fileNameMap instanceof FileNameMap);
+printl(fileNameMap instanceof URLConnection);
+String mime = fileNameMap.getContentTypeFor("files.txt");
+printl(mime);
+```
