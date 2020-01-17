@@ -1,0 +1,37 @@
+
+FL:java.net.HttpCookie
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+getName <p0> : String                                              cookie的名称;
+hasExpired <p0> : boolean                                          是否已经过期;
+parse <p1> : List                                                  构造cookie;
+domainMatches <p2> : boolean                                       是否匹配作用域;
+-----------------------------------------------------------------------------------------------------------------------------
+getComment <p0> : String                                           cookie注释;
+setComment <p1> : void                                             \
+getCommentURL <p0> : String                                        url注释;
+setCommentURL <p1> : void                                          \
+getDiscard <p0> : boolean                                          丢弃属性;
+setDiscard <p1> : void                                             \
+getDomain <p0> : String                                            cookie的作用域;
+setDomain <p1> : void                                              \
+isHttpOnly <p0> : boolean                                          是否存在HttpOnly标记;
+setHttpOnly <p1> : void                                            \
+getMaxAge <p0> : long                                              生存时间;
+setMaxAge <p1> : void                                              \
+getPath <p0> : String                                              cookie路径;
+setPath <p1> : void                                                \
+getPortlist <p0> : String                                          端口列表;
+setPortlist <p1> : void                                            \
+getSecure <p0> : boolean                                           限制安全协议;
+setSecure <p1> : void                                              \
+getValue <p0> : String                                             cookie值;
+setValue <p1> : void                                               \
+getVersion <p0> : int                                              协议版本;
+setVersion <p1> : void                                             \
+-----------------------------------------------------------------------------------------------------------------------------
+clone <p0> : Object                                                \
+hashCode <p0> : int                                                \
+equals <p1> : boolean                                              \
+toString <p0> : String                                             \
+-----------------------------------------------------------------------------------------------------------------------------
