@@ -7,22 +7,24 @@ name <P0> : String                                                 选项的名�
 type <P0> : Class                                                  选项的值;
 -----------------------------------------------------------------------------------------------------------------------------
 
-I:java.net.SocketOptions
+I:java.net.SocketOptions(常量默认大写,便于阅读改小写)
 -----------------------------------------------------------------------------------------------------------------------------
-TCP_NODELAY
-SO_BINDADDR
-SO_REUSEADDR
-SO_BROADCAST
-IP_MULTICAST_IF                                                    多播数据包的出口;
-IP_MULTICAST_IF2                                                   多播数据包的出口;
-IP_MULTICAST_LOOP                                                  多播数据包的本地回环;
-IP_TOS                                                             tcp或udp中的头部分设置type-of-server或traffic字段;
-SO_LINGER
-SO_TIMEOUT
-SO_SNDBUF
-SO_RCVBUF
-SO_KEEPALIVE
-SO_OOBINLINE
+tcp_nodelay                                                        禁用Nagle的连接算法;
+-----------------------------------------------------------------------------------------------------------------------------
+ip_multicast_if                                                    多播数据包的出口;
+ip_multicast_if2                                                   多播数据包的出口;
+ip_multicast_loop                                                  多播数据包的本地回环;
+ip_tos                                                             tcp或udp中的头部分设置type-of-server或traffic字段;
+-----------------------------------------------------------------------------------------------------------------------------
+so_bindaddr                                                        指示绑定的本地地址;
+so_reuseaddr                                                       指示允许重用本地地址和端口(端口复用);
+so_broadcast                                                       指示允许发送广播数据;
+so_linger                                                          指示延迟关闭连接;
+so_timeout                                                         指示等待客户连接的超时时间;
+so_sndbuf                                                          指示接口的发送缓冲区;
+so_rcvbuf                                                          指示接口的接收缓冲区;
+so_keepalive                                                       指示心跳检测,tcp的keepalive机制;
+so_oobinline                                                       指示接收任何tcp紧急数据;
 -----------------------------------------------------------------------------------------------------------------------------
 getOption <P1> : Object                                            获取选项;
 setOption <P2> : void                                              设置选项;

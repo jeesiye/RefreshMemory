@@ -1,1 +1,8 @@
+FL:java.net.SocketPermission
+-----------------------------------------------------------------------------------------------------------------------------
+equals <P1> : boolean
+getActions <P0> : String
+hashCode <P0> : int
+implies <P1> : boolean
+newPermissionCollection <P0> : PermissionCollection
 -----------------------------------------------------------------------------------------------------------------------------

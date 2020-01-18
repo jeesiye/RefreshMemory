@@ -1,1 +1,55 @@
+FL:java.net.DatagramPacket
+-----------------------------------------------------------------------------------------------------------------------------
+getOffset <P0> : int                                               传输数据的偏移量;
+-----------------------------------------------------------------------------------------------------------------------------
+getAddress <P0> : InetAddress                                      网络地址;
+setAddress <P1> : void                                             \
+getSocketAddress <P0> : SocketAddress                              套接字地址;
+setSocketAddress <P1> : void                                       \
+getPort <P0> : int                                                 传输接口
+setPort <P1> : void                                                \
+getData <P0> : byte[]                                              传输数据;
+setData <P1> : void                                                \
+setData <P3> : void                                                \
+getLength <P0> : int                                               传输数据长度;
+setLength <P1> : void                                              \
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.DatagramSocket
+-----------------------------------------------------------------------------------------------------------------------------
+bind <P1> : void                                                   绑定;
+isBound <P0> : boolean                                             查询是否绑定;
+close <P0> : void                                                  关闭连接;
+isClosed <P0> : boolean                                            查询是否关闭连接;
+connect <P1> : void                                                连接操作;
+connect <P2> : void                                                \
+isConnected <P0> : boolean                                         查询是否连接;
+disconnect <P0> : void                                             查询是否无连接;
+-----------------------------------------------------------------------------------------------------------------------------
+send <P1> : void                                                   发送数据;
+receive <P1> : void                                                接收数据;
+-----------------------------------------------------------------------------------------------------------------------------
+getChannel <P0> : DatagramChannel                                  获取基于udp的信道;
+setDatagramSocketImplFactory <P1> : void                           设置udp套接字的实现工厂;
+-----------------------------------------------------------------------------------------------------------------------------
+getInetAddress <P0> : InetAddress                                  获取连接的地址;
+getLocalAddress <P0> : InetAddress                                 获取本地绑定的地址;
+getLocalSocketAddress <P0> : SocketAddress                         获取本地绑定的套接字地址;
+getRemoteSocketAddress <P0> : SocketAddress                        获取连接的套接字地址;
+getPort <P0> : int                                                 获取连接的端口号;
+getLocalPort <P0> : int                                            获取本地绑定的端口号;
+-----------------------------------------------------------------------------------------------------------------------------
+getSendBufferSize <P0> : int                                       发送缓冲数据;
+setSendBufferSize <P1> : void                                      \
+getReceiveBufferSize <P0> : int                                    接收缓冲数据;
+setReceiveBufferSize <P1> : void                                   \
+getReuseAddress <P0> : boolean                                     复用地址;
+setReuseAddress <P1> : void                                        \
+getSoTimeout <P0> : int                                            超时时间;
+setSoTimeout <P1> : void                                           \
+getTrafficClass <P0> : int                                         流量;
+setTrafficClass <P1> : void                                        \
+getBroadcast <P0> : boolean                                        广播地址;
+setBroadcast <P1> : void                                           \
 -----------------------------------------------------------------------------------------------------------------------------

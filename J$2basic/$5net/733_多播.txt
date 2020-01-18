@@ -1,1 +1,20 @@
+L:java.net.MulticastSocket
+-----------------------------------------------------------------------------------------------------------------------------
+send <P2> : void                                                  发送数据(已弃用);
+-----------------------------------------------------------------------------------------------------------------------------
+joinGroup <P1> : void                                              加入多播计划;
+joinGroup <P2> : void                                              \
+leaveGroup <P1> : void                                             离开多播计划;
+leaveGroup <P2> : void                                             \
+-----------------------------------------------------------------------------------------------------------------------------
+getInterface <P0> : InetAddress                                    用于多播的网络接口地址;
+setInterface <P1> : void                                           \
+getLoopbackMode <P0> : boolean                                     用于多播的本地回环设置;
+setLoopbackMode <P1> : void                                        \
+getNetworkInterface <P0> : NetworkInterface                        多播的网口接口集;
+setNetworkInterface <P1> : void                                    \
+getTTL <P0> : byte                                                 ttl(默认生存时间)(已弃用)(替代函数getTimeToLive)
+setTTL <P1> : void                                                 \
+getTimeToLive <P0> : int                                           默认的生存时间;
+setTimeToLive <P1> : void                                          \
 -----------------------------------------------------------------------------------------------------------------------------

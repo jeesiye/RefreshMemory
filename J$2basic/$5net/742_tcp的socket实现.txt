@@ -1,1 +1,75 @@
+L:java.net.ServerSocket
+-----------------------------------------------------------------------------------------------------------------------------
+accept <P0> : Socket                                               服务端准备就绪,等待客户端的连接请求;
+-----------------------------------------------------------------------------------------------------------------------------
+bind <P1> : void                                                   绑定本地的地址;
+bind <P2> : void                                                   \
+isBound <P0> : boolean                                             是否绑定了本地地址;
+close <P0> : void                                                  服务端关闭连接;(拒绝后续所有的连接请求)
+isClosed <P0> : boolean                                            服务端关闭连接与否;
+-----------------------------------------------------------------------------------------------------------------------------
+getChannel <P0> : ServerSocketChannel                              获取服务端的传输信道;
+getInetAddress <P0> : InetAddress                                  获取连接的地址;
+getLocalSocketAddress <P0> : SocketAddress                         获取绑定的本地地址;
+getLocalPort <P0> : int                                            获取绑定的本地地址端口;
+-----------------------------------------------------------------------------------------------------------------------------
+setPerformancePreferences <P3> : void                              设置服务端的socket的首选项;
+setSocketFactory <P1> : void                                       设置socket工厂;
+-----------------------------------------------------------------------------------------------------------------------------
+getReceiveBufferSize <P0> : int                                    接收的缓冲数据的大小;
+setReceiveBufferSize <P1> : void                                   \
+getReuseAddress <P0> : boolean                                     复用地址或端口;
+setReuseAddress <P1> : void                                        \
+getSoTimeout <P0> : int                                            连接的超时时间;
+setSoTimeout <P1> : void                                           \
+-----------------------------------------------------------------------------------------------------------------------------
+toString <P0> : String                                             \
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.Socket
+-----------------------------------------------------------------------------------------------------------------------------
+bind <P1> : void
+close <P0> : void
+connect <P1> : void
+connect <P2> : void
+getChannel <P0> : SocketChannel
+getInetAddress <P0> : InetAddress
+getInputStream <P0> : InputStream
+getKeepAlive <P0> : boolean
+getLocalAddress <P0> : InetAddress
+getLocalPort <P0> : int
+getLocalSocketAddress <P0> : SocketAddress
+getOOBInline <P0> : boolean
+getOutputStream <P0> : OutputStream
+getPort <P0> : int
+getReceiveBufferSize <P0> : int
+getRemoteSocketAddress <P0> : SocketAddress
+getReuseAddress <P0> : boolean
+getSendBufferSize <P0> : int
+getSoLinger <P0> : int
+getSoTimeout <P0> : int
+isBound <P0> : boolean
+isClosed <P0> : boolean
+isConnected <P0> : boolean
+isInputShutdown <P0> : boolean
+isOutputShutdown <P0> : boolean
+sendUrgentData <P1> : void
+setKeepAlive <P1> : void
+setOOBInline <P1> : void
+setPerformancePreferences <P3> : void
+setReceiveBufferSize <P1> : void
+setReuseAddress <P1> : void
+setSendBufferSize <P1> : void
+setSoLinger <P2> : void
+setSoTimeout <P1> : void
+setSocketImplFactory <P1> : void
+getTcpNoDelay <P0> : boolean                                       Nagle算法与否()
+setTcpNoDelay <P1> : void
+getTrafficClass <P0> : int
+setTrafficClass <P1> : void
+shutdownInput <P0> : void
+shutdownOutput <P0> : void
+-----------------------------------------------------------------------------------------------------------------------------
+toString <P0> : String                                             \
 -----------------------------------------------------------------------------------------------------------------------------
