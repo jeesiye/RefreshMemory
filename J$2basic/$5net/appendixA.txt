@@ -3,6 +3,7 @@ interfaces
 ContentHandlerFactory                                              处理MIME工厂;
 URLStreamHandlerFactory                                            url流协议处理工厂;
 DatagramSocketImplFactory                                          udp套接字实现工厂;
+SocketImplFactory                                                  tcp套接字实现工厂;
 -----------------------------------------------------------------------------------------------------------------------------
 CookiePolicy                                                       cookie规则;
 CookieStore                                                        cookie存储;
