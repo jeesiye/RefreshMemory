@@ -54,7 +54,7 @@ date                                                               当前日历�
 -----------------------------------------------------------------------------------------------------------------------------
 short                                                              简短的日历描述符;
 short_format                                                       简短的日历描述符;
-short_standalone
+short_standalone                                                   缩写的日历描述符;
 long                                                               完整的日历描述符;
 long_format                                                        \
 long_standalone                                                    独立的日历描述符;
@@ -144,32 +144,34 @@ java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale,boolean)
 -----------------------------------------------------------------------------------------------------------------------------
 L:java.util.GregorianCalendar(constants)
 -----------------------------------------------------------------------------------------------------------------------------
-BC                                                                 \
-AD                                                                 \
+BC                                                                 公元前(时代);
+AD                                                                 公元(时代);
 -----------------------------------------------------------------------------------------------------------------------------
 L:java.util.GregoianCalendar(func)
 -----------------------------------------------------------------------------------------------------------------------------
-add <p2> : void                                                    \
-clone <p0> : Object                                                \
-equals <p1> : boolean                                              \
-from <p1> : GregorianCalendar                                      \
-getActualMaximum <p1> : int                                        \
-getActualMinimum <p1> : int                                        \
-getCalendarType <p0> : String                                      \
-getGreatestMinimum <p1> : int                                      \
-getGregorianChange <p0> : Date                                     \
-getLeastMaximum <p1> : int                                         \
-getMaximum <p1> : int                                              \
-getMinimum <p1> : int                                              \
-getTimeZone <p0> : TimeZone                                        \
-getWeekYear <p0> : int                                             \
-getWeeksInWeekYear <p0> : int                                      \
-hashCode <p0> : int                                                \
-isLeapYear <p1> : boolean                                          \
-isWeekDateSupported <p0> : boolean                                 \
-roll <p2> : void                                                   \
+from <p1> : GregorianCalendar                                      给定ZonedDateTime对象来创造该对象;(static)
+toZonedDateTime <p0> : ZonedDateTime                               将当前对象转换为ZonedDateTime对象;
+isLeapYear <p1> : boolean                                          给定的年份是否是闰年;
+getGregorianChange <p0> : Date                                     公历日期;
 setGregorianChange <p1> : void                                     \
-setTimeZone <p1> : void                                            \
-setWeekDate <p3> : void                                            \
-toZonedDateTime <p0> : ZonedDateTime                               \
+-----------------------------------------------------------------------------------------------------------------------------
+add <p2> : void                                                    \(重写或实现Calendar中的函数)
+roll <p2> : void                                                   \(重写或实现Calendar中的函数)
+isWeekDateSupported <p0> : boolean                                 \(重写或实现Calendar中的函数)
+getActualMaximum <p1> : int                                        \(重写或实现Calendar中的函数)
+getActualMinimum <p1> : int                                        \(重写或实现Calendar中的函数)
+getCalendarType <p0> : String                                      \(重写或实现Calendar中的函数)
+getGreatestMinimum <p1> : int                                      \(重写或实现Calendar中的函数)
+getLeastMaximum <p1> : int                                         \(重写或实现Calendar中的函数)
+getMaximum <p1> : int                                              \(重写或实现Calendar中的函数)
+getMinimum <p1> : int                                              \(重写或实现Calendar中的函数)
+getTimeZone <p0> : TimeZone                                        \(重写或实现Calendar中的函数)
+getWeekYear <p0> : int                                             \(重写或实现Calendar中的函数)
+getWeeksInWeekYear <p0> : int                                      \(重写或实现Calendar中的函数)
+setTimeZone <p1> : void                                            \(重写或实现Calendar中的函数)
+setWeekDate <p3> : void                                            \(重写或实现Calendar中的函数)
+-----------------------------------------------------------------------------------------------------------------------------
+clone <p0> : Object                                                \
+hashCode <p0> : int                                                \
+equals <p1> : boolean                                              \
 -----------------------------------------------------------------------------------------------------------------------------
