@@ -1,0 +1,175 @@
+
+
+
+
+A:java.util.Calendar(constructor)
+-----------------------------------------------------------------------------------------------------------------------------
+protected java.util.Calendar()
+protected java.util.Calendar(java.util.TimeZone,java.util.Locale)
+-----------------------------------------------------------------------------------------------------------------------------
+A:java.util.Calendar(constants)(默认大写,便于阅读改小写)
+-----------------------------------------------------------------------------------------------------------------------------
+am                                                                 上午;
+pm                                                                 下午;
+am_pm                                                              上午或者下午;
+-----------------------------------------------------------------------------------------------------------------------------
+sunday                                                             星期日;
+monday                                                             星期一;
+tuesday                                                            星期二;
+wednesday                                                          星期三;
+thursday                                                           星期四;
+friday                                                             星期五;
+saturday                                                           星期六;
+-----------------------------------------------------------------------------------------------------------------------------
+january                                                            1月份;
+february                                                           2月份;
+march                                                              3月份;
+april                                                              4月份;
+may                                                                5月份;
+june                                                               6月份;
+july                                                               7月份;
+august                                                             8月份;
+september                                                          9月份;
+october                                                            10月份;
+november                                                           11月份;
+december                                                           12月份;
+undecimber                                                         指示一年中的第十三个月;
+-----------------------------------------------------------------------------------------------------------------------------
+year                                                               年(当前日历表示的年份);
+month                                                              月(当前日历表示的月份);
+hour                                                               上午或下午的第几个小时(当前日历表示的时间);
+minute                                                             分钟(当前日历表示的时间,是当前小时的第多少分钟);
+second                                                             秒(当前日历表示的时间,是当前分钟的多少秒);
+millisecond                                                        毫秒数(当前日历表示的时间);
+-----------------------------------------------------------------------------------------------------------------------------
+week_of_year                                                       当年的第几周(当前日历表示的日期);
+week_of_month                                                      当月的第几周(当前日历表示的日期);
+day_of_year                                                        当年的第几天(当前日历表示的日期);
+day_of_month                                                       当月的第几天(当前日历表示的日期月份);
+day_of_week_in_month                                               本月中第几个星期几(当前日历表示的星期几);
+day_of_week                                                        本周的第几天(当前日历表示的星期几);
+hour_of_day                                                        当天的第几个小时(当前日历表示的时间);
+-----------------------------------------------------------------------------------------------------------------------------
+date                                                               当前日历中,当月的第几天;
+-----------------------------------------------------------------------------------------------------------------------------
+short                                                              简短的日历描述符;
+short_format                                                       简短的日历描述符;
+short_standalone
+long                                                               完整的日历描述符;
+long_format                                                        \
+long_standalone                                                    独立的日历描述符;
+narrow_format                                                      狭隘的日历描述符;
+narrow_standalone                                                  \
+-----------------------------------------------------------------------------------------------------------------------------
+zone_offset                                                        时区的偏移量;
+dst_offset                                                         夏令时的偏移量;
+era                                                                指示时代(例如儒略历中的AD或BC);
+field_count                                                        日历部件的总数;(此类的实例抛出异常)
+all_styles                                                         表示所有样式的日期描述符(比如星期日或Sun);
+-----------------------------------------------------------------------------------------------------------------------------
+A:java.util.Calendar(func)
+-----------------------------------------------------------------------------------------------------------------------------
+getInstance <p0> : Calendar                                        获取Calendar的实例(static);
+getInstance <p1> : Calendar                                        \
+getInstance <p2> : Calendar                                        \
+-----------------------------------------------------------------------------------------------------------------------------
+getAvailableCalendarTypes <p0> : Set                               获取可用的日历类型集;
+getAvailableLocales <p0> : Locale[]                                获取可用的本地化集;
+-----------------------------------------------------------------------------------------------------------------------------
+toInstant <p0> : Instant                                           转换为Instant类型的实例;
+-----------------------------------------------------------------------------------------------------------------------------
+after <p1> : boolean                                               是否在给定日历之前;
+before <p1> : boolean                                              是否在给定日历之后;
+isLenient <p0> : boolean                                           宽松的计算标准与否;
+isSet <p1> : boolean                                               某个日历部件是否有值;
+isWeekDateSupported <p0> : boolean                                 是否支持日期描述符;
+-----------------------------------------------------------------------------------------------------------------------------
+get <p1> : int                                                     获取某个日历部件的值;
+getWeekYear <p0> : int                                             获取当前日历表示的年份;
+getWeeksInWeekYear <p0> : int                                      获取当前日历是当年的第几个周;
+getFirstDayOfWeek <p0> : int                                       获取当前日历的一周第一天的编号;
+getCalendarType <p0> : String                                      获取当前日历的类型;
+getDisplayName <p3> : String                                       给定时区,获取第一个默认显式的日历部件名称;
+getDisplayNames <p3> : Map                                         给定时区,获取所有默认显式的日历部件名称;
+-----------------------------------------------------------------------------------------------------------------------------
+getMinimalDaysInFirstWeek <p0> : int                               获取一年中第一周所需的最短限度的时间;
+getTime <p0> : Date                                                将日历转换为Date类型;
+getTimeInMillis <p0> : long                                        讲日历抓换为毫秒数;
+getTimeZone <p0> : TimeZone                                        获取当前日历所表示的时区;
+-----------------------------------------------------------------------------------------------------------------------------
+getMaximum <p1> : int                                              获取给定日历部件的最大值;
+getMinimum <p1> : int                                              获取给定日历部件的最小值;
+getActualMaximum <p1> : int                                        获取给定日历部件实际的最大值;
+getActualMinimum <p1> : int                                        获取给定日历部件实际的最小值;
+getGreatestMinimum <p1> : int                                      获取给定日历部件的最高端的最小值;
+getLeastMaximum <p1> : int                                         获取给定日历部件的最低端的最大值;
+-----------------------------------------------------------------------------------------------------------------------------
+add <p2> : void                                                    修改日历;
+roll <p2> : void                                                   更改某个较小单位的日历部件;
+clear <p0> : void                                                  清空日历的值;
+clear <p1> : void                                                  \
+set <p2> : void                                                    设置日历;
+set <p3> : void                                                    \
+set <p5> : void                                                    \
+set <p6> : void                                                    \
+setFirstDayOfWeek <p1> : void                                      设置一周的第一天是星期几;
+setLenient <p1> : void                                             是否设置为严格的日历标准;(默认是不严格的)
+setMinimalDaysInFirstWeek <p1> : void                              一年第一周所需的最短时间;
+setTime <p1> : void                                                使用给定的Date对象设置为日历;
+setTimeInMillis <p1> : void                                        使用给定的毫秒数设置为日历;
+setTimeZone <p1> : void                                            使用给定的时区设置当前日历的时区;
+setWeekDate <p3> : void                                            设置日历的日期描述符;
+-----------------------------------------------------------------------------------------------------------------------------
+clone <p0> : Object                                                \
+compareTo <p1> : int                                               \
+hashCode <p0> : int                                                \
+equals <p1> : boolean                                              \
+toString <p0> : String                                             \
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+L:java.util.GregorianCalendar(constructor)
+-----------------------------------------------------------------------------------------------------------------------------
+public java.util.GregorianCalendar(int,int,int)
+public java.util.GregorianCalendar(int,int,int,int,int)
+public java.util.GregorianCalendar(int,int,int,int,int,int)
+public java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale)
+public java.util.GregorianCalendar(java.util.Locale)
+public java.util.GregorianCalendar(java.util.TimeZone)
+public java.util.GregorianCalendar()
+-----------------------------------------------------------------------------------------------------------------------------
+java.util.GregorianCalendar(int,int,int,int,int,int,int)
+java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale,boolean)
+-----------------------------------------------------------------------------------------------------------------------------
+L:java.util.GregorianCalendar(constants)
+-----------------------------------------------------------------------------------------------------------------------------
+BC                                                                 \
+AD                                                                 \
+-----------------------------------------------------------------------------------------------------------------------------
+L:java.util.GregoianCalendar(func)
+-----------------------------------------------------------------------------------------------------------------------------
+add <p2> : void                                                    \
+clone <p0> : Object                                                \
+equals <p1> : boolean                                              \
+from <p1> : GregorianCalendar                                      \
+getActualMaximum <p1> : int                                        \
+getActualMinimum <p1> : int                                        \
+getCalendarType <p0> : String                                      \
+getGreatestMinimum <p1> : int                                      \
+getGregorianChange <p0> : Date                                     \
+getLeastMaximum <p1> : int                                         \
+getMaximum <p1> : int                                              \
+getMinimum <p1> : int                                              \
+getTimeZone <p0> : TimeZone                                        \
+getWeekYear <p0> : int                                             \
+getWeeksInWeekYear <p0> : int                                      \
+hashCode <p0> : int                                                \
+isLeapYear <p1> : boolean                                          \
+isWeekDateSupported <p0> : boolean                                 \
+roll <p2> : void                                                   \
+setGregorianChange <p1> : void                                     \
+setTimeZone <p1> : void                                            \
+setWeekDate <p3> : void                                            \
+toZonedDateTime <p0> : ZonedDateTime                               \
+-----------------------------------------------------------------------------------------------------------------------------
