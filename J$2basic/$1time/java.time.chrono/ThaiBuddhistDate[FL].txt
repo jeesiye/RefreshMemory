@@ -1,0 +1,77 @@
+FL:java.time.chrono.ThaiBuddhistDate
+------------------------------------------------------------------------------------------------------------------------------
+java.time.chrono.ThaiBuddhistDate(java.time.LocalDate)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.ThaiBuddhistDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.ThaiBuddhistDate
+------------------------------------------------------------------------------------------------------------------------------
+now <p1> :ThaiBuddhistDate                                         \
+now <p1> :ThaiBuddhistDate                                         \
+now <p0> :ThaiBuddhistDate                                         \
+getChronology <p0> :Chronology                                     \
+getChronology <p0> :ThaiBuddhistChronology                         \
+getEra <p0> :ThaiBuddhistEra                                       \
+getEra <p0> :Era                                                   \
+lengthOfMonth <p0> :int                                            \
+getProlepticMonth <p0> :long                                       \
+getProlepticYear <p0> :int                                         \
+with <p1> :ThaiBuddhistDate                                        \
+with <p1> :Temporal                                                \
+with <p2> :ChronoLocalDate                                         \
+with <p1> :ChronoLocalDate                                         \
+with <p2> :Temporal                                                \
+with <p1> :ThaiBuddhistDate                                        \
+with <p2> :ThaiBuddhistDate                                        \
+plus <p1> :ThaiBuddhistDate                                        \
+plus <p2> :Temporal                                                \
+plus <p1> :Temporal                                                \
+plus <p1> :ChronoLocalDate                                         \
+plus <p2> :ChronoLocalDate                                         \
+plus <p2> :ThaiBuddhistDate                                        \
+minus <p1> :ThaiBuddhistDate                                       \
+minus <p1> :Temporal                                               \
+minus <p2> :Temporal                                               \
+minus <p2> :ThaiBuddhistDate                                       \
+minus <p2> :ChronoLocalDate                                        \
+minus <p1> :ChronoLocalDate                                        \
+plusYears <p1> :ChronoLocalDate                                    \
+plusYears <p1> :ThaiBuddhistDate                                   \
+plusMonths <p1> :ChronoLocalDate                                   \
+plusMonths <p1> :ThaiBuddhistDate                                  \
+plusWeeks <p1> :ThaiBuddhistDate                                   \
+plusWeeks <p1> :ChronoLocalDate                                    \
+plusDays <p1> :ChronoLocalDate                                     \
+plusDays <p1> :ThaiBuddhistDate                                    \
+minusYears <p1> :ChronoLocalDate                                   \
+minusYears <p1> :ThaiBuddhistDate                                  \
+minusMonths <p1> :ThaiBuddhistDate                                 \
+minusMonths <p1> :ChronoLocalDate                                  \
+minusWeeks <p1> :ThaiBuddhistDate                                  \
+minusWeeks <p1> :ChronoLocalDate                                   \
+minusDays <p1> :ChronoLocalDate                                    \
+minusDays <p1> :ThaiBuddhistDate                                   \
+atTime <p1> :ChronoLocalDateTime                                   \
+until <p2> :long                                                   \
+until <p1> :ChronoPeriod                                           \
+toEpochDay <p0> :long                                              \
+writeExternal <p1> :void                                           \
+readExternal <p1> :ThaiBuddhistDate                                \
+from <p1> :ThaiBuddhistDate                                        \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+getLong <p1> :long                                                 \
+readObject <p1> :void                                              \
+of <p3> :ThaiBuddhistDate                                          \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

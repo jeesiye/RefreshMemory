@@ -14,7 +14,6 @@ FL:java.time.zone.ZoneOffsetTransitionRule
 ------------------------------------------------------------------------------------------------------------------------------
 writeExternal <p1> :void                                           \
 readExternal <p1> :ZoneOffsetTransitionRule                        \
-getMonth <p0> :Month                                               \
 getDayOfMonthIndicator <p0> :int                                   \
 getDayOfWeek <p0> :DayOfWeek                                       \
 getLocalTime <p0> :LocalTime                                       \
@@ -24,6 +23,7 @@ getStandardOffset <p0> :ZoneOffset                                 \
 getOffsetBefore <p0> :ZoneOffset                                   \
 getOffsetAfter <p0> :ZoneOffset                                    \
 createTransition <p1> :ZoneOffsetTransition                        \
+getMonth <p0> :Month                                               \
 equals <p1> :boolean                                               \
 toString <p0> :String                                              \
 hashCode <p0> :int                                                 \

@@ -1,0 +1,76 @@
+L:java.util.GregorianCalendar
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.GregorianCalendar(int,int,int)
+public java.util.GregorianCalendar(int,int,int,int,int)
+public java.util.GregorianCalendar(int,int,int,int,int,int)
+java.util.GregorianCalendar(int,int,int,int,int,int,int)
+public java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale)
+public java.util.GregorianCalendar(java.util.Locale)
+public java.util.GregorianCalendar(java.util.TimeZone)
+java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale,boolean)
+public java.util.GregorianCalendar()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.GregorianCalendar
+------------------------------------------------------------------------------------------------------------------------------
+BC                                                                 \
+AD                                                                 \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.GregorianCalendar
+------------------------------------------------------------------------------------------------------------------------------
+setGregorianChange <p1> :void                                      \
+setGregorianChange <p1> :void                                      \
+getGregorianChange <p0> :Date                                      \
+isLeapYear <p1> :boolean                                           \
+getCalendarType <p0> :String                                       \
+roll <p2> :void                                                    \
+roll <p2> :void                                                    \
+getMinimum <p1> :int                                               \
+getMaximum <p1> :int                                               \
+getGreatestMinimum <p1> :int                                       \
+getLeastMaximum <p1> :int                                          \
+getActualMinimum <p1> :int                                         \
+getActualMaximum <p1> :int                                         \
+getYearOffsetInMillis <p0> :long                                   \
+isWeekDateSupported <p0> :boolean                                  \
+getWeekYear <p0> :int                                              \
+setWeekDate <p3> :void                                             \
+getWeeksInWeekYear <p0> :int                                       \
+computeFields <p0> :void                                           \
+computeFields <p2> :int                                            \
+getWeekNumber <p2> :int                                            \
+computeTime <p0> :void                                             \
+getFixedDate <p3> :long                                            \
+getNormalizedCalendar <p0> :GregorianCalendar                      \
+getJulianCalendarSystem <p0> :BaseCalendar                         \
+getCutoverCalendarSystem <p0> :BaseCalendar                        \
+isCutoverYear <p1> :boolean                                        \
+getFixedDateJan1 <p2> :long                                        \
+getFixedDateMonth1 <p2> :long                                      \
+getCalendarDate <p1> :Date                                         \
+getGregorianCutoverDate <p0> :Date                                 \
+getLastJulianDate <p0> :Date                                       \
+monthLength <p1> :int                                              \
+monthLength <p2> :int                                              \
+actualMonthLength <p0> :int                                        \
+yearLength <p0> :int                                               \
+yearLength <p1> :int                                               \
+pinDayOfMonth <p0> :void                                           \
+getCurrentFixedDate <p0> :long                                     \
+getRolledValue <p4> :int                                           \
+internalGetEra <p0> :int                                           \
+toZonedDateTime <p0> :ZonedDateTime                                \
+from <p1> :GregorianCalendar                                       \
+getTimeZone <p0> :TimeZone                                         \
+setTimeZone <p1> :void                                             \
+add <p2> :void                                                     \
+equals <p1> :boolean                                               \
+hashCode <p0> :int                                                 \
+clone <p0> :Object                                                 \
+readObject <p1> :void                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

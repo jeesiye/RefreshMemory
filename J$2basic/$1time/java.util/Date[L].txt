@@ -1,0 +1,64 @@
+L:java.util.Date
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.Date()
+public java.util.Date(long)
+public java.util.Date(int,int,int,int,int)
+public java.util.Date(int,int,int,int,int,int)
+public java.util.Date(java.lang.String)
+public java.util.Date(int,int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Date
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Date
+------------------------------------------------------------------------------------------------------------------------------
+UTC <p6> :long                                                     \
+getYear <p0> :int                                                  \
+setYear <p1> :void                                                 \
+getMonth <p0> :int                                                 \
+setMonth <p1> :void                                                \
+setDate <p1> :void                                                 \
+getDay <p0> :int                                                   \
+getHours <p0> :int                                                 \
+setHours <p1> :void                                                \
+getMinutes <p0> :int                                               \
+setMinutes <p1> :void                                              \
+getSeconds <p0> :int                                               \
+setSeconds <p1> :void                                              \
+getTimeImpl <p0> :long                                             \
+getMillisOf <p1> :long                                             \
+convertToAbbr <p2> :StringBuilder                                  \
+toLocaleString <p0> :String                                        \
+toGMTString <p0> :String                                           \
+getTimezoneOffset <p0> :int                                        \
+getCalendarDate <p0> :Date                                         \
+getCalendarSystem <p1> :BaseCalendar                               \
+getCalendarSystem <p1> :BaseCalendar                               \
+getCalendarSystem <p1> :BaseCalendar                               \
+getJulianCalendar <p0> :BaseCalendar                               \
+toInstant <p0> :Instant                                            \
+setTime <p1> :void                                                 \
+getTime <p0> :long                                                 \
+from <p1> :Date                                                    \
+getDate <p0> :int                                                  \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+clone <p0> :Object                                                 \
+compareTo <p1> :int                                                \
+compareTo <p1> :int                                                \
+readObject <p1> :void                                              \
+writeObject <p1> :void                                             \
+normalize <p0> :Date                                               \
+normalize <p1> :Date                                               \
+parse <p1> :long                                                   \
+before <p1> :boolean                                               \
+after <p1> :boolean                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

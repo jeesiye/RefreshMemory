@@ -1,0 +1,77 @@
+FL:java.time.chrono.MinguoDate
+------------------------------------------------------------------------------------------------------------------------------
+java.time.chrono.MinguoDate(java.time.LocalDate)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.MinguoDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.MinguoDate
+------------------------------------------------------------------------------------------------------------------------------
+now <p1> :MinguoDate                                               \
+now <p1> :MinguoDate                                               \
+now <p0> :MinguoDate                                               \
+getChronology <p0> :Chronology                                     \
+getChronology <p0> :MinguoChronology                               \
+getEra <p0> :MinguoEra                                             \
+getEra <p0> :Era                                                   \
+lengthOfMonth <p0> :int                                            \
+getProlepticMonth <p0> :long                                       \
+getProlepticYear <p0> :int                                         \
+with <p1> :MinguoDate                                              \
+with <p1> :Temporal                                                \
+with <p2> :ChronoLocalDate                                         \
+with <p1> :ChronoLocalDate                                         \
+with <p2> :Temporal                                                \
+with <p1> :MinguoDate                                              \
+with <p2> :MinguoDate                                              \
+plus <p1> :MinguoDate                                              \
+plus <p2> :Temporal                                                \
+plus <p1> :Temporal                                                \
+plus <p1> :ChronoLocalDate                                         \
+plus <p2> :ChronoLocalDate                                         \
+plus <p2> :MinguoDate                                              \
+minus <p1> :MinguoDate                                             \
+minus <p1> :Temporal                                               \
+minus <p2> :Temporal                                               \
+minus <p2> :MinguoDate                                             \
+minus <p2> :ChronoLocalDate                                        \
+minus <p1> :ChronoLocalDate                                        \
+plusYears <p1> :ChronoLocalDate                                    \
+plusYears <p1> :MinguoDate                                         \
+plusMonths <p1> :ChronoLocalDate                                   \
+plusMonths <p1> :MinguoDate                                        \
+plusWeeks <p1> :MinguoDate                                         \
+plusWeeks <p1> :ChronoLocalDate                                    \
+plusDays <p1> :ChronoLocalDate                                     \
+plusDays <p1> :MinguoDate                                          \
+minusYears <p1> :ChronoLocalDate                                   \
+minusYears <p1> :MinguoDate                                        \
+minusMonths <p1> :MinguoDate                                       \
+minusMonths <p1> :ChronoLocalDate                                  \
+minusWeeks <p1> :MinguoDate                                        \
+minusWeeks <p1> :ChronoLocalDate                                   \
+minusDays <p1> :ChronoLocalDate                                    \
+minusDays <p1> :MinguoDate                                         \
+atTime <p1> :ChronoLocalDateTime                                   \
+until <p2> :long                                                   \
+until <p1> :ChronoPeriod                                           \
+toEpochDay <p0> :long                                              \
+writeExternal <p1> :void                                           \
+readExternal <p1> :MinguoDate                                      \
+from <p1> :MinguoDate                                              \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+getLong <p1> :long                                                 \
+readObject <p1> :void                                              \
+of <p3> :MinguoDate                                                \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

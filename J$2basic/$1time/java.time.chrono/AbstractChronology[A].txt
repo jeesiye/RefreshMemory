@@ -1,0 +1,48 @@
+A:java.time.chrono.AbstractChronology
+------------------------------------------------------------------------------------------------------------------------------
+protected java.time.chrono.AbstractChronology()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.time.chrono.AbstractChronology
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.time.chrono.AbstractChronology
+------------------------------------------------------------------------------------------------------------------------------
+writeExternal <p1> :void                                           \
+readExternal <p1> :Chronology                                      \
+resolveDate <p2> :ChronoLocalDate                                  \
+resolveYearOfEra <p2> :ChronoLocalDate                             \
+resolveYMD <p2> :ChronoLocalDate                                   \
+resolveYD <p2> :ChronoLocalDate                                    \
+registerChrono <p1> :Chronology                                    \
+registerChrono <p2> :Chronology                                    \
+initCache <p0> :boolean                                            \
+ofLocale <p1> :Chronology                                          \
+of0 <p1> :Chronology                                               \
+getAvailableChronologies <p0> :Set                                 \
+resolveProlepticMonth <p2> :void                                   \
+resolveYMAA <p2> :ChronoLocalDate                                  \
+resolveYMAD <p2> :ChronoLocalDate                                  \
+resolveYAA <p2> :ChronoLocalDate                                   \
+resolveYAD <p2> :ChronoLocalDate                                   \
+resolveAligned <p4> :ChronoLocalDate                               \
+addFieldValue <p3> :void                                           \
+lambda$static$2241c452$1 <p2> :int                                 \
+lambda$static$b5a61975$1 <p2> :int                                 \
+lambda$static$7f2d2d5b$1 <p2> :int                                 \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+compareTo <p1> :int                                                \
+compareTo <p1> :int                                                \
+readObject <p1> :void                                              \
+of <p1> :Chronology                                                \
+$deserializeLambda$ <p1> :Object                                   \
+writeReplace <p0> :Object                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

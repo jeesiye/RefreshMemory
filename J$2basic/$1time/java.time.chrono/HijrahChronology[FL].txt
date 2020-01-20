@@ -1,0 +1,79 @@
+FL:java.time.chrono.HijrahChronology
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.HijrahChronology(java.lang.String) throws java.time.DateTimeException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahChronology
+------------------------------------------------------------------------------------------------------------------------------
+INSTANCE                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahChronology
+------------------------------------------------------------------------------------------------------------------------------
+getEpochDay <p3> :long                                             \
+getHijrahDateInfo <p1> :int[]                                      \
+checkValidYear <p1> :int                                           \
+registerVariants <p0> :void                                        \
+checkCalendarInit <p0> :void                                       \
+checkValidDayOfYear <p1> :void                                     \
+checkValidMonth <p1> :void                                         \
+getMinimumYear <p0> :int                                           \
+getMaximumYear <p0> :int                                           \
+getMaximumMonthLength <p0> :int                                    \
+getMinimumMonthLength <p0> :int                                    \
+getMaximumDayOfYear <p0> :int                                      \
+getSmallestMaximumDayOfYear <p0> :int                              \
+epochDayToEpochMonth <p1> :int                                     \
+epochMonthToYear <p1> :int                                         \
+yearToEpochMonth <p1> :int                                         \
+epochMonthToMonth <p1> :int                                        \
+epochMonthToEpochDay <p1> :int                                     \
+yearMonthToDayOfYear <p2> :int                                     \
+epochMonthLength <p1> :int                                         \
+readConfigProperties <p1> :Properties                              \
+loadCalendarData <p0> :void                                        \
+createEpochMonths <p4> :int[]                                      \
+parseMonths <p1> :int[]                                            \
+parseYMD <p1> :int[]                                               \
+lambda$readConfigProperties$0 <p1> :Properties                     \
+getYearLength <p1> :int                                            \
+getMonthLength <p2> :int                                           \
+isLeapYear <p1> :boolean                                           \
+eraOf <p1> :HijrahEra                                              \
+eraOf <p1> :Era                                                    \
+localDateTime <p1> :ChronoLocalDateTime                            \
+getDayOfYear <p2> :int                                             \
+date <p3> :ChronoLocalDate                                         \
+date <p1> :HijrahDate                                              \
+date <p4> :HijrahDate                                              \
+date <p4> :ChronoLocalDate                                         \
+date <p1> :ChronoLocalDate                                         \
+date <p3> :HijrahDate                                              \
+getCalendarType <p0> :String                                       \
+dateYearDay <p2> :ChronoLocalDate                                  \
+dateYearDay <p3> :HijrahDate                                       \
+dateYearDay <p2> :HijrahDate                                       \
+dateYearDay <p3> :ChronoLocalDate                                  \
+dateEpochDay <p1> :ChronoLocalDate                                 \
+dateEpochDay <p1> :HijrahDate                                      \
+dateNow <p0> :ChronoLocalDate                                      \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p1> :HijrahDate                                           \
+dateNow <p1> :HijrahDate                                           \
+dateNow <p0> :HijrahDate                                           \
+zonedDateTime <p1> :ChronoZonedDateTime                            \
+zonedDateTime <p2> :ChronoZonedDateTime                            \
+prolepticYear <p2> :int                                            \
+eras <p0> :List                                                    \
+resolveDate <p2> :HijrahDate                                       \
+resolveDate <p2> :ChronoLocalDate                                  \
+readObject <p1> :void                                              \
+getId <p0> :String                                                 \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

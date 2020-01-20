@@ -12,6 +12,8 @@ FL:java.time.temporal.ValueRange
 
 FL:java.time.temporal.ValueRange
 ------------------------------------------------------------------------------------------------------------------------------
+checkValidValue <p2> :long                                         \
+checkValidIntValue <p2> :int                                       \
 isFixed <p0> :boolean                                              \
 getMinimum <p0> :long                                              \
 getLargestMinimum <p0> :long                                       \
@@ -20,8 +22,6 @@ getMaximum <p0> :long                                              \
 isIntValue <p0> :boolean                                           \
 isValidValue <p1> :boolean                                         \
 isValidIntValue <p1> :boolean                                      \
-checkValidValue <p2> :long                                         \
-checkValidIntValue <p2> :int                                       \
 genInvalidFieldMessage <p2> :String                                \
 equals <p1> :boolean                                               \
 toString <p0> :String                                              \

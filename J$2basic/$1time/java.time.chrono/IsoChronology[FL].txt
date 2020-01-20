@@ -1,0 +1,60 @@
+FL:java.time.chrono.IsoChronology
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.IsoChronology()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.IsoChronology
+------------------------------------------------------------------------------------------------------------------------------
+INSTANCE                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.IsoChronology
+------------------------------------------------------------------------------------------------------------------------------
+period <p3> :ChronoPeriod                                          \
+period <p3> :Period                                                \
+isLeapYear <p1> :boolean                                           \
+eraOf <p1> :IsoEra                                                 \
+eraOf <p1> :Era                                                    \
+localDateTime <p1> :LocalDateTime                                  \
+localDateTime <p1> :ChronoLocalDateTime                            \
+date <p4> :LocalDate                                               \
+date <p3> :LocalDate                                               \
+date <p1> :ChronoLocalDate                                         \
+date <p3> :ChronoLocalDate                                         \
+date <p4> :ChronoLocalDate                                         \
+date <p1> :LocalDate                                               \
+getCalendarType <p0> :String                                       \
+dateYearDay <p3> :ChronoLocalDate                                  \
+dateYearDay <p3> :LocalDate                                        \
+dateYearDay <p2> :LocalDate                                        \
+dateYearDay <p2> :ChronoLocalDate                                  \
+dateEpochDay <p1> :LocalDate                                       \
+dateEpochDay <p1> :ChronoLocalDate                                 \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p0> :LocalDate                                            \
+dateNow <p1> :LocalDate                                            \
+dateNow <p1> :LocalDate                                            \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p0> :ChronoLocalDate                                      \
+zonedDateTime <p1> :ChronoZonedDateTime                            \
+zonedDateTime <p2> :ChronoZonedDateTime                            \
+zonedDateTime <p1> :ZonedDateTime                                  \
+zonedDateTime <p2> :ZonedDateTime                                  \
+prolepticYear <p2> :int                                            \
+eras <p0> :List                                                    \
+resolveDate <p2> :ChronoLocalDate                                  \
+resolveDate <p2> :LocalDate                                        \
+resolveYearOfEra <p2> :LocalDate                                   \
+resolveYearOfEra <p2> :ChronoLocalDate                             \
+resolveYMD <p2> :LocalDate                                         \
+resolveYMD <p2> :ChronoLocalDate                                   \
+resolveProlepticMonth <p2> :void                                   \
+readObject <p1> :void                                              \
+getId <p0> :String                                                 \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

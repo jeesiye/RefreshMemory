@@ -1,0 +1,34 @@
+FL:java.time.format.DecimalStyle
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.format.DecimalStyle(char,char,char,char)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.format.DecimalStyle
+------------------------------------------------------------------------------------------------------------------------------
+STANDARD                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.format.DecimalStyle
+------------------------------------------------------------------------------------------------------------------------------
+ofDefaultLocale <p0> :DecimalStyle                                 \
+getZeroDigit <p0> :char                                            \
+withZeroDigit <p1> :DecimalStyle                                   \
+getPositiveSign <p0> :char                                         \
+withPositiveSign <p1> :DecimalStyle                                \
+getNegativeSign <p0> :char                                         \
+withNegativeSign <p1> :DecimalStyle                                \
+getDecimalSeparator <p0> :char                                     \
+withDecimalSeparator <p1> :DecimalStyle                            \
+convertToDigit <p1> :int                                           \
+convertNumberToI18N <p1> :String                                   \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+create <p1> :DecimalStyle                                          \
+of <p1> :DecimalStyle                                              \
+getAvailableLocales <p0> :Set                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

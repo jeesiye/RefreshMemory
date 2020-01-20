@@ -1,0 +1,85 @@
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.HijrahDate(java.time.chrono.HijrahChronology,int,int,int)
+private java.time.chrono.HijrahDate(java.time.chrono.HijrahChronology,long)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+withVariant <p1> :HijrahDate                                       \
+getEraValue <p0> :int                                              \
+now <p1> :HijrahDate                                               \
+now <p1> :HijrahDate                                               \
+now <p0> :HijrahDate                                               \
+getChronology <p0> :Chronology                                     \
+getChronology <p0> :HijrahChronology                               \
+getEra <p0> :Era                                                   \
+getEra <p0> :HijrahEra                                             \
+lengthOfMonth <p0> :int                                            \
+getProlepticMonth <p0> :long                                       \
+with <p1> :ChronoLocalDate                                         \
+with <p2> :HijrahDate                                              \
+with <p2> :ChronoLocalDate                                         \
+with <p1> :HijrahDate                                              \
+with <p2> :Temporal                                                \
+with <p1> :Temporal                                                \
+plus <p1> :HijrahDate                                              \
+plus <p2> :HijrahDate                                              \
+plus <p2> :ChronoLocalDate                                         \
+plus <p1> :ChronoLocalDate                                         \
+plus <p2> :Temporal                                                \
+plus <p1> :Temporal                                                \
+minus <p2> :HijrahDate                                             \
+minus <p2> :ChronoLocalDate                                        \
+minus <p1> :HijrahDate                                             \
+minus <p1> :Temporal                                               \
+minus <p2> :Temporal                                               \
+minus <p1> :ChronoLocalDate                                        \
+plusYears <p1> :ChronoLocalDate                                    \
+plusYears <p1> :HijrahDate                                         \
+plusMonths <p1> :ChronoLocalDate                                   \
+plusMonths <p1> :HijrahDate                                        \
+plusWeeks <p1> :HijrahDate                                         \
+plusWeeks <p1> :ChronoLocalDate                                    \
+plusDays <p1> :ChronoLocalDate                                     \
+plusDays <p1> :HijrahDate                                          \
+minusYears <p1> :ChronoLocalDate                                   \
+minusYears <p1> :HijrahDate                                        \
+minusMonths <p1> :ChronoLocalDate                                  \
+minusMonths <p1> :HijrahDate                                       \
+minusWeeks <p1> :ChronoLocalDate                                   \
+minusWeeks <p1> :HijrahDate                                        \
+minusDays <p1> :ChronoLocalDate                                    \
+minusDays <p1> :HijrahDate                                         \
+atTime <p1> :ChronoLocalDateTime                                   \
+until <p1> :ChronoPeriod                                           \
+until <p2> :long                                                   \
+toEpochDay <p0> :long                                              \
+writeExternal <p1> :void                                           \
+readExternal <p1> :HijrahDate                                      \
+isLeapYear <p0> :boolean                                           \
+lengthOfYear <p0> :int                                             \
+ofEpochDay <p2> :HijrahDate                                        \
+resolvePreviousValid <p3> :HijrahDate                              \
+getDayOfYear <p0> :int                                             \
+getDayOfWeek <p0> :int                                             \
+from <p1> :HijrahDate                                              \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+getLong <p1> :long                                                 \
+readObject <p1> :void                                              \
+of <p3> :HijrahDate                                                \
+of <p4> :HijrahDate                                                \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

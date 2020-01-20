@@ -15,12 +15,12 @@ FL:java.time.zone.ZoneOffsetTransition
 ------------------------------------------------------------------------------------------------------------------------------
 writeExternal <p1> :void                                           \
 readExternal <p1> :ZoneOffsetTransition                            \
+getOffsetBefore <p0> :ZoneOffset                                   \
+getOffsetAfter <p0> :ZoneOffset                                    \
 getInstant <p0> :Instant                                           \
 toEpochSecond <p0> :long                                           \
 getDateTimeBefore <p0> :LocalDateTime                              \
 getDateTimeAfter <p0> :LocalDateTime                               \
-getOffsetBefore <p0> :ZoneOffset                                   \
-getOffsetAfter <p0> :ZoneOffset                                    \
 getDuration <p0> :Duration                                         \
 getDurationSeconds <p0> :int                                       \
 isGap <p0> :boolean                                                \

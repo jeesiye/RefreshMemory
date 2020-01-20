@@ -12,8 +12,10 @@ I:java.time.temporal.TemporalAmount
 
 I:java.time.temporal.TemporalAmount
 ------------------------------------------------------------------------------------------------------------------------------
-addTo <p1> : Temporal                                              \
-get <p1> : long                                                    \
-getUnits <p0> : List                                               \
-subtractFrom <p1> : Temporal                                       \
+addTo <p1> :Temporal                                               \
+getUnits <p0> :List                                                \
+subtractFrom <p1> :Temporal                                        \
+get <p1> :long                                                     \
 ------------------------------------------------------------------------------------------------------------------------------
+
+

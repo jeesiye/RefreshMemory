@@ -12,11 +12,11 @@ FL:java.time.temporal.TemporalAdjusters
 
 FL:java.time.temporal.TemporalAdjusters
 ------------------------------------------------------------------------------------------------------------------------------
+firstDayOfYear <p0> :TemporalAdjuster                              \
 ofDateAdjuster <p1> :TemporalAdjuster                              \
 firstDayOfMonth <p0> :TemporalAdjuster                             \
 lastDayOfMonth <p0> :TemporalAdjuster                              \
 firstDayOfNextMonth <p0> :TemporalAdjuster                         \
-firstDayOfYear <p0> :TemporalAdjuster                              \
 lastDayOfYear <p0> :TemporalAdjuster                               \
 firstDayOfNextYear <p0> :TemporalAdjuster                          \
 firstInMonth <p1> :TemporalAdjuster                                \
