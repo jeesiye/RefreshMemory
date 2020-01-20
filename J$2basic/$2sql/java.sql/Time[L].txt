@@ -14,15 +14,15 @@ L:java.sql.Time
 L:java.sql.Time
 ------------------------------------------------------------------------------------------------------------------------------
 toLocalTime <p0> :LocalTime                                        \
+getYear <p0> :int                                                  \
+getMonth <p0> :int                                                 \
+toInstant <p0> :Instant                                            \
+setTime <p1> :void                                                 \
+getDate <p0> :int                                                  \
 setYear <p1> :void                                                 \
 setMonth <p1> :void                                                \
 setDate <p1> :void                                                 \
 getDay <p0> :int                                                   \
-setTime <p1> :void                                                 \
-getDate <p0> :int                                                  \
-getYear <p0> :int                                                  \
-getMonth <p0> :int                                                 \
-toInstant <p0> :Instant                                            \
 toString <p0> :String                                              \
 valueOf <p1> :Time                                                 \
 valueOf <p1> :Time                                                 \

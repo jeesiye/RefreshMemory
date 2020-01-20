@@ -12,13 +12,13 @@ I:java.sql.Array
 
 I:java.sql.Array
 ------------------------------------------------------------------------------------------------------------------------------
-getResultSet <p1> :ResultSet                                       \
+free <p0> :void                                                    \
 getResultSet <p0> :ResultSet                                       \
-getResultSet <p3> :ResultSet                                       \
+getResultSet <p1> :ResultSet                                       \
 getResultSet <p2> :ResultSet                                       \
+getResultSet <p3> :ResultSet                                       \
 getBaseTypeName <p0> :String                                       \
 getBaseType <p0> :int                                              \
-free <p0> :void                                                    \
 getArray <p3> :Object                                              \
 getArray <p0> :Object                                              \
 getArray <p1> :Object                                              \

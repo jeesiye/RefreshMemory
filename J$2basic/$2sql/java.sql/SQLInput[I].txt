@@ -12,8 +12,6 @@ I:java.sql.SQLInput
 
 I:java.sql.SQLInput
 ------------------------------------------------------------------------------------------------------------------------------
-readLong <p0> :long                                                \
-wasNull <p0> :boolean                                              \
 readString <p0> :String                                            \
 readBoolean <p0> :boolean                                          \
 readByte <p0> :byte                                                \
@@ -35,9 +33,11 @@ readNClob <p0> :NClob                                              \
 readNString <p0> :String                                           \
 readSQLXML <p0> :SQLXML                                            \
 readRowId <p0> :RowId                                              \
+readLong <p0> :long                                                \
+wasNull <p0> :boolean                                              \
 readFloat <p0> :float                                              \
-readObject <p0> :Object                                            \
 readObject <p1> :Object                                            \
+readObject <p0> :Object                                            \
 readInt <p0> :int                                                  \
 readBytes <p0> :byte[]                                             \
 ------------------------------------------------------------------------------------------------------------------------------

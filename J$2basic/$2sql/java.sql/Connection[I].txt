@@ -16,7 +16,7 @@ TRANSACTION_SERIALIZABLE                                           \
 
 I:java.sql.Connection
 ------------------------------------------------------------------------------------------------------------------------------
-abort <p1> :void                                                   \
+isValid <p1> :boolean                                              \
 createStatement <p3> :Statement                                    \
 createStatement <p2> :Statement                                    \
 createStatement <p0> :Statement                                    \
@@ -64,7 +64,7 @@ setSchema <p1> :void                                               \
 getSchema <p0> :String                                             \
 setNetworkTimeout <p2> :void                                       \
 getNetworkTimeout <p0> :int                                        \
-isValid <p1> :boolean                                              \
+abort <p1> :void                                                   \
 setReadOnly <p1> :void                                             \
 close <p0> :void                                                   \
 isReadOnly <p0> :boolean                                           \

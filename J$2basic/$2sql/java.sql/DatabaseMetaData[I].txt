@@ -72,8 +72,6 @@ functionReturnsTable                                               \
 
 I:java.sql.DatabaseMetaData
 ------------------------------------------------------------------------------------------------------------------------------
-getConnection <p0> :Connection                                     \
-getResultSetHoldability <p0> :int                                  \
 allProceduresAreCallable <p0> :boolean                             \
 allTablesAreSelectable <p0> :boolean                               \
 getUserName <p0> :String                                           \
@@ -109,8 +107,8 @@ supportsAlterTableWithAddColumn <p0> :boolean                      \
 supportsAlterTableWithDropColumn <p0> :boolean                     \
 supportsColumnAliasing <p0> :boolean                               \
 nullPlusNonNullIsNull <p0> :boolean                                \
-supportsConvert <p2> :boolean                                      \
 supportsConvert <p0> :boolean                                      \
+supportsConvert <p2> :boolean                                      \
 supportsTableCorrelationNames <p0> :boolean                        \
 supportsDifferentTableCorrelationNames <p0> :boolean               \
 supportsExpressionsInOrderBy <p0> :boolean                         \
@@ -193,8 +191,8 @@ dataDefinitionIgnoredInTransactions <p0> :boolean                  \
 getProcedures <p3> :ResultSet                                      \
 getProcedureColumns <p4> :ResultSet                                \
 getTables <p4> :ResultSet                                          \
-getSchemas <p2> :ResultSet                                         \
 getSchemas <p0> :ResultSet                                         \
+getSchemas <p2> :ResultSet                                         \
 getCatalogs <p0> :ResultSet                                        \
 getTableTypes <p0> :ResultSet                                      \
 getColumns <p4> :ResultSet                                         \
@@ -245,6 +243,8 @@ getPseudoColumns <p4> :ResultSet                                   \
 generatedKeyAlwaysReturned <p0> :boolean                           \
 getMaxLogicalLobSize <p0> :long                                    \
 supportsRefCursors <p0> :boolean                                   \
+getConnection <p0> :Connection                                     \
+getResultSetHoldability <p0> :int                                  \
 getURL <p0> :String                                                \
 getAttributes <p4> :ResultSet                                      \
 isReadOnly <p0> :boolean                                           \

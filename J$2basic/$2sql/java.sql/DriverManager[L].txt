@@ -12,15 +12,10 @@ L:java.sql.DriverManager
 
 L:java.sql.DriverManager
 ------------------------------------------------------------------------------------------------------------------------------
-getLogWriter <p0> :PrintWriter                                     \
-getConnection <p2> :Connection                                     \
-getConnection <p3> :Connection                                     \
-getConnection <p3> :Connection                                     \
-getConnection <p1> :Connection                                     \
 setLogWriter <p1> :void                                            \
 getDriver <p1> :Driver                                             \
-registerDriver <p2> :void                                          \
 registerDriver <p1> :void                                          \
+registerDriver <p2> :void                                          \
 deregisterDriver <p1> :void                                        \
 getDrivers <p0> :Enumeration                                       \
 setLoginTimeout <p1> :void                                         \
@@ -30,6 +25,11 @@ getLogStream <p0> :PrintStream                                     \
 isDriverAllowed <p2> :boolean                                      \
 isDriverAllowed <p2> :boolean                                      \
 loadInitialDrivers <p0> :void                                      \
+getLogWriter <p0> :PrintWriter                                     \
+getConnection <p3> :Connection                                     \
+getConnection <p1> :Connection                                     \
+getConnection <p3> :Connection                                     \
+getConnection <p2> :Connection                                     \
 println <p1> :void                                                 \
 ------------------------------------------------------------------------------------------------------------------------------
 

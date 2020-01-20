@@ -12,12 +12,12 @@ I:java.sql.Blob
 
 I:java.sql.Blob
 ------------------------------------------------------------------------------------------------------------------------------
-setBytes <p4> :int                                                 \
+free <p0> :void                                                    \
 setBytes <p2> :int                                                 \
+setBytes <p4> :int                                                 \
 setBinaryStream <p1> :OutputStream                                 \
 getBinaryStream <p2> :InputStream                                  \
 getBinaryStream <p0> :InputStream                                  \
-free <p0> :void                                                    \
 length <p0> :long                                                  \
 getBytes <p2> :byte[]                                              \
 position <p2> :long                                                \

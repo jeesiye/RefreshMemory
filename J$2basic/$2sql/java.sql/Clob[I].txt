@@ -12,15 +12,15 @@ I:java.sql.Clob
 
 I:java.sql.Clob
 ------------------------------------------------------------------------------------------------------------------------------
-setString <p2> :int                                                \
+free <p0> :void                                                    \
 setString <p4> :int                                                \
+setString <p2> :int                                                \
 setAsciiStream <p1> :OutputStream                                  \
 setCharacterStream <p1> :Writer                                    \
 getCharacterStream <p2> :Reader                                    \
 getCharacterStream <p0> :Reader                                    \
 getSubString <p2> :String                                          \
 getAsciiStream <p0> :InputStream                                   \
-free <p0> :void                                                    \
 length <p0> :long                                                  \
 position <p2> :long                                                \
 position <p2> :long                                                \
