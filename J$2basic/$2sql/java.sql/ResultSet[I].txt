@@ -1,0 +1,219 @@
+I:java.sql.ResultSet
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.ResultSet
+------------------------------------------------------------------------------------------------------------------------------
+FETCH_FORWARD                                                      \
+FETCH_REVERSE                                                      \
+FETCH_UNKNOWN                                                      \
+TYPE_FORWARD_ONLY                                                  \
+TYPE_SCROLL_INSENSITIVE                                            \
+TYPE_SCROLL_SENSITIVE                                              \
+CONCUR_READ_ONLY                                                   \
+CONCUR_UPDATABLE                                                   \
+HOLD_CURSORS_OVER_COMMIT                                           \
+CLOSE_CURSORS_AT_COMMIT                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.ResultSet
+------------------------------------------------------------------------------------------------------------------------------
+getString <p1> :String                                             \
+getString <p1> :String                                             \
+last <p0> :boolean                                                 \
+isClosed <p0> :boolean                                             \
+getMetaData <p0> :ResultSetMetaData                                \
+getWarnings <p0> :SQLWarning                                       \
+clearWarnings <p0> :void                                           \
+getHoldability <p0> :int                                           \
+wasNull <p0> :boolean                                              \
+getBigDecimal <p2> :BigDecimal                                     \
+getBigDecimal <p1> :BigDecimal                                     \
+getBigDecimal <p2> :BigDecimal                                     \
+getBigDecimal <p1> :BigDecimal                                     \
+getTimestamp <p2> :Timestamp                                       \
+getTimestamp <p1> :Timestamp                                       \
+getTimestamp <p2> :Timestamp                                       \
+getTimestamp <p1> :Timestamp                                       \
+getBlob <p1> :Blob                                                 \
+getBlob <p1> :Blob                                                 \
+getClob <p1> :Clob                                                 \
+getClob <p1> :Clob                                                 \
+getRowId <p1> :RowId                                               \
+getRowId <p1> :RowId                                               \
+getNClob <p1> :NClob                                               \
+getNClob <p1> :NClob                                               \
+getSQLXML <p1> :SQLXML                                             \
+getSQLXML <p1> :SQLXML                                             \
+getNString <p1> :String                                            \
+getNString <p1> :String                                            \
+getNCharacterStream <p1> :Reader                                   \
+getNCharacterStream <p1> :Reader                                   \
+getCharacterStream <p1> :Reader                                    \
+getCharacterStream <p1> :Reader                                    \
+setFetchDirection <p1> :void                                       \
+getFetchDirection <p0> :int                                        \
+setFetchSize <p1> :void                                            \
+getFetchSize <p0> :int                                             \
+getBinaryStream <p1> :InputStream                                  \
+getBinaryStream <p1> :InputStream                                  \
+getAsciiStream <p1> :InputStream                                   \
+getAsciiStream <p1> :InputStream                                   \
+getTime <p1> :Time                                                 \
+getTime <p1> :Time                                                 \
+getTime <p2> :Time                                                 \
+getTime <p2> :Time                                                 \
+getDate <p1> :Date                                                 \
+getDate <p2> :Date                                                 \
+getDate <p2> :Date                                                 \
+getDate <p1> :Date                                                 \
+getUnicodeStream <p1> :InputStream                                 \
+getUnicodeStream <p1> :InputStream                                 \
+getCursorName <p0> :String                                         \
+findColumn <p1> :int                                               \
+isBeforeFirst <p0> :boolean                                        \
+isAfterLast <p0> :boolean                                          \
+isFirst <p0> :boolean                                              \
+isLast <p0> :boolean                                               \
+beforeFirst <p0> :void                                             \
+afterLast <p0> :void                                               \
+getRow <p0> :int                                                   \
+absolute <p1> :boolean                                             \
+relative <p1> :boolean                                             \
+getConcurrency <p0> :int                                           \
+rowUpdated <p0> :boolean                                           \
+rowInserted <p0> :boolean                                          \
+rowDeleted <p0> :boolean                                           \
+updateNull <p1> :void                                              \
+updateNull <p1> :void                                              \
+updateBoolean <p2> :void                                           \
+updateBoolean <p2> :void                                           \
+updateByte <p2> :void                                              \
+updateByte <p2> :void                                              \
+updateShort <p2> :void                                             \
+updateShort <p2> :void                                             \
+updateInt <p2> :void                                               \
+updateInt <p2> :void                                               \
+updateLong <p2> :void                                              \
+updateLong <p2> :void                                              \
+updateFloat <p2> :void                                             \
+updateFloat <p2> :void                                             \
+updateDouble <p2> :void                                            \
+updateDouble <p2> :void                                            \
+updateBigDecimal <p2> :void                                        \
+updateBigDecimal <p2> :void                                        \
+updateString <p2> :void                                            \
+updateString <p2> :void                                            \
+updateDate <p2> :void                                              \
+updateDate <p2> :void                                              \
+updateTime <p2> :void                                              \
+updateTime <p2> :void                                              \
+updateTimestamp <p2> :void                                         \
+updateTimestamp <p2> :void                                         \
+updateAsciiStream <p3> :void                                       \
+updateAsciiStream <p3> :void                                       \
+updateAsciiStream <p2> :void                                       \
+updateAsciiStream <p3> :void                                       \
+updateAsciiStream <p2> :void                                       \
+updateAsciiStream <p3> :void                                       \
+updateBinaryStream <p3> :void                                      \
+updateBinaryStream <p3> :void                                      \
+updateBinaryStream <p2> :void                                      \
+updateBinaryStream <p2> :void                                      \
+updateBinaryStream <p3> :void                                      \
+updateBinaryStream <p3> :void                                      \
+updateCharacterStream <p3> :void                                   \
+updateCharacterStream <p3> :void                                   \
+updateCharacterStream <p3> :void                                   \
+updateCharacterStream <p3> :void                                   \
+updateCharacterStream <p2> :void                                   \
+updateCharacterStream <p2> :void                                   \
+updateObject <p3> :void                                            \
+updateObject <p4> :void                                            \
+updateObject <p3> :void                                            \
+updateObject <p4> :void                                            \
+updateObject <p2> :void                                            \
+updateObject <p3> :void                                            \
+updateObject <p2> :void                                            \
+updateObject <p3> :void                                            \
+insertRow <p0> :void                                               \
+updateRow <p0> :void                                               \
+deleteRow <p0> :void                                               \
+refreshRow <p0> :void                                              \
+cancelRowUpdates <p0> :void                                        \
+moveToInsertRow <p0> :void                                         \
+moveToCurrentRow <p0> :void                                        \
+getStatement <p0> :Statement                                       \
+updateRef <p2> :void                                               \
+updateRef <p2> :void                                               \
+updateBlob <p2> :void                                              \
+updateBlob <p2> :void                                              \
+updateBlob <p2> :void                                              \
+updateBlob <p3> :void                                              \
+updateBlob <p3> :void                                              \
+updateBlob <p2> :void                                              \
+updateClob <p2> :void                                              \
+updateClob <p2> :void                                              \
+updateClob <p2> :void                                              \
+updateClob <p3> :void                                              \
+updateClob <p2> :void                                              \
+updateClob <p3> :void                                              \
+updateArray <p2> :void                                             \
+updateArray <p2> :void                                             \
+updateRowId <p2> :void                                             \
+updateRowId <p2> :void                                             \
+updateNString <p2> :void                                           \
+updateNString <p2> :void                                           \
+updateNClob <p3> :void                                             \
+updateNClob <p2> :void                                             \
+updateNClob <p2> :void                                             \
+updateNClob <p3> :void                                             \
+updateNClob <p2> :void                                             \
+updateNClob <p2> :void                                             \
+updateSQLXML <p2> :void                                            \
+updateSQLXML <p2> :void                                            \
+updateNCharacterStream <p2> :void                                  \
+updateNCharacterStream <p3> :void                                  \
+updateNCharacterStream <p2> :void                                  \
+updateNCharacterStream <p3> :void                                  \
+updateBytes <p2> :void                                             \
+updateBytes <p2> :void                                             \
+getObject <p2> :Object                                             \
+getObject <p2> :Object                                             \
+getObject <p2> :Object                                             \
+getObject <p1> :Object                                             \
+getObject <p1> :Object                                             \
+getObject <p2> :Object                                             \
+getBoolean <p1> :boolean                                           \
+getBoolean <p1> :boolean                                           \
+getByte <p1> :byte                                                 \
+getByte <p1> :byte                                                 \
+getShort <p1> :short                                               \
+getShort <p1> :short                                               \
+getInt <p1> :int                                                   \
+getInt <p1> :int                                                   \
+getLong <p1> :long                                                 \
+getLong <p1> :long                                                 \
+getFloat <p1> :float                                               \
+getFloat <p1> :float                                               \
+getDouble <p1> :double                                             \
+getDouble <p1> :double                                             \
+getBytes <p1> :byte[]                                              \
+getBytes <p1> :byte[]                                              \
+next <p0> :boolean                                                 \
+getArray <p1> :Array                                               \
+getArray <p1> :Array                                               \
+getURL <p1> :URL                                                   \
+getURL <p1> :URL                                                   \
+first <p0> :boolean                                                \
+close <p0> :void                                                   \
+getType <p0> :int                                                  \
+getRef <p1> :Ref                                                   \
+getRef <p1> :Ref                                                   \
+previous <p0> :boolean                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

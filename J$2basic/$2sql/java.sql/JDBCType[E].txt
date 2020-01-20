@@ -1,0 +1,61 @@
+E:java.sql.JDBCType
+------------------------------------------------------------------------------------------------------------------------------
+private java.sql.JDBCType(java.lang.String,int,java.lang.Integer)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.sql.JDBCType
+------------------------------------------------------------------------------------------------------------------------------
+BIT                                                                \
+TINYINT                                                            \
+SMALLINT                                                           \
+INTEGER                                                            \
+BIGINT                                                             \
+FLOAT                                                              \
+REAL                                                               \
+DOUBLE                                                             \
+NUMERIC                                                            \
+DECIMAL                                                            \
+CHAR                                                               \
+VARCHAR                                                            \
+LONGVARCHAR                                                        \
+DATE                                                               \
+TIME                                                               \
+TIMESTAMP                                                          \
+BINARY                                                             \
+VARBINARY                                                          \
+LONGVARBINARY                                                      \
+NULL                                                               \
+OTHER                                                              \
+JAVA_OBJECT                                                        \
+DISTINCT                                                           \
+STRUCT                                                             \
+ARRAY                                                              \
+BLOB                                                               \
+CLOB                                                               \
+REF                                                                \
+DATALINK                                                           \
+BOOLEAN                                                            \
+ROWID                                                              \
+NCHAR                                                              \
+NVARCHAR                                                           \
+LONGNVARCHAR                                                       \
+NCLOB                                                              \
+SQLXML                                                             \
+REF_CURSOR                                                         \
+TIME_WITH_TIMEZONE                                                 \
+TIMESTAMP_WITH_TIMEZONE                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.sql.JDBCType
+------------------------------------------------------------------------------------------------------------------------------
+getVendor <p0> :String                                             \
+getVendorTypeNumber <p0> :Integer                                  \
+values <p0> :JDBCType[]                                            \
+valueOf <p1> :JDBCType                                             \
+valueOf <p1> :JDBCType                                             \
+getName <p0> :String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

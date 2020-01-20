@@ -16,18 +16,19 @@ TRANSACTION_SERIALIZABLE                                           \
 
 I:java.sql.Connection
 ------------------------------------------------------------------------------------------------------------------------------
-createStatement <p2> :Statement                                    \
+abort <p1> :void                                                   \
 createStatement <p3> :Statement                                    \
+createStatement <p2> :Statement                                    \
 createStatement <p0> :Statement                                    \
-prepareStatement <p4> :PreparedStatement                           \
 prepareStatement <p2> :PreparedStatement                           \
 prepareStatement <p1> :PreparedStatement                           \
-prepareStatement <p2> :PreparedStatement                           \
+prepareStatement <p4> :PreparedStatement                           \
 prepareStatement <p2> :PreparedStatement                           \
 prepareStatement <p3> :PreparedStatement                           \
-prepareCall <p1> :CallableStatement                                \
-prepareCall <p4> :CallableStatement                                \
+prepareStatement <p2> :PreparedStatement                           \
 prepareCall <p3> :CallableStatement                                \
+prepareCall <p4> :CallableStatement                                \
+prepareCall <p1> :CallableStatement                                \
 nativeSQL <p1> :String                                             \
 setAutoCommit <p1> :void                                           \
 getAutoCommit <p0> :boolean                                        \
@@ -53,9 +54,8 @@ createClob <p0> :Clob                                              \
 createBlob <p0> :Blob                                              \
 createNClob <p0> :NClob                                            \
 createSQLXML <p0> :SQLXML                                          \
-isValid <p1> :boolean                                              \
-setClientInfo <p2> :void                                           \
 setClientInfo <p1> :void                                           \
+setClientInfo <p2> :void                                           \
 getClientInfo <p0> :Properties                                     \
 getClientInfo <p1> :String                                         \
 createArrayOf <p2> :Array                                          \
@@ -64,7 +64,7 @@ setSchema <p1> :void                                               \
 getSchema <p0> :String                                             \
 setNetworkTimeout <p2> :void                                       \
 getNetworkTimeout <p0> :int                                        \
-abort <p1> :void                                                   \
+isValid <p1> :boolean                                              \
 setReadOnly <p1> :void                                             \
 close <p0> :void                                                   \
 isReadOnly <p0> :boolean                                           \
