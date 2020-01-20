@@ -1,0 +1,73 @@
+I:java.sql.Connection
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.Connection
+------------------------------------------------------------------------------------------------------------------------------
+TRANSACTION_NONE                                                   \
+TRANSACTION_READ_UNCOMMITTED                                       \
+TRANSACTION_READ_COMMITTED                                         \
+TRANSACTION_REPEATABLE_READ                                        \
+TRANSACTION_SERIALIZABLE                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.Connection
+------------------------------------------------------------------------------------------------------------------------------
+createStatement <p2> :Statement                                    \
+createStatement <p3> :Statement                                    \
+createStatement <p0> :Statement                                    \
+prepareStatement <p4> :PreparedStatement                           \
+prepareStatement <p2> :PreparedStatement                           \
+prepareStatement <p1> :PreparedStatement                           \
+prepareStatement <p2> :PreparedStatement                           \
+prepareStatement <p2> :PreparedStatement                           \
+prepareStatement <p3> :PreparedStatement                           \
+prepareCall <p1> :CallableStatement                                \
+prepareCall <p4> :CallableStatement                                \
+prepareCall <p3> :CallableStatement                                \
+nativeSQL <p1> :String                                             \
+setAutoCommit <p1> :void                                           \
+getAutoCommit <p0> :boolean                                        \
+commit <p0> :void                                                  \
+rollback <p0> :void                                                \
+rollback <p1> :void                                                \
+isClosed <p0> :boolean                                             \
+getMetaData <p0> :DatabaseMetaData                                 \
+setCatalog <p1> :void                                              \
+getCatalog <p0> :String                                            \
+setTransactionIsolation <p1> :void                                 \
+getTransactionIsolation <p0> :int                                  \
+getWarnings <p0> :SQLWarning                                       \
+clearWarnings <p0> :void                                           \
+getTypeMap <p0> :Map                                               \
+setTypeMap <p1> :void                                              \
+setHoldability <p1> :void                                          \
+getHoldability <p0> :int                                           \
+setSavepoint <p0> :Savepoint                                       \
+setSavepoint <p1> :Savepoint                                       \
+releaseSavepoint <p1> :void                                        \
+createClob <p0> :Clob                                              \
+createBlob <p0> :Blob                                              \
+createNClob <p0> :NClob                                            \
+createSQLXML <p0> :SQLXML                                          \
+isValid <p1> :boolean                                              \
+setClientInfo <p2> :void                                           \
+setClientInfo <p1> :void                                           \
+getClientInfo <p0> :Properties                                     \
+getClientInfo <p1> :String                                         \
+createArrayOf <p2> :Array                                          \
+createStruct <p2> :Struct                                          \
+setSchema <p1> :void                                               \
+getSchema <p0> :String                                             \
+setNetworkTimeout <p2> :void                                       \
+getNetworkTimeout <p0> :int                                        \
+abort <p1> :void                                                   \
+setReadOnly <p1> :void                                             \
+close <p0> :void                                                   \
+isReadOnly <p0> :boolean                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
