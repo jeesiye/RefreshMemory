@@ -1,0 +1,55 @@
+FL:java.time.chrono.JapaneseChronology
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.JapaneseChronology()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.JapaneseChronology
+------------------------------------------------------------------------------------------------------------------------------
+INSTANCE                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.JapaneseChronology
+------------------------------------------------------------------------------------------------------------------------------
+getCalendarType <p0> :String                                       \
+dateYearDay <p2> :JapaneseDate                                     \
+dateYearDay <p3> :JapaneseDate                                     \
+dateYearDay <p3> :ChronoLocalDate                                  \
+dateYearDay <p2> :ChronoLocalDate                                  \
+dateEpochDay <p1> :JapaneseDate                                    \
+dateEpochDay <p1> :ChronoLocalDate                                 \
+dateNow <p0> :ChronoLocalDate                                      \
+dateNow <p1> :JapaneseDate                                         \
+dateNow <p1> :JapaneseDate                                         \
+dateNow <p0> :JapaneseDate                                         \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p1> :ChronoLocalDate                                      \
+localDateTime <p1> :ChronoLocalDateTime                            \
+zonedDateTime <p1> :ChronoZonedDateTime                            \
+zonedDateTime <p2> :ChronoZonedDateTime                            \
+isLeapYear <p1> :boolean                                           \
+prolepticYear <p2> :int                                            \
+eraOf <p1> :Era                                                    \
+eraOf <p1> :JapaneseEra                                            \
+eras <p0> :List                                                    \
+getCurrentEra <p0> :JapaneseEra                                    \
+resolveDate <p2> :ChronoLocalDate                                  \
+resolveDate <p2> :JapaneseDate                                     \
+resolveYearOfEra <p2> :ChronoLocalDate                             \
+prolepticYearLenient <p2> :int                                     \
+resolveYMD <p4> :ChronoLocalDate                                   \
+resolveYD <p4> :ChronoLocalDate                                    \
+date <p4> :ChronoLocalDate                                         \
+date <p4> :JapaneseDate                                            \
+date <p3> :JapaneseDate                                            \
+date <p3> :ChronoLocalDate                                         \
+date <p1> :JapaneseDate                                            \
+date <p1> :ChronoLocalDate                                         \
+readObject <p1> :void                                              \
+getId <p0> :String                                                 \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

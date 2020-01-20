@@ -1,0 +1,40 @@
+FL:java.time.zone.ZoneOffsetTransition
+------------------------------------------------------------------------------------------------------------------------------
+java.time.zone.ZoneOffsetTransition(long,java.time.ZoneOffset,java.time.ZoneOffset)
+java.time.zone.ZoneOffsetTransition(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransition
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransition
+------------------------------------------------------------------------------------------------------------------------------
+writeExternal <p1> :void                                           \
+readExternal <p1> :ZoneOffsetTransition                            \
+getInstant <p0> :Instant                                           \
+toEpochSecond <p0> :long                                           \
+getDateTimeBefore <p0> :LocalDateTime                              \
+getDateTimeAfter <p0> :LocalDateTime                               \
+getOffsetBefore <p0> :ZoneOffset                                   \
+getOffsetAfter <p0> :ZoneOffset                                    \
+getDuration <p0> :Duration                                         \
+getDurationSeconds <p0> :int                                       \
+isGap <p0> :boolean                                                \
+isOverlap <p0> :boolean                                            \
+isValidOffset <p1> :boolean                                        \
+getValidOffsets <p0> :List                                         \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+compareTo <p1> :int                                                \
+compareTo <p1> :int                                                \
+readObject <p1> :void                                              \
+of <p3> :ZoneOffsetTransition                                      \
+writeReplace <p0> :Object                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

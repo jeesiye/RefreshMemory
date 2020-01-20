@@ -1,0 +1,45 @@
+FL:java.time.zone.ZoneRules
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.zone.ZoneRules(long[],java.time.ZoneOffset[],long[],java.time.ZoneOffset[],java.time.zone.ZoneOffsetTransitionRule[])
+private java.time.zone.ZoneRules(java.time.ZoneOffset)
+java.time.zone.ZoneRules(java.time.ZoneOffset,java.time.ZoneOffset,java.util.List,java.util.List,java.util.List)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneRules
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneRules
+------------------------------------------------------------------------------------------------------------------------------
+writeExternal <p1> :void                                           \
+readExternal <p1> :ZoneRules                                       \
+isFixedOffset <p0> :boolean                                        \
+getValidOffsets <p1> :List                                         \
+getTransition <p1> :ZoneOffsetTransition                           \
+getOffsetInfo <p1> :Object                                         \
+findOffsetInfo <p2> :Object                                        \
+findTransitionArray <p1> :ZoneOffsetTransition[]                   \
+getStandardOffset <p1> :ZoneOffset                                 \
+getDaylightSavings <p1> :Duration                                  \
+isDaylightSavings <p1> :boolean                                    \
+isValidOffset <p2> :boolean                                        \
+nextTransition <p1> :ZoneOffsetTransition                          \
+previousTransition <p1> :ZoneOffsetTransition                      \
+findYear <p2> :int                                                 \
+getTransitions <p0> :List                                          \
+getTransitionRules <p0> :List                                      \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+readObject <p1> :void                                              \
+of <p5> :ZoneRules                                                 \
+of <p1> :ZoneRules                                                 \
+getOffset <p1> :ZoneOffset                                         \
+getOffset <p1> :ZoneOffset                                         \
+writeReplace <p0> :Object                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

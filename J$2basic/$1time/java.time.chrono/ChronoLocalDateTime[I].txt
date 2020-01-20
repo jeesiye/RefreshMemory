@@ -1,0 +1,50 @@
+I:java.time.chrono.ChronoLocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoLocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoLocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+timeLineOrder <p0> :Comparator                                     \
+getChronology <p0> :Chronology                                     \
+toLocalDate <p0> :ChronoLocalDate                                  \
+toLocalTime <p0> :LocalTime                                        \
+with <p2> :ChronoLocalDateTime                                     \
+with <p1> :ChronoLocalDateTime                                     \
+with <p1> :Temporal                                                \
+with <p2> :Temporal                                                \
+plus <p2> :ChronoLocalDateTime                                     \
+plus <p2> :Temporal                                                \
+plus <p1> :Temporal                                                \
+plus <p1> :ChronoLocalDateTime                                     \
+minus <p2> :Temporal                                               \
+minus <p1> :Temporal                                               \
+minus <p2> :ChronoLocalDateTime                                    \
+minus <p1> :ChronoLocalDateTime                                    \
+adjustInto <p1> :Temporal                                          \
+atZone <p1> :ChronoZonedDateTime                                   \
+toInstant <p1> :Instant                                            \
+toEpochSecond <p1> :long                                           \
+isAfter <p1> :boolean                                              \
+isBefore <p1> :boolean                                             \
+isEqual <p1> :boolean                                              \
+from <p1> :ChronoLocalDateTime                                     \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+compareTo <p1> :int                                                \
+compareTo <p1> :int                                                \
+format <p1> :String                                                \
+query <p1> :Object                                                 \
+isSupported <p1> :boolean                                          \
+isSupported <p1> :boolean                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

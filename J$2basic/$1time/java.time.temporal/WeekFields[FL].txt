@@ -1,0 +1,30 @@
+FL:java.time.temporal.WeekFields
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.temporal.WeekFields(java.time.DayOfWeek,int)
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.temporal.WeekFields
+------------------------------------------------------------------------------------------------------------------------------
+ISO                                                                \
+SUNDAY_START                                                       \
+WEEK_BASED_YEARS                                                   \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.temporal.WeekFields
+------------------------------------------------------------------------------------------------------------------------------
+dayOfWeek <p0> : TemporalField                                     \
+equals <p1> : boolean                                              \
+getFirstDayOfWeek <p0> : DayOfWeek                                 \
+getMinimalDaysInFirstWeek <p0> : int                               \
+hashCode <p0> : int                                                \
+of <p1> : WeekFields                                               \
+of <p2> : WeekFields                                               \
+toString <p0> : String                                             \
+weekBasedYear <p0> : TemporalField                                 \
+weekOfMonth <p0> : TemporalField                                   \
+weekOfWeekBasedYear <p0> : TemporalField                           \
+weekOfYear <p0> : TemporalField                                    \
+------------------------------------------------------------------------------------------------------------------------------

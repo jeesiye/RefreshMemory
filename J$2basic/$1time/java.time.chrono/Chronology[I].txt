@@ -1,0 +1,48 @@
+I:java.time.chrono.Chronology
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.Chronology
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.Chronology
+------------------------------------------------------------------------------------------------------------------------------
+from <p1> :Chronology                                              \
+date <p1> :ChronoLocalDate                                         \
+date <p4> :ChronoLocalDate                                         \
+date <p3> :ChronoLocalDate                                         \
+ofLocale <p1> :Chronology                                          \
+getAvailableChronologies <p0> :Set                                 \
+getCalendarType <p0> :String                                       \
+dateYearDay <p3> :ChronoLocalDate                                  \
+dateYearDay <p2> :ChronoLocalDate                                  \
+dateEpochDay <p1> :ChronoLocalDate                                 \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p0> :ChronoLocalDate                                      \
+localDateTime <p1> :ChronoLocalDateTime                            \
+zonedDateTime <p1> :ChronoZonedDateTime                            \
+zonedDateTime <p2> :ChronoZonedDateTime                            \
+isLeapYear <p1> :boolean                                           \
+prolepticYear <p2> :int                                            \
+eraOf <p1> :Era                                                    \
+eras <p0> :List                                                    \
+resolveDate <p2> :ChronoLocalDate                                  \
+period <p3> :ChronoPeriod                                          \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+compareTo <p1> :int                                                \
+compareTo <p1> :int                                                \
+getId <p0> :String                                                 \
+of <p1> :Chronology                                                \
+range <p1> :ValueRange                                             \
+getDisplayName <p2> :String                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

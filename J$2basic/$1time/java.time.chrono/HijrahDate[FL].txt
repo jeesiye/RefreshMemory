@@ -1,0 +1,85 @@
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.HijrahDate(java.time.chrono.HijrahChronology,long)
+private java.time.chrono.HijrahDate(java.time.chrono.HijrahChronology,int,int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+from <p1> :HijrahDate                                              \
+ofEpochDay <p2> :HijrahDate                                        \
+now <p1> :HijrahDate                                               \
+now <p1> :HijrahDate                                               \
+now <p0> :HijrahDate                                               \
+getChronology <p0> :HijrahChronology                               \
+getChronology <p0> :Chronology                                     \
+getEra <p0> :Era                                                   \
+getEra <p0> :HijrahEra                                             \
+lengthOfMonth <p0> :int                                            \
+lengthOfYear <p0> :int                                             \
+getProlepticMonth <p0> :long                                       \
+with <p1> :Temporal                                                \
+with <p2> :HijrahDate                                              \
+with <p1> :HijrahDate                                              \
+with <p2> :ChronoLocalDate                                         \
+with <p1> :ChronoLocalDate                                         \
+with <p2> :Temporal                                                \
+resolvePreviousValid <p3> :HijrahDate                              \
+withVariant <p1> :HijrahDate                                       \
+plus <p2> :ChronoLocalDate                                         \
+plus <p1> :Temporal                                                \
+plus <p2> :Temporal                                                \
+plus <p1> :ChronoLocalDate                                         \
+plus <p1> :HijrahDate                                              \
+plus <p2> :HijrahDate                                              \
+minus <p2> :HijrahDate                                             \
+minus <p2> :Temporal                                               \
+minus <p1> :HijrahDate                                             \
+minus <p1> :Temporal                                               \
+minus <p1> :ChronoLocalDate                                        \
+minus <p2> :ChronoLocalDate                                        \
+toEpochDay <p0> :long                                              \
+getDayOfYear <p0> :int                                             \
+getDayOfWeek <p0> :int                                             \
+getEraValue <p0> :int                                              \
+isLeapYear <p0> :boolean                                           \
+plusYears <p1> :ChronoLocalDate                                    \
+plusYears <p1> :HijrahDate                                         \
+plusMonths <p1> :ChronoLocalDate                                   \
+plusMonths <p1> :HijrahDate                                        \
+plusWeeks <p1> :ChronoLocalDate                                    \
+plusWeeks <p1> :HijrahDate                                         \
+plusDays <p1> :ChronoLocalDate                                     \
+plusDays <p1> :HijrahDate                                          \
+minusYears <p1> :ChronoLocalDate                                   \
+minusYears <p1> :HijrahDate                                        \
+minusMonths <p1> :ChronoLocalDate                                  \
+minusMonths <p1> :HijrahDate                                       \
+minusWeeks <p1> :HijrahDate                                        \
+minusWeeks <p1> :ChronoLocalDate                                   \
+minusDays <p1> :HijrahDate                                         \
+minusDays <p1> :ChronoLocalDate                                    \
+atTime <p1> :ChronoLocalDateTime                                   \
+until <p1> :ChronoPeriod                                           \
+until <p2> :long                                                   \
+writeExternal <p1> :void                                           \
+readExternal <p1> :HijrahDate                                      \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+getLong <p1> :long                                                 \
+readObject <p1> :void                                              \
+of <p4> :HijrahDate                                                \
+of <p3> :HijrahDate                                                \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

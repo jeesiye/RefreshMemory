@@ -1,0 +1,35 @@
+FL:java.time.temporal.ValueRange
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.temporal.ValueRange(long,long,long,long)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.temporal.ValueRange
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.temporal.ValueRange
+------------------------------------------------------------------------------------------------------------------------------
+isFixed <p0> :boolean                                              \
+getMinimum <p0> :long                                              \
+getLargestMinimum <p0> :long                                       \
+getSmallestMaximum <p0> :long                                      \
+getMaximum <p0> :long                                              \
+isIntValue <p0> :boolean                                           \
+isValidValue <p1> :boolean                                         \
+isValidIntValue <p1> :boolean                                      \
+checkValidValue <p2> :long                                         \
+checkValidIntValue <p2> :int                                       \
+genInvalidFieldMessage <p2> :String                                \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+readObject <p1> :void                                              \
+of <p2> :ValueRange                                                \
+of <p3> :ValueRange                                                \
+of <p4> :ValueRange                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

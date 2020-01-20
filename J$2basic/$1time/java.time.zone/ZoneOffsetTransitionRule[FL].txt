@@ -1,0 +1,35 @@
+FL:java.time.zone.ZoneOffsetTransitionRule
+------------------------------------------------------------------------------------------------------------------------------
+java.time.zone.ZoneOffsetTransitionRule(java.time.Month,int,java.time.DayOfWeek,java.time.LocalTime,boolean,java.time.zone.ZoneOffsetTransitionRule$TimeDefinition,java.time.ZoneOffset,java.time.ZoneOffset,java.time.ZoneOffset)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransitionRule
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransitionRule
+------------------------------------------------------------------------------------------------------------------------------
+writeExternal <p1> :void                                           \
+readExternal <p1> :ZoneOffsetTransitionRule                        \
+getMonth <p0> :Month                                               \
+getDayOfMonthIndicator <p0> :int                                   \
+getDayOfWeek <p0> :DayOfWeek                                       \
+getLocalTime <p0> :LocalTime                                       \
+isMidnightEndOfDay <p0> :boolean                                   \
+getTimeDefinition <p0> :TimeDefinition                             \
+getStandardOffset <p0> :ZoneOffset                                 \
+getOffsetBefore <p0> :ZoneOffset                                   \
+getOffsetAfter <p0> :ZoneOffset                                    \
+createTransition <p1> :ZoneOffsetTransition                        \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+readObject <p1> :void                                              \
+of <p9> :ZoneOffsetTransitionRule                                  \
+writeReplace <p0> :Object                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

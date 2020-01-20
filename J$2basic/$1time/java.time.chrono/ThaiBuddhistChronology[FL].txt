@@ -1,0 +1,50 @@
+FL:java.time.chrono.ThaiBuddhistChronology
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.ThaiBuddhistChronology()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.ThaiBuddhistChronology
+------------------------------------------------------------------------------------------------------------------------------
+INSTANCE                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.ThaiBuddhistChronology
+------------------------------------------------------------------------------------------------------------------------------
+getCalendarType <p0> :String                                       \
+dateYearDay <p3> :ThaiBuddhistDate                                 \
+dateYearDay <p2> :ChronoLocalDate                                  \
+dateYearDay <p2> :ThaiBuddhistDate                                 \
+dateYearDay <p3> :ChronoLocalDate                                  \
+dateEpochDay <p1> :ChronoLocalDate                                 \
+dateEpochDay <p1> :ThaiBuddhistDate                                \
+dateNow <p1> :ThaiBuddhistDate                                     \
+dateNow <p1> :ThaiBuddhistDate                                     \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p1> :ChronoLocalDate                                      \
+dateNow <p0> :ChronoLocalDate                                      \
+dateNow <p0> :ThaiBuddhistDate                                     \
+localDateTime <p1> :ChronoLocalDateTime                            \
+zonedDateTime <p2> :ChronoZonedDateTime                            \
+zonedDateTime <p1> :ChronoZonedDateTime                            \
+isLeapYear <p1> :boolean                                           \
+prolepticYear <p2> :int                                            \
+eraOf <p1> :ThaiBuddhistEra                                        \
+eraOf <p1> :Era                                                    \
+eras <p0> :List                                                    \
+resolveDate <p2> :ChronoLocalDate                                  \
+resolveDate <p2> :ThaiBuddhistDate                                 \
+date <p4> :ThaiBuddhistDate                                        \
+date <p4> :ChronoLocalDate                                         \
+date <p3> :ThaiBuddhistDate                                        \
+date <p1> :ChronoLocalDate                                         \
+date <p3> :ChronoLocalDate                                         \
+date <p1> :ThaiBuddhistDate                                        \
+readObject <p1> :void                                              \
+getId <p0> :String                                                 \
+writeReplace <p0> :Object                                          \
+range <p1> :ValueRange                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+
