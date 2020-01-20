@@ -1,0 +1,34 @@
+L:java.net.InetSocketAddress
+------------------------------------------------------------------------------------------------------------------------------
+private java.net.InetSocketAddress(int,java.lang.String)
+public java.net.InetSocketAddress(int)
+public java.net.InetSocketAddress(java.net.InetAddress,int)
+public java.net.InetSocketAddress(java.lang.String,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.InetSocketAddress
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.InetSocketAddress
+------------------------------------------------------------------------------------------------------------------------------
+checkHost <p1> :String                                             \
+createUnresolved <p2> :InetSocketAddress                           \
+checkPort <p1> :int                                                \
+getHostString <p0> :String                                         \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+getAddress <p0> :InetAddress                                       \
+readObject <p1> :void                                              \
+writeObject <p1> :void                                             \
+getPort <p0> :int                                                  \
+isUnresolved <p0> :boolean                                         \
+getHostName <p0> :String                                           \
+readObjectNoData <p0> :void                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

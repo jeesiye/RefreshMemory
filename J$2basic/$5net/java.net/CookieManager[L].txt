@@ -1,26 +1,26 @@
-I:java.sql.SQLXML
+L:java.net.CookieManager
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.CookieManager(java.net.CookieStore,java.net.CookiePolicy)
+public java.net.CookieManager()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.CookieManager
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.sql.SQLXML
+L:java.net.CookieManager
 ------------------------------------------------------------------------------------------------------------------------------
-\
-------------------------------------------------------------------------------------------------------------------------------
-
-
-I:java.sql.SQLXML
-------------------------------------------------------------------------------------------------------------------------------
-getString <p0> :String                                             \
-free <p0> :void                                                    \
-setString <p1> :void                                               \
-setBinaryStream <p0> :OutputStream                                 \
-setCharacterStream <p0> :Writer                                    \
-getCharacterStream <p0> :Reader                                    \
-getBinaryStream <p0> :InputStream                                  \
-getSource <p1> :Source                                             \
-setResult <p1> :Result                                             \
+setCookiePolicy <p1> :void                                         \
+getCookieStore <p0> :CookieStore                                   \
+shouldAcceptInternal <p2> :boolean                                 \
+isInPortList <p2> :boolean                                         \
+pathMatches <p2> :boolean                                          \
+sortByPath <p1> :List                                              \
+get <p2> :Map                                                      \
+put <p2> :void                                                     \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

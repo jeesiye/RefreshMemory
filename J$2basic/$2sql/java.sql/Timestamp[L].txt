@@ -13,10 +13,10 @@ L:java.sql.Timestamp
 
 L:java.sql.Timestamp
 ------------------------------------------------------------------------------------------------------------------------------
-toInstant <p0> :Instant                                            \
 setTime <p1> :void                                                 \
 getTime <p0> :long                                                 \
 from <p1> :Timestamp                                               \
+toInstant <p0> :Instant                                            \
 getNanos <p0> :int                                                 \
 setNanos <p1> :void                                                \
 toLocalDateTime <p0> :LocalDateTime                                \

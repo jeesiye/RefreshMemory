@@ -1,0 +1,127 @@
+FL:java.net.URI
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.URI(java.lang.String) throws java.net.URISyntaxException
+public java.net.URI(java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+public java.net.URI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+private java.net.URI()
+public java.net.URI(java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+public java.net.URI(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.URI
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.URI
+------------------------------------------------------------------------------------------------------------------------------
+access$702 <p2> :String                                            \
+access$900 <p0> :long                                              \
+access$1300 <p0> :long                                             \
+parseServerAuthority <p0> :URI                                     \
+getRawSchemeSpecificPart <p0> :String                              \
+getSchemeSpecificPart <p0> :String                                 \
+getRawAuthority <p0> :String                                       \
+getRawUserInfo <p0> :String                                        \
+getRawPath <p0> :String                                            \
+getRawQuery <p0> :String                                           \
+getRawFragment <p0> :String                                        \
+toASCIIString <p0> :String                                         \
+equal <p2> :boolean                                                \
+equalIgnoringCase <p2> :boolean                                    \
+normalizedHash <p2> :int                                           \
+hashIgnoringCase <p2> :int                                         \
+compareIgnoringCase <p2> :int                                      \
+defineSchemeSpecificPart <p0> :void                                \
+defineString <p0> :void                                            \
+resolvePath <p3> :String                                           \
+needsNormalization <p1> :int                                       \
+removeDots <p2> :void                                              \
+maybeAddLeadingDot <p2> :void                                      \
+access$1002 <p2> :String                                           \
+access$1102 <p2> :String                                           \
+access$1402 <p2> :String                                           \
+access$1502 <p2> :String                                           \
+access$1700 <p0> :long                                             \
+access$1800 <p0> :long                                             \
+access$1900 <p0> :long                                             \
+access$2000 <p0> :long                                             \
+access$2100 <p0> :long                                             \
+access$2202 <p2> :String                                           \
+access$2302 <p2> :String                                           \
+access$2402 <p2> :String                                           \
+access$2502 <p2> :int                                              \
+access$2600 <p0> :long                                             \
+access$2700 <p0> :long                                             \
+access$2800 <p0> :long                                             \
+access$2900 <p0> :long                                             \
+access$3000 <p0> :long                                             \
+access$3100 <p0> :long                                             \
+access$3200 <p0> :long                                             \
+access$3300 <p0> :long                                             \
+access$3400 <p0> :long                                             \
+toUpper <p1> :int                                                  \
+access$1200 <p0> :long                                             \
+access$1600 <p0> :long                                             \
+hash <p2> :int                                                     \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+toString <p9> :String                                              \
+hashCode <p0> :int                                                 \
+compareTo <p1> :int                                                \
+compareTo <p1> :int                                                \
+split <p2> :void                                                   \
+join <p2> :int                                                     \
+decode <p1> :int                                                   \
+decode <p1> :String                                                \
+decode <p2> :byte                                                  \
+encode <p1> :String                                                \
+compare <p2> :int                                                  \
+access$100 <p0> :long                                              \
+access$200 <p0> :long                                              \
+access$300 <p3> :boolean                                           \
+isAbsolute <p0> :boolean                                           \
+readObject <p1> :void                                              \
+writeObject <p1> :void                                             \
+resolve <p2> :URI                                                  \
+resolve <p1> :URI                                                  \
+resolve <p1> :URI                                                  \
+create <p1> :URI                                                   \
+access$400 <p0> :long                                              \
+access$500 <p0> :long                                              \
+access$600 <p0> :long                                              \
+access$002 <p2> :String                                            \
+normalize <p1> :URI                                                \
+normalize <p1> :String                                             \
+normalize <p0> :URI                                                \
+getPath <p0> :String                                               \
+toURL <p0> :URL                                                    \
+isOpaque <p0> :boolean                                             \
+getScheme <p0> :String                                             \
+getAuthority <p0> :String                                          \
+getFragment <p0> :String                                           \
+getQuery <p0> :String                                              \
+getHost <p0> :String                                               \
+getUserInfo <p0> :String                                           \
+getPort <p0> :int                                                  \
+toLower <p1> :int                                                  \
+match <p3> :boolean                                                \
+relativize <p1> :URI                                               \
+relativize <p2> :URI                                               \
+appendSchemeSpecificPart <p8> :void                                \
+appendAuthority <p5> :void                                         \
+appendFragment <p2> :void                                          \
+quote <p3> :String                                                 \
+appendEncoded <p2> :void                                           \
+appendEscape <p2> :void                                            \
+checkPath <p3> :void                                               \
+lowMask <p2> :long                                                 \
+lowMask <p1> :long                                                 \
+highMask <p1> :long                                                \
+highMask <p2> :long                                                \
+access$800 <p0> :long                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

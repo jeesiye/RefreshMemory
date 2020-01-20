@@ -14,11 +14,11 @@ L:java.sql.Date
 L:java.sql.Date
 ------------------------------------------------------------------------------------------------------------------------------
 toLocalDate <p0> :LocalDate                                        \
+setTime <p1> :void                                                 \
 getHours <p0> :int                                                 \
 getMinutes <p0> :int                                               \
 getSeconds <p0> :int                                               \
 toInstant <p0> :Instant                                            \
-setTime <p1> :void                                                 \
 setHours <p1> :void                                                \
 setMinutes <p1> :void                                              \
 setSeconds <p1> :void                                              \

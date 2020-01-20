@@ -1,0 +1,52 @@
+FL:java.net.Inet6Address
+------------------------------------------------------------------------------------------------------------------------------
+java.net.Inet6Address(java.lang.String,byte[],java.lang.String) throws java.net.UnknownHostException
+java.net.Inet6Address(java.lang.String,byte[],java.net.NetworkInterface) throws java.net.UnknownHostException
+java.net.Inet6Address(java.lang.String,byte[])
+java.net.Inet6Address(java.lang.String,byte[],int)
+java.net.Inet6Address()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.Inet6Address
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.Inet6Address
+------------------------------------------------------------------------------------------------------------------------------
+isMulticastAddress <p0> :boolean                                   \
+isAnyLocalAddress <p0> :boolean                                    \
+isLoopbackAddress <p0> :boolean                                    \
+isLinkLocalAddress <p0> :boolean                                   \
+isLinkLocalAddress <p1> :boolean                                   \
+isSiteLocalAddress <p1> :boolean                                   \
+isSiteLocalAddress <p0> :boolean                                   \
+isMCGlobal <p0> :boolean                                           \
+isMCNodeLocal <p0> :boolean                                        \
+isMCLinkLocal <p0> :boolean                                        \
+isMCSiteLocal <p0> :boolean                                        \
+isMCOrgLocal <p0> :boolean                                         \
+getByAddress <p3> :Inet6Address                                    \
+getByAddress <p3> :Inet6Address                                    \
+getScopeId <p0> :int                                               \
+numericToTextFormat <p1> :String                                   \
+initstr <p3> :void                                                 \
+initif <p3> :void                                                  \
+isDifferentLocalAddressType <p2> :boolean                          \
+deriveNumericScope <p2> :int                                       \
+deriveNumericScope <p1> :int                                       \
+getScopedInterface <p0> :NetworkInterface                          \
+isIPv4CompatibleAddress <p0> :boolean                              \
+equals <p1> :boolean                                               \
+hashCode <p0> :int                                                 \
+getAddress <p0> :byte[]                                            \
+access$000 <p2> :int                                               \
+init <p0> :void                                                    \
+readObject <p1> :void                                              \
+writeObject <p1> :void                                             \
+getHostAddress <p0> :String                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

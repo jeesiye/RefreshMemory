@@ -1,0 +1,57 @@
+FL:java.net.URL
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.URL(java.net.URL,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
+public java.net.URL(java.net.URL,java.lang.String) throws java.net.MalformedURLException
+public java.net.URL(java.lang.String) throws java.net.MalformedURLException
+public java.net.URL(java.lang.String,java.lang.String,int,java.lang.String) throws java.net.MalformedURLException
+public java.net.URL(java.lang.String,java.lang.String,java.lang.String) throws java.net.MalformedURLException
+public java.net.URL(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.URL
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.URL
+------------------------------------------------------------------------------------------------------------------------------
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+openStream <p0> :InputStream                                       \
+readObject <p1> :void                                              \
+writeObject <p1> :void                                             \
+set <p8> :void                                                     \
+set <p5> :void                                                     \
+readResolve <p0> :Object                                           \
+getPath <p0> :String                                               \
+toURI <p0> :URI                                                    \
+getAuthority <p0> :String                                          \
+getQuery <p0> :String                                              \
+openConnection <p1> :URLConnection                                 \
+openConnection <p0> :URLConnection                                 \
+getProtocol <p0> :String                                           \
+getFile <p0> :String                                               \
+getHost <p0> :String                                               \
+isValidProtocol <p1> :boolean                                      \
+checkSpecifyHandler <p1> :void                                     \
+getUserInfo <p0> :String                                           \
+getPort <p0> :int                                                  \
+getDefaultPort <p0> :int                                           \
+getRef <p0> :String                                                \
+sameFile <p1> :boolean                                             \
+toExternalForm <p0> :String                                        \
+getContent <p1> :Object                                            \
+getContent <p0> :Object                                            \
+setURLStreamHandlerFactory <p1> :void                              \
+getURLStreamHandler <p1> :URLStreamHandler                         \
+setDeserializedFields <p1> :URL                                    \
+fabricateNewURL <p0> :URL                                          \
+isBuiltinStreamHandler <p1> :boolean                               \
+resetState <p0> :void                                              \
+setSerializedHashCode <p1> :void                                   \
+------------------------------------------------------------------------------------------------------------------------------
+
+

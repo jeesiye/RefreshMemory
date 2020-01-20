@@ -1,0 +1,65 @@
+L:java.net.InetAddress
+------------------------------------------------------------------------------------------------------------------------------
+java.net.InetAddress()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.InetAddress
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.InetAddress
+------------------------------------------------------------------------------------------------------------------------------
+isMulticastAddress <p0> :boolean                                   \
+isAnyLocalAddress <p0> :boolean                                    \
+isLoopbackAddress <p0> :boolean                                    \
+isLinkLocalAddress <p0> :boolean                                   \
+isSiteLocalAddress <p0> :boolean                                   \
+isMCGlobal <p0> :boolean                                           \
+isMCNodeLocal <p0> :boolean                                        \
+isMCLinkLocal <p0> :boolean                                        \
+isMCSiteLocal <p0> :boolean                                        \
+isMCOrgLocal <p0> :boolean                                         \
+isReachable <p3> :boolean                                          \
+isReachable <p1> :boolean                                          \
+getCanonicalHostName <p0> :String                                  \
+getHostFromNameService <p2> :String                                \
+cacheInitIfNeeded <p0> :void                                       \
+cacheAddresses <p3> :void                                          \
+getCachedAddresses <p1> :InetAddress[]                             \
+createNSProvider <p1> :NameService                                 \
+getByAddress <p1> :InetAddress                                     \
+getByAddress <p2> :InetAddress                                     \
+getAllByName <p1> :InetAddress[]                                   \
+getAllByName <p2> :InetAddress[]                                   \
+getLoopbackAddress <p0> :InetAddress                               \
+checkNumericZone <p1> :int                                         \
+getAllByName0 <p1> :InetAddress[]                                  \
+getAllByName0 <p2> :InetAddress[]                                  \
+getAllByName0 <p3> :InetAddress[]                                  \
+getAddressesFromNameService <p2> :InetAddress[]                    \
+checkLookupTable <p1> :InetAddress[]                               \
+updateLookupTable <p1> :void                                       \
+getLocalHost <p0> :InetAddress                                     \
+anyLocalAddress <p0> :InetAddress                                  \
+loadImpl <p1> :InetAddressImpl                                     \
+getByName <p2> :InetAddress                                        \
+getByName <p1> :InetAddress                                        \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+getAddress <p0> :byte[]                                            \
+init <p0> :void                                                    \
+readObject <p1> :void                                              \
+writeObject <p1> :void                                             \
+getHostAddress <p0> :String                                        \
+readResolve <p0> :Object                                           \
+getHostName <p0> :String                                           \
+getHostName <p1> :String                                           \
+readObjectNoData <p1> :void                                        \
+holder <p0> :InetAddressHolder                                     \
+------------------------------------------------------------------------------------------------------------------------------
+
+

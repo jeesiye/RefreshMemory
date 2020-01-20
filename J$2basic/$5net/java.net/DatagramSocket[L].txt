@@ -1,0 +1,57 @@
+L:java.net.DatagramSocket
+------------------------------------------------------------------------------------------------------------------------------
+protected java.net.DatagramSocket(java.net.DatagramSocketImpl)
+public java.net.DatagramSocket() throws java.net.SocketException
+public java.net.DatagramSocket(java.net.SocketAddress) throws java.net.SocketException
+public java.net.DatagramSocket(int) throws java.net.SocketException
+public java.net.DatagramSocket(int,java.net.InetAddress) throws java.net.SocketException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.DatagramSocket
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.DatagramSocket
+------------------------------------------------------------------------------------------------------------------------------
+bind <p1> :void                                                    \
+send <p1> :void                                                    \
+disconnect <p0> :void                                              \
+receive <p1> :void                                                 \
+isClosed <p0> :boolean                                             \
+getLocalPort <p0> :int                                             \
+createImpl <p0> :void                                              \
+checkOldImpl <p0> :void                                            \
+getImpl <p0> :DatagramSocketImpl                                   \
+checkAddress <p2> :void                                            \
+getInetAddress <p0> :InetAddress                                   \
+getLocalAddress <p0> :InetAddress                                  \
+getRemoteSocketAddress <p0> :SocketAddress                         \
+getLocalSocketAddress <p0> :SocketAddress                          \
+setSoTimeout <p1> :void                                            \
+getSoTimeout <p0> :int                                             \
+setSendBufferSize <p1> :void                                       \
+getSendBufferSize <p0> :int                                        \
+setReceiveBufferSize <p1> :void                                    \
+getReceiveBufferSize <p0> :int                                     \
+setTrafficClass <p1> :void                                         \
+getTrafficClass <p0> :int                                          \
+setReuseAddress <p1> :void                                         \
+getReuseAddress <p0> :boolean                                      \
+isConnected <p0> :boolean                                          \
+isBound <p0> :boolean                                              \
+connectInternal <p2> :void                                         \
+checkFiltering <p1> :boolean                                       \
+setBroadcast <p1> :void                                            \
+getBroadcast <p0> :boolean                                         \
+setDatagramSocketImplFactory <p1> :void                            \
+connect <p2> :void                                                 \
+connect <p1> :void                                                 \
+close <p0> :void                                                   \
+getPort <p0> :int                                                  \
+getChannel <p0> :DatagramChannel                                   \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,44 @@
+A:java.net.SocketImpl
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.SocketImpl()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.SocketImpl
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.SocketImpl
+------------------------------------------------------------------------------------------------------------------------------
+getOutputStream <p0> :OutputStream                                 \
+bind <p2> :void                                                    \
+setOption <p2> :void                                               \
+getOption <p1> :Object                                             \
+getLocalPort <p0> :int                                             \
+getFileDescriptor <p0> :FileDescriptor                             \
+getInetAddress <p0> :InetAddress                                   \
+sendUrgentData <p1> :void                                          \
+shutdownInput <p0> :void                                           \
+shutdownOutput <p0> :void                                          \
+setPerformancePreferences <p3> :void                               \
+setSocket <p1> :void                                               \
+supportsUrgentData <p0> :boolean                                   \
+getSocket <p0> :Socket                                             \
+setServerSocket <p1> :void                                         \
+getServerSocket <p0> :ServerSocket                                 \
+toString <p0> :String                                              \
+connect <p2> :void                                                 \
+connect <p2> :void                                                 \
+connect <p2> :void                                                 \
+listen <p1> :void                                                  \
+accept <p1> :void                                                  \
+create <p1> :void                                                  \
+close <p0> :void                                                   \
+available <p0> :int                                                \
+reset <p0> :void                                                   \
+getInputStream <p0> :InputStream                                   \
+getPort <p0> :int                                                  \
+------------------------------------------------------------------------------------------------------------------------------
+
+

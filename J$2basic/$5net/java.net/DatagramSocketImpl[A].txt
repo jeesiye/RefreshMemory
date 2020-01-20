@@ -1,0 +1,40 @@
+A:java.net.DatagramSocketImpl
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.DatagramSocketImpl()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.DatagramSocketImpl
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.DatagramSocketImpl
+------------------------------------------------------------------------------------------------------------------------------
+bind <p2> :void                                                    \
+send <p1> :void                                                    \
+disconnect <p0> :void                                              \
+peekData <p1> :int                                                 \
+receive <p1> :void                                                 \
+setTimeToLive <p1> :void                                           \
+getTimeToLive <p0> :int                                            \
+setTTL <p1> :void                                                  \
+getTTL <p0> :byte                                                  \
+leave <p1> :void                                                   \
+joinGroup <p2> :void                                               \
+leaveGroup <p2> :void                                              \
+setOption <p2> :void                                               \
+getOption <p1> :Object                                             \
+dataAvailable <p0> :int                                            \
+setDatagramSocket <p1> :void                                       \
+getDatagramSocket <p0> :DatagramSocket                             \
+getLocalPort <p0> :int                                             \
+getFileDescriptor <p0> :FileDescriptor                             \
+join <p1> :void                                                    \
+connect <p2> :void                                                 \
+create <p0> :void                                                  \
+close <p0> :void                                                   \
+peek <p1> :int                                                     \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,34 @@
+L:java.net.MulticastSocket
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.MulticastSocket() throws java.io.IOException
+public java.net.MulticastSocket(java.net.SocketAddress) throws java.io.IOException
+public java.net.MulticastSocket(int) throws java.io.IOException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.MulticastSocket
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.MulticastSocket
+------------------------------------------------------------------------------------------------------------------------------
+send <p2> :void                                                    \
+setTimeToLive <p1> :void                                           \
+getTimeToLive <p0> :int                                            \
+setTTL <p1> :void                                                  \
+getTTL <p0> :byte                                                  \
+joinGroup <p2> :void                                               \
+joinGroup <p1> :void                                               \
+leaveGroup <p2> :void                                              \
+leaveGroup <p1> :void                                              \
+setInterface <p1> :void                                            \
+getInterface <p0> :InetAddress                                     \
+setNetworkInterface <p1> :void                                     \
+getNetworkInterface <p0> :NetworkInterface                         \
+setLoopbackMode <p1> :void                                         \
+getLoopbackMode <p0> :boolean                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

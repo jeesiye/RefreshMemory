@@ -1,0 +1,35 @@
+FL:java.net.DatagramPacket
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.DatagramPacket(byte[],int)
+public java.net.DatagramPacket(byte[],int,int)
+public java.net.DatagramPacket(byte[],int,java.net.InetAddress,int)
+public java.net.DatagramPacket(byte[],int,java.net.SocketAddress)
+public java.net.DatagramPacket(byte[],int,int,java.net.SocketAddress)
+public java.net.DatagramPacket(byte[],int,int,java.net.InetAddress,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.DatagramPacket
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.DatagramPacket
+------------------------------------------------------------------------------------------------------------------------------
+getData <p0> :byte[]                                               \
+setData <p1> :void                                                 \
+setData <p3> :void                                                 \
+setAddress <p1> :void                                              \
+setPort <p1> :void                                                 \
+setSocketAddress <p1> :void                                        \
+getSocketAddress <p0> :SocketAddress                               \
+getLength <p0> :int                                                \
+getAddress <p0> :InetAddress                                       \
+init <p0> :void                                                    \
+setLength <p1> :void                                               \
+getPort <p0> :int                                                  \
+getOffset <p0> :int                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,77 @@
+A:java.net.URLConnection
+------------------------------------------------------------------------------------------------------------------------------
+protected java.net.URLConnection(java.net.URL)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.URLConnection
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.URLConnection
+------------------------------------------------------------------------------------------------------------------------------
+setRequestProperty <p2> :void                                      \
+setUseCaches <p1> :void                                            \
+getContentLength <p0> :int                                         \
+getHeaderField <p1> :String                                        \
+getHeaderField <p1> :String                                        \
+getContentLengthLong <p0> :long                                    \
+getHeaderFieldKey <p1> :String                                     \
+getLastModified <p0> :long                                         \
+getFileNameMap <p0> :FileNameMap                                   \
+addRequestProperty <p2> :void                                      \
+getRequestProperty <p1> :String                                    \
+getRequestProperties <p0> :Map                                     \
+getContentType <p0> :String                                        \
+guessContentTypeFromStream <p1> :String                            \
+guessContentTypeFromName <p1> :String                              \
+setFileNameMap <p1> :void                                          \
+setConnectTimeout <p1> :void                                       \
+getConnectTimeout <p0> :int                                        \
+setReadTimeout <p1> :void                                          \
+getReadTimeout <p0> :int                                           \
+getContentEncoding <p0> :String                                    \
+getExpiration <p0> :long                                           \
+getDate <p0> :long                                                 \
+getHeaderFields <p0> :Map                                          \
+getHeaderFieldInt <p2> :int                                        \
+getHeaderFieldLong <p2> :long                                      \
+getHeaderFieldDate <p2> :long                                      \
+getOutputStream <p0> :OutputStream                                 \
+setDoInput <p1> :void                                              \
+getDoInput <p0> :boolean                                           \
+setDoOutput <p1> :void                                             \
+getDoOutput <p0> :boolean                                          \
+setAllowUserInteraction <p1> :void                                 \
+getAllowUserInteraction <p0> :boolean                              \
+setDefaultAllowUserInteraction <p1> :void                          \
+getDefaultAllowUserInteraction <p0> :boolean                       \
+getUseCaches <p0> :boolean                                         \
+setIfModifiedSince <p1> :void                                      \
+getIfModifiedSince <p0> :long                                      \
+getDefaultUseCaches <p0> :boolean                                  \
+setDefaultUseCaches <p1> :void                                     \
+setDefaultRequestProperty <p2> :void                               \
+getDefaultRequestProperty <p1> :String                             \
+setContentHandlerFactory <p1> :void                                \
+getContentHandler <p0> :ContentHandler                             \
+stripOffParameters <p1> :String                                    \
+lookupContentHandlerClassFor <p1> :ContentHandler                  \
+typeToPackageName <p1> :String                                     \
+getContentHandlerPkgPrefixes <p0> :String                          \
+checkfpx <p1> :boolean                                             \
+skipForward <p2> :long                                             \
+toString <p0> :String                                              \
+access$000 <p0> :FileNameMap                                       \
+getURL <p0> :URL                                                   \
+connect <p0> :void                                                 \
+getInputStream <p0> :InputStream                                   \
+getPermission <p0> :Permission                                     \
+getContent <p0> :Object                                            \
+getContent <p1> :Object                                            \
+readBytes <p3> :int                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,39 @@
+L:java.net.URLClassLoader
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
+java.net.URLClassLoader(java.net.URL[],java.security.AccessControlContext)
+public java.net.URLClassLoader(java.net.URL[])
+java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader,java.security.AccessControlContext)
+public java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.URLClassLoader
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.URLClassLoader
+------------------------------------------------------------------------------------------------------------------------------
+definePackageInternal <p3> :void                                   \
+newInstance <p2> :URLClassLoader                                   \
+newInstance <p1> :URLClassLoader                                   \
+getResourceAsStream <p1> :InputStream                              \
+access$100 <p3> :Class                                             \
+access$200 <p1> :AccessControlContext                              \
+findClass <p1> :Class                                              \
+defineClass <p2> :Class                                            \
+findResource <p1> :URL                                             \
+findResources <p1> :Enumeration                                    \
+definePackage <p3> :Package                                        \
+access$000 <p1> :URLClassPath                                      \
+getPermissions <p1> :PermissionCollection                          \
+close <p0> :void                                                   \
+addURL <p1> :void                                                  \
+getURLs <p0> :URL[]                                                \
+getAndVerifyPackage <p3> :Package                                  \
+isSealed <p2> :boolean                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

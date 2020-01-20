@@ -33,9 +33,9 @@ readNClob <p0> :NClob                                              \
 readNString <p0> :String                                           \
 readSQLXML <p0> :SQLXML                                            \
 readRowId <p0> :RowId                                              \
+readFloat <p0> :float                                              \
 readLong <p0> :long                                                \
 wasNull <p0> :boolean                                              \
-readFloat <p0> :float                                              \
 readObject <p1> :Object                                            \
 readObject <p0> :Object                                            \
 readInt <p0> :int                                                  \

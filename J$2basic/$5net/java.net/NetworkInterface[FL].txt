@@ -1,0 +1,53 @@
+FL:java.net.NetworkInterface
+------------------------------------------------------------------------------------------------------------------------------
+java.net.NetworkInterface()
+java.net.NetworkInterface(java.lang.String,int,java.net.InetAddress[])
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.NetworkInterface
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.NetworkInterface
+------------------------------------------------------------------------------------------------------------------------------
+getIndex <p0> :int                                                 \
+getInetAddresses <p0> :Enumeration                                 \
+getNetworkInterfaces <p0> :Enumeration                             \
+getInterfaceAddresses <p0> :List                                   \
+getSubInterfaces <p0> :Enumeration                                 \
+getByIndex <p1> :NetworkInterface                                  \
+getByInetAddress <p1> :NetworkInterface                            \
+getAll <p0> :NetworkInterface[]                                    \
+getByName0 <p1> :NetworkInterface                                  \
+getByIndex0 <p1> :NetworkInterface                                 \
+getByInetAddress0 <p1> :NetworkInterface                           \
+isUp <p0> :boolean                                                 \
+isLoopback <p0> :boolean                                           \
+isPointToPoint <p0> :boolean                                       \
+supportsMulticast <p0> :boolean                                    \
+getHardwareAddress <p0> :byte[]                                    \
+getMTU <p0> :int                                                   \
+isVirtual <p0> :boolean                                            \
+isUp0 <p2> :boolean                                                \
+isLoopback0 <p2> :boolean                                          \
+supportsMulticast0 <p2> :boolean                                   \
+isP2P0 <p2> :boolean                                               \
+getMacAddr0 <p3> :byte[]                                           \
+getMTU0 <p2> :int                                                  \
+getByName <p1> :NetworkInterface                                   \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+getName <p0> :String                                               \
+getDefault <p0> :NetworkInterface                                  \
+access$100 <p1> :NetworkInterface[]                                \
+getParent <p0> :NetworkInterface                                   \
+access$000 <p1> :InetAddress[]                                     \
+init <p0> :void                                                    \
+getDisplayName <p0> :String                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

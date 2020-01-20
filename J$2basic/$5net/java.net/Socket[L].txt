@@ -1,0 +1,77 @@
+L:java.net.Socket
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.Socket(java.lang.String,int,java.net.InetAddress,int) throws java.io.IOException
+public java.net.Socket(java.net.InetAddress,int,java.net.InetAddress,int) throws java.io.IOException
+private java.net.Socket(java.net.SocketAddress,java.net.SocketAddress,boolean) throws java.io.IOException
+public java.net.Socket(java.net.InetAddress,int,boolean) throws java.io.IOException
+public java.net.Socket(java.lang.String,int,boolean) throws java.io.IOException
+public java.net.Socket()
+public java.net.Socket(java.net.Proxy)
+protected java.net.Socket(java.net.SocketImpl) throws java.net.SocketException
+public java.net.Socket(java.lang.String,int) throws java.net.UnknownHostException,java.io.IOException
+public java.net.Socket(java.net.InetAddress,int) throws java.io.IOException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.Socket
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.Socket
+------------------------------------------------------------------------------------------------------------------------------
+getOutputStream <p0> :OutputStream                                 \
+bind <p1> :void                                                    \
+isClosed <p0> :boolean                                             \
+getLocalPort <p0> :int                                             \
+createImpl <p1> :void                                              \
+checkOldImpl <p0> :void                                            \
+setImpl <p0> :void                                                 \
+getImpl <p0> :SocketImpl                                           \
+checkAddress <p2> :void                                            \
+postAccept <p0> :void                                              \
+setCreated <p0> :void                                              \
+setBound <p0> :void                                                \
+setConnected <p0> :void                                            \
+getInetAddress <p0> :InetAddress                                   \
+getLocalAddress <p0> :InetAddress                                  \
+getRemoteSocketAddress <p0> :SocketAddress                         \
+getLocalSocketAddress <p0> :SocketAddress                          \
+setTcpNoDelay <p1> :void                                           \
+getTcpNoDelay <p0> :boolean                                        \
+setSoLinger <p2> :void                                             \
+getSoLinger <p0> :int                                              \
+sendUrgentData <p1> :void                                          \
+setOOBInline <p1> :void                                            \
+getOOBInline <p0> :boolean                                         \
+setSoTimeout <p1> :void                                            \
+getSoTimeout <p0> :int                                             \
+setSendBufferSize <p1> :void                                       \
+getSendBufferSize <p0> :int                                        \
+setReceiveBufferSize <p1> :void                                    \
+getReceiveBufferSize <p0> :int                                     \
+setKeepAlive <p1> :void                                            \
+getKeepAlive <p0> :boolean                                         \
+setTrafficClass <p1> :void                                         \
+getTrafficClass <p0> :int                                          \
+setReuseAddress <p1> :void                                         \
+getReuseAddress <p0> :boolean                                      \
+shutdownInput <p0> :void                                           \
+shutdownOutput <p0> :void                                          \
+isConnected <p0> :boolean                                          \
+isBound <p0> :boolean                                              \
+isInputShutdown <p0> :boolean                                      \
+isOutputShutdown <p0> :boolean                                     \
+setSocketImplFactory <p1> :void                                    \
+setPerformancePreferences <p3> :void                               \
+toString <p0> :String                                              \
+connect <p1> :void                                                 \
+connect <p2> :void                                                 \
+close <p0> :void                                                   \
+getInputStream <p0> :InputStream                                   \
+getPort <p0> :int                                                  \
+getChannel <p0> :SocketChannel                                     \
+------------------------------------------------------------------------------------------------------------------------------
+
+

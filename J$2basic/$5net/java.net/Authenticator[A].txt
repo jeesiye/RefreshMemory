@@ -1,0 +1,31 @@
+A:java.net.Authenticator
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.Authenticator()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.Authenticator
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.net.Authenticator
+------------------------------------------------------------------------------------------------------------------------------
+requestPasswordAuthentication <p5> :PasswordAuthentication         \
+requestPasswordAuthentication <p6> :PasswordAuthentication         \
+requestPasswordAuthentication <p8> :PasswordAuthentication         \
+getRequestingHost <p0> :String                                     \
+getRequestingSite <p0> :InetAddress                                \
+getRequestingPort <p0> :int                                        \
+getRequestingProtocol <p0> :String                                 \
+getRequestingPrompt <p0> :String                                   \
+getRequestingScheme <p0> :String                                   \
+getPasswordAuthentication <p0> :PasswordAuthentication             \
+getRequestingURL <p0> :URL                                         \
+getRequestorType <p0> :RequestorType                               \
+reset <p0> :void                                                   \
+setDefault <p1> :void                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

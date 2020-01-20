@@ -1,0 +1,64 @@
+FL:java.net.HttpCookie
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.HttpCookie(java.lang.String,java.lang.String)
+private java.net.HttpCookie(java.lang.String,java.lang.String,java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.HttpCookie
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.HttpCookie
+------------------------------------------------------------------------------------------------------------------------------
+getComment <p0> :String                                            \
+setComment <p1> :void                                              \
+header <p0> :String                                                \
+getSecure <p0> :boolean                                            \
+isHttpOnly <p0> :boolean                                           \
+getPortlist <p0> :String                                           \
+setPath <p1> :void                                                 \
+getDomain <p0> :String                                             \
+setDomain <p1> :void                                               \
+setPortlist <p1> :void                                             \
+getVersion <p0> :int                                               \
+domainMatches <p2> :boolean                                        \
+hasExpired <p0> :boolean                                           \
+setCommentURL <p1> :void                                           \
+getCommentURL <p0> :String                                         \
+setDiscard <p1> :void                                              \
+getDiscard <p0> :boolean                                           \
+setMaxAge <p1> :void                                               \
+getMaxAge <p0> :long                                               \
+setSecure <p1> :void                                               \
+setVersion <p1> :void                                              \
+setHttpOnly <p1> :void                                             \
+isToken <p1> :boolean                                              \
+parseInternal <p2> :HttpCookie                                     \
+assignAttribute <p3> :void                                         \
+toNetscapeHeaderString <p0> :String                                \
+toRFC2965HeaderString <p0> :String                                 \
+expiryDate2DeltaSeconds <p1> :long                                 \
+guessCookieVersion <p1> :int                                       \
+stripOffSurroundingQuote <p1> :String                              \
+startsWithIgnoreCase <p2> :boolean                                 \
+splitMultiCookies <p1> :List                                       \
+equals <p1> :boolean                                               \
+toString <p0> :String                                              \
+hashCode <p0> :int                                                 \
+clone <p0> :Object                                                 \
+getName <p0> :String                                               \
+equalsIgnoreCase <p2> :boolean                                     \
+getValue <p0> :String                                              \
+access$100 <p2> :List                                              \
+access$200 <p1> :String                                            \
+access$000 <p2> :long                                              \
+setValue <p1> :void                                                \
+getPath <p0> :String                                               \
+parse <p1> :List                                                   \
+parse <p2> :List                                                   \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,48 @@
+L:java.net.ServerSocket
+------------------------------------------------------------------------------------------------------------------------------
+public java.net.ServerSocket(int) throws java.io.IOException
+public java.net.ServerSocket() throws java.io.IOException
+java.net.ServerSocket(java.net.SocketImpl)
+public java.net.ServerSocket(int,int,java.net.InetAddress) throws java.io.IOException
+public java.net.ServerSocket(int,int) throws java.io.IOException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.ServerSocket
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.net.ServerSocket
+------------------------------------------------------------------------------------------------------------------------------
+implAccept <p1> :void                                              \
+setSocketFactory <p1> :void                                        \
+bind <p2> :void                                                    \
+bind <p1> :void                                                    \
+isClosed <p0> :boolean                                             \
+getLocalPort <p0> :int                                             \
+createImpl <p0> :void                                              \
+checkOldImpl <p0> :void                                            \
+setImpl <p0> :void                                                 \
+getImpl <p0> :SocketImpl                                           \
+setCreated <p0> :void                                              \
+setBound <p0> :void                                                \
+getInetAddress <p0> :InetAddress                                   \
+getLocalSocketAddress <p0> :SocketAddress                          \
+setSoTimeout <p1> :void                                            \
+getSoTimeout <p0> :int                                             \
+setReceiveBufferSize <p1> :void                                    \
+getReceiveBufferSize <p0> :int                                     \
+setReuseAddress <p1> :void                                         \
+getReuseAddress <p0> :boolean                                      \
+isBound <p0> :boolean                                              \
+setPerformancePreferences <p3> :void                               \
+toString <p0> :String                                              \
+access$000 <p1> :SocketImpl                                        \
+accept <p0> :Socket                                                \
+close <p0> :void                                                   \
+getChannel <p0> :ServerSocketChannel                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

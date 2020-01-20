@@ -1,0 +1,46 @@
+FL:java.net.SocketPermission
+------------------------------------------------------------------------------------------------------------------------------
+java.net.SocketPermission(java.lang.String,int)
+public java.net.SocketPermission(java.lang.String,java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.SocketPermission
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.SocketPermission
+------------------------------------------------------------------------------------------------------------------------------
+inRange <p4> :boolean                                              \
+impliesIgnoreMask <p1> :boolean                                    \
+getMask <p0> :int                                                  \
+getMask <p1> :int                                                  \
+setDeny <p0> :void                                                 \
+parsePort <p1> :int[]                                              \
+includesEphemerals <p0> :boolean                                   \
+isUntrusted <p0> :boolean                                          \
+getCanonName <p0> :void                                            \
+authorized <p2> :boolean                                           \
+authorizedIPv4 <p2> :boolean                                       \
+authorizedIPv6 <p2> :boolean                                       \
+getIP <p0> :void                                                   \
+compareHostnames <p1> :boolean                                     \
+initEphemeralPorts <p2> :int                                       \
+equals <p1> :boolean                                               \
+hashCode <p0> :int                                                 \
+access$000 <p2> :int                                               \
+init <p2> :void                                                    \
+readObject <p1> :void                                              \
+writeObject <p1> :void                                             \
+implies <p1> :boolean                                              \
+getActions <p0> :String                                            \
+getActions <p1> :String                                            \
+getDebug <p0> :Debug                                               \
+getHost <p1> :String                                               \
+newPermissionCollection <p0> :PermissionCollection                 \
+match <p2> :boolean                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

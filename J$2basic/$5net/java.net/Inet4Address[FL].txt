@@ -1,0 +1,36 @@
+FL:java.net.Inet4Address
+------------------------------------------------------------------------------------------------------------------------------
+java.net.Inet4Address(java.lang.String,int)
+java.net.Inet4Address(java.lang.String,byte[])
+java.net.Inet4Address()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.Inet4Address
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.net.Inet4Address
+------------------------------------------------------------------------------------------------------------------------------
+isMulticastAddress <p0> :boolean                                   \
+isAnyLocalAddress <p0> :boolean                                    \
+isLoopbackAddress <p0> :boolean                                    \
+isLinkLocalAddress <p0> :boolean                                   \
+isSiteLocalAddress <p0> :boolean                                   \
+isMCGlobal <p0> :boolean                                           \
+isMCNodeLocal <p0> :boolean                                        \
+isMCLinkLocal <p0> :boolean                                        \
+isMCSiteLocal <p0> :boolean                                        \
+isMCOrgLocal <p0> :boolean                                         \
+numericToTextFormat <p1> :String                                   \
+equals <p1> :boolean                                               \
+hashCode <p0> :int                                                 \
+getAddress <p0> :byte[]                                            \
+init <p0> :void                                                    \
+getHostAddress <p0> :String                                        \
+writeReplace <p0> :Object                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+
