@@ -1,0 +1,65 @@
+E:java.time.temporal.ChronoField
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.temporal.ChronoField(java.lang.String,int,java.lang.String,java.time.temporal.TemporalUnit,java.time.temporal.TemporalUnit,java.time.temporal.ValueRange,java.lang.String)
+private java.time.temporal.ChronoField(java.lang.String,int,java.lang.String,java.time.temporal.TemporalUnit,java.time.temporal.TemporalUnit,java.time.temporal.ValueRange)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.time.temporal.ChronoField
+------------------------------------------------------------------------------------------------------------------------------
+YEAR                                                               年份;
+MONTH_OF_YEAR                                                      当年的第几月;
+DAY_OF_YEAR                                                        当年的第几天;
+DAY_OF_MONTH                                                       当月的第几天;
+DAY_OF_WEEK                                                        本周的第几天;
+------------------------------------------------------------------------------------------------------------------------------
+HOUR_OF_DAY                                                        当天的多少小时;
+CLOCK_HOUR_OF_DAY                                                  \
+MINUTE_OF_DAY                                                      当天的多少分钟;
+MINUTE_OF_HOUR                                                     当小时的多少分钟;
+SECOND_OF_DAY                                                      当天的多少秒;
+SECOND_OF_MINUTE                                                   当分钟的多少秒;
+MILLI_OF_DAY                                                       当天的多少毫秒;
+MILLI_OF_SECOND                                                    当分钟的多少毫秒;
+MICRO_OF_DAY                                                       当天的多少微秒;
+MICRO_OF_SECOND                                                    当秒的多少微秒;
+NANO_OF_DAY                                                        当天的多少纳秒;
+NANO_OF_SECOND                                                     当秒的多少纳秒;
+------------------------------------------------------------------------------------------------------------------------------
+HOUR_OF_AMPM                                                       上午或下午的多少小时;
+CLOCK_HOUR_OF_AMPM                                                 \
+AMPM_OF_DAY                                                        当天的上午或下午;
+------------------------------------------------------------------------------------------------------------------------------
+ALIGNED_DAY_OF_WEEK_IN_YEAR                                        本年天数,重新排列周期,算是星期几;
+ALIGNED_DAY_OF_WEEK_IN_MONTH                                       本月天数,重新排列周期,算是星期几;
+ALIGNED_WEEK_OF_YEAR                                               本年天数,重新排列周期,可以排几个星期(向上舍入);
+ALIGNED_WEEK_OF_MONTH                                              本月天数,重新排列周期,可以排几个星期(向上舍入);
+------------------------------------------------------------------------------------------------------------------------------
+EPOCH_DAY                                                          从7011到现在有多少天;
+INSTANT_SECONDS                                                    从7011到现在有多少秒;
+PROLEPTIC_MONTH                                                    从0年开始有多少个月;
+OFFSET_SECONDS                                                     参考时间点,此时当天的总秒数;
+------------------------------------------------------------------------------------------------------------------------------
+ERA                                                                \
+YEAR_OF_ERA                                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.time.temporal.ChronoField
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <p2> : Temporal                                         \
+checkValidIntValue <p1> : int                                      \
+checkValidValue <p1> : long                                        \
+getBaseUnit <p0> : TemporalUnit                                    \
+getDisplayName <p1> : String                                       \
+getFrom <p1> : long                                                \
+getRangeUnit <p0> : TemporalUnit                                   \
+isDateBased <p0> : boolean                                         \
+isSupportedBy <p1> : boolean                                       \
+isTimeBased <p0> : boolean                                         \
+range <p0> : ValueRange                                            \
+rangeRefinedBy <p1> : ValueRange                                   \
+toString <p0> : String                                             \
+valueOf <p1> : ChronoField                                         \
+values <p0> : ChronoField[]                                        \
+------------------------------------------------------------------------------------------------------------------------------
