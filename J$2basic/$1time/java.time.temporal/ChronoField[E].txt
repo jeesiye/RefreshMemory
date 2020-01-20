@@ -5,43 +5,43 @@ private java.time.temporal.ChronoField(java.lang.String,int,java.lang.String,jav
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-E:java.time.temporal.ChronoField
+E:java.time.temporal.ChronoField(为阅读改小写)
 ------------------------------------------------------------------------------------------------------------------------------
-YEAR                                                               年份;
-MONTH_OF_YEAR                                                      当年的第几月;
-DAY_OF_YEAR                                                        当年的第几天;
-DAY_OF_MONTH                                                       当月的第几天;
-DAY_OF_WEEK                                                        本周的第几天;
+year                                                               年份;
+month_of_year                                                      当年的第几月;
+day_of_year                                                        当年的第几天;
+day_of_month                                                       当月的第几天;
+day_of_week                                                        本周的第几天;
 ------------------------------------------------------------------------------------------------------------------------------
-HOUR_OF_DAY                                                        当天的多少小时;
-CLOCK_HOUR_OF_DAY                                                  \
-MINUTE_OF_DAY                                                      当天的多少分钟;
-MINUTE_OF_HOUR                                                     当小时的多少分钟;
-SECOND_OF_DAY                                                      当天的多少秒;
-SECOND_OF_MINUTE                                                   当分钟的多少秒;
-MILLI_OF_DAY                                                       当天的多少毫秒;
-MILLI_OF_SECOND                                                    当分钟的多少毫秒;
-MICRO_OF_DAY                                                       当天的多少微秒;
-MICRO_OF_SECOND                                                    当秒的多少微秒;
-NANO_OF_DAY                                                        当天的多少纳秒;
-NANO_OF_SECOND                                                     当秒的多少纳秒;
+hour_of_day                                                        当天的多少小时;
+clock_hour_of_day                                                  \
+minute_of_day                                                      当天的多少分钟;
+minute_of_hour                                                     当小时的多少分钟;
+second_of_day                                                      当天的多少秒;
+second_of_minute                                                   当分钟的多少秒;
+milli_of_day                                                       当天的多少毫秒;
+milli_of_second                                                    当分钟的多少毫秒;
+micro_of_day                                                       当天的多少微秒;
+micro_of_second                                                    当秒的多少微秒;
+nano_of_day                                                        当天的多少纳秒;
+nano_of_second                                                     当秒的多少纳秒;
 ------------------------------------------------------------------------------------------------------------------------------
-HOUR_OF_AMPM                                                       上午或下午的多少小时;
-CLOCK_HOUR_OF_AMPM                                                 \
-AMPM_OF_DAY                                                        当天的上午或下午;
+hour_of_ampm                                                       上午或下午的多少小时;
+clock_hour_of_ampm                                                 \
+ampm_of_day                                                        当天的上午或下午;
 ------------------------------------------------------------------------------------------------------------------------------
-ALIGNED_DAY_OF_WEEK_IN_YEAR                                        本年天数,重新排列周期,算是星期几;
-ALIGNED_DAY_OF_WEEK_IN_MONTH                                       本月天数,重新排列周期,算是星期几;
-ALIGNED_WEEK_OF_YEAR                                               本年天数,重新排列周期,可以排几个星期(向上舍入);
-ALIGNED_WEEK_OF_MONTH                                              本月天数,重新排列周期,可以排几个星期(向上舍入);
+aligned_day_of_week_in_year                                        本年天数,重新排列周期,算是星期几;
+aligned_day_of_week_in_month                                       本月天数,重新排列周期,算是星期几;
+aligned_week_of_year                                               本年天数,重新排列周期,可以排几个星期(向上舍入);
+aligned_week_of_month                                              本月天数,重新排列周期,可以排几个星期(向上舍入);
 ------------------------------------------------------------------------------------------------------------------------------
-EPOCH_DAY                                                          从7011到现在有多少天;
-INSTANT_SECONDS                                                    从7011到现在有多少秒;
-PROLEPTIC_MONTH                                                    从0年开始有多少个月;
-OFFSET_SECONDS                                                     参考时间点,此时当天的总秒数;
+epoch_day                                                          从7011到现在有多少天;
+instant_seconds                                                    从7011到现在有多少秒;
+proleptic_month                                                    从0年开始有多少个月;
+offset_seconds                                                     参考时间点,此时当天的总秒数;
 ------------------------------------------------------------------------------------------------------------------------------
-ERA                                                                \
-YEAR_OF_ERA                                                        \
+era                                                                \
+year_of_era                                                        \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

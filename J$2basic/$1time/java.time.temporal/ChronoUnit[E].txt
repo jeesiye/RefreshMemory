@@ -4,25 +4,25 @@ private java.time.temporal.ChronoUnit(java.lang.String,int,java.lang.String,java
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-E:java.time.temporal.ChronoUnit
+E:java.time.temporal.ChronoUnit(为阅读改小写)
 ------------------------------------------------------------------------------------------------------------------------------
-YEARS                                                              年
-MONTHS                                                             月份
-WEEKS                                                              周期
-DAYS                                                               天数
-HOURS                                                              小时
-MINUTES                                                            分钟
-SECONDS                                                            秒
-MILLIS                                                             毫秒
-MICROS                                                             微秒
-NANOS                                                              纳秒
+years                                                              年
+months                                                             月份
+weeks                                                              周期
+days                                                               天数
+hours                                                              小时
+minutes                                                            分钟
+seconds                                                            秒
+millis                                                             毫秒
+micros                                                             微秒
+nanos                                                              纳秒
 ------------------------------------------------------------------------------------------------------------------------------
-FOREVER                                                            永恒
-ERAS                                                               时代
-MILLENNIA                                                          千年
-CENTURIES                                                          世纪
-DECADES                                                            十年
-HALF_DAYS                                                          半天
+forever                                                            永恒
+eras                                                               时代
+millennia                                                          千年
+centuries                                                          世纪
+decades                                                            十年
+half_days                                                          半天
 ------------------------------------------------------------------------------------------------------------------------------
 
 
