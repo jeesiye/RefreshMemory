@@ -1,0 +1,41 @@
+L:java.util.logging.LogRecord
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.logging.LogRecord(java.util.logging.Level,java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.LogRecord
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.LogRecord
+------------------------------------------------------------------------------------------------------------------------------
+getLevel <> : Level                                                \
+getLoggerName <> : String                                          \
+getMessage <> : String                                             \
+getMillis <> : long                                                \
+getParameters <> : Object[]                                        \
+getResourceBundle <> : ResourceBundle                              \
+getResourceBundleName <> : String                                  \
+getSequenceNumber <> : long                                        \
+getSourceClassName <> : String                                     \
+getSourceMethodName <> : String                                    \
+getThreadID <> : int                                               \
+getThrown <> : Throwable                                           \
+setLevel <Level> : void                                            \
+setLoggerName <String> : void                                      \
+setMessage <String> : void                                         \
+setMillis <long> : void                                            \
+setParameters <Object[]> : void                                    \
+setResourceBundle <ResourceBundle> : void                          \
+setResourceBundleName <String> : void                              \
+setSequenceNumber <long> : void                                    \
+setSourceClassName <String> : void                                 \
+setSourceMethodName <String> : void                                \
+setThreadID <int> : void                                           \
+setThrown <Throwable> : void                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

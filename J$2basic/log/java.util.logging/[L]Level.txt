@@ -1,0 +1,36 @@
+L:java.util.logging.Level
+------------------------------------------------------------------------------------------------------------------------------
+protected java.util.logging.Level(java.lang.String,int,java.lang.String)
+private java.util.logging.Level(java.lang.String,int,java.lang.String,boolean)
+java.util.logging.Level(java.lang.String,int,java.lang.String,boolean,java.util.logging.Level$1)
+protected java.util.logging.Level(java.lang.String,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.Level
+------------------------------------------------------------------------------------------------------------------------------
+OFF                                                                \
+SEVERE                                                             \
+WARNING                                                            \
+INFO                                                               \
+CONFIG                                                             \
+FINE                                                               \
+FINER                                                              \
+FINEST                                                             \
+ALL                                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.Level
+------------------------------------------------------------------------------------------------------------------------------
+equals <Object> : boolean                                          \
+getLocalizedName <> : String                                       \
+getName <> : String                                                \
+getResourceBundleName <> : String                                  \
+hashCode <> : int                                                  \
+intValue <> : int                                                  \
+parse <String> : Level                                             \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

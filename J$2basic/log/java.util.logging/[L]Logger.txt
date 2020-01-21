@@ -1,0 +1,80 @@
+L:java.util.logging.Logger
+------------------------------------------------------------------------------------------------------------------------------
+protected java.util.logging.Logger(java.lang.String,java.lang.String)
+private java.util.logging.Logger(java.lang.String)
+java.util.logging.Logger(java.lang.String,java.lang.String,java.lang.Class,java.util.logging.LogManager,boolean)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.Logger
+------------------------------------------------------------------------------------------------------------------------------
+GLOBAL_LOGGER_NAME                                                 \
+global                                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.Logger
+------------------------------------------------------------------------------------------------------------------------------
+addHandler <Handler> : void                                        \
+config <String> : void                                             \
+config <Supplier> : void                                           \
+entering <String,String,Object> : void                             \
+entering <String,String,Object[]> : void                           \
+entering <String,String> : void                                    \
+exiting <String,String,Object> : void                              \
+exiting <String,String> : void                                     \
+fine <String> : void                                               \
+fine <Supplier> : void                                             \
+finer <String> : void                                              \
+finer <Supplier> : void                                            \
+finest <String> : void                                             \
+finest <Supplier> : void                                           \
+getAnonymousLogger <> : Logger                                     \
+getAnonymousLogger <String> : Logger                               \
+getFilter <> : Filter                                              \
+getGlobal <> : Logger                                              \
+getHandlers <> : Handler[]                                         \
+getLevel <> : Level                                                \
+getLogger <String,String> : Logger                                 \
+getLogger <String> : Logger                                        \
+getName <> : String                                                \
+getParent <> : Logger                                              \
+getResourceBundle <> : ResourceBundle                              \
+getResourceBundleName <> : String                                  \
+getUseParentHandlers <> : boolean                                  \
+info <String> : void                                               \
+info <Supplier> : void                                             \
+isLoggable <Level> : boolean                                       \
+log <Level,String,Object> : void                                   \
+log <Level,String,Object[]> : void                                 \
+log <Level,String,Throwable> : void                                \
+log <Level,String> : void                                          \
+log <Level,Supplier> : void                                        \
+log <Level,Throwable,Supplier> : void                              \
+log <LogRecord> : void                                             \
+logp <Level,String,String,String,Object> : void                    \
+logp <Level,String,String,String,Object[]> : void                  \
+logp <Level,String,String,String,Throwable> : void                 \
+logp <Level,String,String,String> : void                           \
+logp <Level,String,String,Supplier> : void                         \
+logp <Level,String,String,Throwable,Supplier> : void               \
+logrb <Level,String,String,ResourceBundle,String,Object[]> : void  \
+logrb <Level,String,String,ResourceBundle,String,Throwable> : void \
+logrb <Level,String,String,String,String,Object> : void            \
+logrb <Level,String,String,String,String,Object[]> : void          \
+logrb <Level,String,String,String,String,Throwable> : void         \
+logrb <Level,String,String,String,String> : void                   \
+removeHandler <Handler> : void                                     \
+setFilter <Filter> : void                                          \
+setLevel <Level> : void                                            \
+setParent <Logger> : void                                          \
+setResourceBundle <ResourceBundle> : void                          \
+setUseParentHandlers <boolean> : void                              \
+severe <String> : void                                             \
+severe <Supplier> : void                                           \
+throwing <String,String,Throwable> : void                          \
+warning <String> : void                                            \
+warning <Supplier> : void                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,30 @@
+L:java.util.logging.LogManager
+------------------------------------------------------------------------------------------------------------------------------
+private java.util.logging.LogManager(java.lang.Void)
+protected java.util.logging.LogManager()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.LogManager
+------------------------------------------------------------------------------------------------------------------------------
+LOGGING_MXBEAN_NAME                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.LogManager
+------------------------------------------------------------------------------------------------------------------------------
+addLogger <Logger> : boolean                                       \
+addPropertyChangeListener <PropertyChangeListener> : void          \
+checkAccess <> : void                                              \
+getLogManager <> : LogManager                                      \
+getLogger <String> : Logger                                        \
+getLoggerNames <> : Enumeration                                    \
+getLoggingMXBean <> : LoggingMXBean                                \
+getProperty <String> : String                                      \
+readConfiguration <> : void                                        \
+readConfiguration <InputStream> : void                             \
+removePropertyChangeListener <PropertyChangeListener> : void       \
+reset <> : void                                                    \
+------------------------------------------------------------------------------------------------------------------------------
+
+

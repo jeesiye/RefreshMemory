@@ -1,0 +1,23 @@
+L:java.util.logging.FileHandler
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.logging.FileHandler(java.lang.String,int,int,boolean) throws java.io.IOException,java.lang.SecurityException
+public java.util.logging.FileHandler(java.lang.String,boolean) throws java.io.IOException,java.lang.SecurityException
+public java.util.logging.FileHandler() throws java.io.IOException,java.lang.SecurityException
+public java.util.logging.FileHandler(java.lang.String) throws java.io.IOException,java.lang.SecurityException
+public java.util.logging.FileHandler(java.lang.String,int,int) throws java.io.IOException,java.lang.SecurityException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.FileHandler
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.logging.FileHandler
+------------------------------------------------------------------------------------------------------------------------------
+close <> : void                                                    \
+publish <LogRecord> : void                                         \
+------------------------------------------------------------------------------------------------------------------------------
+
+
