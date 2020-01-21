@@ -12,20 +12,13 @@ FL:java.time.temporal.TemporalQueries
 
 FL:java.time.temporal.TemporalQueries
 ------------------------------------------------------------------------------------------------------------------------------
-zone <p0> :TemporalQuery                                           \
-localDate <p0> :TemporalQuery                                      \
-localTime <p0> :TemporalQuery                                      \
-lambda$static$6 <p1> :LocalTime                                    \
-lambda$static$5 <p1> :LocalDate                                    \
-lambda$static$4 <p1> :ZoneId                                       \
-lambda$static$3 <p1> :ZoneOffset                                   \
-lambda$static$2 <p1> :TemporalUnit                                 \
-lambda$static$1 <p1> :Chronology                                   \
-lambda$static$0 <p1> :ZoneId                                       \
-zoneId <p0> :TemporalQuery                                         \
-chronology <p0> :TemporalQuery                                     \
-precision <p0> :TemporalQuery                                      \
-offset <p0> :TemporalQuery                                         \
+zoneId <> : TemporalQuery                                          \
+chronology <> : TemporalQuery                                      \
+precision <> : TemporalQuery                                       \
+zone <> : TemporalQuery                                            \
+localDate <> : TemporalQuery                                       \
+localTime <> : TemporalQuery                                       \
+offset <> : TemporalQuery                                          \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

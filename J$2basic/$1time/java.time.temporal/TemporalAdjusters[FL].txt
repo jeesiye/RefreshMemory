@@ -12,33 +12,20 @@ FL:java.time.temporal.TemporalAdjusters
 
 FL:java.time.temporal.TemporalAdjusters
 ------------------------------------------------------------------------------------------------------------------------------
-firstDayOfYear <p0> :TemporalAdjuster                              \
-ofDateAdjuster <p1> :TemporalAdjuster                              \
-firstDayOfMonth <p0> :TemporalAdjuster                             \
-lastDayOfMonth <p0> :TemporalAdjuster                              \
-firstDayOfNextMonth <p0> :TemporalAdjuster                         \
-lastDayOfYear <p0> :TemporalAdjuster                               \
-firstDayOfNextYear <p0> :TemporalAdjuster                          \
-firstInMonth <p1> :TemporalAdjuster                                \
-lastInMonth <p1> :TemporalAdjuster                                 \
-dayOfWeekInMonth <p2> :TemporalAdjuster                            \
-nextOrSame <p1> :TemporalAdjuster                                  \
-previousOrSame <p1> :TemporalAdjuster                              \
-lambda$previousOrSame$12 <p2> :Temporal                            \
-lambda$previous$11 <p2> :Temporal                                  \
-lambda$nextOrSame$10 <p2> :Temporal                                \
-lambda$next$9 <p2> :Temporal                                       \
-lambda$dayOfWeekInMonth$8 <p3> :Temporal                           \
-lambda$dayOfWeekInMonth$7 <p3> :Temporal                           \
-lambda$firstDayOfNextYear$6 <p1> :Temporal                         \
-lambda$lastDayOfYear$5 <p1> :Temporal                              \
-lambda$firstDayOfYear$4 <p1> :Temporal                             \
-lambda$firstDayOfNextMonth$3 <p1> :Temporal                        \
-lambda$lastDayOfMonth$2 <p1> :Temporal                             \
-lambda$firstDayOfMonth$1 <p1> :Temporal                            \
-lambda$ofDateAdjuster$0 <p2> :Temporal                             \
-next <p1> :TemporalAdjuster                                        \
-previous <p1> :TemporalAdjuster                                    \
+firstDayOfYear <> : TemporalAdjuster                               \
+ofDateAdjuster <UnaryOperator> : TemporalAdjuster                  \
+firstDayOfMonth <> : TemporalAdjuster                              \
+lastDayOfMonth <> : TemporalAdjuster                               \
+firstDayOfNextMonth <> : TemporalAdjuster                          \
+lastDayOfYear <> : TemporalAdjuster                                \
+firstDayOfNextYear <> : TemporalAdjuster                           \
+firstInMonth <DayOfWeek> : TemporalAdjuster                        \
+lastInMonth <DayOfWeek> : TemporalAdjuster                         \
+dayOfWeekInMonth <int,DayOfWeek> : TemporalAdjuster                \
+nextOrSame <DayOfWeek> : TemporalAdjuster                          \
+previousOrSame <DayOfWeek> : TemporalAdjuster                      \
+next <DayOfWeek> : TemporalAdjuster                                \
+previous <DayOfWeek> : TemporalAdjuster                            \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

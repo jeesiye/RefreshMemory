@@ -12,11 +12,11 @@ I:java.time.temporal.TemporalAccessor
 
 I:java.time.temporal.TemporalAccessor
 ------------------------------------------------------------------------------------------------------------------------------
-get <p1> :int                                                      \
-getLong <p1> :long                                                 \
-query <p1> :Object                                                 \
-isSupported <p1> :boolean                                          \
-range <p1> :ValueRange                                             \
+get <TemporalField> : int                                          \
+getLong <TemporalField> : long                                     \
+query <TemporalQuery> : Object                                     \
+isSupported <TemporalField> : boolean                              \
+range <TemporalField> : ValueRange                                 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

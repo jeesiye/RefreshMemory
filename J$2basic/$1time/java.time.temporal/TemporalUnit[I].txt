@@ -12,16 +12,14 @@ I:java.time.temporal.TemporalUnit
 
 I:java.time.temporal.TemporalUnit
 ------------------------------------------------------------------------------------------------------------------------------
-between <p2> :long                                                 \
+isDateBased <> : boolean                                           \
+isTimeBased <> : boolean                                           \
+isSupportedBy <Temporal> : boolean                                 \
+getDuration <> : Duration                                          \
+isDurationEstimated <> : boolean                                   \
+addTo <Temporal,long> : Temporal                                   \
+between <Temporal,Temporal> : long                                 \
+toString <> : String                                               \
 ------------------------------------------------------------------------------------------------------------------------------
-addTo <p2> :Temporal                                               \
-------------------------------------------------------------------------------------------------------------------------------
-getDuration <p0> :Duration                                         \
-------------------------------------------------------------------------------------------------------------------------------
-isDateBased <p0> :boolean                                          \
-isTimeBased <p0> :boolean                                          \
-isSupportedBy <p1> :boolean                                        \
-isDurationEstimated <p0> :boolean                                  \
-------------------------------------------------------------------------------------------------------------------------------
-toString <p0> :String                                              \
-------------------------------------------------------------------------------------------------------------------------------
+
+

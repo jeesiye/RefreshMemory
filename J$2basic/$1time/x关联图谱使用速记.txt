@@ -1,0 +1,12 @@
+
+
+
+
+TemporalAccessor
+    1) #get函数,#range函数,#is函数;使用到TemporalField对象;
+    2) #range函数;使用到TemporalQuery对象;
+
+Temporal
+    1) plus函数;使用到TemporalAmount对象,使用到TemporalUnit对象;
+    2) minus函数;使用到TemporalAmount对象,使用到TemporalUnit对象;
+                         

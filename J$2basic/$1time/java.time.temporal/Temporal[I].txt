@@ -12,14 +12,14 @@ I:java.time.temporal.Temporal
 
 I:java.time.temporal.Temporal
 ------------------------------------------------------------------------------------------------------------------------------
-with <p2> :Temporal                                                \
-with <p1> :Temporal                                                \
-plus <p1> :Temporal                                                \
-plus <p2> :Temporal                                                \
-until <p2> :long                                                   \
-minus <p1> :Temporal                                               \
-minus <p2> :Temporal                                               \
-isSupported <p1> :boolean                                          \
+with <TemporalField,long> : Temporal                               \
+with <TemporalAdjuster> : Temporal                                 \
+plus <TemporalAmount> : Temporal                                   \
+plus <long,TemporalUnit> : Temporal                                \
+until <Temporal,TemporalUnit> : long                               \
+minus <TemporalAmount> : Temporal                                  \
+minus <long,TemporalUnit> : Temporal                               \
+isSupported <TemporalUnit> : boolean                               \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

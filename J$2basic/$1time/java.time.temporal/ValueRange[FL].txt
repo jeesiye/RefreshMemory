@@ -12,24 +12,24 @@ FL:java.time.temporal.ValueRange
 
 FL:java.time.temporal.ValueRange
 ------------------------------------------------------------------------------------------------------------------------------
-checkValidValue <p2> :long                                         \
-checkValidIntValue <p2> :int                                       \
-isFixed <p0> :boolean                                              \
-getMinimum <p0> :long                                              \
-getLargestMinimum <p0> :long                                       \
-getSmallestMaximum <p0> :long                                      \
-getMaximum <p0> :long                                              \
-isIntValue <p0> :boolean                                           \
-isValidValue <p1> :boolean                                         \
-isValidIntValue <p1> :boolean                                      \
-genInvalidFieldMessage <p2> :String                                \
-equals <p1> :boolean                                               \
-toString <p0> :String                                              \
-hashCode <p0> :int                                                 \
-readObject <p1> :void                                              \
-of <p2> :ValueRange                                                \
-of <p3> :ValueRange                                                \
-of <p4> :ValueRange                                                \
+checkValidValue <long,TemporalField> : long                        \
+checkValidIntValue <long,TemporalField> : int                      \
+isFixed <> : boolean                                               \
+getMinimum <> : long                                               \
+getLargestMinimum <> : long                                        \
+getSmallestMaximum <> : long                                       \
+getMaximum <> : long                                               \
+isIntValue <> : boolean                                            \
+isValidValue <long> : boolean                                      \
+isValidIntValue <long> : boolean                                   \
+genInvalidFieldMessage <TemporalField,long> : String               \
+equals <Object> : boolean                                          \
+toString <> : String                                               \
+hashCode <> : int                                                  \
+readObject <ObjectInputStream> : void                              \
+of <long,long> : ValueRange                                        \
+of <long,long,long> : ValueRange                                   \
+of <long,long,long,long> : ValueRange                              \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

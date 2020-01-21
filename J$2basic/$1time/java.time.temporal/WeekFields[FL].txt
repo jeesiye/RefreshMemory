@@ -14,23 +14,20 @@ WEEK_BASED_YEARS                                                   \
 
 FL:java.time.temporal.WeekFields
 ------------------------------------------------------------------------------------------------------------------------------
-dayOfWeek <p0> :TemporalField                                      \
-weekOfMonth <p0> :TemporalField                                    \
-weekOfYear <p0> :TemporalField                                     \
-weekOfWeekBasedYear <p0> :TemporalField                            \
-weekBasedYear <p0> :TemporalField                                  \
-getFirstDayOfWeek <p0> :DayOfWeek                                  \
-getMinimalDaysInFirstWeek <p0> :int                                \
-equals <p1> :boolean                                               \
-toString <p0> :String                                              \
-hashCode <p0> :int                                                 \
-access$100 <p1> :TemporalField                                     \
-access$200 <p1> :TemporalField                                     \
-access$000 <p1> :TemporalField                                     \
-readObject <p1> :void                                              \
-readResolve <p0> :Object                                           \
-of <p2> :WeekFields                                                \
-of <p1> :WeekFields                                                \
+dayOfWeek <> : TemporalField                                       \
+weekOfMonth <> : TemporalField                                     \
+weekOfYear <> : TemporalField                                      \
+weekOfWeekBasedYear <> : TemporalField                             \
+weekBasedYear <> : TemporalField                                   \
+getFirstDayOfWeek <> : DayOfWeek                                   \
+getMinimalDaysInFirstWeek <> : int                                 \
+equals <Object> : boolean                                          \
+toString <> : String                                               \
+hashCode <> : int                                                  \
+readObject <ObjectInputStream> : void                              \
+readResolve <> : Object                                            \
+of <DayOfWeek,int> : WeekFields                                    \
+of <Locale> : WeekFields                                           \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -12,21 +12,18 @@ I:java.time.temporal.TemporalField
 
 I:java.time.temporal.TemporalField
 ------------------------------------------------------------------------------------------------------------------------------
-adjustInto <p2> :Temporal                                          \
+getBaseUnit <> : TemporalUnit                                      \
+getRangeUnit <> : TemporalUnit                                     \
+isDateBased <> : boolean                                           \
+isTimeBased <> : boolean                                           \
+isSupportedBy <TemporalAccessor> : boolean                         \
+rangeRefinedBy <TemporalAccessor> : ValueRange                     \
+getFrom <TemporalAccessor> : long                                  \
+adjustInto <Temporal,long> : Temporal                              \
+toString <> : String                                               \
+resolve <Map,TemporalAccessor,ResolverStyle> : TemporalAccessor    \
+range <> : ValueRange                                              \
+getDisplayName <Locale> : String                                   \
 ------------------------------------------------------------------------------------------------------------------------------
-resolve <p3> :TemporalAccessor                                     \
-------------------------------------------------------------------------------------------------------------------------------
-range <p0> :ValueRange                                             \
-rangeRefinedBy <p1> :ValueRange                                    \
-------------------------------------------------------------------------------------------------------------------------------
-getDisplayName <p1> :String                                        \
-getBaseUnit <p0> :TemporalUnit                                     \
-getRangeUnit <p0> :TemporalUnit                                    \
-getFrom <p1> :long                                                 \
-------------------------------------------------------------------------------------------------------------------------------
-isDateBased <p0> :boolean                                          \
-isTimeBased <p0> :boolean                                          \
-isSupportedBy <p1> :boolean                                        \
-------------------------------------------------------------------------------------------------------------------------------
-toString <p0> :String                                              \
-------------------------------------------------------------------------------------------------------------------------------
+
+

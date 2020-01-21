@@ -4,43 +4,39 @@ private java.time.temporal.ChronoUnit(java.lang.String,int,java.lang.String,java
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-E:java.time.temporal.ChronoUnit(便阅读;改小写)
+E:java.time.temporal.ChronoUnit
 ------------------------------------------------------------------------------------------------------------------------------
-years                                                              年份;
-months                                                             月份;
-weeks                                                              周期;
-days                                                               天数;
-hours                                                              小时;
-minutes                                                            分钟;
-seconds                                                            秒数;
-millis                                                             毫秒;
-micros                                                             微秒;
-nanos                                                              纳秒;
-------------------------------------------------------------------------------------------------------------------------------
-forever                                                            永恒;
-eras                                                               时代;
-millennia                                                          千年;
-centuries                                                          世纪;
-decades                                                            十年;
-half_days                                                          半天;
+NANOS                                                              \
+MICROS                                                             \
+MILLIS                                                             \
+SECONDS                                                            \
+MINUTES                                                            \
+HOURS                                                              \
+HALF_DAYS                                                          \
+DAYS                                                               \
+WEEKS                                                              \
+MONTHS                                                             \
+YEARS                                                              \
+DECADES                                                            \
+CENTURIES                                                          \
+MILLENNIA                                                          \
+ERAS                                                               \
+FOREVER                                                            \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
 E:java.time.temporal.ChronoUnit
 ------------------------------------------------------------------------------------------------------------------------------
-between <p2> :long                                                 \
+isDateBased <> : boolean                                           \
+isTimeBased <> : boolean                                           \
+isSupportedBy <Temporal> : boolean                                 \
+getDuration <> : Duration                                          \
+isDurationEstimated <> : boolean                                   \
+addTo <Temporal,long> : Temporal                                   \
+between <Temporal,Temporal> : long                                 \
+toString <> : String                                               \
+values <> : ChronoUnit[]                                           \
+valueOf <String> : ChronoUnit                                      \
 ------------------------------------------------------------------------------------------------------------------------------
-addTo <p2> :Temporal                                               \
-------------------------------------------------------------------------------------------------------------------------------
-getDuration <p0> :Duration                                         \
-------------------------------------------------------------------------------------------------------------------------------
-isDateBased <p0> :boolean                                          \
-isTimeBased <p0> :boolean                                          \
-isSupportedBy <p1> :boolean                                        \
-isDurationEstimated <p0> :boolean                                  \
-------------------------------------------------------------------------------------------------------------------------------
-values <p0> :ChronoUnit[]                                          \
-valueOf <p1> :ChronoUnit                                           \
-------------------------------------------------------------------------------------------------------------------------------
-toString <p0> :String                                              \
-------------------------------------------------------------------------------------------------------------------------------
+
+
