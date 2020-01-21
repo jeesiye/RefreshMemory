@@ -1,0 +1,24 @@
+FL:java.rmi.registry.LocateRegistry
+------------------------------------------------------------------------------------------------------------------------------
+private java.rmi.registry.LocateRegistry()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.rmi.registry.LocateRegistry
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.rmi.registry.LocateRegistry
+------------------------------------------------------------------------------------------------------------------------------
+createRegistry <int,RMIClientSocketFactory,RMIServerSocketFactory> : Registry
+createRegistry <int> : Registry                                    \
+getRegistry <> : Registry                                          \
+getRegistry <String,int,RMIClientSocketFactory> : Registry         \
+getRegistry <String,int> : Registry                                \
+getRegistry <String> : Registry                                    \
+getRegistry <int> : Registry                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

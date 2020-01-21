@@ -1,0 +1,24 @@
+L:java.security.ProtectionDomain
+------------------------------------------------------------------------------------------------------------------------------
+public java.security.ProtectionDomain(java.security.CodeSource,java.security.PermissionCollection)
+public java.security.ProtectionDomain(java.security.CodeSource,java.security.PermissionCollection,java.lang.ClassLoader,java.security.Principal[])
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.security.ProtectionDomain
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.security.ProtectionDomain
+------------------------------------------------------------------------------------------------------------------------------
+getClassLoader <> : ClassLoader                                    \
+getCodeSource <> : CodeSource                                      \
+getPermissions <> : PermissionCollection                           \
+getPrincipals <> : Principal[]                                     \
+implies <Permission> : boolean                                     \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

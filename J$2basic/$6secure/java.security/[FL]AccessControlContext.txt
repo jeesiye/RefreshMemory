@@ -1,0 +1,26 @@
+FL:java.security.AccessControlContext
+------------------------------------------------------------------------------------------------------------------------------
+java.security.AccessControlContext(java.security.ProtectionDomain[],boolean)
+java.security.AccessControlContext(java.security.ProtectionDomain,java.security.DomainCombiner,java.security.AccessControlContext,java.security.AccessControlContext,java.security.Permission[])
+java.security.AccessControlContext(java.security.AccessControlContext,java.security.DomainCombiner,boolean)
+java.security.AccessControlContext(java.security.ProtectionDomain[],java.security.AccessControlContext)
+public java.security.AccessControlContext(java.security.ProtectionDomain[])
+public java.security.AccessControlContext(java.security.AccessControlContext,java.security.DomainCombiner)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.security.AccessControlContext
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.security.AccessControlContext
+------------------------------------------------------------------------------------------------------------------------------
+checkPermission <Permission> : void                                \
+equals <Object> : boolean                                          \
+getDomainCombiner <> : DomainCombiner                              \
+hashCode <> : int                                                  \
+------------------------------------------------------------------------------------------------------------------------------
+
+

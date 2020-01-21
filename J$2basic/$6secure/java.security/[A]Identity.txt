@@ -1,0 +1,32 @@
+A:java.security.Identity
+------------------------------------------------------------------------------------------------------------------------------
+public java.security.Identity(java.lang.String)
+public java.security.Identity(java.lang.String,java.security.IdentityScope) throws java.security.KeyManagementException
+protected java.security.Identity()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.Identity
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.Identity
+------------------------------------------------------------------------------------------------------------------------------
+addCertificate <Certificate> : void                                \
+certificates <> : Certificate[]                                    \
+equals <Object> : boolean                                          \
+getInfo <> : String                                                \
+getName <> : String                                                \
+getPublicKey <> : PublicKey                                        \
+getScope <> : IdentityScope                                        \
+hashCode <> : int                                                  \
+removeCertificate <Certificate> : void                             \
+setInfo <String> : void                                            \
+setPublicKey <PublicKey> : void                                    \
+toString <> : String                                               \
+toString <boolean> : String                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

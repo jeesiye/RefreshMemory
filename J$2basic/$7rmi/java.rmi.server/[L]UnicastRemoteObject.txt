@@ -1,0 +1,24 @@
+L:java.rmi.server.UnicastRemoteObject
+------------------------------------------------------------------------------------------------------------------------------
+protected java.rmi.server.UnicastRemoteObject(int) throws java.rmi.RemoteException
+protected java.rmi.server.UnicastRemoteObject() throws java.rmi.RemoteException
+protected java.rmi.server.UnicastRemoteObject(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.rmi.server.UnicastRemoteObject
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.rmi.server.UnicastRemoteObject
+------------------------------------------------------------------------------------------------------------------------------
+clone <> : Object                                                  \
+exportObject <Remote,int,RMIClientSocketFactory,RMIServerSocketFactory> : Remote
+exportObject <Remote,int> : Remote                                 \
+exportObject <Remote> : RemoteStub                                 \
+unexportObject <Remote,boolean> : boolean                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,27 @@
+I:java.rmi.activation.ActivationSystem
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.rmi.activation.ActivationSystem
+------------------------------------------------------------------------------------------------------------------------------
+SYSTEM_PORT                                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.rmi.activation.ActivationSystem
+------------------------------------------------------------------------------------------------------------------------------
+activeGroup <ActivationGroupID,ActivationInstantiator,long> : ActivationMonitor
+getActivationDesc <ActivationID> : ActivationDesc                  \
+getActivationGroupDesc <ActivationGroupID> : ActivationGroupDesc   \
+registerGroup <ActivationGroupDesc> : ActivationGroupID            \
+registerObject <ActivationDesc> : ActivationID                     \
+setActivationDesc <ActivationID,ActivationDesc> : ActivationDesc   \
+setActivationGroupDesc <ActivationGroupID,ActivationGroupDesc> : ActivationGroupDesc
+shutdown <> : void                                                 \
+unregisterGroup <ActivationGroupID> : void                         \
+unregisterObject <ActivationID> : void                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,40 @@
+A:java.security.Signature
+------------------------------------------------------------------------------------------------------------------------------
+protected java.security.Signature(java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.Signature
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.Signature
+------------------------------------------------------------------------------------------------------------------------------
+clone <> : Object                                                  \
+getAlgorithm <> : String                                           \
+getInstance <String,Provider> : Signature                          \
+getInstance <String,String> : Signature                            \
+getInstance <String> : Signature                                   \
+getParameter <String> : Object                                     \
+getParameters <> : AlgorithmParameters                             \
+getProvider <> : Provider                                          \
+initSign <PrivateKey,SecureRandom> : void                          \
+initSign <PrivateKey> : void                                       \
+initVerify <Certificate> : void                                    \
+initVerify <PublicKey> : void                                      \
+setParameter <AlgorithmParameterSpec> : void                       \
+setParameter <String,Object> : void                                \
+sign <> : byte[]                                                   \
+sign <byte[],int,int> : int                                        \
+toString <> : String                                               \
+update <ByteBuffer> : void                                         \
+update <byte> : void                                               \
+update <byte[],int,int> : void                                     \
+update <byte[]> : void                                             \
+verify <byte[],int,int> : boolean                                  \
+verify <byte[]> : boolean                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

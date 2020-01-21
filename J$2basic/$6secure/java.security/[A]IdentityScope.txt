@@ -1,0 +1,28 @@
+A:java.security.IdentityScope
+------------------------------------------------------------------------------------------------------------------------------
+protected java.security.IdentityScope()
+public java.security.IdentityScope(java.lang.String,java.security.IdentityScope) throws java.security.KeyManagementException
+public java.security.IdentityScope(java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.IdentityScope
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.IdentityScope
+------------------------------------------------------------------------------------------------------------------------------
+addIdentity <Identity> : void                                      \
+getIdentity <Principal> : Identity                                 \
+getIdentity <PublicKey> : Identity                                 \
+getIdentity <String> : Identity                                    \
+getSystemScope <> : IdentityScope                                  \
+identities <> : Enumeration                                        \
+removeIdentity <Identity> : void                                   \
+size <> : int                                                      \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,29 @@
+A:java.security.Policy
+------------------------------------------------------------------------------------------------------------------------------
+public java.security.Policy()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.Policy
+------------------------------------------------------------------------------------------------------------------------------
+UNSUPPORTED_EMPTY_COLLECTION                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.Policy
+------------------------------------------------------------------------------------------------------------------------------
+getInstance <String,Parameters,Provider> : Policy                  \
+getInstance <String,Parameters,String> : Policy                    \
+getInstance <String,Parameters> : Policy                           \
+getParameters <> : Parameters                                      \
+getPermissions <CodeSource> : PermissionCollection                 \
+getPermissions <ProtectionDomain> : PermissionCollection           \
+getPolicy <> : Policy                                              \
+getProvider <> : Provider                                          \
+getType <> : String                                                \
+implies <ProtectionDomain,Permission> : boolean                    \
+refresh <> : void                                                  \
+setPolicy <Policy> : void                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,27 @@
+L:java.security.KeyFactory
+------------------------------------------------------------------------------------------------------------------------------
+protected java.security.KeyFactory(java.security.KeyFactorySpi,java.security.Provider,java.lang.String)
+private java.security.KeyFactory(java.lang.String) throws java.security.NoSuchAlgorithmException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.security.KeyFactory
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.security.KeyFactory
+------------------------------------------------------------------------------------------------------------------------------
+generatePrivate <KeySpec> : PrivateKey                             \
+generatePublic <KeySpec> : PublicKey                               \
+getAlgorithm <> : String                                           \
+getInstance <String,Provider> : KeyFactory                         \
+getInstance <String,String> : KeyFactory                           \
+getInstance <String> : KeyFactory                                  \
+getKeySpec <Key,Class> : KeySpec                                   \
+getProvider <> : Provider                                          \
+translateKey <Key> : Key                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+

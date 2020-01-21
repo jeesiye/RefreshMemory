@@ -1,0 +1,27 @@
+FL:java.security.UnresolvedPermission
+------------------------------------------------------------------------------------------------------------------------------
+public java.security.UnresolvedPermission(java.lang.String,java.lang.String,java.lang.String,java.security.cert.Certificate[])
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.security.UnresolvedPermission
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.security.UnresolvedPermission
+------------------------------------------------------------------------------------------------------------------------------
+equals <Object> : boolean                                          \
+getActions <> : String                                             \
+getUnresolvedActions <> : String                                   \
+getUnresolvedCerts <> : Certificate[]                              \
+getUnresolvedName <> : String                                      \
+getUnresolvedType <> : String                                      \
+hashCode <> : int                                                  \
+implies <Permission> : boolean                                     \
+newPermissionCollection <> : PermissionCollection                  \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

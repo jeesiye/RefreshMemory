@@ -1,0 +1,23 @@
+A:java.rmi.activation.ActivationGroup
+------------------------------------------------------------------------------------------------------------------------------
+protected java.rmi.activation.ActivationGroup(java.rmi.activation.ActivationGroupID) throws java.rmi.RemoteException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.rmi.activation.ActivationGroup
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.rmi.activation.ActivationGroup
+------------------------------------------------------------------------------------------------------------------------------
+activeObject <ActivationID,Remote> : void                          \
+createGroup <ActivationGroupID,ActivationGroupDesc,long> : ActivationGroup
+currentGroupID <> : ActivationGroupID                              \
+getSystem <> : ActivationSystem                                    \
+inactiveObject <ActivationID> : boolean                            \
+setSystem <ActivationSystem> : void                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

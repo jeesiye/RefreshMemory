@@ -1,0 +1,27 @@
+FL:java.rmi.activation.ActivationDesc
+------------------------------------------------------------------------------------------------------------------------------
+public java.rmi.activation.ActivationDesc(java.lang.String,java.lang.String,java.rmi.MarshalledObject,boolean) throws java.rmi.activation.ActivationException
+public java.rmi.activation.ActivationDesc(java.lang.String,java.lang.String,java.rmi.MarshalledObject) throws java.rmi.activation.ActivationException
+public java.rmi.activation.ActivationDesc(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject)
+public java.rmi.activation.ActivationDesc(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject,boolean)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.rmi.activation.ActivationDesc
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.rmi.activation.ActivationDesc
+------------------------------------------------------------------------------------------------------------------------------
+equals <Object> : boolean                                          \
+getClassName <> : String                                           \
+getData <> : MarshalledObject                                      \
+getGroupID <> : ActivationGroupID                                  \
+getLocation <> : String                                            \
+getRestartMode <> : boolean                                        \
+hashCode <> : int                                                  \
+------------------------------------------------------------------------------------------------------------------------------
+
+

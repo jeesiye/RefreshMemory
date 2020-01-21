@@ -1,0 +1,31 @@
+L:java.security.SecureRandom
+------------------------------------------------------------------------------------------------------------------------------
+private java.security.SecureRandom(java.security.SecureRandomSpi,java.security.Provider,java.lang.String)
+protected java.security.SecureRandom(java.security.SecureRandomSpi,java.security.Provider)
+public java.security.SecureRandom(byte[])
+public java.security.SecureRandom()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.security.SecureRandom
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.security.SecureRandom
+------------------------------------------------------------------------------------------------------------------------------
+generateSeed <int> : byte[]                                        \
+getAlgorithm <> : String                                           \
+getInstance <String,Provider> : SecureRandom                       \
+getInstance <String,String> : SecureRandom                         \
+getInstance <String> : SecureRandom                                \
+getInstanceStrong <> : SecureRandom                                \
+getProvider <> : Provider                                          \
+getSeed <int> : byte[]                                             \
+nextBytes <byte[]> : void                                          \
+setSeed <byte[]> : void                                            \
+setSeed <long> : void                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,28 @@
+A:java.security.KeyPairGenerator
+------------------------------------------------------------------------------------------------------------------------------
+protected java.security.KeyPairGenerator(java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.KeyPairGenerator
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.security.KeyPairGenerator
+------------------------------------------------------------------------------------------------------------------------------
+genKeyPair <> : KeyPair                                            \
+generateKeyPair <> : KeyPair                                       \
+getAlgorithm <> : String                                           \
+getInstance <String,Provider> : KeyPairGenerator                   \
+getInstance <String,String> : KeyPairGenerator                     \
+getInstance <String> : KeyPairGenerator                            \
+getProvider <> : Provider                                          \
+initialize <AlgorithmParameterSpec,SecureRandom> : void            \
+initialize <AlgorithmParameterSpec> : void                         \
+initialize <int,SecureRandom> : void                               \
+initialize <int> : void                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+

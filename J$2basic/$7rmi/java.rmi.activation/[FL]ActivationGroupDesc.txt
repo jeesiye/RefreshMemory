@@ -1,0 +1,25 @@
+FL:java.rmi.activation.ActivationGroupDesc
+------------------------------------------------------------------------------------------------------------------------------
+public java.rmi.activation.ActivationGroupDesc(java.util.Properties,java.rmi.activation.ActivationGroupDesc$CommandEnvironment)
+public java.rmi.activation.ActivationGroupDesc(java.lang.String,java.lang.String,java.rmi.MarshalledObject,java.util.Properties,java.rmi.activation.ActivationGroupDesc$CommandEnvironment)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.rmi.activation.ActivationGroupDesc
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.rmi.activation.ActivationGroupDesc
+------------------------------------------------------------------------------------------------------------------------------
+equals <Object> : boolean                                          \
+getClassName <> : String                                           \
+getCommandEnvironment <> : CommandEnvironment                      \
+getData <> : MarshalledObject                                      \
+getLocation <> : String                                            \
+getPropertyOverrides <> : Properties                               \
+hashCode <> : int                                                  \
+------------------------------------------------------------------------------------------------------------------------------
+
+
