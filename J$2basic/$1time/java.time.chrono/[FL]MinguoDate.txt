@@ -1,0 +1,38 @@
+FL:java.time.chrono.MinguoDate
+------------------------------------------------------------------------------------------------------------------------------
+java.time.chrono.MinguoDate(java.time.LocalDate)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.MinguoDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.MinguoDate
+------------------------------------------------------------------------------------------------------------------------------
+atTime <LocalTime> : ChronoLocalDateTime                           \
+equals <Object> : boolean                                          \
+from <TemporalAccessor> : MinguoDate                               \
+getChronology <> : MinguoChronology                                \
+getEra <> : MinguoEra                                              \
+getLong <TemporalField> : long                                     \
+hashCode <> : int                                                  \
+lengthOfMonth <> : int                                             \
+minus <TemporalAmount> : MinguoDate                                \
+minus <long,TemporalUnit> : MinguoDate                             \
+now <> : MinguoDate                                                \
+now <Clock> : MinguoDate                                           \
+now <ZoneId> : MinguoDate                                          \
+of <int,int,int> : MinguoDate                                      \
+plus <TemporalAmount> : MinguoDate                                 \
+plus <long,TemporalUnit> : MinguoDate                              \
+range <TemporalField> : ValueRange                                 \
+toEpochDay <> : long                                               \
+until <ChronoLocalDate> : ChronoPeriod                             \
+with <TemporalAdjuster> : MinguoDate                               \
+with <TemporalField,long> : MinguoDate                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

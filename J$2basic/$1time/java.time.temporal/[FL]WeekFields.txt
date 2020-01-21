@@ -27,5 +27,3 @@ weekOfMonth <> : TemporalField                                     \
 weekOfWeekBasedYear <> : TemporalField                             \
 weekOfYear <> : TemporalField                                      \
 ------------------------------------------------------------------------------------------------------------------------------
-
-

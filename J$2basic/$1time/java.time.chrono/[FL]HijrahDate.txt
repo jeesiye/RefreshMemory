@@ -1,0 +1,42 @@
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.HijrahDate(java.time.chrono.HijrahChronology,int,int,int)
+private java.time.chrono.HijrahDate(java.time.chrono.HijrahChronology,long)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahDate
+------------------------------------------------------------------------------------------------------------------------------
+atTime <LocalTime> : ChronoLocalDateTime                           \
+equals <Object> : boolean                                          \
+from <TemporalAccessor> : HijrahDate                               \
+getChronology <> : HijrahChronology                                \
+getEra <> : HijrahEra                                              \
+getLong <TemporalField> : long                                     \
+hashCode <> : int                                                  \
+isLeapYear <> : boolean                                            \
+lengthOfMonth <> : int                                             \
+lengthOfYear <> : int                                              \
+minus <TemporalAmount> : HijrahDate                                \
+minus <long,TemporalUnit> : HijrahDate                             \
+now <> : HijrahDate                                                \
+now <Clock> : HijrahDate                                           \
+now <ZoneId> : HijrahDate                                          \
+of <int,int,int> : HijrahDate                                      \
+plus <TemporalAmount> : HijrahDate                                 \
+plus <long,TemporalUnit> : HijrahDate                              \
+range <TemporalField> : ValueRange                                 \
+toEpochDay <> : long                                               \
+until <ChronoLocalDate> : ChronoPeriod                             \
+with <TemporalAdjuster> : HijrahDate                               \
+with <TemporalField,long> : HijrahDate                             \
+withVariant <HijrahChronology> : HijrahDate                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

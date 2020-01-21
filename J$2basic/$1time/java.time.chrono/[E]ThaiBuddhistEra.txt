@@ -13,10 +13,10 @@ BE                                                                 \
 
 E:java.time.chrono.ThaiBuddhistEra
 ------------------------------------------------------------------------------------------------------------------------------
-values <p0> :ThaiBuddhistEra[]                                     \
-valueOf <p1> :ThaiBuddhistEra                                      \
-getValue <p0> :int                                                 \
-of <p1> :ThaiBuddhistEra                                           \
+getValue <> : int                                                  \
+of <int> : ThaiBuddhistEra                                         \
+valueOf <String> : ThaiBuddhistEra                                 \
+values <> : ThaiBuddhistEra[]                                      \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

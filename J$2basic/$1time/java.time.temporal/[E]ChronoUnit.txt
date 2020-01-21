@@ -6,22 +6,23 @@ private java.time.temporal.ChronoUnit(java.lang.String,int,java.lang.String,java
 
 E:java.time.temporal.ChronoUnit
 ------------------------------------------------------------------------------------------------------------------------------
-NANOS                                                              \
-MICROS                                                             \
-MILLIS                                                             \
-SECONDS                                                            \
-MINUTES                                                            \
-HOURS                                                              \
-HALF_DAYS                                                          \
-DAYS                                                               \
-WEEKS                                                              \
-MONTHS                                                             \
-YEARS                                                              \
-DECADES                                                            \
-CENTURIES                                                          \
-MILLENNIA                                                          \
-ERAS                                                               \
-FOREVER                                                            \
+YEARS                                                              年份;
+MONTHS                                                             月份;
+WEEKS                                                              周期;
+DAYS                                                               天数;
+HOURS                                                              小时;
+MINUTES                                                            分钟;
+SECONDS                                                            秒;
+MILLIS                                                             毫秒;
+MICROS                                                             微秒;
+NANOS                                                              纳秒;
+------------------------------------------------------------------------------------------------------------------------------
+FOREVER                                                            永恒;
+ERAS                                                               时代;
+MILLENNIA                                                          千年;
+CENTURIES                                                          世纪;
+DECADES                                                            十年;
+HALF_DAYS                                                          半天;
 ------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -38,5 +39,3 @@ toString <> : String                                               \
 valueOf <String> : ChronoUnit                                      \
 values <> : ChronoUnit[]                                           \
 ------------------------------------------------------------------------------------------------------------------------------
-
-

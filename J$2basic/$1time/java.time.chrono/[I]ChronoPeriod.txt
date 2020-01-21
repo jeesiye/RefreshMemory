@@ -1,0 +1,33 @@
+I:java.time.chrono.ChronoPeriod
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoPeriod
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoPeriod
+------------------------------------------------------------------------------------------------------------------------------
+addTo <Temporal> : Temporal                                        \
+between <ChronoLocalDate,ChronoLocalDate> : ChronoPeriod           \
+equals <Object> : boolean                                          \
+get <TemporalUnit> : long                                          \
+getChronology <> : Chronology                                      \
+getUnits <> : List                                                 \
+hashCode <> : int                                                  \
+isNegative <> : boolean                                            \
+isZero <> : boolean                                                \
+minus <TemporalAmount> : ChronoPeriod                              \
+multipliedBy <int> : ChronoPeriod                                  \
+negated <> : ChronoPeriod                                          \
+normalized <> : ChronoPeriod                                       \
+plus <TemporalAmount> : ChronoPeriod                               \
+subtractFrom <Temporal> : Temporal                                 \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

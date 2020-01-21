@@ -1,0 +1,46 @@
+I:java.time.chrono.ChronoLocalDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoLocalDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoLocalDate
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atTime <LocalTime> : ChronoLocalDateTime                           \
+compareTo <ChronoLocalDate> : int                                  \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : ChronoLocalDate                          \
+getChronology <> : Chronology                                      \
+getEra <> : Era                                                    \
+hashCode <> : int                                                  \
+isAfter <ChronoLocalDate> : boolean                                \
+isBefore <ChronoLocalDate> : boolean                               \
+isEqual <ChronoLocalDate> : boolean                                \
+isLeapYear <> : boolean                                            \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+lengthOfMonth <> : int                                             \
+lengthOfYear <> : int                                              \
+minus <TemporalAmount> : ChronoLocalDate                           \
+minus <long,TemporalUnit> : ChronoLocalDate                        \
+plus <TemporalAmount> : ChronoLocalDate                            \
+plus <long,TemporalUnit> : ChronoLocalDate                         \
+query <TemporalQuery> : Object                                     \
+timeLineOrder <> : Comparator                                      \
+toEpochDay <> : long                                               \
+toString <> : String                                               \
+until <ChronoLocalDate> : ChronoPeriod                             \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : ChronoLocalDate                          \
+with <TemporalField,long> : ChronoLocalDate                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

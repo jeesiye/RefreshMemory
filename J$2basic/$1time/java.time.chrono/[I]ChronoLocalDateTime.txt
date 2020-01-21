@@ -1,0 +1,43 @@
+I:java.time.chrono.ChronoLocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoLocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.chrono.ChronoLocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atZone <ZoneId> : ChronoZonedDateTime                              \
+compareTo <ChronoLocalDateTime> : int                              \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : ChronoLocalDateTime                      \
+getChronology <> : Chronology                                      \
+hashCode <> : int                                                  \
+isAfter <ChronoLocalDateTime> : boolean                            \
+isBefore <ChronoLocalDateTime> : boolean                           \
+isEqual <ChronoLocalDateTime> : boolean                            \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : ChronoLocalDateTime                       \
+minus <long,TemporalUnit> : ChronoLocalDateTime                    \
+plus <TemporalAmount> : ChronoLocalDateTime                        \
+plus <long,TemporalUnit> : ChronoLocalDateTime                     \
+query <TemporalQuery> : Object                                     \
+timeLineOrder <> : Comparator                                      \
+toEpochSecond <ZoneOffset> : long                                  \
+toInstant <ZoneOffset> : Instant                                   \
+toLocalDate <> : ChronoLocalDate                                   \
+toLocalTime <> : LocalTime                                         \
+toString <> : String                                               \
+with <TemporalAdjuster> : ChronoLocalDateTime                      \
+with <TemporalField,long> : ChronoLocalDateTime                    \
+------------------------------------------------------------------------------------------------------------------------------
+
+

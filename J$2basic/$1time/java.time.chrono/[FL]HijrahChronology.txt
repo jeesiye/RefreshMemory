@@ -1,0 +1,37 @@
+FL:java.time.chrono.HijrahChronology
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.HijrahChronology(java.lang.String) throws java.time.DateTimeException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahChronology
+------------------------------------------------------------------------------------------------------------------------------
+INSTANCE                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.HijrahChronology
+------------------------------------------------------------------------------------------------------------------------------
+date <Era,int,int,int> : HijrahDate                                \
+date <TemporalAccessor> : HijrahDate                               \
+date <int,int,int> : HijrahDate                                    \
+dateEpochDay <long> : HijrahDate                                   \
+dateNow <> : HijrahDate                                            \
+dateNow <Clock> : HijrahDate                                       \
+dateNow <ZoneId> : HijrahDate                                      \
+dateYearDay <Era,int,int> : HijrahDate                             \
+dateYearDay <int,int> : HijrahDate                                 \
+eraOf <int> : HijrahEra                                            \
+eras <> : List                                                     \
+getCalendarType <> : String                                        \
+getId <> : String                                                  \
+isLeapYear <long> : boolean                                        \
+localDateTime <TemporalAccessor> : ChronoLocalDateTime             \
+prolepticYear <Era,int> : int                                      \
+range <ChronoField> : ValueRange                                   \
+resolveDate <Map,ResolverStyle> : HijrahDate                       \
+zonedDateTime <Instant,ZoneId> : ChronoZonedDateTime               \
+zonedDateTime <TemporalAccessor> : ChronoZonedDateTime             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

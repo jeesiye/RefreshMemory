@@ -1,0 +1,37 @@
+FL:java.time.chrono.MinguoChronology
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.chrono.MinguoChronology()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.MinguoChronology
+------------------------------------------------------------------------------------------------------------------------------
+INSTANCE                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.MinguoChronology
+------------------------------------------------------------------------------------------------------------------------------
+date <Era,int,int,int> : MinguoDate                                \
+date <TemporalAccessor> : MinguoDate                               \
+date <int,int,int> : MinguoDate                                    \
+dateEpochDay <long> : MinguoDate                                   \
+dateNow <> : MinguoDate                                            \
+dateNow <Clock> : MinguoDate                                       \
+dateNow <ZoneId> : MinguoDate                                      \
+dateYearDay <Era,int,int> : MinguoDate                             \
+dateYearDay <int,int> : MinguoDate                                 \
+eraOf <int> : MinguoEra                                            \
+eras <> : List                                                     \
+getCalendarType <> : String                                        \
+getId <> : String                                                  \
+isLeapYear <long> : boolean                                        \
+localDateTime <TemporalAccessor> : ChronoLocalDateTime             \
+prolepticYear <Era,int> : int                                      \
+range <ChronoField> : ValueRange                                   \
+resolveDate <Map,ResolverStyle> : MinguoDate                       \
+zonedDateTime <Instant,ZoneId> : ChronoZonedDateTime               \
+zonedDateTime <TemporalAccessor> : ChronoZonedDateTime             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,42 @@
+FL:java.time.chrono.JapaneseDate
+------------------------------------------------------------------------------------------------------------------------------
+java.time.chrono.JapaneseDate(java.time.chrono.JapaneseEra,int,java.time.LocalDate)
+java.time.chrono.JapaneseDate(java.time.LocalDate)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.JapaneseDate
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.chrono.JapaneseDate
+------------------------------------------------------------------------------------------------------------------------------
+atTime <LocalTime> : ChronoLocalDateTime                           \
+equals <Object> : boolean                                          \
+from <TemporalAccessor> : JapaneseDate                             \
+getChronology <> : JapaneseChronology                              \
+getEra <> : JapaneseEra                                            \
+getLong <TemporalField> : long                                     \
+hashCode <> : int                                                  \
+isSupported <TemporalField> : boolean                              \
+lengthOfMonth <> : int                                             \
+lengthOfYear <> : int                                              \
+minus <TemporalAmount> : JapaneseDate                              \
+minus <long,TemporalUnit> : JapaneseDate                           \
+now <> : JapaneseDate                                              \
+now <Clock> : JapaneseDate                                         \
+now <ZoneId> : JapaneseDate                                        \
+of <JapaneseEra,int,int,int> : JapaneseDate                        \
+of <int,int,int> : JapaneseDate                                    \
+plus <TemporalAmount> : JapaneseDate                               \
+plus <long,TemporalUnit> : JapaneseDate                            \
+range <TemporalField> : ValueRange                                 \
+toEpochDay <> : long                                               \
+until <ChronoLocalDate> : ChronoPeriod                             \
+with <TemporalAdjuster> : JapaneseDate                             \
+with <TemporalField,long> : JapaneseDate                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
