@@ -1,0 +1,33 @@
+FL:java.time.zone.ZoneOffsetTransition
+------------------------------------------------------------------------------------------------------------------------------
+java.time.zone.ZoneOffsetTransition(long,java.time.ZoneOffset,java.time.ZoneOffset)
+java.time.zone.ZoneOffsetTransition(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransition
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransition
+------------------------------------------------------------------------------------------------------------------------------
+compareTo <ZoneOffsetTransition> : int                             \
+equals <Object> : boolean                                          \
+getDateTimeAfter <> : LocalDateTime                                \
+getDateTimeBefore <> : LocalDateTime                               \
+getDuration <> : Duration                                          \
+getInstant <> : Instant                                            \
+getOffsetAfter <> : ZoneOffset                                     \
+getOffsetBefore <> : ZoneOffset                                    \
+hashCode <> : int                                                  \
+isGap <> : boolean                                                 \
+isOverlap <> : boolean                                             \
+isValidOffset <ZoneOffset> : boolean                               \
+of <LocalDateTime,ZoneOffset,ZoneOffset> : ZoneOffsetTransition    \
+toEpochSecond <> : long                                            \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,37 @@
+FL:java.time.zone.ZoneRules
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.zone.ZoneRules(java.time.ZoneOffset)
+java.time.zone.ZoneRules(java.time.ZoneOffset,java.time.ZoneOffset,java.util.List,java.util.List,java.util.List)
+private java.time.zone.ZoneRules(long[],java.time.ZoneOffset[],long[],java.time.ZoneOffset[],java.time.zone.ZoneOffsetTransitionRule[])
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneRules
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneRules
+------------------------------------------------------------------------------------------------------------------------------
+equals <Object> : boolean                                          \
+getDaylightSavings <Instant> : Duration                            \
+getOffset <Instant> : ZoneOffset                                   \
+getOffset <LocalDateTime> : ZoneOffset                             \
+getStandardOffset <Instant> : ZoneOffset                           \
+getTransition <LocalDateTime> : ZoneOffsetTransition               \
+getTransitionRules <> : List                                       \
+getTransitions <> : List                                           \
+getValidOffsets <LocalDateTime> : List                             \
+hashCode <> : int                                                  \
+isDaylightSavings <Instant> : boolean                              \
+isFixedOffset <> : boolean                                         \
+isValidOffset <LocalDateTime,ZoneOffset> : boolean                 \
+nextTransition <Instant> : ZoneOffsetTransition                    \
+of <ZoneOffset,ZoneOffset,List,List,List> : ZoneRules              \
+of <ZoneOffset> : ZoneRules                                        \
+previousTransition <Instant> : ZoneOffsetTransition                \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

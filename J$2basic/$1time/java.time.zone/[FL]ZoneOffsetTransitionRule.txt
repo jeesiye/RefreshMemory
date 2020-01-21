@@ -1,0 +1,31 @@
+FL:java.time.zone.ZoneOffsetTransitionRule
+------------------------------------------------------------------------------------------------------------------------------
+java.time.zone.ZoneOffsetTransitionRule(java.time.Month,int,java.time.DayOfWeek,java.time.LocalTime,boolean,java.time.zone.ZoneOffsetTransitionRule$TimeDefinition,java.time.ZoneOffset,java.time.ZoneOffset,java.time.ZoneOffset)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransitionRule
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.zone.ZoneOffsetTransitionRule
+------------------------------------------------------------------------------------------------------------------------------
+createTransition <int> : ZoneOffsetTransition                      \
+equals <Object> : boolean                                          \
+getDayOfMonthIndicator <> : int                                    \
+getDayOfWeek <> : DayOfWeek                                        \
+getLocalTime <> : LocalTime                                        \
+getMonth <> : Month                                                \
+getOffsetAfter <> : ZoneOffset                                     \
+getOffsetBefore <> : ZoneOffset                                    \
+getStandardOffset <> : ZoneOffset                                  \
+getTimeDefinition <> : TimeDefinition                              \
+hashCode <> : int                                                  \
+isMidnightEndOfDay <> : boolean                                    \
+of <Month,int,DayOfWeek,LocalTime,boolean,TimeDefinition,ZoneOffset,ZoneOffset,ZoneOffset> : ZoneOffsetTransitionRule
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

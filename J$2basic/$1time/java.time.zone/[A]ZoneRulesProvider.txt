@@ -12,17 +12,11 @@ A:java.time.zone.ZoneRulesProvider
 
 A:java.time.zone.ZoneRulesProvider
 ------------------------------------------------------------------------------------------------------------------------------
-getAvailableZoneIds <p0> :Set                                      \
-getRules <p2> :ZoneRules                                           \
-getVersions <p1> :NavigableMap                                     \
-getProvider <p1> :ZoneRulesProvider                                \
-registerProvider <p1> :void                                        \
-registerProvider0 <p1> :void                                       \
-refresh <p0> :boolean                                              \
-provideZoneIds <p0> :Set                                           \
-provideRules <p2> :ZoneRules                                       \
-provideVersions <p1> :NavigableMap                                 \
-provideRefresh <p0> :boolean                                       \
+getAvailableZoneIds <> : Set                                       \
+getRules <String,boolean> : ZoneRules                              \
+getVersions <String> : NavigableMap                                \
+refresh <> : boolean                                               \
+registerProvider <ZoneRulesProvider> : void                        \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
