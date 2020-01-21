@@ -42,21 +42,21 @@ OFFSET_SECONDS                                                     \
 
 E:java.time.temporal.ChronoField
 ------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal,long> : Temporal                              \
+checkValidIntValue <long> : int                                    \
+checkValidValue <long> : long                                      \
 getBaseUnit <> : TemporalUnit                                      \
+getDisplayName <Locale> : String                                   \
+getFrom <TemporalAccessor> : long                                  \
 getRangeUnit <> : TemporalUnit                                     \
 isDateBased <> : boolean                                           \
-isTimeBased <> : boolean                                           \
-checkValidValue <long> : long                                      \
-checkValidIntValue <long> : int                                    \
 isSupportedBy <TemporalAccessor> : boolean                         \
-rangeRefinedBy <TemporalAccessor> : ValueRange                     \
-getFrom <TemporalAccessor> : long                                  \
-adjustInto <Temporal,long> : Temporal                              \
-toString <> : String                                               \
-values <> : ChronoField[]                                          \
-valueOf <String> : ChronoField                                     \
+isTimeBased <> : boolean                                           \
 range <> : ValueRange                                              \
-getDisplayName <Locale> : String                                   \
+rangeRefinedBy <TemporalAccessor> : ValueRange                     \
+toString <> : String                                               \
+valueOf <String> : ChronoField                                     \
+values <> : ChronoField[]                                          \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

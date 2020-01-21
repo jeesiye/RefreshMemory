@@ -12,24 +12,22 @@ FL:java.time.temporal.ValueRange
 
 FL:java.time.temporal.ValueRange
 ------------------------------------------------------------------------------------------------------------------------------
-checkValidValue <long,TemporalField> : long                        \
 checkValidIntValue <long,TemporalField> : int                      \
-isFixed <> : boolean                                               \
-getMinimum <> : long                                               \
-getLargestMinimum <> : long                                        \
-getSmallestMaximum <> : long                                       \
-getMaximum <> : long                                               \
-isIntValue <> : boolean                                            \
-isValidValue <long> : boolean                                      \
-isValidIntValue <long> : boolean                                   \
-genInvalidFieldMessage <TemporalField,long> : String               \
+checkValidValue <long,TemporalField> : long                        \
 equals <Object> : boolean                                          \
-toString <> : String                                               \
+getLargestMinimum <> : long                                        \
+getMaximum <> : long                                               \
+getMinimum <> : long                                               \
+getSmallestMaximum <> : long                                       \
 hashCode <> : int                                                  \
-readObject <ObjectInputStream> : void                              \
-of <long,long> : ValueRange                                        \
-of <long,long,long> : ValueRange                                   \
+isFixed <> : boolean                                               \
+isIntValue <> : boolean                                            \
+isValidIntValue <long> : boolean                                   \
+isValidValue <long> : boolean                                      \
 of <long,long,long,long> : ValueRange                              \
+of <long,long,long> : ValueRange                                   \
+of <long,long> : ValueRange                                        \
+toString <> : String                                               \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

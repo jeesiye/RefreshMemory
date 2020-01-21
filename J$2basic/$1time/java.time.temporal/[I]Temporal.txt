@@ -1,22 +1,25 @@
-I:java.time.temporal.TemporalAccessor
+I:java.time.temporal.Temporal
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.time.temporal.TemporalAccessor
+I:java.time.temporal.Temporal
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.time.temporal.TemporalAccessor
+I:java.time.temporal.Temporal
 ------------------------------------------------------------------------------------------------------------------------------
-get <TemporalField> : int                                          \
-getLong <TemporalField> : long                                     \
-query <TemporalQuery> : Object                                     \
-isSupported <TemporalField> : boolean                              \
-range <TemporalField> : ValueRange                                 \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : Temporal                                  \
+minus <long,TemporalUnit> : Temporal                               \
+plus <TemporalAmount> : Temporal                                   \
+plus <long,TemporalUnit> : Temporal                                \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : Temporal                                 \
+with <TemporalField,long> : Temporal                               \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -1,25 +1,21 @@
-I:java.time.temporal.TemporalUnit
+I:java.time.temporal.TemporalAmount
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.time.temporal.TemporalUnit
+I:java.time.temporal.TemporalAmount
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.time.temporal.TemporalUnit
+I:java.time.temporal.TemporalAmount
 ------------------------------------------------------------------------------------------------------------------------------
-isDateBased <> : boolean                                           \
-isTimeBased <> : boolean                                           \
-isSupportedBy <Temporal> : boolean                                 \
-getDuration <> : Duration                                          \
-isDurationEstimated <> : boolean                                   \
-addTo <Temporal,long> : Temporal                                   \
-between <Temporal,Temporal> : long                                 \
-toString <> : String                                               \
+addTo <Temporal> : Temporal                                        \
+get <TemporalUnit> : long                                          \
+getUnits <> : List                                                 \
+subtractFrom <Temporal> : Temporal                                 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

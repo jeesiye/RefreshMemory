@@ -1,24 +1,22 @@
-FL:java.time.temporal.TemporalQueries
-------------------------------------------------------------------------------------------------------------------------------
-private java.time.temporal.TemporalQueries()
-------------------------------------------------------------------------------------------------------------------------------
-
-
-FL:java.time.temporal.TemporalQueries
+I:java.time.temporal.TemporalAccessor
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-FL:java.time.temporal.TemporalQueries
+I:java.time.temporal.TemporalAccessor
 ------------------------------------------------------------------------------------------------------------------------------
-zoneId <> : TemporalQuery                                          \
-chronology <> : TemporalQuery                                      \
-precision <> : TemporalQuery                                       \
-zone <> : TemporalQuery                                            \
-localDate <> : TemporalQuery                                       \
-localTime <> : TemporalQuery                                       \
-offset <> : TemporalQuery                                          \
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.time.temporal.TemporalAccessor
+------------------------------------------------------------------------------------------------------------------------------
+get <TemporalField> : int                                          \
+getLong <TemporalField> : long                                     \
+isSupported <TemporalField> : boolean                              \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

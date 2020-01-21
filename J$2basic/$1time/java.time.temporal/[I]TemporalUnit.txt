@@ -1,25 +1,25 @@
-I:java.time.temporal.Temporal
+I:java.time.temporal.TemporalUnit
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.time.temporal.Temporal
+I:java.time.temporal.TemporalUnit
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.time.temporal.Temporal
+I:java.time.temporal.TemporalUnit
 ------------------------------------------------------------------------------------------------------------------------------
-with <TemporalField,long> : Temporal                               \
-with <TemporalAdjuster> : Temporal                                 \
-plus <TemporalAmount> : Temporal                                   \
-plus <long,TemporalUnit> : Temporal                                \
-until <Temporal,TemporalUnit> : long                               \
-minus <TemporalAmount> : Temporal                                  \
-minus <long,TemporalUnit> : Temporal                               \
-isSupported <TemporalUnit> : boolean                               \
+addTo <Temporal,long> : Temporal                                   \
+between <Temporal,Temporal> : long                                 \
+getDuration <> : Duration                                          \
+isDateBased <> : boolean                                           \
+isDurationEstimated <> : boolean                                   \
+isSupportedBy <Temporal> : boolean                                 \
+isTimeBased <> : boolean                                           \
+toString <> : String                                               \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

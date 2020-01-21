@@ -27,16 +27,16 @@ FOREVER                                                            \
 
 E:java.time.temporal.ChronoUnit
 ------------------------------------------------------------------------------------------------------------------------------
-isDateBased <> : boolean                                           \
-isTimeBased <> : boolean                                           \
-isSupportedBy <Temporal> : boolean                                 \
-getDuration <> : Duration                                          \
-isDurationEstimated <> : boolean                                   \
 addTo <Temporal,long> : Temporal                                   \
 between <Temporal,Temporal> : long                                 \
+getDuration <> : Duration                                          \
+isDateBased <> : boolean                                           \
+isDurationEstimated <> : boolean                                   \
+isSupportedBy <Temporal> : boolean                                 \
+isTimeBased <> : boolean                                           \
 toString <> : String                                               \
-values <> : ChronoUnit[]                                           \
 valueOf <String> : ChronoUnit                                      \
+values <> : ChronoUnit[]                                           \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

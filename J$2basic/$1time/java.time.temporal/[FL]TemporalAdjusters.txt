@@ -12,20 +12,20 @@ FL:java.time.temporal.TemporalAdjusters
 
 FL:java.time.temporal.TemporalAdjusters
 ------------------------------------------------------------------------------------------------------------------------------
-firstDayOfYear <> : TemporalAdjuster                               \
-ofDateAdjuster <UnaryOperator> : TemporalAdjuster                  \
-firstDayOfMonth <> : TemporalAdjuster                              \
-lastDayOfMonth <> : TemporalAdjuster                               \
-firstDayOfNextMonth <> : TemporalAdjuster                          \
-lastDayOfYear <> : TemporalAdjuster                                \
-firstDayOfNextYear <> : TemporalAdjuster                           \
-firstInMonth <DayOfWeek> : TemporalAdjuster                        \
-lastInMonth <DayOfWeek> : TemporalAdjuster                         \
 dayOfWeekInMonth <int,DayOfWeek> : TemporalAdjuster                \
-nextOrSame <DayOfWeek> : TemporalAdjuster                          \
-previousOrSame <DayOfWeek> : TemporalAdjuster                      \
+firstDayOfMonth <> : TemporalAdjuster                              \
+firstDayOfNextMonth <> : TemporalAdjuster                          \
+firstDayOfNextYear <> : TemporalAdjuster                           \
+firstDayOfYear <> : TemporalAdjuster                               \
+firstInMonth <DayOfWeek> : TemporalAdjuster                        \
+lastDayOfMonth <> : TemporalAdjuster                               \
+lastDayOfYear <> : TemporalAdjuster                                \
+lastInMonth <DayOfWeek> : TemporalAdjuster                         \
 next <DayOfWeek> : TemporalAdjuster                                \
+nextOrSame <DayOfWeek> : TemporalAdjuster                          \
+ofDateAdjuster <UnaryOperator> : TemporalAdjuster                  \
 previous <DayOfWeek> : TemporalAdjuster                            \
+previousOrSame <DayOfWeek> : TemporalAdjuster                      \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

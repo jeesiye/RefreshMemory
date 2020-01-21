@@ -15,19 +15,17 @@ WEEK_BASED_YEARS                                                   \
 FL:java.time.temporal.WeekFields
 ------------------------------------------------------------------------------------------------------------------------------
 dayOfWeek <> : TemporalField                                       \
-weekOfMonth <> : TemporalField                                     \
-weekOfYear <> : TemporalField                                      \
-weekOfWeekBasedYear <> : TemporalField                             \
-weekBasedYear <> : TemporalField                                   \
+equals <Object> : boolean                                          \
 getFirstDayOfWeek <> : DayOfWeek                                   \
 getMinimalDaysInFirstWeek <> : int                                 \
-equals <Object> : boolean                                          \
-toString <> : String                                               \
 hashCode <> : int                                                  \
-readObject <ObjectInputStream> : void                              \
-readResolve <> : Object                                            \
 of <DayOfWeek,int> : WeekFields                                    \
 of <Locale> : WeekFields                                           \
+toString <> : String                                               \
+weekBasedYear <> : TemporalField                                   \
+weekOfMonth <> : TemporalField                                     \
+weekOfWeekBasedYear <> : TemporalField                             \
+weekOfYear <> : TemporalField                                      \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
