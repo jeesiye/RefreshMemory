@@ -1,26 +1,24 @@
-I:java.sql.SQLXML
+I:java.sql.Driver
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.sql.SQLXML
+I:java.sql.Driver
 ------------------------------------------------------------------------------------------------------------------------------
 \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-I:java.sql.SQLXML
+I:java.sql.Driver
 ------------------------------------------------------------------------------------------------------------------------------
-getString <p0> :String                                             \
-free <p0> :void                                                    \
-setString <p1> :void                                               \
-setBinaryStream <p0> :OutputStream                                 \
-setCharacterStream <p0> :Writer                                    \
-getCharacterStream <p0> :Reader                                    \
-getBinaryStream <p0> :InputStream                                  \
-getSource <p1> :Source                                             \
-setResult <p1> :Result                                             \
+acceptsURL <String> : boolean                                      \
+connect <String,Properties> : Connection                           \
+getMajorVersion <> : int                                           \
+getMinorVersion <> : int                                           \
+getParentLogger <> : Logger                                        \
+getPropertyInfo <String,Properties> : DriverPropertyInfo[]         \
+jdbcCompliant <> : boolean                                         \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

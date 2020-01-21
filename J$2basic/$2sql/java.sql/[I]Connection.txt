@@ -1,0 +1,73 @@
+I:java.sql.Connection
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.Connection
+------------------------------------------------------------------------------------------------------------------------------
+TRANSACTION_NONE                                                   \
+TRANSACTION_READ_UNCOMMITTED                                       \
+TRANSACTION_READ_COMMITTED                                         \
+TRANSACTION_REPEATABLE_READ                                        \
+TRANSACTION_SERIALIZABLE                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.Connection
+------------------------------------------------------------------------------------------------------------------------------
+abort <Executor> : void                                            \
+clearWarnings <> : void                                            \
+close <> : void                                                    \
+commit <> : void                                                   \
+createArrayOf <String,Object[]> : Array                            \
+createBlob <> : Blob                                               \
+createClob <> : Clob                                               \
+createNClob <> : NClob                                             \
+createSQLXML <> : SQLXML                                           \
+createStatement <> : Statement                                     \
+createStatement <int,int,int> : Statement                          \
+createStatement <int,int> : Statement                              \
+createStruct <String,Object[]> : Struct                            \
+getAutoCommit <> : boolean                                         \
+getCatalog <> : String                                             \
+getClientInfo <> : Properties                                      \
+getClientInfo <String> : String                                    \
+getHoldability <> : int                                            \
+getMetaData <> : DatabaseMetaData                                  \
+getNetworkTimeout <> : int                                         \
+getSchema <> : String                                              \
+getTransactionIsolation <> : int                                   \
+getTypeMap <> : Map                                                \
+getWarnings <> : SQLWarning                                        \
+isClosed <> : boolean                                              \
+isReadOnly <> : boolean                                            \
+isValid <int> : boolean                                            \
+nativeSQL <String> : String                                        \
+prepareCall <String,int,int,int> : CallableStatement               \
+prepareCall <String,int,int> : CallableStatement                   \
+prepareCall <String> : CallableStatement                           \
+prepareStatement <String,String[]> : PreparedStatement             \
+prepareStatement <String,int,int,int> : PreparedStatement          \
+prepareStatement <String,int,int> : PreparedStatement              \
+prepareStatement <String,int> : PreparedStatement                  \
+prepareStatement <String,int[]> : PreparedStatement                \
+prepareStatement <String> : PreparedStatement                      \
+releaseSavepoint <Savepoint> : void                                \
+rollback <> : void                                                 \
+rollback <Savepoint> : void                                        \
+setAutoCommit <boolean> : void                                     \
+setCatalog <String> : void                                         \
+setClientInfo <Properties> : void                                  \
+setClientInfo <String,String> : void                               \
+setHoldability <int> : void                                        \
+setNetworkTimeout <Executor,int> : void                            \
+setReadOnly <boolean> : void                                       \
+setSavepoint <> : Savepoint                                        \
+setSavepoint <String> : Savepoint                                  \
+setSchema <String> : void                                          \
+setTransactionIsolation <int> : void                               \
+setTypeMap <Map> : void                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -13,18 +13,18 @@ L:java.sql.Date
 
 L:java.sql.Date
 ------------------------------------------------------------------------------------------------------------------------------
-setTime <p1> :void                                                 \
-toLocalDate <p0> :LocalDate                                        \
-getHours <p0> :int                                                 \
-getMinutes <p0> :int                                               \
-getSeconds <p0> :int                                               \
-toInstant <p0> :Instant                                            \
-setHours <p1> :void                                                \
-setMinutes <p1> :void                                              \
-setSeconds <p1> :void                                              \
-toString <p0> :String                                              \
-valueOf <p1> :Date                                                 \
-valueOf <p1> :Date                                                 \
+getHours <> : int                                                  \
+getMinutes <> : int                                                \
+getSeconds <> : int                                                \
+setHours <int> : void                                              \
+setMinutes <int> : void                                            \
+setSeconds <int> : void                                            \
+setTime <long> : void                                              \
+toInstant <> : Instant                                             \
+toLocalDate <> : LocalDate                                         \
+toString <> : String                                               \
+valueOf <LocalDate> : Date                                         \
+valueOf <String> : Date                                            \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -12,17 +12,17 @@ I:java.sql.Array
 
 I:java.sql.Array
 ------------------------------------------------------------------------------------------------------------------------------
-free <p0> :void                                                    \
-getResultSet <p0> :ResultSet                                       \
-getResultSet <p1> :ResultSet                                       \
-getResultSet <p2> :ResultSet                                       \
-getResultSet <p3> :ResultSet                                       \
-getBaseTypeName <p0> :String                                       \
-getBaseType <p0> :int                                              \
-getArray <p3> :Object                                              \
-getArray <p0> :Object                                              \
-getArray <p1> :Object                                              \
-getArray <p2> :Object                                              \
+free <> : void                                                     \
+getArray <> : Object                                               \
+getArray <Map> : Object                                            \
+getArray <long,int,Map> : Object                                   \
+getArray <long,int> : Object                                       \
+getBaseType <> : int                                               \
+getBaseTypeName <> : String                                        \
+getResultSet <> : ResultSet                                        \
+getResultSet <Map> : ResultSet                                     \
+getResultSet <long,int,Map> : ResultSet                            \
+getResultSet <long,int> : ResultSet                                \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

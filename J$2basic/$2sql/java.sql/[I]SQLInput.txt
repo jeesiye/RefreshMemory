@@ -1,0 +1,45 @@
+I:java.sql.SQLInput
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.SQLInput
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.SQLInput
+------------------------------------------------------------------------------------------------------------------------------
+readArray <> : Array                                               \
+readAsciiStream <> : InputStream                                   \
+readBigDecimal <> : BigDecimal                                     \
+readBinaryStream <> : InputStream                                  \
+readBlob <> : Blob                                                 \
+readBoolean <> : boolean                                           \
+readByte <> : byte                                                 \
+readBytes <> : byte[]                                              \
+readCharacterStream <> : Reader                                    \
+readClob <> : Clob                                                 \
+readDate <> : Date                                                 \
+readDouble <> : double                                             \
+readFloat <> : float                                               \
+readInt <> : int                                                   \
+readLong <> : long                                                 \
+readNClob <> : NClob                                               \
+readNString <> : String                                            \
+readObject <> : Object                                             \
+readObject <Class> : Object                                        \
+readRef <> : Ref                                                   \
+readRowId <> : RowId                                               \
+readSQLXML <> : SQLXML                                             \
+readShort <> : short                                               \
+readString <> : String                                             \
+readTime <> : Time                                                 \
+readTimestamp <> : Timestamp                                       \
+readURL <> : URL                                                   \
+wasNull <> : boolean                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

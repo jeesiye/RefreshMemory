@@ -1,0 +1,32 @@
+L:java.sql.DriverManager
+------------------------------------------------------------------------------------------------------------------------------
+private java.sql.DriverManager()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.sql.DriverManager
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.sql.DriverManager
+------------------------------------------------------------------------------------------------------------------------------
+deregisterDriver <Driver> : void                                   \
+getConnection <String,Properties> : Connection                     \
+getConnection <String,String,String> : Connection                  \
+getConnection <String> : Connection                                \
+getDriver <String> : Driver                                        \
+getDrivers <> : Enumeration                                        \
+getLogStream <> : PrintStream                                      \
+getLogWriter <> : PrintWriter                                      \
+getLoginTimeout <> : int                                           \
+println <String> : void                                            \
+registerDriver <Driver,DriverAction> : void                        \
+registerDriver <Driver> : void                                     \
+setLogStream <PrintStream> : void                                  \
+setLogWriter <PrintWriter> : void                                  \
+setLoginTimeout <int> : void                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

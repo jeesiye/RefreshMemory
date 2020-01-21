@@ -50,12 +50,12 @@ TIMESTAMP_WITH_TIMEZONE                                            \
 
 E:java.sql.JDBCType
 ------------------------------------------------------------------------------------------------------------------------------
-getVendor <p0> :String                                             \
-getVendorTypeNumber <p0> :Integer                                  \
-values <p0> :JDBCType[]                                            \
-valueOf <p1> :JDBCType                                             \
-valueOf <p1> :JDBCType                                             \
-getName <p0> :String                                               \
+getName <> : String                                                \
+getVendor <> : String                                              \
+getVendorTypeNumber <> : Integer                                   \
+valueOf <String> : JDBCType                                        \
+valueOf <int> : JDBCType                                           \
+values <> : JDBCType[]                                             \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

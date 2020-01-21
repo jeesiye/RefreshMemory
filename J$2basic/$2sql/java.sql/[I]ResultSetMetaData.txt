@@ -1,0 +1,40 @@
+I:java.sql.ResultSetMetaData
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.ResultSetMetaData
+------------------------------------------------------------------------------------------------------------------------------
+columnNoNulls                                                      \
+columnNullable                                                     \
+columnNullableUnknown                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.ResultSetMetaData
+------------------------------------------------------------------------------------------------------------------------------
+getCatalogName <int> : String                                      \
+getColumnClassName <int> : String                                  \
+getColumnCount <> : int                                            \
+getColumnDisplaySize <int> : int                                   \
+getColumnLabel <int> : String                                      \
+getColumnName <int> : String                                       \
+getColumnType <int> : int                                          \
+getColumnTypeName <int> : String                                   \
+getPrecision <int> : int                                           \
+getScale <int> : int                                               \
+getSchemaName <int> : String                                       \
+getTableName <int> : String                                        \
+isAutoIncrement <int> : boolean                                    \
+isCaseSensitive <int> : boolean                                    \
+isCurrency <int> : boolean                                         \
+isDefinitelyWritable <int> : boolean                               \
+isNullable <int> : int                                             \
+isReadOnly <int> : boolean                                         \
+isSearchable <int> : boolean                                       \
+isSigned <int> : boolean                                           \
+isWritable <int> : boolean                                         \
+------------------------------------------------------------------------------------------------------------------------------
+
+

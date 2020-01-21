@@ -1,0 +1,219 @@
+I:java.sql.ResultSet
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.ResultSet
+------------------------------------------------------------------------------------------------------------------------------
+FETCH_FORWARD                                                      \
+FETCH_REVERSE                                                      \
+FETCH_UNKNOWN                                                      \
+TYPE_FORWARD_ONLY                                                  \
+TYPE_SCROLL_INSENSITIVE                                            \
+TYPE_SCROLL_SENSITIVE                                              \
+CONCUR_READ_ONLY                                                   \
+CONCUR_UPDATABLE                                                   \
+HOLD_CURSORS_OVER_COMMIT                                           \
+CLOSE_CURSORS_AT_COMMIT                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.ResultSet
+------------------------------------------------------------------------------------------------------------------------------
+absolute <int> : boolean                                           \
+afterLast <> : void                                                \
+beforeFirst <> : void                                              \
+cancelRowUpdates <> : void                                         \
+clearWarnings <> : void                                            \
+close <> : void                                                    \
+deleteRow <> : void                                                \
+findColumn <String> : int                                          \
+first <> : boolean                                                 \
+getArray <String> : Array                                          \
+getArray <int> : Array                                             \
+getAsciiStream <String> : InputStream                              \
+getAsciiStream <int> : InputStream                                 \
+getBigDecimal <String,int> : BigDecimal                            \
+getBigDecimal <String> : BigDecimal                                \
+getBigDecimal <int,int> : BigDecimal                               \
+getBigDecimal <int> : BigDecimal                                   \
+getBinaryStream <String> : InputStream                             \
+getBinaryStream <int> : InputStream                                \
+getBlob <String> : Blob                                            \
+getBlob <int> : Blob                                               \
+getBoolean <String> : boolean                                      \
+getBoolean <int> : boolean                                         \
+getByte <String> : byte                                            \
+getByte <int> : byte                                               \
+getBytes <String> : byte[]                                         \
+getBytes <int> : byte[]                                            \
+getCharacterStream <String> : Reader                               \
+getCharacterStream <int> : Reader                                  \
+getClob <String> : Clob                                            \
+getClob <int> : Clob                                               \
+getConcurrency <> : int                                            \
+getCursorName <> : String                                          \
+getDate <String,Calendar> : Date                                   \
+getDate <String> : Date                                            \
+getDate <int,Calendar> : Date                                      \
+getDate <int> : Date                                               \
+getDouble <String> : double                                        \
+getDouble <int> : double                                           \
+getFetchDirection <> : int                                         \
+getFetchSize <> : int                                              \
+getFloat <String> : float                                          \
+getFloat <int> : float                                             \
+getHoldability <> : int                                            \
+getInt <String> : int                                              \
+getInt <int> : int                                                 \
+getLong <String> : long                                            \
+getLong <int> : long                                               \
+getMetaData <> : ResultSetMetaData                                 \
+getNCharacterStream <String> : Reader                              \
+getNCharacterStream <int> : Reader                                 \
+getNClob <String> : NClob                                          \
+getNClob <int> : NClob                                             \
+getNString <String> : String                                       \
+getNString <int> : String                                          \
+getObject <String,Class> : Object                                  \
+getObject <String,Map> : Object                                    \
+getObject <String> : Object                                        \
+getObject <int,Class> : Object                                     \
+getObject <int,Map> : Object                                       \
+getObject <int> : Object                                           \
+getRef <String> : Ref                                              \
+getRef <int> : Ref                                                 \
+getRow <> : int                                                    \
+getRowId <String> : RowId                                          \
+getRowId <int> : RowId                                             \
+getSQLXML <String> : SQLXML                                        \
+getSQLXML <int> : SQLXML                                           \
+getShort <String> : short                                          \
+getShort <int> : short                                             \
+getStatement <> : Statement                                        \
+getString <String> : String                                        \
+getString <int> : String                                           \
+getTime <String,Calendar> : Time                                   \
+getTime <String> : Time                                            \
+getTime <int,Calendar> : Time                                      \
+getTime <int> : Time                                               \
+getTimestamp <String,Calendar> : Timestamp                         \
+getTimestamp <String> : Timestamp                                  \
+getTimestamp <int,Calendar> : Timestamp                            \
+getTimestamp <int> : Timestamp                                     \
+getType <> : int                                                   \
+getURL <String> : URL                                              \
+getURL <int> : URL                                                 \
+getUnicodeStream <String> : InputStream                            \
+getUnicodeStream <int> : InputStream                               \
+getWarnings <> : SQLWarning                                        \
+insertRow <> : void                                                \
+isAfterLast <> : boolean                                           \
+isBeforeFirst <> : boolean                                         \
+isClosed <> : boolean                                              \
+isFirst <> : boolean                                               \
+isLast <> : boolean                                                \
+last <> : boolean                                                  \
+moveToCurrentRow <> : void                                         \
+moveToInsertRow <> : void                                          \
+next <> : boolean                                                  \
+previous <> : boolean                                              \
+refreshRow <> : void                                               \
+relative <int> : boolean                                           \
+rowDeleted <> : boolean                                            \
+rowInserted <> : boolean                                           \
+rowUpdated <> : boolean                                            \
+setFetchDirection <int> : void                                     \
+setFetchSize <int> : void                                          \
+updateArray <String,Array> : void                                  \
+updateArray <int,Array> : void                                     \
+updateAsciiStream <String,InputStream,int> : void                  \
+updateAsciiStream <String,InputStream,long> : void                 \
+updateAsciiStream <String,InputStream> : void                      \
+updateAsciiStream <int,InputStream,int> : void                     \
+updateAsciiStream <int,InputStream,long> : void                    \
+updateAsciiStream <int,InputStream> : void                         \
+updateBigDecimal <String,BigDecimal> : void                        \
+updateBigDecimal <int,BigDecimal> : void                           \
+updateBinaryStream <String,InputStream,int> : void                 \
+updateBinaryStream <String,InputStream,long> : void                \
+updateBinaryStream <String,InputStream> : void                     \
+updateBinaryStream <int,InputStream,int> : void                    \
+updateBinaryStream <int,InputStream,long> : void                   \
+updateBinaryStream <int,InputStream> : void                        \
+updateBlob <String,Blob> : void                                    \
+updateBlob <String,InputStream,long> : void                        \
+updateBlob <String,InputStream> : void                             \
+updateBlob <int,Blob> : void                                       \
+updateBlob <int,InputStream,long> : void                           \
+updateBlob <int,InputStream> : void                                \
+updateBoolean <String,boolean> : void                              \
+updateBoolean <int,boolean> : void                                 \
+updateByte <String,byte> : void                                    \
+updateByte <int,byte> : void                                       \
+updateBytes <String,byte[]> : void                                 \
+updateBytes <int,byte[]> : void                                    \
+updateCharacterStream <String,Reader,int> : void                   \
+updateCharacterStream <String,Reader,long> : void                  \
+updateCharacterStream <String,Reader> : void                       \
+updateCharacterStream <int,Reader,int> : void                      \
+updateCharacterStream <int,Reader,long> : void                     \
+updateCharacterStream <int,Reader> : void                          \
+updateClob <String,Clob> : void                                    \
+updateClob <String,Reader,long> : void                             \
+updateClob <String,Reader> : void                                  \
+updateClob <int,Clob> : void                                       \
+updateClob <int,Reader,long> : void                                \
+updateClob <int,Reader> : void                                     \
+updateDate <String,Date> : void                                    \
+updateDate <int,Date> : void                                       \
+updateDouble <String,double> : void                                \
+updateDouble <int,double> : void                                   \
+updateFloat <String,float> : void                                  \
+updateFloat <int,float> : void                                     \
+updateInt <String,int> : void                                      \
+updateInt <int,int> : void                                         \
+updateLong <String,long> : void                                    \
+updateLong <int,long> : void                                       \
+updateNCharacterStream <String,Reader,long> : void                 \
+updateNCharacterStream <String,Reader> : void                      \
+updateNCharacterStream <int,Reader,long> : void                    \
+updateNCharacterStream <int,Reader> : void                         \
+updateNClob <String,NClob> : void                                  \
+updateNClob <String,Reader,long> : void                            \
+updateNClob <String,Reader> : void                                 \
+updateNClob <int,NClob> : void                                     \
+updateNClob <int,Reader,long> : void                               \
+updateNClob <int,Reader> : void                                    \
+updateNString <String,String> : void                               \
+updateNString <int,String> : void                                  \
+updateNull <String> : void                                         \
+updateNull <int> : void                                            \
+updateObject <String,Object,SQLType,int> : void                    \
+updateObject <String,Object,SQLType> : void                        \
+updateObject <String,Object,int> : void                            \
+updateObject <String,Object> : void                                \
+updateObject <int,Object,SQLType,int> : void                       \
+updateObject <int,Object,SQLType> : void                           \
+updateObject <int,Object,int> : void                               \
+updateObject <int,Object> : void                                   \
+updateRef <String,Ref> : void                                      \
+updateRef <int,Ref> : void                                         \
+updateRow <> : void                                                \
+updateRowId <String,RowId> : void                                  \
+updateRowId <int,RowId> : void                                     \
+updateSQLXML <String,SQLXML> : void                                \
+updateSQLXML <int,SQLXML> : void                                   \
+updateShort <String,short> : void                                  \
+updateShort <int,short> : void                                     \
+updateString <String,String> : void                                \
+updateString <int,String> : void                                   \
+updateTime <String,Time> : void                                    \
+updateTime <int,Time> : void                                       \
+updateTimestamp <String,Timestamp> : void                          \
+updateTimestamp <int,Timestamp> : void                             \
+wasNull <> : boolean                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

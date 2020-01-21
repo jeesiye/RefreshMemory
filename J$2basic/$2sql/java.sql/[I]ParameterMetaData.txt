@@ -18,15 +18,15 @@ parameterModeOut                                                   \
 
 I:java.sql.ParameterMetaData
 ------------------------------------------------------------------------------------------------------------------------------
-isNullable <p1> :int                                               \
-isSigned <p1> :boolean                                             \
-getPrecision <p1> :int                                             \
-getScale <p1> :int                                                 \
-getParameterType <p1> :int                                         \
-getParameterTypeName <p1> :String                                  \
-getParameterClassName <p1> :String                                 \
-getParameterMode <p1> :int                                         \
-getParameterCount <p0> :int                                        \
+getParameterClassName <int> : String                               \
+getParameterCount <> : int                                         \
+getParameterMode <int> : int                                       \
+getParameterType <int> : int                                       \
+getParameterTypeName <int> : String                                \
+getPrecision <int> : int                                           \
+getScale <int> : int                                               \
+isNullable <int> : int                                             \
+isSigned <int> : boolean                                           \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

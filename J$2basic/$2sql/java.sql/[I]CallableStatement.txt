@@ -1,0 +1,137 @@
+I:java.sql.CallableStatement
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.CallableStatement
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.CallableStatement
+------------------------------------------------------------------------------------------------------------------------------
+getArray <String> : Array                                          \
+getArray <int> : Array                                             \
+getBigDecimal <String> : BigDecimal                                \
+getBigDecimal <int,int> : BigDecimal                               \
+getBigDecimal <int> : BigDecimal                                   \
+getBlob <String> : Blob                                            \
+getBlob <int> : Blob                                               \
+getBoolean <String> : boolean                                      \
+getBoolean <int> : boolean                                         \
+getByte <String> : byte                                            \
+getByte <int> : byte                                               \
+getBytes <String> : byte[]                                         \
+getBytes <int> : byte[]                                            \
+getCharacterStream <String> : Reader                               \
+getCharacterStream <int> : Reader                                  \
+getClob <String> : Clob                                            \
+getClob <int> : Clob                                               \
+getDate <String,Calendar> : Date                                   \
+getDate <String> : Date                                            \
+getDate <int,Calendar> : Date                                      \
+getDate <int> : Date                                               \
+getDouble <String> : double                                        \
+getDouble <int> : double                                           \
+getFloat <String> : float                                          \
+getFloat <int> : float                                             \
+getInt <String> : int                                              \
+getInt <int> : int                                                 \
+getLong <String> : long                                            \
+getLong <int> : long                                               \
+getNCharacterStream <String> : Reader                              \
+getNCharacterStream <int> : Reader                                 \
+getNClob <String> : NClob                                          \
+getNClob <int> : NClob                                             \
+getNString <String> : String                                       \
+getNString <int> : String                                          \
+getObject <String,Class> : Object                                  \
+getObject <String,Map> : Object                                    \
+getObject <String> : Object                                        \
+getObject <int,Class> : Object                                     \
+getObject <int,Map> : Object                                       \
+getObject <int> : Object                                           \
+getRef <String> : Ref                                              \
+getRef <int> : Ref                                                 \
+getRowId <String> : RowId                                          \
+getRowId <int> : RowId                                             \
+getSQLXML <String> : SQLXML                                        \
+getSQLXML <int> : SQLXML                                           \
+getShort <String> : short                                          \
+getShort <int> : short                                             \
+getString <String> : String                                        \
+getString <int> : String                                           \
+getTime <String,Calendar> : Time                                   \
+getTime <String> : Time                                            \
+getTime <int,Calendar> : Time                                      \
+getTime <int> : Time                                               \
+getTimestamp <String,Calendar> : Timestamp                         \
+getTimestamp <String> : Timestamp                                  \
+getTimestamp <int,Calendar> : Timestamp                            \
+getTimestamp <int> : Timestamp                                     \
+getURL <String> : URL                                              \
+getURL <int> : URL                                                 \
+registerOutParameter <String,SQLType,String> : void                \
+registerOutParameter <String,SQLType,int> : void                   \
+registerOutParameter <String,SQLType> : void                       \
+registerOutParameter <String,int,String> : void                    \
+registerOutParameter <String,int,int> : void                       \
+registerOutParameter <String,int> : void                           \
+registerOutParameter <int,SQLType,String> : void                   \
+registerOutParameter <int,SQLType,int> : void                      \
+registerOutParameter <int,SQLType> : void                          \
+registerOutParameter <int,int,String> : void                       \
+registerOutParameter <int,int,int> : void                          \
+registerOutParameter <int,int> : void                              \
+setAsciiStream <String,InputStream,int> : void                     \
+setAsciiStream <String,InputStream,long> : void                    \
+setAsciiStream <String,InputStream> : void                         \
+setBigDecimal <String,BigDecimal> : void                           \
+setBinaryStream <String,InputStream,int> : void                    \
+setBinaryStream <String,InputStream,long> : void                   \
+setBinaryStream <String,InputStream> : void                        \
+setBlob <String,Blob> : void                                       \
+setBlob <String,InputStream,long> : void                           \
+setBlob <String,InputStream> : void                                \
+setBoolean <String,boolean> : void                                 \
+setByte <String,byte> : void                                       \
+setBytes <String,byte[]> : void                                    \
+setCharacterStream <String,Reader,int> : void                      \
+setCharacterStream <String,Reader,long> : void                     \
+setCharacterStream <String,Reader> : void                          \
+setClob <String,Clob> : void                                       \
+setClob <String,Reader,long> : void                                \
+setClob <String,Reader> : void                                     \
+setDate <String,Date,Calendar> : void                              \
+setDate <String,Date> : void                                       \
+setDouble <String,double> : void                                   \
+setFloat <String,float> : void                                     \
+setInt <String,int> : void                                         \
+setLong <String,long> : void                                       \
+setNCharacterStream <String,Reader,long> : void                    \
+setNCharacterStream <String,Reader> : void                         \
+setNClob <String,NClob> : void                                     \
+setNClob <String,Reader,long> : void                               \
+setNClob <String,Reader> : void                                    \
+setNString <String,String> : void                                  \
+setNull <String,int,String> : void                                 \
+setNull <String,int> : void                                        \
+setObject <String,Object,SQLType,int> : void                       \
+setObject <String,Object,SQLType> : void                           \
+setObject <String,Object,int,int> : void                           \
+setObject <String,Object,int> : void                               \
+setObject <String,Object> : void                                   \
+setRowId <String,RowId> : void                                     \
+setSQLXML <String,SQLXML> : void                                   \
+setShort <String,short> : void                                     \
+setString <String,String> : void                                   \
+setTime <String,Time,Calendar> : void                              \
+setTime <String,Time> : void                                       \
+setTimestamp <String,Timestamp,Calendar> : void                    \
+setTimestamp <String,Timestamp> : void                             \
+setURL <String,URL> : void                                         \
+wasNull <> : boolean                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

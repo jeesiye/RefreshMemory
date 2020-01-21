@@ -1,0 +1,35 @@
+L:java.sql.Timestamp
+------------------------------------------------------------------------------------------------------------------------------
+public java.sql.Timestamp(int,int,int,int,int,int,int)
+public java.sql.Timestamp(long)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.sql.Timestamp
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.sql.Timestamp
+------------------------------------------------------------------------------------------------------------------------------
+after <Timestamp> : boolean                                        \
+before <Timestamp> : boolean                                       \
+compareTo <Date> : int                                             \
+compareTo <Timestamp> : int                                        \
+equals <Object> : boolean                                          \
+equals <Timestamp> : boolean                                       \
+from <Instant> : Timestamp                                         \
+getNanos <> : int                                                  \
+getTime <> : long                                                  \
+hashCode <> : int                                                  \
+setNanos <int> : void                                              \
+setTime <long> : void                                              \
+toInstant <> : Instant                                             \
+toLocalDateTime <> : LocalDateTime                                 \
+toString <> : String                                               \
+valueOf <LocalDateTime> : Timestamp                                \
+valueOf <String> : Timestamp                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

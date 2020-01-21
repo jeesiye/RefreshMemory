@@ -1,0 +1,74 @@
+I:java.sql.PreparedStatement
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.PreparedStatement
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.PreparedStatement
+------------------------------------------------------------------------------------------------------------------------------
+addBatch <> : void                                                 \
+clearParameters <> : void                                          \
+execute <> : boolean                                               \
+executeLargeUpdate <> : long                                       \
+executeQuery <> : ResultSet                                        \
+executeUpdate <> : int                                             \
+getMetaData <> : ResultSetMetaData                                 \
+getParameterMetaData <> : ParameterMetaData                        \
+setArray <int,Array> : void                                        \
+setAsciiStream <int,InputStream,int> : void                        \
+setAsciiStream <int,InputStream,long> : void                       \
+setAsciiStream <int,InputStream> : void                            \
+setBigDecimal <int,BigDecimal> : void                              \
+setBinaryStream <int,InputStream,int> : void                       \
+setBinaryStream <int,InputStream,long> : void                      \
+setBinaryStream <int,InputStream> : void                           \
+setBlob <int,Blob> : void                                          \
+setBlob <int,InputStream,long> : void                              \
+setBlob <int,InputStream> : void                                   \
+setBoolean <int,boolean> : void                                    \
+setByte <int,byte> : void                                          \
+setBytes <int,byte[]> : void                                       \
+setCharacterStream <int,Reader,int> : void                         \
+setCharacterStream <int,Reader,long> : void                        \
+setCharacterStream <int,Reader> : void                             \
+setClob <int,Clob> : void                                          \
+setClob <int,Reader,long> : void                                   \
+setClob <int,Reader> : void                                        \
+setDate <int,Date,Calendar> : void                                 \
+setDate <int,Date> : void                                          \
+setDouble <int,double> : void                                      \
+setFloat <int,float> : void                                        \
+setInt <int,int> : void                                            \
+setLong <int,long> : void                                          \
+setNCharacterStream <int,Reader,long> : void                       \
+setNCharacterStream <int,Reader> : void                            \
+setNClob <int,NClob> : void                                        \
+setNClob <int,Reader,long> : void                                  \
+setNClob <int,Reader> : void                                       \
+setNString <int,String> : void                                     \
+setNull <int,int,String> : void                                    \
+setNull <int,int> : void                                           \
+setObject <int,Object,SQLType,int> : void                          \
+setObject <int,Object,SQLType> : void                              \
+setObject <int,Object,int,int> : void                              \
+setObject <int,Object,int> : void                                  \
+setObject <int,Object> : void                                      \
+setRef <int,Ref> : void                                            \
+setRowId <int,RowId> : void                                        \
+setSQLXML <int,SQLXML> : void                                      \
+setShort <int,short> : void                                        \
+setString <int,String> : void                                      \
+setTime <int,Time,Calendar> : void                                 \
+setTime <int,Time> : void                                          \
+setTimestamp <int,Timestamp,Calendar> : void                       \
+setTimestamp <int,Timestamp> : void                                \
+setURL <int,URL> : void                                            \
+setUnicodeStream <int,InputStream,int> : void                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

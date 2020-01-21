@@ -1,0 +1,253 @@
+I:java.sql.DatabaseMetaData
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.DatabaseMetaData
+------------------------------------------------------------------------------------------------------------------------------
+procedureResultUnknown                                             \
+procedureNoResult                                                  \
+procedureReturnsResult                                             \
+procedureColumnUnknown                                             \
+procedureColumnIn                                                  \
+procedureColumnInOut                                               \
+procedureColumnOut                                                 \
+procedureColumnReturn                                              \
+procedureColumnResult                                              \
+procedureNoNulls                                                   \
+procedureNullable                                                  \
+procedureNullableUnknown                                           \
+columnNoNulls                                                      \
+columnNullable                                                     \
+columnNullableUnknown                                              \
+bestRowTemporary                                                   \
+bestRowTransaction                                                 \
+bestRowSession                                                     \
+bestRowUnknown                                                     \
+bestRowNotPseudo                                                   \
+bestRowPseudo                                                      \
+versionColumnUnknown                                               \
+versionColumnNotPseudo                                             \
+versionColumnPseudo                                                \
+importedKeyCascade                                                 \
+importedKeyRestrict                                                \
+importedKeySetNull                                                 \
+importedKeyNoAction                                                \
+importedKeySetDefault                                              \
+importedKeyInitiallyDeferred                                       \
+importedKeyInitiallyImmediate                                      \
+importedKeyNotDeferrable                                           \
+typeNoNulls                                                        \
+typeNullable                                                       \
+typeNullableUnknown                                                \
+typePredNone                                                       \
+typePredChar                                                       \
+typePredBasic                                                      \
+typeSearchable                                                     \
+tableIndexStatistic                                                \
+tableIndexClustered                                                \
+tableIndexHashed                                                   \
+tableIndexOther                                                    \
+attributeNoNulls                                                   \
+attributeNullable                                                  \
+attributeNullableUnknown                                           \
+sqlStateXOpen                                                      \
+sqlStateSQL                                                        \
+sqlStateSQL99                                                      \
+functionColumnUnknown                                              \
+functionColumnIn                                                   \
+functionColumnInOut                                                \
+functionColumnOut                                                  \
+functionReturn                                                     \
+functionColumnResult                                               \
+functionNoNulls                                                    \
+functionNullable                                                   \
+functionNullableUnknown                                            \
+functionResultUnknown                                              \
+functionNoTable                                                    \
+functionReturnsTable                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.sql.DatabaseMetaData
+------------------------------------------------------------------------------------------------------------------------------
+allProceduresAreCallable <> : boolean                              \
+allTablesAreSelectable <> : boolean                                \
+autoCommitFailureClosesAllResultSets <> : boolean                  \
+dataDefinitionCausesTransactionCommit <> : boolean                 \
+dataDefinitionIgnoredInTransactions <> : boolean                   \
+deletesAreDetected <int> : boolean                                 \
+doesMaxRowSizeIncludeBlobs <> : boolean                            \
+generatedKeyAlwaysReturned <> : boolean                            \
+getAttributes <String,String,String,String> : ResultSet            \
+getBestRowIdentifier <String,String,String,int,boolean> : ResultSet\
+getCatalogSeparator <> : String                                    \
+getCatalogTerm <> : String                                         \
+getCatalogs <> : ResultSet                                         \
+getClientInfoProperties <> : ResultSet                             \
+getColumnPrivileges <String,String,String,String> : ResultSet      \
+getColumns <String,String,String,String> : ResultSet               \
+getConnection <> : Connection                                      \
+getCrossReference <String,String,String,String,String,String> : ResultSet
+getDatabaseMajorVersion <> : int                                   \
+getDatabaseMinorVersion <> : int                                   \
+getDatabaseProductName <> : String                                 \
+getDatabaseProductVersion <> : String                              \
+getDefaultTransactionIsolation <> : int                            \
+getDriverMajorVersion <> : int                                     \
+getDriverMinorVersion <> : int                                     \
+getDriverName <> : String                                          \
+getDriverVersion <> : String                                       \
+getExportedKeys <String,String,String> : ResultSet                 \
+getExtraNameCharacters <> : String                                 \
+getFunctionColumns <String,String,String,String> : ResultSet       \
+getFunctions <String,String,String> : ResultSet                    \
+getIdentifierQuoteString <> : String                               \
+getImportedKeys <String,String,String> : ResultSet                 \
+getIndexInfo <String,String,String,boolean,boolean> : ResultSet    \
+getJDBCMajorVersion <> : int                                       \
+getJDBCMinorVersion <> : int                                       \
+getMaxBinaryLiteralLength <> : int                                 \
+getMaxCatalogNameLength <> : int                                   \
+getMaxCharLiteralLength <> : int                                   \
+getMaxColumnNameLength <> : int                                    \
+getMaxColumnsInGroupBy <> : int                                    \
+getMaxColumnsInIndex <> : int                                      \
+getMaxColumnsInOrderBy <> : int                                    \
+getMaxColumnsInSelect <> : int                                     \
+getMaxColumnsInTable <> : int                                      \
+getMaxConnections <> : int                                         \
+getMaxCursorNameLength <> : int                                    \
+getMaxIndexLength <> : int                                         \
+getMaxLogicalLobSize <> : long                                     \
+getMaxProcedureNameLength <> : int                                 \
+getMaxRowSize <> : int                                             \
+getMaxSchemaNameLength <> : int                                    \
+getMaxStatementLength <> : int                                     \
+getMaxStatements <> : int                                          \
+getMaxTableNameLength <> : int                                     \
+getMaxTablesInSelect <> : int                                      \
+getMaxUserNameLength <> : int                                      \
+getNumericFunctions <> : String                                    \
+getPrimaryKeys <String,String,String> : ResultSet                  \
+getProcedureColumns <String,String,String,String> : ResultSet      \
+getProcedureTerm <> : String                                       \
+getProcedures <String,String,String> : ResultSet                   \
+getPseudoColumns <String,String,String,String> : ResultSet         \
+getResultSetHoldability <> : int                                   \
+getRowIdLifetime <> : RowIdLifetime                                \
+getSQLKeywords <> : String                                         \
+getSQLStateType <> : int                                           \
+getSchemaTerm <> : String                                          \
+getSchemas <> : ResultSet                                          \
+getSchemas <String,String> : ResultSet                             \
+getSearchStringEscape <> : String                                  \
+getStringFunctions <> : String                                     \
+getSuperTables <String,String,String> : ResultSet                  \
+getSuperTypes <String,String,String> : ResultSet                   \
+getSystemFunctions <> : String                                     \
+getTablePrivileges <String,String,String> : ResultSet              \
+getTableTypes <> : ResultSet                                       \
+getTables <String,String,String,String[]> : ResultSet              \
+getTimeDateFunctions <> : String                                   \
+getTypeInfo <> : ResultSet                                         \
+getUDTs <String,String,String,int[]> : ResultSet                   \
+getURL <> : String                                                 \
+getUserName <> : String                                            \
+getVersionColumns <String,String,String> : ResultSet               \
+insertsAreDetected <int> : boolean                                 \
+isCatalogAtStart <> : boolean                                      \
+isReadOnly <> : boolean                                            \
+locatorsUpdateCopy <> : boolean                                    \
+nullPlusNonNullIsNull <> : boolean                                 \
+nullsAreSortedAtEnd <> : boolean                                   \
+nullsAreSortedAtStart <> : boolean                                 \
+nullsAreSortedHigh <> : boolean                                    \
+nullsAreSortedLow <> : boolean                                     \
+othersDeletesAreVisible <int> : boolean                            \
+othersInsertsAreVisible <int> : boolean                            \
+othersUpdatesAreVisible <int> : boolean                            \
+ownDeletesAreVisible <int> : boolean                               \
+ownInsertsAreVisible <int> : boolean                               \
+ownUpdatesAreVisible <int> : boolean                               \
+storesLowerCaseIdentifiers <> : boolean                            \
+storesLowerCaseQuotedIdentifiers <> : boolean                      \
+storesMixedCaseIdentifiers <> : boolean                            \
+storesMixedCaseQuotedIdentifiers <> : boolean                      \
+storesUpperCaseIdentifiers <> : boolean                            \
+storesUpperCaseQuotedIdentifiers <> : boolean                      \
+supportsANSI92EntryLevelSQL <> : boolean                           \
+supportsANSI92FullSQL <> : boolean                                 \
+supportsANSI92IntermediateSQL <> : boolean                         \
+supportsAlterTableWithAddColumn <> : boolean                       \
+supportsAlterTableWithDropColumn <> : boolean                      \
+supportsBatchUpdates <> : boolean                                  \
+supportsCatalogsInDataManipulation <> : boolean                    \
+supportsCatalogsInIndexDefinitions <> : boolean                    \
+supportsCatalogsInPrivilegeDefinitions <> : boolean                \
+supportsCatalogsInProcedureCalls <> : boolean                      \
+supportsCatalogsInTableDefinitions <> : boolean                    \
+supportsColumnAliasing <> : boolean                                \
+supportsConvert <> : boolean                                       \
+supportsConvert <int,int> : boolean                                \
+supportsCoreSQLGrammar <> : boolean                                \
+supportsCorrelatedSubqueries <> : boolean                          \
+supportsDataDefinitionAndDataManipulationTransactions <> : boolean \
+supportsDataManipulationTransactionsOnly <> : boolean              \
+supportsDifferentTableCorrelationNames <> : boolean                \
+supportsExpressionsInOrderBy <> : boolean                          \
+supportsExtendedSQLGrammar <> : boolean                            \
+supportsFullOuterJoins <> : boolean                                \
+supportsGetGeneratedKeys <> : boolean                              \
+supportsGroupBy <> : boolean                                       \
+supportsGroupByBeyondSelect <> : boolean                           \
+supportsGroupByUnrelated <> : boolean                              \
+supportsIntegrityEnhancementFacility <> : boolean                  \
+supportsLikeEscapeClause <> : boolean                              \
+supportsLimitedOuterJoins <> : boolean                             \
+supportsMinimumSQLGrammar <> : boolean                             \
+supportsMixedCaseIdentifiers <> : boolean                          \
+supportsMixedCaseQuotedIdentifiers <> : boolean                    \
+supportsMultipleOpenResults <> : boolean                           \
+supportsMultipleResultSets <> : boolean                            \
+supportsMultipleTransactions <> : boolean                          \
+supportsNamedParameters <> : boolean                               \
+supportsNonNullableColumns <> : boolean                            \
+supportsOpenCursorsAcrossCommit <> : boolean                       \
+supportsOpenCursorsAcrossRollback <> : boolean                     \
+supportsOpenStatementsAcrossCommit <> : boolean                    \
+supportsOpenStatementsAcrossRollback <> : boolean                  \
+supportsOrderByUnrelated <> : boolean                              \
+supportsOuterJoins <> : boolean                                    \
+supportsPositionedDelete <> : boolean                              \
+supportsPositionedUpdate <> : boolean                              \
+supportsRefCursors <> : boolean                                    \
+supportsResultSetConcurrency <int,int> : boolean                   \
+supportsResultSetHoldability <int> : boolean                       \
+supportsResultSetType <int> : boolean                              \
+supportsSavepoints <> : boolean                                    \
+supportsSchemasInDataManipulation <> : boolean                     \
+supportsSchemasInIndexDefinitions <> : boolean                     \
+supportsSchemasInPrivilegeDefinitions <> : boolean                 \
+supportsSchemasInProcedureCalls <> : boolean                       \
+supportsSchemasInTableDefinitions <> : boolean                     \
+supportsSelectForUpdate <> : boolean                               \
+supportsStatementPooling <> : boolean                              \
+supportsStoredFunctionsUsingCallSyntax <> : boolean                \
+supportsStoredProcedures <> : boolean                              \
+supportsSubqueriesInComparisons <> : boolean                       \
+supportsSubqueriesInExists <> : boolean                            \
+supportsSubqueriesInIns <> : boolean                               \
+supportsSubqueriesInQuantifieds <> : boolean                       \
+supportsTableCorrelationNames <> : boolean                         \
+supportsTransactionIsolationLevel <int> : boolean                  \
+supportsTransactions <> : boolean                                  \
+supportsUnion <> : boolean                                         \
+supportsUnionAll <> : boolean                                      \
+updatesAreDetected <int> : boolean                                 \
+usesLocalFilePerTable <> : boolean                                 \
+usesLocalFiles <> : boolean                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+
