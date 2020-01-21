@@ -1,0 +1,30 @@
+L:java.util.LinkedHashMap
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.LinkedHashMap(int,float,boolean)
+public java.util.LinkedHashMap(java.util.Map)
+public java.util.LinkedHashMap(int)
+public java.util.LinkedHashMap(int,float)
+public java.util.LinkedHashMap()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.LinkedHashMap
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.LinkedHashMap
+------------------------------------------------------------------------------------------------------------------------------
+clear <> : void                                                    \
+containsValue <Object> : boolean                                   \
+entrySet <> : Set                                                  \
+forEach <BiConsumer> : void                                        \
+get <Object> : Object                                              \
+getOrDefault <Object,Object> : Object                              \
+keySet <> : Set                                                    \
+replaceAll <BiFunction> : void                                     \
+values <> : Collection                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

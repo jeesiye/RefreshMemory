@@ -1,0 +1,69 @@
+L:java.util.Vector
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.Vector(java.util.Collection)
+public java.util.Vector()
+public java.util.Vector(int)
+public java.util.Vector(int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Vector
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Vector
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+add <int,Object> : void                                            \
+addAll <Collection> : boolean                                      \
+addAll <int,Collection> : boolean                                  \
+addElement <Object> : void                                         \
+capacity <> : int                                                  \
+clear <> : void                                                    \
+clone <> : Object                                                  \
+contains <Object> : boolean                                        \
+containsAll <Collection> : boolean                                 \
+copyInto <Object[]> : void                                         \
+elementAt <int> : Object                                           \
+elements <> : Enumeration                                          \
+ensureCapacity <int> : void                                        \
+equals <Object> : boolean                                          \
+firstElement <> : Object                                           \
+forEach <Consumer> : void                                          \
+get <int> : Object                                                 \
+hashCode <> : int                                                  \
+indexOf <Object,int> : int                                         \
+indexOf <Object> : int                                             \
+insertElementAt <Object,int> : void                                \
+isEmpty <> : boolean                                               \
+iterator <> : Iterator                                             \
+lastElement <> : Object                                            \
+lastIndexOf <Object,int> : int                                     \
+lastIndexOf <Object> : int                                         \
+listIterator <> : ListIterator                                     \
+listIterator <int> : ListIterator                                  \
+remove <Object> : boolean                                          \
+remove <int> : Object                                              \
+removeAll <Collection> : boolean                                   \
+removeAllElements <> : void                                        \
+removeElement <Object> : boolean                                   \
+removeElementAt <int> : void                                       \
+removeIf <Predicate> : boolean                                     \
+replaceAll <UnaryOperator> : void                                  \
+retainAll <Collection> : boolean                                   \
+set <int,Object> : Object                                          \
+setElementAt <Object,int> : void                                   \
+setSize <int> : void                                               \
+size <> : int                                                      \
+sort <Comparator> : void                                           \
+spliterator <> : Spliterator                                       \
+subList <int,int> : List                                           \
+toArray <> : Object[]                                              \
+toArray <Object[]> : Object[]                                      \
+toString <> : String                                               \
+trimToSize <> : void                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

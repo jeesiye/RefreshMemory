@@ -1,0 +1,44 @@
+I:java.util.Deque
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.Deque
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.Deque
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+addFirst <Object> : void                                           \
+addLast <Object> : void                                            \
+contains <Object> : boolean                                        \
+descendingIterator <> : Iterator                                   \
+element <> : Object                                                \
+getFirst <> : Object                                               \
+getLast <> : Object                                                \
+iterator <> : Iterator                                             \
+offer <Object> : boolean                                           \
+offerFirst <Object> : boolean                                      \
+offerLast <Object> : boolean                                       \
+peek <> : Object                                                   \
+peekFirst <> : Object                                              \
+peekLast <> : Object                                               \
+poll <> : Object                                                   \
+pollFirst <> : Object                                              \
+pollLast <> : Object                                               \
+pop <> : Object                                                    \
+push <Object> : void                                               \
+remove <> : Object                                                 \
+remove <Object> : boolean                                          \
+removeFirst <> : Object                                            \
+removeFirstOccurrence <Object> : boolean                           \
+removeLast <> : Object                                             \
+removeLastOccurrence <Object> : boolean                            \
+size <> : int                                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

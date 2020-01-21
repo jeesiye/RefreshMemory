@@ -1,0 +1,52 @@
+L:java.util.ArrayDeque
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.ArrayDeque(int)
+public java.util.ArrayDeque()
+public java.util.ArrayDeque(java.util.Collection)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.ArrayDeque
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.ArrayDeque
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+addFirst <Object> : void                                           \
+addLast <Object> : void                                            \
+clear <> : void                                                    \
+clone <> : ArrayDeque                                              \
+contains <Object> : boolean                                        \
+descendingIterator <> : Iterator                                   \
+element <> : Object                                                \
+getFirst <> : Object                                               \
+getLast <> : Object                                                \
+isEmpty <> : boolean                                               \
+iterator <> : Iterator                                             \
+offer <Object> : boolean                                           \
+offerFirst <Object> : boolean                                      \
+offerLast <Object> : boolean                                       \
+peek <> : Object                                                   \
+peekFirst <> : Object                                              \
+peekLast <> : Object                                               \
+poll <> : Object                                                   \
+pollFirst <> : Object                                              \
+pollLast <> : Object                                               \
+pop <> : Object                                                    \
+push <Object> : void                                               \
+remove <> : Object                                                 \
+remove <Object> : boolean                                          \
+removeFirst <> : Object                                            \
+removeFirstOccurrence <Object> : boolean                           \
+removeLast <> : Object                                             \
+removeLastOccurrence <Object> : boolean                            \
+size <> : int                                                      \
+spliterator <> : Spliterator                                       \
+toArray <> : Object[]                                              \
+toArray <Object[]> : Object[]                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

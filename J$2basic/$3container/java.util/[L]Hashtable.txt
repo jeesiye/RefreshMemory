@@ -1,0 +1,50 @@
+L:java.util.Hashtable
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.Hashtable(java.util.Map)
+public java.util.Hashtable()
+public java.util.Hashtable(int)
+public java.util.Hashtable(int,float)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Hashtable
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Hashtable
+------------------------------------------------------------------------------------------------------------------------------
+clear <> : void                                                    \
+clone <> : Object                                                  \
+compute <Object,BiFunction> : Object                               \
+computeIfAbsent <Object,Function> : Object                         \
+computeIfPresent <Object,BiFunction> : Object                      \
+contains <Object> : boolean                                        \
+containsKey <Object> : boolean                                     \
+containsValue <Object> : boolean                                   \
+elements <> : Enumeration                                          \
+entrySet <> : Set                                                  \
+equals <Object> : boolean                                          \
+forEach <BiConsumer> : void                                        \
+get <Object> : Object                                              \
+getOrDefault <Object,Object> : Object                              \
+hashCode <> : int                                                  \
+isEmpty <> : boolean                                               \
+keySet <> : Set                                                    \
+keys <> : Enumeration                                              \
+merge <Object,Object,BiFunction> : Object                          \
+put <Object,Object> : Object                                       \
+putAll <Map> : void                                                \
+putIfAbsent <Object,Object> : Object                               \
+remove <Object,Object> : boolean                                   \
+remove <Object> : Object                                           \
+replace <Object,Object,Object> : boolean                           \
+replace <Object,Object> : Object                                   \
+replaceAll <BiFunction> : void                                     \
+size <> : int                                                      \
+toString <> : String                                               \
+values <> : Collection                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

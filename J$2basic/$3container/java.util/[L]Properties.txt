@@ -1,0 +1,33 @@
+L:java.util.Properties
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.Properties()
+public java.util.Properties(java.util.Properties)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Properties
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Properties
+------------------------------------------------------------------------------------------------------------------------------
+getProperty <String,String> : String                               \
+getProperty <String> : String                                      \
+list <PrintStream> : void                                          \
+list <PrintWriter> : void                                          \
+load <InputStream> : void                                          \
+load <Reader> : void                                               \
+loadFromXML <InputStream> : void                                   \
+propertyNames <> : Enumeration                                     \
+save <OutputStream,String> : void                                  \
+setProperty <String,String> : Object                               \
+store <OutputStream,String> : void                                 \
+store <Writer,String> : void                                       \
+storeToXML <OutputStream,String,String> : void                     \
+storeToXML <OutputStream,String> : void                            \
+stringPropertyNames <> : Set                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

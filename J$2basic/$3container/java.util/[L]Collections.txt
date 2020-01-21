@@ -1,0 +1,85 @@
+L:java.util.Collections
+------------------------------------------------------------------------------------------------------------------------------
+private java.util.Collections()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Collections
+------------------------------------------------------------------------------------------------------------------------------
+EMPTY_SET                                                          \
+EMPTY_LIST                                                         \
+EMPTY_MAP                                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Collections
+------------------------------------------------------------------------------------------------------------------------------
+addAll <Collection,Object[]> : boolean                             \
+asLifoQueue <Deque> : Queue                                        \
+binarySearch <List,Object,Comparator> : int                        \
+binarySearch <List,Object> : int                                   \
+checkedCollection <Collection,Class> : Collection                  \
+checkedList <List,Class> : List                                    \
+checkedMap <Map,Class,Class> : Map                                 \
+checkedNavigableMap <NavigableMap,Class,Class> : NavigableMap      \
+checkedNavigableSet <NavigableSet,Class> : NavigableSet            \
+checkedQueue <Queue,Class> : Queue                                 \
+checkedSet <Set,Class> : Set                                       \
+checkedSortedMap <SortedMap,Class,Class> : SortedMap               \
+checkedSortedSet <SortedSet,Class> : SortedSet                     \
+copy <List,List> : void                                            \
+disjoint <Collection,Collection> : boolean                         \
+emptyEnumeration <> : Enumeration                                  \
+emptyIterator <> : Iterator                                        \
+emptyList <> : List                                                \
+emptyListIterator <> : ListIterator                                \
+emptyMap <> : Map                                                  \
+emptyNavigableMap <> : NavigableMap                                \
+emptyNavigableSet <> : NavigableSet                                \
+emptySet <> : Set                                                  \
+emptySortedMap <> : SortedMap                                      \
+emptySortedSet <> : SortedSet                                      \
+enumeration <Collection> : Enumeration                             \
+fill <List,Object> : void                                          \
+frequency <Collection,Object> : int                                \
+indexOfSubList <List,List> : int                                   \
+lastIndexOfSubList <List,List> : int                               \
+list <Enumeration> : ArrayList                                     \
+max <Collection,Comparator> : Object                               \
+max <Collection> : Object                                          \
+min <Collection,Comparator> : Object                               \
+min <Collection> : Object                                          \
+nCopies <int,Object> : List                                        \
+newSetFromMap <Map> : Set                                          \
+replaceAll <List,Object,Object> : boolean                          \
+reverse <List> : void                                              \
+reverseOrder <> : Comparator                                       \
+reverseOrder <Comparator> : Comparator                             \
+rotate <List,int> : void                                           \
+shuffle <List,Random> : void                                       \
+shuffle <List> : void                                              \
+singleton <Object> : Set                                           \
+singletonList <Object> : List                                      \
+singletonMap <Object,Object> : Map                                 \
+sort <List,Comparator> : void                                      \
+sort <List> : void                                                 \
+swap <List,int,int> : void                                         \
+synchronizedCollection <Collection> : Collection                   \
+synchronizedList <List> : List                                     \
+synchronizedMap <Map> : Map                                        \
+synchronizedNavigableMap <NavigableMap> : NavigableMap             \
+synchronizedNavigableSet <NavigableSet> : NavigableSet             \
+synchronizedSet <Set> : Set                                        \
+synchronizedSortedMap <SortedMap> : SortedMap                      \
+synchronizedSortedSet <SortedSet> : SortedSet                      \
+unmodifiableCollection <Collection> : Collection                   \
+unmodifiableList <List> : List                                     \
+unmodifiableMap <Map> : Map                                        \
+unmodifiableNavigableMap <NavigableMap> : NavigableMap             \
+unmodifiableNavigableSet <NavigableSet> : NavigableSet             \
+unmodifiableSet <Set> : Set                                        \
+unmodifiableSortedMap <SortedMap> : SortedMap                      \
+unmodifiableSortedSet <SortedSet> : SortedSet                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

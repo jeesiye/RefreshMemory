@@ -1,0 +1,39 @@
+L:java.util.Random
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.Random()
+public java.util.Random(long)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Random
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Random
+------------------------------------------------------------------------------------------------------------------------------
+doubles <> : DoubleStream                                          \
+doubles <double,double> : DoubleStream                             \
+doubles <long,double,double> : DoubleStream                        \
+doubles <long> : DoubleStream                                      \
+ints <> : IntStream                                                \
+ints <int,int> : IntStream                                         \
+ints <long,int,int> : IntStream                                    \
+ints <long> : IntStream                                            \
+longs <> : LongStream                                              \
+longs <long,long,long> : LongStream                                \
+longs <long,long> : LongStream                                     \
+longs <long> : LongStream                                          \
+nextBoolean <> : boolean                                           \
+nextBytes <byte[]> : void                                          \
+nextDouble <> : double                                             \
+nextFloat <> : float                                               \
+nextGaussian <> : double                                           \
+nextInt <> : int                                                   \
+nextInt <int> : int                                                \
+nextLong <> : long                                                 \
+setSeed <long> : void                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

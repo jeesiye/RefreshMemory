@@ -1,0 +1,60 @@
+L:java.util.TreeMap
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.TreeMap()
+public java.util.TreeMap(java.util.Map)
+public java.util.TreeMap(java.util.Comparator)
+public java.util.TreeMap(java.util.SortedMap)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.TreeMap
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.TreeMap
+------------------------------------------------------------------------------------------------------------------------------
+ceilingEntry <Object> : Entry                                      \
+ceilingKey <Object> : Object                                       \
+clear <> : void                                                    \
+clone <> : Object                                                  \
+comparator <> : Comparator                                         \
+containsKey <Object> : boolean                                     \
+containsValue <Object> : boolean                                   \
+descendingKeySet <> : NavigableSet                                 \
+descendingMap <> : NavigableMap                                    \
+entrySet <> : Set                                                  \
+firstEntry <> : Entry                                              \
+firstKey <> : Object                                               \
+floorEntry <Object> : Entry                                        \
+floorKey <Object> : Object                                         \
+forEach <BiConsumer> : void                                        \
+get <Object> : Object                                              \
+headMap <Object,boolean> : NavigableMap                            \
+headMap <Object> : SortedMap                                       \
+higherEntry <Object> : Entry                                       \
+higherKey <Object> : Object                                        \
+keySet <> : Set                                                    \
+lastEntry <> : Entry                                               \
+lastKey <> : Object                                                \
+lowerEntry <Object> : Entry                                        \
+lowerKey <Object> : Object                                         \
+navigableKeySet <> : NavigableSet                                  \
+pollFirstEntry <> : Entry                                          \
+pollLastEntry <> : Entry                                           \
+put <Object,Object> : Object                                       \
+putAll <Map> : void                                                \
+remove <Object> : Object                                           \
+replace <Object,Object,Object> : boolean                           \
+replace <Object,Object> : Object                                   \
+replaceAll <BiFunction> : void                                     \
+size <> : int                                                      \
+subMap <Object,Object> : SortedMap                                 \
+subMap <Object,boolean,Object,boolean> : NavigableMap              \
+tailMap <Object,boolean> : NavigableMap                            \
+tailMap <Object> : SortedMap                                       \
+values <> : Collection                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

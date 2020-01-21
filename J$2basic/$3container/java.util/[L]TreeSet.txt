@@ -1,0 +1,48 @@
+L:java.util.TreeSet
+------------------------------------------------------------------------------------------------------------------------------
+java.util.TreeSet(java.util.NavigableMap)
+public java.util.TreeSet(java.util.SortedSet)
+public java.util.TreeSet(java.util.Collection)
+public java.util.TreeSet(java.util.Comparator)
+public java.util.TreeSet()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.TreeSet
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.TreeSet
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+addAll <Collection> : boolean                                      \
+ceiling <Object> : Object                                          \
+clear <> : void                                                    \
+clone <> : Object                                                  \
+comparator <> : Comparator                                         \
+contains <Object> : boolean                                        \
+descendingIterator <> : Iterator                                   \
+descendingSet <> : NavigableSet                                    \
+first <> : Object                                                  \
+floor <Object> : Object                                            \
+headSet <Object,boolean> : NavigableSet                            \
+headSet <Object> : SortedSet                                       \
+higher <Object> : Object                                           \
+isEmpty <> : boolean                                               \
+iterator <> : Iterator                                             \
+last <> : Object                                                   \
+lower <Object> : Object                                            \
+pollFirst <> : Object                                              \
+pollLast <> : Object                                               \
+remove <Object> : boolean                                          \
+size <> : int                                                      \
+spliterator <> : Spliterator                                       \
+subSet <Object,Object> : SortedSet                                 \
+subSet <Object,boolean,Object,boolean> : NavigableSet              \
+tailSet <Object,boolean> : NavigableSet                            \
+tailSet <Object> : SortedSet                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

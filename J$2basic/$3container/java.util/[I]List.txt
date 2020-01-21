@@ -1,0 +1,45 @@
+I:java.util.List
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.List
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.List
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+add <int,Object> : void                                            \
+addAll <Collection> : boolean                                      \
+addAll <int,Collection> : boolean                                  \
+clear <> : void                                                    \
+contains <Object> : boolean                                        \
+containsAll <Collection> : boolean                                 \
+equals <Object> : boolean                                          \
+get <int> : Object                                                 \
+hashCode <> : int                                                  \
+indexOf <Object> : int                                             \
+isEmpty <> : boolean                                               \
+iterator <> : Iterator                                             \
+lastIndexOf <Object> : int                                         \
+listIterator <> : ListIterator                                     \
+listIterator <int> : ListIterator                                  \
+remove <Object> : boolean                                          \
+remove <int> : Object                                              \
+removeAll <Collection> : boolean                                   \
+replaceAll <UnaryOperator> : void                                  \
+retainAll <Collection> : boolean                                   \
+set <int,Object> : Object                                          \
+size <> : int                                                      \
+sort <Comparator> : void                                           \
+spliterator <> : Spliterator                                       \
+subList <int,int> : List                                           \
+toArray <> : Object[]                                              \
+toArray <Object[]> : Object[]                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

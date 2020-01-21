@@ -1,0 +1,32 @@
+I:java.util.NavigableSet
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.NavigableSet
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.NavigableSet
+------------------------------------------------------------------------------------------------------------------------------
+ceiling <Object> : Object                                          \
+descendingIterator <> : Iterator                                   \
+descendingSet <> : NavigableSet                                    \
+floor <Object> : Object                                            \
+headSet <Object,boolean> : NavigableSet                            \
+headSet <Object> : SortedSet                                       \
+higher <Object> : Object                                           \
+iterator <> : Iterator                                             \
+lower <Object> : Object                                            \
+pollFirst <> : Object                                              \
+pollLast <> : Object                                               \
+subSet <Object,Object> : SortedSet                                 \
+subSet <Object,boolean,Object,boolean> : NavigableSet              \
+tailSet <Object,boolean> : NavigableSet                            \
+tailSet <Object> : SortedSet                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

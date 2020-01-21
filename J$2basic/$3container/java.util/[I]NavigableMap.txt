@@ -1,0 +1,38 @@
+I:java.util.NavigableMap
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.NavigableMap
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.NavigableMap
+------------------------------------------------------------------------------------------------------------------------------
+ceilingEntry <Object> : Entry                                      \
+ceilingKey <Object> : Object                                       \
+descendingKeySet <> : NavigableSet                                 \
+descendingMap <> : NavigableMap                                    \
+firstEntry <> : Entry                                              \
+floorEntry <Object> : Entry                                        \
+floorKey <Object> : Object                                         \
+headMap <Object,boolean> : NavigableMap                            \
+headMap <Object> : SortedMap                                       \
+higherEntry <Object> : Entry                                       \
+higherKey <Object> : Object                                        \
+lastEntry <> : Entry                                               \
+lowerEntry <Object> : Entry                                        \
+lowerKey <Object> : Object                                         \
+navigableKeySet <> : NavigableSet                                  \
+pollFirstEntry <> : Entry                                          \
+pollLastEntry <> : Entry                                           \
+subMap <Object,Object> : SortedMap                                 \
+subMap <Object,boolean,Object,boolean> : NavigableMap              \
+tailMap <Object,boolean> : NavigableMap                            \
+tailMap <Object> : SortedMap                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

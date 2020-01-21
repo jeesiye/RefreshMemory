@@ -1,0 +1,42 @@
+FL:java.util.Spliterators
+------------------------------------------------------------------------------------------------------------------------------
+private java.util.Spliterators()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.util.Spliterators
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.util.Spliterators
+------------------------------------------------------------------------------------------------------------------------------
+emptyDoubleSpliterator <> : OfDouble                               \
+emptyIntSpliterator <> : OfInt                                     \
+emptyLongSpliterator <> : OfLong                                   \
+emptySpliterator <> : Spliterator                                  \
+iterator <OfDouble> : OfDouble                                     \
+iterator <OfInt> : OfInt                                           \
+iterator <OfLong> : OfLong                                         \
+iterator <Spliterator> : Iterator                                  \
+spliterator <Collection,int> : Spliterator                         \
+spliterator <Iterator,long,int> : Spliterator                      \
+spliterator <Object[],int,int,int> : Spliterator                   \
+spliterator <Object[],int> : Spliterator                           \
+spliterator <OfDouble,long,int> : OfDouble                         \
+spliterator <OfInt,long,int> : OfInt                               \
+spliterator <OfLong,long,int> : OfLong                             \
+spliterator <double[],int,int,int> : OfDouble                      \
+spliterator <double[],int> : OfDouble                              \
+spliterator <int[],int,int,int> : OfInt                            \
+spliterator <int[],int> : OfInt                                    \
+spliterator <long[],int,int,int> : OfLong                          \
+spliterator <long[],int> : OfLong                                  \
+spliteratorUnknownSize <Iterator,int> : Spliterator                \
+spliteratorUnknownSize <OfDouble,int> : OfDouble                   \
+spliteratorUnknownSize <OfInt,int> : OfInt                         \
+spliteratorUnknownSize <OfLong,int> : OfLong                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

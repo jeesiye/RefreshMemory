@@ -1,0 +1,51 @@
+L:java.util.Date
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.Date()
+public java.util.Date(long)
+public java.util.Date(int,int,int,int,int)
+public java.util.Date(int,int,int,int,int,int)
+public java.util.Date(java.lang.String)
+public java.util.Date(int,int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Date
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Date
+------------------------------------------------------------------------------------------------------------------------------
+UTC <int,int,int,int,int,int> : long                               \
+after <Date> : boolean                                             \
+before <Date> : boolean                                            \
+clone <> : Object                                                  \
+compareTo <Date> : int                                             \
+equals <Object> : boolean                                          \
+from <Instant> : Date                                              \
+getDate <> : int                                                   \
+getDay <> : int                                                    \
+getHours <> : int                                                  \
+getMinutes <> : int                                                \
+getMonth <> : int                                                  \
+getSeconds <> : int                                                \
+getTime <> : long                                                  \
+getTimezoneOffset <> : int                                         \
+getYear <> : int                                                   \
+hashCode <> : int                                                  \
+parse <String> : long                                              \
+setDate <int> : void                                               \
+setHours <int> : void                                              \
+setMinutes <int> : void                                            \
+setMonth <int> : void                                              \
+setSeconds <int> : void                                            \
+setTime <long> : void                                              \
+setYear <int> : void                                               \
+toGMTString <> : String                                            \
+toInstant <> : Instant                                             \
+toLocaleString <> : String                                         \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

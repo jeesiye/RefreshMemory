@@ -1,0 +1,172 @@
+L:java.util.Arrays
+------------------------------------------------------------------------------------------------------------------------------
+private java.util.Arrays()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Arrays
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.Arrays
+------------------------------------------------------------------------------------------------------------------------------
+asList <Object[]> : List                                           \
+binarySearch <Object[],Object,Comparator> : int                    \
+binarySearch <Object[],Object> : int                               \
+binarySearch <Object[],int,int,Object,Comparator> : int            \
+binarySearch <Object[],int,int,Object> : int                       \
+binarySearch <byte[],byte> : int                                   \
+binarySearch <byte[],int,int,byte> : int                           \
+binarySearch <char[],char> : int                                   \
+binarySearch <char[],int,int,char> : int                           \
+binarySearch <double[],double> : int                               \
+binarySearch <double[],int,int,double> : int                       \
+binarySearch <float[],float> : int                                 \
+binarySearch <float[],int,int,float> : int                         \
+binarySearch <int[],int,int,int> : int                             \
+binarySearch <int[],int> : int                                     \
+binarySearch <long[],int,int,long> : int                           \
+binarySearch <long[],long> : int                                   \
+binarySearch <short[],int,int,short> : int                         \
+binarySearch <short[],short> : int                                 \
+copyOf <Object[],int,Class> : Object[]                             \
+copyOf <Object[],int> : Object[]                                   \
+copyOf <boolean[],int> : boolean[]                                 \
+copyOf <byte[],int> : byte[]                                       \
+copyOf <char[],int> : char[]                                       \
+copyOf <double[],int> : double[]                                   \
+copyOf <float[],int> : float[]                                     \
+copyOf <int[],int> : int[]                                         \
+copyOf <long[],int> : long[]                                       \
+copyOf <short[],int> : short[]                                     \
+copyOfRange <Object[],int,int,Class> : Object[]                    \
+copyOfRange <Object[],int,int> : Object[]                          \
+copyOfRange <boolean[],int,int> : boolean[]                        \
+copyOfRange <byte[],int,int> : byte[]                              \
+copyOfRange <char[],int,int> : char[]                              \
+copyOfRange <double[],int,int> : double[]                          \
+copyOfRange <float[],int,int> : float[]                            \
+copyOfRange <int[],int,int> : int[]                                \
+copyOfRange <long[],int,int> : long[]                              \
+copyOfRange <short[],int,int> : short[]                            \
+deepEquals <Object[],Object[]> : boolean                           \
+deepHashCode <Object[]> : int                                      \
+deepToString <Object[]> : String                                   \
+equals <Object[],Object[]> : boolean                               \
+equals <boolean[],boolean[]> : boolean                             \
+equals <byte[],byte[]> : boolean                                   \
+equals <char[],char[]> : boolean                                   \
+equals <double[],double[]> : boolean                               \
+equals <float[],float[]> : boolean                                 \
+equals <int[],int[]> : boolean                                     \
+equals <long[],long[]> : boolean                                   \
+equals <short[],short[]> : boolean                                 \
+fill <Object[],Object> : void                                      \
+fill <Object[],int,int,Object> : void                              \
+fill <boolean[],boolean> : void                                    \
+fill <boolean[],int,int,boolean> : void                            \
+fill <byte[],byte> : void                                          \
+fill <byte[],int,int,byte> : void                                  \
+fill <char[],char> : void                                          \
+fill <char[],int,int,char> : void                                  \
+fill <double[],double> : void                                      \
+fill <double[],int,int,double> : void                              \
+fill <float[],float> : void                                        \
+fill <float[],int,int,float> : void                                \
+fill <int[],int,int,int> : void                                    \
+fill <int[],int> : void                                            \
+fill <long[],int,int,long> : void                                  \
+fill <long[],long> : void                                          \
+fill <short[],int,int,short> : void                                \
+fill <short[],short> : void                                        \
+hashCode <Object[]> : int                                          \
+hashCode <boolean[]> : int                                         \
+hashCode <byte[]> : int                                            \
+hashCode <char[]> : int                                            \
+hashCode <double[]> : int                                          \
+hashCode <float[]> : int                                           \
+hashCode <int[]> : int                                             \
+hashCode <long[]> : int                                            \
+hashCode <short[]> : int                                           \
+parallelPrefix <Object[],BinaryOperator> : void                    \
+parallelPrefix <Object[],int,int,BinaryOperator> : void            \
+parallelPrefix <double[],DoubleBinaryOperator> : void              \
+parallelPrefix <double[],int,int,DoubleBinaryOperator> : void      \
+parallelPrefix <int[],IntBinaryOperator> : void                    \
+parallelPrefix <int[],int,int,IntBinaryOperator> : void            \
+parallelPrefix <long[],LongBinaryOperator> : void                  \
+parallelPrefix <long[],int,int,LongBinaryOperator> : void          \
+parallelSetAll <Object[],IntFunction> : void                       \
+parallelSetAll <double[],IntToDoubleFunction> : void               \
+parallelSetAll <int[],IntUnaryOperator> : void                     \
+parallelSetAll <long[],IntToLongFunction> : void                   \
+parallelSort <Comparable[],int,int> : void                         \
+parallelSort <Comparable[]> : void                                 \
+parallelSort <Object[],Comparator> : void                          \
+parallelSort <Object[],int,int,Comparator> : void                  \
+parallelSort <byte[],int,int> : void                               \
+parallelSort <byte[]> : void                                       \
+parallelSort <char[],int,int> : void                               \
+parallelSort <char[]> : void                                       \
+parallelSort <double[],int,int> : void                             \
+parallelSort <double[]> : void                                     \
+parallelSort <float[],int,int> : void                              \
+parallelSort <float[]> : void                                      \
+parallelSort <int[],int,int> : void                                \
+parallelSort <int[]> : void                                        \
+parallelSort <long[],int,int> : void                               \
+parallelSort <long[]> : void                                       \
+parallelSort <short[],int,int> : void                              \
+parallelSort <short[]> : void                                      \
+setAll <Object[],IntFunction> : void                               \
+setAll <double[],IntToDoubleFunction> : void                       \
+setAll <int[],IntUnaryOperator> : void                             \
+setAll <long[],IntToLongFunction> : void                           \
+sort <Object[],Comparator> : void                                  \
+sort <Object[],int,int,Comparator> : void                          \
+sort <Object[],int,int> : void                                     \
+sort <Object[]> : void                                             \
+sort <byte[],int,int> : void                                       \
+sort <byte[]> : void                                               \
+sort <char[],int,int> : void                                       \
+sort <char[]> : void                                               \
+sort <double[],int,int> : void                                     \
+sort <double[]> : void                                             \
+sort <float[],int,int> : void                                      \
+sort <float[]> : void                                              \
+sort <int[],int,int> : void                                        \
+sort <int[]> : void                                                \
+sort <long[],int,int> : void                                       \
+sort <long[]> : void                                               \
+sort <short[],int,int> : void                                      \
+sort <short[]> : void                                              \
+spliterator <Object[],int,int> : Spliterator                       \
+spliterator <Object[]> : Spliterator                               \
+spliterator <double[],int,int> : OfDouble                          \
+spliterator <double[]> : OfDouble                                  \
+spliterator <int[],int,int> : OfInt                                \
+spliterator <int[]> : OfInt                                        \
+spliterator <long[],int,int> : OfLong                              \
+spliterator <long[]> : OfLong                                      \
+stream <Object[],int,int> : Stream                                 \
+stream <Object[]> : Stream                                         \
+stream <double[],int,int> : DoubleStream                           \
+stream <double[]> : DoubleStream                                   \
+stream <int[],int,int> : IntStream                                 \
+stream <int[]> : IntStream                                         \
+stream <long[],int,int> : LongStream                               \
+stream <long[]> : LongStream                                       \
+toString <Object[]> : String                                       \
+toString <boolean[]> : String                                      \
+toString <byte[]> : String                                         \
+toString <char[]> : String                                         \
+toString <double[]> : String                                       \
+toString <float[]> : String                                        \
+toString <int[]> : String                                          \
+toString <long[]> : String                                         \
+toString <short[]> : String                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

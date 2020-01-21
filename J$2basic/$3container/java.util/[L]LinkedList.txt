@@ -1,0 +1,58 @@
+L:java.util.LinkedList
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.LinkedList()
+public java.util.LinkedList(java.util.Collection)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.LinkedList
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.LinkedList
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+add <int,Object> : void                                            \
+addAll <Collection> : boolean                                      \
+addAll <int,Collection> : boolean                                  \
+addFirst <Object> : void                                           \
+addLast <Object> : void                                            \
+clear <> : void                                                    \
+clone <> : Object                                                  \
+contains <Object> : boolean                                        \
+descendingIterator <> : Iterator                                   \
+element <> : Object                                                \
+get <int> : Object                                                 \
+getFirst <> : Object                                               \
+getLast <> : Object                                                \
+indexOf <Object> : int                                             \
+lastIndexOf <Object> : int                                         \
+listIterator <int> : ListIterator                                  \
+offer <Object> : boolean                                           \
+offerFirst <Object> : boolean                                      \
+offerLast <Object> : boolean                                       \
+peek <> : Object                                                   \
+peekFirst <> : Object                                              \
+peekLast <> : Object                                               \
+poll <> : Object                                                   \
+pollFirst <> : Object                                              \
+pollLast <> : Object                                               \
+pop <> : Object                                                    \
+push <Object> : void                                               \
+remove <> : Object                                                 \
+remove <Object> : boolean                                          \
+remove <int> : Object                                              \
+removeFirst <> : Object                                            \
+removeFirstOccurrence <Object> : boolean                           \
+removeLast <> : Object                                             \
+removeLastOccurrence <Object> : boolean                            \
+set <int,Object> : Object                                          \
+size <> : int                                                      \
+spliterator <> : Spliterator                                       \
+toArray <> : Object[]                                              \
+toArray <Object[]> : Object[]                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

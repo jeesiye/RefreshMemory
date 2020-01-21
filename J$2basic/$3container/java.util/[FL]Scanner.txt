@@ -1,0 +1,84 @@
+FL:java.util.Scanner
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.Scanner(java.io.InputStream)
+private java.util.Scanner(java.lang.Readable,java.util.regex.Pattern)
+public java.util.Scanner(java.lang.Readable)
+public java.util.Scanner(java.nio.file.Path) throws java.io.IOException
+private java.util.Scanner(java.io.File,java.nio.charset.CharsetDecoder) throws java.io.FileNotFoundException
+public java.util.Scanner(java.io.File,java.lang.String) throws java.io.FileNotFoundException
+public java.util.Scanner(java.io.File) throws java.io.FileNotFoundException
+public java.util.Scanner(java.io.InputStream,java.lang.String)
+public java.util.Scanner(java.nio.channels.ReadableByteChannel,java.lang.String)
+public java.util.Scanner(java.nio.channels.ReadableByteChannel)
+public java.util.Scanner(java.lang.String)
+private java.util.Scanner(java.nio.file.Path,java.nio.charset.Charset) throws java.io.IOException
+public java.util.Scanner(java.nio.file.Path,java.lang.String) throws java.io.IOException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.util.Scanner
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.util.Scanner
+------------------------------------------------------------------------------------------------------------------------------
+close <> : void                                                    \
+delimiter <> : Pattern                                             \
+findInLine <Pattern> : String                                      \
+findInLine <String> : String                                       \
+findWithinHorizon <Pattern,int> : String                           \
+findWithinHorizon <String,int> : String                            \
+hasNext <> : boolean                                               \
+hasNext <Pattern> : boolean                                        \
+hasNext <String> : boolean                                         \
+hasNextBigDecimal <> : boolean                                     \
+hasNextBigInteger <> : boolean                                     \
+hasNextBigInteger <int> : boolean                                  \
+hasNextBoolean <> : boolean                                        \
+hasNextByte <> : boolean                                           \
+hasNextByte <int> : boolean                                        \
+hasNextDouble <> : boolean                                         \
+hasNextFloat <> : boolean                                          \
+hasNextInt <> : boolean                                            \
+hasNextInt <int> : boolean                                         \
+hasNextLine <> : boolean                                           \
+hasNextLong <> : boolean                                           \
+hasNextLong <int> : boolean                                        \
+hasNextShort <> : boolean                                          \
+hasNextShort <int> : boolean                                       \
+ioException <> : IOException                                       \
+locale <> : Locale                                                 \
+match <> : MatchResult                                             \
+next <> : String                                                   \
+next <Pattern> : String                                            \
+next <String> : String                                             \
+nextBigDecimal <> : BigDecimal                                     \
+nextBigInteger <> : BigInteger                                     \
+nextBigInteger <int> : BigInteger                                  \
+nextBoolean <> : boolean                                           \
+nextByte <> : byte                                                 \
+nextByte <int> : byte                                              \
+nextDouble <> : double                                             \
+nextFloat <> : float                                               \
+nextInt <> : int                                                   \
+nextInt <int> : int                                                \
+nextLine <> : String                                               \
+nextLong <> : long                                                 \
+nextLong <int> : long                                              \
+nextShort <> : short                                               \
+nextShort <int> : short                                            \
+radix <> : int                                                     \
+remove <> : void                                                   \
+reset <> : Scanner                                                 \
+skip <Pattern> : Scanner                                           \
+skip <String> : Scanner                                            \
+toString <> : String                                               \
+useDelimiter <Pattern> : Scanner                                   \
+useDelimiter <String> : Scanner                                    \
+useLocale <Locale> : Scanner                                       \
+useRadix <int> : Scanner                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+

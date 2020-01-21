@@ -1,0 +1,34 @@
+L:java.util.WeakHashMap
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.WeakHashMap(java.util.Map)
+public java.util.WeakHashMap(int)
+public java.util.WeakHashMap(int,float)
+public java.util.WeakHashMap()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.WeakHashMap
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.WeakHashMap
+------------------------------------------------------------------------------------------------------------------------------
+clear <> : void                                                    \
+containsKey <Object> : boolean                                     \
+containsValue <Object> : boolean                                   \
+entrySet <> : Set                                                  \
+forEach <BiConsumer> : void                                        \
+get <Object> : Object                                              \
+isEmpty <> : boolean                                               \
+keySet <> : Set                                                    \
+put <Object,Object> : Object                                       \
+putAll <Map> : void                                                \
+remove <Object> : Object                                           \
+replaceAll <BiFunction> : void                                     \
+size <> : int                                                      \
+values <> : Collection                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

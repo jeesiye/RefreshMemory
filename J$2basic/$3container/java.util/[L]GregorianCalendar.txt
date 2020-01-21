@@ -1,0 +1,50 @@
+L:java.util.GregorianCalendar
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.GregorianCalendar(int,int,int)
+public java.util.GregorianCalendar(int,int,int,int,int)
+public java.util.GregorianCalendar(int,int,int,int,int,int)
+java.util.GregorianCalendar(int,int,int,int,int,int,int)
+public java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale)
+public java.util.GregorianCalendar(java.util.Locale)
+public java.util.GregorianCalendar(java.util.TimeZone)
+java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale,boolean)
+public java.util.GregorianCalendar()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.GregorianCalendar
+------------------------------------------------------------------------------------------------------------------------------
+BC                                                                 \
+AD                                                                 \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.GregorianCalendar
+------------------------------------------------------------------------------------------------------------------------------
+add <int,int> : void                                               \
+clone <> : Object                                                  \
+equals <Object> : boolean                                          \
+from <ZonedDateTime> : GregorianCalendar                           \
+getActualMaximum <int> : int                                       \
+getActualMinimum <int> : int                                       \
+getCalendarType <> : String                                        \
+getGreatestMinimum <int> : int                                     \
+getGregorianChange <> : Date                                       \
+getLeastMaximum <int> : int                                        \
+getMaximum <int> : int                                             \
+getMinimum <int> : int                                             \
+getTimeZone <> : TimeZone                                          \
+getWeekYear <> : int                                               \
+getWeeksInWeekYear <> : int                                        \
+hashCode <> : int                                                  \
+isLeapYear <int> : boolean                                         \
+isWeekDateSupported <> : boolean                                   \
+roll <int,boolean> : void                                          \
+roll <int,int> : void                                              \
+setGregorianChange <Date> : void                                   \
+setTimeZone <TimeZone> : void                                      \
+setWeekDate <int,int,int> : void                                   \
+toZonedDateTime <> : ZonedDateTime                                 \
+------------------------------------------------------------------------------------------------------------------------------
+
+

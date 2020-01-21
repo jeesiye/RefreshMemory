@@ -1,0 +1,36 @@
+L:java.util.PriorityQueue
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.PriorityQueue(java.util.PriorityQueue)
+public java.util.PriorityQueue()
+public java.util.PriorityQueue(int,java.util.Comparator)
+public java.util.PriorityQueue(java.util.Comparator)
+public java.util.PriorityQueue(int)
+public java.util.PriorityQueue(java.util.SortedSet)
+public java.util.PriorityQueue(java.util.Collection)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.PriorityQueue
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.PriorityQueue
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+clear <> : void                                                    \
+comparator <> : Comparator                                         \
+contains <Object> : boolean                                        \
+iterator <> : Iterator                                             \
+offer <Object> : boolean                                           \
+peek <> : Object                                                   \
+poll <> : Object                                                   \
+remove <Object> : boolean                                          \
+size <> : int                                                      \
+spliterator <> : Spliterator                                       \
+toArray <> : Object[]                                              \
+toArray <Object[]> : Object[]                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

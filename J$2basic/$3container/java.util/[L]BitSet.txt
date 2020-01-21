@@ -1,0 +1,54 @@
+L:java.util.BitSet
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.BitSet(int)
+private java.util.BitSet(long[])
+public java.util.BitSet()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.BitSet
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.BitSet
+------------------------------------------------------------------------------------------------------------------------------
+and <BitSet> : void                                                \
+andNot <BitSet> : void                                             \
+cardinality <> : int                                               \
+clear <> : void                                                    \
+clear <int,int> : void                                             \
+clear <int> : void                                                 \
+clone <> : Object                                                  \
+equals <Object> : boolean                                          \
+flip <int,int> : void                                              \
+flip <int> : void                                                  \
+get <int,int> : BitSet                                             \
+get <int> : boolean                                                \
+hashCode <> : int                                                  \
+intersects <BitSet> : boolean                                      \
+isEmpty <> : boolean                                               \
+length <> : int                                                    \
+nextClearBit <int> : int                                           \
+nextSetBit <int> : int                                             \
+or <BitSet> : void                                                 \
+previousClearBit <int> : int                                       \
+previousSetBit <int> : int                                         \
+set <int,boolean> : void                                           \
+set <int,int,boolean> : void                                       \
+set <int,int> : void                                               \
+set <int> : void                                                   \
+size <> : int                                                      \
+stream <> : IntStream                                              \
+toByteArray <> : byte[]                                            \
+toLongArray <> : long[]                                            \
+toString <> : String                                               \
+valueOf <ByteBuffer> : BitSet                                      \
+valueOf <LongBuffer> : BitSet                                      \
+valueOf <byte[]> : BitSet                                          \
+valueOf <long[]> : BitSet                                          \
+xor <BitSet> : void                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

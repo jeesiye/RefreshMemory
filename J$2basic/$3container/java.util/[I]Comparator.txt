@@ -1,0 +1,35 @@
+I:java.util.Comparator
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.Comparator
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.Comparator
+------------------------------------------------------------------------------------------------------------------------------
+compare <Object,Object> : int                                      \
+comparing <Function,Comparator> : Comparator                       \
+comparing <Function> : Comparator                                  \
+comparingDouble <ToDoubleFunction> : Comparator                    \
+comparingInt <ToIntFunction> : Comparator                          \
+comparingLong <ToLongFunction> : Comparator                        \
+equals <Object> : boolean                                          \
+naturalOrder <> : Comparator                                       \
+nullsFirst <Comparator> : Comparator                               \
+nullsLast <Comparator> : Comparator                                \
+reverseOrder <> : Comparator                                       \
+reversed <> : Comparator                                           \
+thenComparing <Comparator> : Comparator                            \
+thenComparing <Function,Comparator> : Comparator                   \
+thenComparing <Function> : Comparator                              \
+thenComparingDouble <ToDoubleFunction> : Comparator                \
+thenComparingInt <ToIntFunction> : Comparator                      \
+thenComparingLong <ToLongFunction> : Comparator                    \
+------------------------------------------------------------------------------------------------------------------------------
+
+

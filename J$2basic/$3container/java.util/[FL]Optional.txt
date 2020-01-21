@@ -1,0 +1,33 @@
+FL:java.util.Optional
+------------------------------------------------------------------------------------------------------------------------------
+private java.util.Optional()
+private java.util.Optional(java.lang.Object)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.util.Optional
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.util.Optional
+------------------------------------------------------------------------------------------------------------------------------
+empty <> : Optional                                                \
+equals <Object> : boolean                                          \
+filter <Predicate> : Optional                                      \
+flatMap <Function> : Optional                                      \
+get <> : Object                                                    \
+hashCode <> : int                                                  \
+ifPresent <Consumer> : void                                        \
+isPresent <> : boolean                                             \
+map <Function> : Optional                                          \
+of <Object> : Optional                                             \
+ofNullable <Object> : Optional                                     \
+orElse <Object> : Object                                           \
+orElseGet <Supplier> : Object                                      \
+orElseThrow <Supplier> : Object                                    \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

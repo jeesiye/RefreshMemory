@@ -1,0 +1,44 @@
+L:java.util.HashMap
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.HashMap(int)
+public java.util.HashMap()
+public java.util.HashMap(java.util.Map)
+public java.util.HashMap(int,float)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.HashMap
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.HashMap
+------------------------------------------------------------------------------------------------------------------------------
+clear <> : void                                                    \
+clone <> : Object                                                  \
+compute <Object,BiFunction> : Object                               \
+computeIfAbsent <Object,Function> : Object                         \
+computeIfPresent <Object,BiFunction> : Object                      \
+containsKey <Object> : boolean                                     \
+containsValue <Object> : boolean                                   \
+entrySet <> : Set                                                  \
+forEach <BiConsumer> : void                                        \
+get <Object> : Object                                              \
+getOrDefault <Object,Object> : Object                              \
+isEmpty <> : boolean                                               \
+keySet <> : Set                                                    \
+merge <Object,Object,BiFunction> : Object                          \
+put <Object,Object> : Object                                       \
+putAll <Map> : void                                                \
+putIfAbsent <Object,Object> : Object                               \
+remove <Object,Object> : boolean                                   \
+remove <Object> : Object                                           \
+replace <Object,Object,Object> : boolean                           \
+replace <Object,Object> : Object                                   \
+replaceAll <BiFunction> : void                                     \
+size <> : int                                                      \
+values <> : Collection                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+

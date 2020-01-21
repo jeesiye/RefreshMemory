@@ -1,0 +1,36 @@
+I:java.util.Collection
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.Collection
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+I:java.util.Collection
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+addAll <Collection> : boolean                                      \
+clear <> : void                                                    \
+contains <Object> : boolean                                        \
+containsAll <Collection> : boolean                                 \
+equals <Object> : boolean                                          \
+hashCode <> : int                                                  \
+isEmpty <> : boolean                                               \
+iterator <> : Iterator                                             \
+parallelStream <> : Stream                                         \
+remove <Object> : boolean                                          \
+removeAll <Collection> : boolean                                   \
+removeIf <Predicate> : boolean                                     \
+retainAll <Collection> : boolean                                   \
+size <> : int                                                      \
+spliterator <> : Spliterator                                       \
+stream <> : Stream                                                 \
+toArray <> : Object[]                                              \
+toArray <Object[]> : Object[]                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

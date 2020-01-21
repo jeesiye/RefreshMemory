@@ -1,0 +1,49 @@
+L:java.util.ArrayList
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.ArrayList(java.util.Collection)
+public java.util.ArrayList()
+public java.util.ArrayList(int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.ArrayList
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.ArrayList
+------------------------------------------------------------------------------------------------------------------------------
+add <Object> : boolean                                             \
+add <int,Object> : void                                            \
+addAll <Collection> : boolean                                      \
+addAll <int,Collection> : boolean                                  \
+clear <> : void                                                    \
+clone <> : Object                                                  \
+contains <Object> : boolean                                        \
+ensureCapacity <int> : void                                        \
+forEach <Consumer> : void                                          \
+get <int> : Object                                                 \
+indexOf <Object> : int                                             \
+isEmpty <> : boolean                                               \
+iterator <> : Iterator                                             \
+lastIndexOf <Object> : int                                         \
+listIterator <> : ListIterator                                     \
+listIterator <int> : ListIterator                                  \
+remove <Object> : boolean                                          \
+remove <int> : Object                                              \
+removeAll <Collection> : boolean                                   \
+removeIf <Predicate> : boolean                                     \
+replaceAll <UnaryOperator> : void                                  \
+retainAll <Collection> : boolean                                   \
+set <int,Object> : Object                                          \
+size <> : int                                                      \
+sort <Comparator> : void                                           \
+spliterator <> : Spliterator                                       \
+subList <int,int> : List                                           \
+toArray <> : Object[]                                              \
+toArray <Object[]> : Object[]                                      \
+trimToSize <> : void                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

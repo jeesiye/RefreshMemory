@@ -1,0 +1,36 @@
+L:java.util.IdentityHashMap
+------------------------------------------------------------------------------------------------------------------------------
+public java.util.IdentityHashMap(java.util.Map)
+public java.util.IdentityHashMap()
+public java.util.IdentityHashMap(int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.IdentityHashMap
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.util.IdentityHashMap
+------------------------------------------------------------------------------------------------------------------------------
+clear <> : void                                                    \
+clone <> : Object                                                  \
+containsKey <Object> : boolean                                     \
+containsValue <Object> : boolean                                   \
+entrySet <> : Set                                                  \
+equals <Object> : boolean                                          \
+forEach <BiConsumer> : void                                        \
+get <Object> : Object                                              \
+hashCode <> : int                                                  \
+isEmpty <> : boolean                                               \
+keySet <> : Set                                                    \
+put <Object,Object> : Object                                       \
+putAll <Map> : void                                                \
+remove <Object> : Object                                           \
+replaceAll <BiFunction> : void                                     \
+size <> : int                                                      \
+values <> : Collection                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+
