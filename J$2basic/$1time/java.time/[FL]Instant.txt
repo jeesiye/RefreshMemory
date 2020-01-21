@@ -1,0 +1,58 @@
+FL:java.time.Instant
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.Instant(long,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Instant
+------------------------------------------------------------------------------------------------------------------------------
+EPOCH                                                              \
+MIN                                                                \
+MAX                                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Instant
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atOffset <ZoneOffset> : OffsetDateTime                             \
+atZone <ZoneId> : ZonedDateTime                                    \
+compareTo <Instant> : int                                          \
+equals <Object> : boolean                                          \
+from <TemporalAccessor> : Instant                                  \
+get <TemporalField> : int                                          \
+getEpochSecond <> : long                                           \
+getLong <TemporalField> : long                                     \
+getNano <> : int                                                   \
+hashCode <> : int                                                  \
+isAfter <Instant> : boolean                                        \
+isBefore <Instant> : boolean                                       \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : Instant                                   \
+minus <long,TemporalUnit> : Instant                                \
+minusMillis <long> : Instant                                       \
+minusNanos <long> : Instant                                        \
+minusSeconds <long> : Instant                                      \
+now <> : Instant                                                   \
+now <Clock> : Instant                                              \
+ofEpochMilli <long> : Instant                                      \
+ofEpochSecond <long,long> : Instant                                \
+ofEpochSecond <long> : Instant                                     \
+parse <CharSequence> : Instant                                     \
+plus <TemporalAmount> : Instant                                    \
+plus <long,TemporalUnit> : Instant                                 \
+plusMillis <long> : Instant                                        \
+plusNanos <long> : Instant                                         \
+plusSeconds <long> : Instant                                       \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toEpochMilli <> : long                                             \
+toString <> : String                                               \
+truncatedTo <TemporalUnit> : Instant                               \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : Instant                                  \
+with <TemporalField,long> : Instant                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

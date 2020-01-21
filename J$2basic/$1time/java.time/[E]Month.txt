@@ -1,0 +1,47 @@
+E:java.time.Month
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.Month(java.lang.String,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.time.Month
+------------------------------------------------------------------------------------------------------------------------------
+JANUARY                                                            \
+FEBRUARY                                                           \
+MARCH                                                              \
+APRIL                                                              \
+MAY                                                                \
+JUNE                                                               \
+JULY                                                               \
+AUGUST                                                             \
+SEPTEMBER                                                          \
+OCTOBER                                                            \
+NOVEMBER                                                           \
+DECEMBER                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.time.Month
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+firstDayOfYear <boolean> : int                                     \
+firstMonthOfQuarter <> : Month                                     \
+from <TemporalAccessor> : Month                                    \
+get <TemporalField> : int                                          \
+getDisplayName <TextStyle,Locale> : String                         \
+getLong <TemporalField> : long                                     \
+getValue <> : int                                                  \
+isSupported <TemporalField> : boolean                              \
+length <boolean> : int                                             \
+maxLength <> : int                                                 \
+minLength <> : int                                                 \
+minus <long> : Month                                               \
+of <int> : Month                                                   \
+plus <long> : Month                                                \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+valueOf <String> : Month                                           \
+values <> : Month[]                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

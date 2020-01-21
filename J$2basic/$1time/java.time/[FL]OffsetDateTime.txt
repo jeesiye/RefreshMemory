@@ -1,0 +1,98 @@
+FL:java.time.OffsetDateTime
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.OffsetDateTime(java.time.LocalDateTime,java.time.ZoneOffset)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.OffsetDateTime
+------------------------------------------------------------------------------------------------------------------------------
+MIN                                                                \
+MAX                                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.OffsetDateTime
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atZoneSameInstant <ZoneId> : ZonedDateTime                         \
+atZoneSimilarLocal <ZoneId> : ZonedDateTime                        \
+compareTo <OffsetDateTime> : int                                   \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : OffsetDateTime                           \
+get <TemporalField> : int                                          \
+getDayOfMonth <> : int                                             \
+getDayOfWeek <> : DayOfWeek                                        \
+getDayOfYear <> : int                                              \
+getHour <> : int                                                   \
+getLong <TemporalField> : long                                     \
+getMinute <> : int                                                 \
+getMonth <> : Month                                                \
+getMonthValue <> : int                                             \
+getNano <> : int                                                   \
+getOffset <> : ZoneOffset                                          \
+getSecond <> : int                                                 \
+getYear <> : int                                                   \
+hashCode <> : int                                                  \
+isAfter <OffsetDateTime> : boolean                                 \
+isBefore <OffsetDateTime> : boolean                                \
+isEqual <OffsetDateTime> : boolean                                 \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : OffsetDateTime                            \
+minus <long,TemporalUnit> : OffsetDateTime                         \
+minusDays <long> : OffsetDateTime                                  \
+minusHours <long> : OffsetDateTime                                 \
+minusMinutes <long> : OffsetDateTime                               \
+minusMonths <long> : OffsetDateTime                                \
+minusNanos <long> : OffsetDateTime                                 \
+minusSeconds <long> : OffsetDateTime                               \
+minusWeeks <long> : OffsetDateTime                                 \
+minusYears <long> : OffsetDateTime                                 \
+now <> : OffsetDateTime                                            \
+now <Clock> : OffsetDateTime                                       \
+now <ZoneId> : OffsetDateTime                                      \
+of <LocalDate,LocalTime,ZoneOffset> : OffsetDateTime               \
+of <LocalDateTime,ZoneOffset> : OffsetDateTime                     \
+of <int,int,int,int,int,int,int,ZoneOffset> : OffsetDateTime       \
+ofInstant <Instant,ZoneId> : OffsetDateTime                        \
+parse <CharSequence,DateTimeFormatter> : OffsetDateTime            \
+parse <CharSequence> : OffsetDateTime                              \
+plus <TemporalAmount> : OffsetDateTime                             \
+plus <long,TemporalUnit> : OffsetDateTime                          \
+plusDays <long> : OffsetDateTime                                   \
+plusHours <long> : OffsetDateTime                                  \
+plusMinutes <long> : OffsetDateTime                                \
+plusMonths <long> : OffsetDateTime                                 \
+plusNanos <long> : OffsetDateTime                                  \
+plusSeconds <long> : OffsetDateTime                                \
+plusWeeks <long> : OffsetDateTime                                  \
+plusYears <long> : OffsetDateTime                                  \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+timeLineOrder <> : Comparator                                      \
+toEpochSecond <> : long                                            \
+toInstant <> : Instant                                             \
+toLocalDate <> : LocalDate                                         \
+toLocalDateTime <> : LocalDateTime                                 \
+toLocalTime <> : LocalTime                                         \
+toOffsetTime <> : OffsetTime                                       \
+toString <> : String                                               \
+toZonedDateTime <> : ZonedDateTime                                 \
+truncatedTo <TemporalUnit> : OffsetDateTime                        \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : OffsetDateTime                           \
+with <TemporalField,long> : OffsetDateTime                         \
+withDayOfMonth <int> : OffsetDateTime                              \
+withDayOfYear <int> : OffsetDateTime                               \
+withHour <int> : OffsetDateTime                                    \
+withMinute <int> : OffsetDateTime                                  \
+withMonth <int> : OffsetDateTime                                   \
+withNano <int> : OffsetDateTime                                    \
+withOffsetSameInstant <ZoneOffset> : OffsetDateTime                \
+withOffsetSameLocal <ZoneOffset> : OffsetDateTime                  \
+withSecond <int> : OffsetDateTime                                  \
+withYear <int> : OffsetDateTime                                    \
+------------------------------------------------------------------------------------------------------------------------------
+
+

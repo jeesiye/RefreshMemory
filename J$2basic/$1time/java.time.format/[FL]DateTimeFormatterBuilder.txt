@@ -1,0 +1,57 @@
+FL:java.time.format.DateTimeFormatterBuilder
+------------------------------------------------------------------------------------------------------------------------------
+public java.time.format.DateTimeFormatterBuilder()
+private java.time.format.DateTimeFormatterBuilder(java.time.format.DateTimeFormatterBuilder,boolean)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.format.DateTimeFormatterBuilder
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.format.DateTimeFormatterBuilder
+------------------------------------------------------------------------------------------------------------------------------
+append <DateTimeFormatter> : DateTimeFormatterBuilder              \
+appendChronologyId <> : DateTimeFormatterBuilder                   \
+appendChronologyText <TextStyle> : DateTimeFormatterBuilder        \
+appendFraction <TemporalField,int,int,boolean> : DateTimeFormatterBuilder
+appendInstant <> : DateTimeFormatterBuilder                        \
+appendInstant <int> : DateTimeFormatterBuilder                     \
+appendLiteral <String> : DateTimeFormatterBuilder                  \
+appendLiteral <char> : DateTimeFormatterBuilder                    \
+appendLocalized <FormatStyle,FormatStyle> : DateTimeFormatterBuilder
+appendLocalizedOffset <TextStyle> : DateTimeFormatterBuilder       \
+appendOffset <String,String> : DateTimeFormatterBuilder            \
+appendOffsetId <> : DateTimeFormatterBuilder                       \
+appendOptional <DateTimeFormatter> : DateTimeFormatterBuilder      \
+appendPattern <String> : DateTimeFormatterBuilder                  \
+appendText <TemporalField,Map> : DateTimeFormatterBuilder          \
+appendText <TemporalField,TextStyle> : DateTimeFormatterBuilder    \
+appendText <TemporalField> : DateTimeFormatterBuilder              \
+appendValue <TemporalField,int,int,SignStyle> : DateTimeFormatterBuilder
+appendValue <TemporalField,int> : DateTimeFormatterBuilder         \
+appendValue <TemporalField> : DateTimeFormatterBuilder             \
+appendValueReduced <TemporalField,int,int,ChronoLocalDate> : DateTimeFormatterBuilder
+appendValueReduced <TemporalField,int,int,int> : DateTimeFormatterBuilder
+appendZoneId <> : DateTimeFormatterBuilder                         \
+appendZoneOrOffsetId <> : DateTimeFormatterBuilder                 \
+appendZoneRegionId <> : DateTimeFormatterBuilder                   \
+appendZoneText <TextStyle,Set> : DateTimeFormatterBuilder          \
+appendZoneText <TextStyle> : DateTimeFormatterBuilder              \
+getLocalizedDateTimePattern <FormatStyle,FormatStyle,Chronology,Locale> : String
+optionalEnd <> : DateTimeFormatterBuilder                          \
+optionalStart <> : DateTimeFormatterBuilder                        \
+padNext <int,char> : DateTimeFormatterBuilder                      \
+padNext <int> : DateTimeFormatterBuilder                           \
+parseCaseInsensitive <> : DateTimeFormatterBuilder                 \
+parseCaseSensitive <> : DateTimeFormatterBuilder                   \
+parseDefaulting <TemporalField,long> : DateTimeFormatterBuilder    \
+parseLenient <> : DateTimeFormatterBuilder                         \
+parseStrict <> : DateTimeFormatterBuilder                          \
+toFormatter <> : DateTimeFormatter                                 \
+toFormatter <Locale> : DateTimeFormatter                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+

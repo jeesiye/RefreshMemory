@@ -1,0 +1,61 @@
+FL:java.time.YearMonth
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.YearMonth(int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.YearMonth
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.YearMonth
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atDay <int> : LocalDate                                            \
+atEndOfMonth <> : LocalDate                                        \
+compareTo <YearMonth> : int                                        \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : YearMonth                                \
+get <TemporalField> : int                                          \
+getLong <TemporalField> : long                                     \
+getMonth <> : Month                                                \
+getMonthValue <> : int                                             \
+getYear <> : int                                                   \
+hashCode <> : int                                                  \
+isAfter <YearMonth> : boolean                                      \
+isBefore <YearMonth> : boolean                                     \
+isLeapYear <> : boolean                                            \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+isValidDay <int> : boolean                                         \
+lengthOfMonth <> : int                                             \
+lengthOfYear <> : int                                              \
+minus <TemporalAmount> : YearMonth                                 \
+minus <long,TemporalUnit> : YearMonth                              \
+minusMonths <long> : YearMonth                                     \
+minusYears <long> : YearMonth                                      \
+now <> : YearMonth                                                 \
+now <Clock> : YearMonth                                            \
+now <ZoneId> : YearMonth                                           \
+of <int,Month> : YearMonth                                         \
+of <int,int> : YearMonth                                           \
+parse <CharSequence,DateTimeFormatter> : YearMonth                 \
+parse <CharSequence> : YearMonth                                   \
+plus <TemporalAmount> : YearMonth                                  \
+plus <long,TemporalUnit> : YearMonth                               \
+plusMonths <long> : YearMonth                                      \
+plusYears <long> : YearMonth                                       \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toString <> : String                                               \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : YearMonth                                \
+with <TemporalField,long> : YearMonth                              \
+withMonth <int> : YearMonth                                        \
+withYear <int> : YearMonth                                         \
+------------------------------------------------------------------------------------------------------------------------------
+
+

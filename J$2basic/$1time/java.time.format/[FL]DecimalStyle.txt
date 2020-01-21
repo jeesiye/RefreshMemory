@@ -1,0 +1,31 @@
+FL:java.time.format.DecimalStyle
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.format.DecimalStyle(char,char,char,char)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.format.DecimalStyle
+------------------------------------------------------------------------------------------------------------------------------
+STANDARD                                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.format.DecimalStyle
+------------------------------------------------------------------------------------------------------------------------------
+equals <Object> : boolean                                          \
+getAvailableLocales <> : Set                                       \
+getDecimalSeparator <> : char                                      \
+getNegativeSign <> : char                                          \
+getPositiveSign <> : char                                          \
+getZeroDigit <> : char                                             \
+hashCode <> : int                                                  \
+of <Locale> : DecimalStyle                                         \
+ofDefaultLocale <> : DecimalStyle                                  \
+toString <> : String                                               \
+withDecimalSeparator <char> : DecimalStyle                         \
+withNegativeSign <char> : DecimalStyle                             \
+withPositiveSign <char> : DecimalStyle                             \
+withZeroDigit <char> : DecimalStyle                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+

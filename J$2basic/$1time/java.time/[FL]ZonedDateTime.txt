@@ -1,0 +1,93 @@
+FL:java.time.ZonedDateTime
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.ZonedDateTime(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneId)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.ZonedDateTime
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.ZonedDateTime
+------------------------------------------------------------------------------------------------------------------------------
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : ZonedDateTime                            \
+get <TemporalField> : int                                          \
+getDayOfMonth <> : int                                             \
+getDayOfWeek <> : DayOfWeek                                        \
+getDayOfYear <> : int                                              \
+getHour <> : int                                                   \
+getLong <TemporalField> : long                                     \
+getMinute <> : int                                                 \
+getMonth <> : Month                                                \
+getMonthValue <> : int                                             \
+getNano <> : int                                                   \
+getOffset <> : ZoneOffset                                          \
+getSecond <> : int                                                 \
+getYear <> : int                                                   \
+getZone <> : ZoneId                                                \
+hashCode <> : int                                                  \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : ZonedDateTime                             \
+minus <long,TemporalUnit> : ZonedDateTime                          \
+minusDays <long> : ZonedDateTime                                   \
+minusHours <long> : ZonedDateTime                                  \
+minusMinutes <long> : ZonedDateTime                                \
+minusMonths <long> : ZonedDateTime                                 \
+minusNanos <long> : ZonedDateTime                                  \
+minusSeconds <long> : ZonedDateTime                                \
+minusWeeks <long> : ZonedDateTime                                  \
+minusYears <long> : ZonedDateTime                                  \
+now <> : ZonedDateTime                                             \
+now <Clock> : ZonedDateTime                                        \
+now <ZoneId> : ZonedDateTime                                       \
+of <LocalDate,LocalTime,ZoneId> : ZonedDateTime                    \
+of <LocalDateTime,ZoneId> : ZonedDateTime                          \
+of <int,int,int,int,int,int,int,ZoneId> : ZonedDateTime            \
+ofInstant <Instant,ZoneId> : ZonedDateTime                         \
+ofInstant <LocalDateTime,ZoneOffset,ZoneId> : ZonedDateTime        \
+ofLocal <LocalDateTime,ZoneId,ZoneOffset> : ZonedDateTime          \
+ofStrict <LocalDateTime,ZoneOffset,ZoneId> : ZonedDateTime         \
+parse <CharSequence,DateTimeFormatter> : ZonedDateTime             \
+parse <CharSequence> : ZonedDateTime                               \
+plus <TemporalAmount> : ZonedDateTime                              \
+plus <long,TemporalUnit> : ZonedDateTime                           \
+plusDays <long> : ZonedDateTime                                    \
+plusHours <long> : ZonedDateTime                                   \
+plusMinutes <long> : ZonedDateTime                                 \
+plusMonths <long> : ZonedDateTime                                  \
+plusNanos <long> : ZonedDateTime                                   \
+plusSeconds <long> : ZonedDateTime                                 \
+plusWeeks <long> : ZonedDateTime                                   \
+plusYears <long> : ZonedDateTime                                   \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toLocalDate <> : LocalDate                                         \
+toLocalDateTime <> : LocalDateTime                                 \
+toLocalTime <> : LocalTime                                         \
+toOffsetDateTime <> : OffsetDateTime                               \
+toString <> : String                                               \
+truncatedTo <TemporalUnit> : ZonedDateTime                         \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : ZonedDateTime                            \
+with <TemporalField,long> : ZonedDateTime                          \
+withDayOfMonth <int> : ZonedDateTime                               \
+withDayOfYear <int> : ZonedDateTime                                \
+withEarlierOffsetAtOverlap <> : ZonedDateTime                      \
+withFixedOffsetZone <> : ZonedDateTime                             \
+withHour <int> : ZonedDateTime                                     \
+withLaterOffsetAtOverlap <> : ZonedDateTime                        \
+withMinute <int> : ZonedDateTime                                   \
+withMonth <int> : ZonedDateTime                                    \
+withNano <int> : ZonedDateTime                                     \
+withSecond <int> : ZonedDateTime                                   \
+withYear <int> : ZonedDateTime                                     \
+withZoneSameInstant <ZoneId> : ZonedDateTime                       \
+withZoneSameLocal <ZoneId> : ZonedDateTime                         \
+------------------------------------------------------------------------------------------------------------------------------
+
+

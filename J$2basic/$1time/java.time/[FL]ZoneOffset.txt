@@ -1,0 +1,38 @@
+FL:java.time.ZoneOffset
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.ZoneOffset(int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.ZoneOffset
+------------------------------------------------------------------------------------------------------------------------------
+UTC                                                                \
+MIN                                                                \
+MAX                                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.ZoneOffset
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+compareTo <ZoneOffset> : int                                       \
+equals <Object> : boolean                                          \
+from <TemporalAccessor> : ZoneOffset                               \
+get <TemporalField> : int                                          \
+getId <> : String                                                  \
+getLong <TemporalField> : long                                     \
+getRules <> : ZoneRules                                            \
+getTotalSeconds <> : int                                           \
+hashCode <> : int                                                  \
+isSupported <TemporalField> : boolean                              \
+of <String> : ZoneOffset                                           \
+ofHours <int> : ZoneOffset                                         \
+ofHoursMinutes <int,int> : ZoneOffset                              \
+ofHoursMinutesSeconds <int,int,int> : ZoneOffset                   \
+ofTotalSeconds <int> : ZoneOffset                                  \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,57 @@
+FL:java.time.Year
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.Year(int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Year
+------------------------------------------------------------------------------------------------------------------------------
+MIN_VALUE                                                          \
+MAX_VALUE                                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Year
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atDay <int> : LocalDate                                            \
+atMonth <Month> : YearMonth                                        \
+atMonth <int> : YearMonth                                          \
+atMonthDay <MonthDay> : LocalDate                                  \
+compareTo <Year> : int                                             \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : Year                                     \
+get <TemporalField> : int                                          \
+getLong <TemporalField> : long                                     \
+getValue <> : int                                                  \
+hashCode <> : int                                                  \
+isAfter <Year> : boolean                                           \
+isBefore <Year> : boolean                                          \
+isLeap <> : boolean                                                \
+isLeap <long> : boolean                                            \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+isValidMonthDay <MonthDay> : boolean                               \
+length <> : int                                                    \
+minus <TemporalAmount> : Year                                      \
+minus <long,TemporalUnit> : Year                                   \
+minusYears <long> : Year                                           \
+now <> : Year                                                      \
+now <Clock> : Year                                                 \
+now <ZoneId> : Year                                                \
+of <int> : Year                                                    \
+parse <CharSequence,DateTimeFormatter> : Year                      \
+parse <CharSequence> : Year                                        \
+plus <TemporalAmount> : Year                                       \
+plus <long,TemporalUnit> : Year                                    \
+plusYears <long> : Year                                            \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toString <> : String                                               \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : Year                                     \
+with <TemporalField,long> : Year                                   \
+------------------------------------------------------------------------------------------------------------------------------
+
+

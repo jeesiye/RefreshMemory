@@ -1,0 +1,73 @@
+FL:java.time.LocalTime
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.LocalTime(int,int,int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.LocalTime
+------------------------------------------------------------------------------------------------------------------------------
+MIN                                                                \
+MAX                                                                \
+MIDNIGHT                                                           \
+NOON                                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.LocalTime
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atDate <LocalDate> : LocalDateTime                                 \
+atOffset <ZoneOffset> : OffsetTime                                 \
+compareTo <LocalTime> : int                                        \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : LocalTime                                \
+get <TemporalField> : int                                          \
+getHour <> : int                                                   \
+getLong <TemporalField> : long                                     \
+getMinute <> : int                                                 \
+getNano <> : int                                                   \
+getSecond <> : int                                                 \
+hashCode <> : int                                                  \
+isAfter <LocalTime> : boolean                                      \
+isBefore <LocalTime> : boolean                                     \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : LocalTime                                 \
+minus <long,TemporalUnit> : LocalTime                              \
+minusHours <long> : LocalTime                                      \
+minusMinutes <long> : LocalTime                                    \
+minusNanos <long> : LocalTime                                      \
+minusSeconds <long> : LocalTime                                    \
+now <> : LocalTime                                                 \
+now <Clock> : LocalTime                                            \
+now <ZoneId> : LocalTime                                           \
+of <int,int,int,int> : LocalTime                                   \
+of <int,int,int> : LocalTime                                       \
+of <int,int> : LocalTime                                           \
+ofNanoOfDay <long> : LocalTime                                     \
+ofSecondOfDay <long> : LocalTime                                   \
+parse <CharSequence,DateTimeFormatter> : LocalTime                 \
+parse <CharSequence> : LocalTime                                   \
+plus <TemporalAmount> : LocalTime                                  \
+plus <long,TemporalUnit> : LocalTime                               \
+plusHours <long> : LocalTime                                       \
+plusMinutes <long> : LocalTime                                     \
+plusNanos <long> : LocalTime                                       \
+plusSeconds <long> : LocalTime                                     \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toNanoOfDay <> : long                                              \
+toSecondOfDay <> : int                                             \
+toString <> : String                                               \
+truncatedTo <TemporalUnit> : LocalTime                             \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : LocalTime                                \
+with <TemporalField,long> : LocalTime                              \
+withHour <int> : LocalTime                                         \
+withMinute <int> : LocalTime                                       \
+withNano <int> : LocalTime                                         \
+withSecond <int> : LocalTime                                       \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,46 @@
+FL:java.time.MonthDay
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.MonthDay(int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.MonthDay
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.MonthDay
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atYear <int> : LocalDate                                           \
+compareTo <MonthDay> : int                                         \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : MonthDay                                 \
+get <TemporalField> : int                                          \
+getDayOfMonth <> : int                                             \
+getLong <TemporalField> : long                                     \
+getMonth <> : Month                                                \
+getMonthValue <> : int                                             \
+hashCode <> : int                                                  \
+isAfter <MonthDay> : boolean                                       \
+isBefore <MonthDay> : boolean                                      \
+isSupported <TemporalField> : boolean                              \
+isValidYear <int> : boolean                                        \
+now <> : MonthDay                                                  \
+now <Clock> : MonthDay                                             \
+now <ZoneId> : MonthDay                                            \
+of <Month,int> : MonthDay                                          \
+of <int,int> : MonthDay                                            \
+parse <CharSequence,DateTimeFormatter> : MonthDay                  \
+parse <CharSequence> : MonthDay                                    \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toString <> : String                                               \
+with <Month> : MonthDay                                            \
+withDayOfMonth <int> : MonthDay                                    \
+withMonth <int> : MonthDay                                         \
+------------------------------------------------------------------------------------------------------------------------------
+
+

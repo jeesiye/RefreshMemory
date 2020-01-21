@@ -1,0 +1,53 @@
+FL:java.time.Period
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.Period(int,int,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Period
+------------------------------------------------------------------------------------------------------------------------------
+ZERO                                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Period
+------------------------------------------------------------------------------------------------------------------------------
+addTo <Temporal> : Temporal                                        \
+between <LocalDate,LocalDate> : Period                             \
+equals <Object> : boolean                                          \
+from <TemporalAmount> : Period                                     \
+get <TemporalUnit> : long                                          \
+getChronology <> : IsoChronology                                   \
+getDays <> : int                                                   \
+getMonths <> : int                                                 \
+getUnits <> : List                                                 \
+getYears <> : int                                                  \
+hashCode <> : int                                                  \
+isNegative <> : boolean                                            \
+isZero <> : boolean                                                \
+minus <TemporalAmount> : Period                                    \
+minusDays <long> : Period                                          \
+minusMonths <long> : Period                                        \
+minusYears <long> : Period                                         \
+multipliedBy <int> : Period                                        \
+negated <> : Period                                                \
+normalized <> : Period                                             \
+of <int,int,int> : Period                                          \
+ofDays <int> : Period                                              \
+ofMonths <int> : Period                                            \
+ofWeeks <int> : Period                                             \
+ofYears <int> : Period                                             \
+parse <CharSequence> : Period                                      \
+plus <TemporalAmount> : Period                                     \
+plusDays <long> : Period                                           \
+plusMonths <long> : Period                                         \
+plusYears <long> : Period                                          \
+subtractFrom <Temporal> : Temporal                                 \
+toString <> : String                                               \
+toTotalMonths <> : long                                            \
+withDays <int> : Period                                            \
+withMonths <int> : Period                                          \
+withYears <int> : Period                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+

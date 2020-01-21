@@ -1,0 +1,37 @@
+E:java.time.DayOfWeek
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.DayOfWeek(java.lang.String,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.time.DayOfWeek
+------------------------------------------------------------------------------------------------------------------------------
+MONDAY                                                             \
+TUESDAY                                                            \
+WEDNESDAY                                                          \
+THURSDAY                                                           \
+FRIDAY                                                             \
+SATURDAY                                                           \
+SUNDAY                                                             \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+E:java.time.DayOfWeek
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+from <TemporalAccessor> : DayOfWeek                                \
+get <TemporalField> : int                                          \
+getDisplayName <TextStyle,Locale> : String                         \
+getLong <TemporalField> : long                                     \
+getValue <> : int                                                  \
+isSupported <TemporalField> : boolean                              \
+minus <long> : DayOfWeek                                           \
+of <int> : DayOfWeek                                               \
+plus <long> : DayOfWeek                                            \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+valueOf <String> : DayOfWeek                                       \
+values <> : DayOfWeek[]                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+

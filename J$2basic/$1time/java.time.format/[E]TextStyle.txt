@@ -1,22 +1,27 @@
-E:java.time.format.FormatStyle
+E:java.time.format.TextStyle
 ------------------------------------------------------------------------------------------------------------------------------
-private java.time.format.FormatStyle(java.lang.String,int)
+private java.time.format.TextStyle(java.lang.String,int,int,int)
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-E:java.time.format.FormatStyle
+E:java.time.format.TextStyle
 ------------------------------------------------------------------------------------------------------------------------------
 FULL                                                               \
-LONG                                                               \
-MEDIUM                                                             \
+FULL_STANDALONE                                                    \
 SHORT                                                              \
+SHORT_STANDALONE                                                   \
+NARROW                                                             \
+NARROW_STANDALONE                                                  \
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-E:java.time.format.FormatStyle
+E:java.time.format.TextStyle
 ------------------------------------------------------------------------------------------------------------------------------
-values <p0> :FormatStyle[]                                         \
-valueOf <p1> :FormatStyle                                          \
+asNormal <> : TextStyle                                            \
+asStandalone <> : TextStyle                                        \
+isStandalone <> : boolean                                          \
+valueOf <String> : TextStyle                                       \
+values <> : TextStyle[]                                            \
 ------------------------------------------------------------------------------------------------------------------------------
 
 

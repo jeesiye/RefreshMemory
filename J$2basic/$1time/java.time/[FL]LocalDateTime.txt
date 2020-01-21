@@ -1,0 +1,94 @@
+FL:java.time.LocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.LocalDateTime(java.time.LocalDate,java.time.LocalTime)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.LocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+MIN                                                                \
+MAX                                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.LocalDateTime
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atOffset <ZoneOffset> : OffsetDateTime                             \
+atZone <ZoneId> : ZonedDateTime                                    \
+compareTo <ChronoLocalDateTime> : int                              \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : LocalDateTime                            \
+get <TemporalField> : int                                          \
+getDayOfMonth <> : int                                             \
+getDayOfWeek <> : DayOfWeek                                        \
+getDayOfYear <> : int                                              \
+getHour <> : int                                                   \
+getLong <TemporalField> : long                                     \
+getMinute <> : int                                                 \
+getMonth <> : Month                                                \
+getMonthValue <> : int                                             \
+getNano <> : int                                                   \
+getSecond <> : int                                                 \
+getYear <> : int                                                   \
+hashCode <> : int                                                  \
+isAfter <ChronoLocalDateTime> : boolean                            \
+isBefore <ChronoLocalDateTime> : boolean                           \
+isEqual <ChronoLocalDateTime> : boolean                            \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : LocalDateTime                             \
+minus <long,TemporalUnit> : LocalDateTime                          \
+minusDays <long> : LocalDateTime                                   \
+minusHours <long> : LocalDateTime                                  \
+minusMinutes <long> : LocalDateTime                                \
+minusMonths <long> : LocalDateTime                                 \
+minusNanos <long> : LocalDateTime                                  \
+minusSeconds <long> : LocalDateTime                                \
+minusWeeks <long> : LocalDateTime                                  \
+minusYears <long> : LocalDateTime                                  \
+now <> : LocalDateTime                                             \
+now <Clock> : LocalDateTime                                        \
+now <ZoneId> : LocalDateTime                                       \
+of <LocalDate,LocalTime> : LocalDateTime                           \
+of <int,Month,int,int,int,int,int> : LocalDateTime                 \
+of <int,Month,int,int,int,int> : LocalDateTime                     \
+of <int,Month,int,int,int> : LocalDateTime                         \
+of <int,int,int,int,int,int,int> : LocalDateTime                   \
+of <int,int,int,int,int,int> : LocalDateTime                       \
+of <int,int,int,int,int> : LocalDateTime                           \
+ofEpochSecond <long,int,ZoneOffset> : LocalDateTime                \
+ofInstant <Instant,ZoneId> : LocalDateTime                         \
+parse <CharSequence,DateTimeFormatter> : LocalDateTime             \
+parse <CharSequence> : LocalDateTime                               \
+plus <TemporalAmount> : LocalDateTime                              \
+plus <long,TemporalUnit> : LocalDateTime                           \
+plusDays <long> : LocalDateTime                                    \
+plusHours <long> : LocalDateTime                                   \
+plusMinutes <long> : LocalDateTime                                 \
+plusMonths <long> : LocalDateTime                                  \
+plusNanos <long> : LocalDateTime                                   \
+plusSeconds <long> : LocalDateTime                                 \
+plusWeeks <long> : LocalDateTime                                   \
+plusYears <long> : LocalDateTime                                   \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toLocalDate <> : LocalDate                                         \
+toLocalTime <> : LocalTime                                         \
+toString <> : String                                               \
+truncatedTo <TemporalUnit> : LocalDateTime                         \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : LocalDateTime                            \
+with <TemporalField,long> : LocalDateTime                          \
+withDayOfMonth <int> : LocalDateTime                               \
+withDayOfYear <int> : LocalDateTime                                \
+withHour <int> : LocalDateTime                                     \
+withMinute <int> : LocalDateTime                                   \
+withMonth <int> : LocalDateTime                                    \
+withNano <int> : LocalDateTime                                     \
+withSecond <int> : LocalDateTime                                   \
+withYear <int> : LocalDateTime                                     \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,67 @@
+FL:java.time.Duration
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.Duration(long,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Duration
+------------------------------------------------------------------------------------------------------------------------------
+ZERO                                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.Duration
+------------------------------------------------------------------------------------------------------------------------------
+abs <> : Duration                                                  \
+addTo <Temporal> : Temporal                                        \
+between <Temporal,Temporal> : Duration                             \
+compareTo <Duration> : int                                         \
+dividedBy <long> : Duration                                        \
+equals <Object> : boolean                                          \
+from <TemporalAmount> : Duration                                   \
+get <TemporalUnit> : long                                          \
+getNano <> : int                                                   \
+getSeconds <> : long                                               \
+getUnits <> : List                                                 \
+hashCode <> : int                                                  \
+isNegative <> : boolean                                            \
+isZero <> : boolean                                                \
+minus <Duration> : Duration                                        \
+minus <long,TemporalUnit> : Duration                               \
+minusDays <long> : Duration                                        \
+minusHours <long> : Duration                                       \
+minusMillis <long> : Duration                                      \
+minusMinutes <long> : Duration                                     \
+minusNanos <long> : Duration                                       \
+minusSeconds <long> : Duration                                     \
+multipliedBy <long> : Duration                                     \
+negated <> : Duration                                              \
+of <long,TemporalUnit> : Duration                                  \
+ofDays <long> : Duration                                           \
+ofHours <long> : Duration                                          \
+ofMillis <long> : Duration                                         \
+ofMinutes <long> : Duration                                        \
+ofNanos <long> : Duration                                          \
+ofSeconds <long,long> : Duration                                   \
+ofSeconds <long> : Duration                                        \
+parse <CharSequence> : Duration                                    \
+plus <Duration> : Duration                                         \
+plus <long,TemporalUnit> : Duration                                \
+plusDays <long> : Duration                                         \
+plusHours <long> : Duration                                        \
+plusMillis <long> : Duration                                       \
+plusMinutes <long> : Duration                                      \
+plusNanos <long> : Duration                                        \
+plusSeconds <long> : Duration                                      \
+subtractFrom <Temporal> : Temporal                                 \
+toDays <> : long                                                   \
+toHours <> : long                                                  \
+toMillis <> : long                                                 \
+toMinutes <> : long                                                \
+toNanos <> : long                                                  \
+toString <> : String                                               \
+withNanos <int> : Duration                                         \
+withSeconds <long> : Duration                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+

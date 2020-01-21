@@ -1,0 +1,71 @@
+FL:java.time.OffsetTime
+------------------------------------------------------------------------------------------------------------------------------
+private java.time.OffsetTime(java.time.LocalTime,java.time.ZoneOffset)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.OffsetTime
+------------------------------------------------------------------------------------------------------------------------------
+MIN                                                                \
+MAX                                                                \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.time.OffsetTime
+------------------------------------------------------------------------------------------------------------------------------
+adjustInto <Temporal> : Temporal                                   \
+atDate <LocalDate> : OffsetDateTime                                \
+compareTo <OffsetTime> : int                                       \
+equals <Object> : boolean                                          \
+format <DateTimeFormatter> : String                                \
+from <TemporalAccessor> : OffsetTime                               \
+get <TemporalField> : int                                          \
+getHour <> : int                                                   \
+getLong <TemporalField> : long                                     \
+getMinute <> : int                                                 \
+getNano <> : int                                                   \
+getOffset <> : ZoneOffset                                          \
+getSecond <> : int                                                 \
+hashCode <> : int                                                  \
+isAfter <OffsetTime> : boolean                                     \
+isBefore <OffsetTime> : boolean                                    \
+isEqual <OffsetTime> : boolean                                     \
+isSupported <TemporalField> : boolean                              \
+isSupported <TemporalUnit> : boolean                               \
+minus <TemporalAmount> : OffsetTime                                \
+minus <long,TemporalUnit> : OffsetTime                             \
+minusHours <long> : OffsetTime                                     \
+minusMinutes <long> : OffsetTime                                   \
+minusNanos <long> : OffsetTime                                     \
+minusSeconds <long> : OffsetTime                                   \
+now <> : OffsetTime                                                \
+now <Clock> : OffsetTime                                           \
+now <ZoneId> : OffsetTime                                          \
+of <LocalTime,ZoneOffset> : OffsetTime                             \
+of <int,int,int,int,ZoneOffset> : OffsetTime                       \
+ofInstant <Instant,ZoneId> : OffsetTime                            \
+parse <CharSequence,DateTimeFormatter> : OffsetTime                \
+parse <CharSequence> : OffsetTime                                  \
+plus <TemporalAmount> : OffsetTime                                 \
+plus <long,TemporalUnit> : OffsetTime                              \
+plusHours <long> : OffsetTime                                      \
+plusMinutes <long> : OffsetTime                                    \
+plusNanos <long> : OffsetTime                                      \
+plusSeconds <long> : OffsetTime                                    \
+query <TemporalQuery> : Object                                     \
+range <TemporalField> : ValueRange                                 \
+toLocalTime <> : LocalTime                                         \
+toString <> : String                                               \
+truncatedTo <TemporalUnit> : OffsetTime                            \
+until <Temporal,TemporalUnit> : long                               \
+with <TemporalAdjuster> : OffsetTime                               \
+with <TemporalField,long> : OffsetTime                             \
+withHour <int> : OffsetTime                                        \
+withMinute <int> : OffsetTime                                      \
+withNano <int> : OffsetTime                                        \
+withOffsetSameInstant <ZoneOffset> : OffsetTime                    \
+withOffsetSameLocal <ZoneOffset> : OffsetTime                      \
+withSecond <int> : OffsetTime                                      \
+------------------------------------------------------------------------------------------------------------------------------
+
+
