@@ -20,5 +20,3 @@ getParentLogger <> : Logger                                        \
 getPropertyInfo <String,Properties> : DriverPropertyInfo[]         \
 jdbcCompliant <> : boolean                                         \
 ------------------------------------------------------------------------------------------------------------------------------
-
-
