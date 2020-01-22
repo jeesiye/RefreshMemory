@@ -1,0 +1,26 @@
+L:java.text.RuleBasedCollator
+------------------------------------------------------------------------------------------------------------------------------
+public java.text.RuleBasedCollator(java.lang.String) throws java.text.ParseException
+private java.text.RuleBasedCollator(java.text.RuleBasedCollator)
+java.text.RuleBasedCollator(java.lang.String,int) throws java.text.ParseException
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.RuleBasedCollator
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.RuleBasedCollator
+------------------------------------------------------------------------------------------------------------------------------
+clone <> : Object                                                  \
+compare <String,String> : int                                      \
+equals <Object> : boolean                                          \
+getCollationElementIterator <CharacterIterator> : CollationElementIterator
+getCollationElementIterator <String> : CollationElementIterator    \
+getCollationKey <String> : CollationKey                            \
+getRules <> : String                                               \
+hashCode <> : int                                                  \
+------------------------------------------------------------------------------------------------------------------------------
+
+

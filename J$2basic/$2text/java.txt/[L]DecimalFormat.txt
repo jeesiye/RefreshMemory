@@ -1,0 +1,61 @@
+L:java.text.DecimalFormat
+------------------------------------------------------------------------------------------------------------------------------
+public java.text.DecimalFormat(java.lang.String)
+public java.text.DecimalFormat(java.lang.String,java.text.DecimalFormatSymbols)
+public java.text.DecimalFormat()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.DecimalFormat
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.DecimalFormat
+------------------------------------------------------------------------------------------------------------------------------
+applyLocalizedPattern <String> : void                              \
+applyPattern <String> : void                                       \
+clone <> : Object                                                  \
+equals <Object> : boolean                                          \
+format <Object,StringBuffer,FieldPosition> : StringBuffer          \
+format <double,StringBuffer,FieldPosition> : StringBuffer          \
+format <long,StringBuffer,FieldPosition> : StringBuffer            \
+formatToCharacterIterator <Object> : AttributedCharacterIterator   \
+getCurrency <> : Currency                                          \
+getDecimalFormatSymbols <> : DecimalFormatSymbols                  \
+getGroupingSize <> : int                                           \
+getMaximumFractionDigits <> : int                                  \
+getMaximumIntegerDigits <> : int                                   \
+getMinimumFractionDigits <> : int                                  \
+getMinimumIntegerDigits <> : int                                   \
+getMultiplier <> : int                                             \
+getNegativePrefix <> : String                                      \
+getNegativeSuffix <> : String                                      \
+getPositivePrefix <> : String                                      \
+getPositiveSuffix <> : String                                      \
+getRoundingMode <> : RoundingMode                                  \
+hashCode <> : int                                                  \
+isDecimalSeparatorAlwaysShown <> : boolean                         \
+isParseBigDecimal <> : boolean                                     \
+parse <String,ParsePosition> : Number                              \
+setCurrency <Currency> : void                                      \
+setDecimalFormatSymbols <DecimalFormatSymbols> : void              \
+setDecimalSeparatorAlwaysShown <boolean> : void                    \
+setGroupingSize <int> : void                                       \
+setGroupingUsed <boolean> : void                                   \
+setMaximumFractionDigits <int> : void                              \
+setMaximumIntegerDigits <int> : void                               \
+setMinimumFractionDigits <int> : void                              \
+setMinimumIntegerDigits <int> : void                               \
+setMultiplier <int> : void                                         \
+setNegativePrefix <String> : void                                  \
+setNegativeSuffix <String> : void                                  \
+setParseBigDecimal <boolean> : void                                \
+setPositivePrefix <String> : void                                  \
+setPositiveSuffix <String> : void                                  \
+setRoundingMode <RoundingMode> : void                              \
+toLocalizedPattern <> : String                                     \
+toPattern <> : String                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

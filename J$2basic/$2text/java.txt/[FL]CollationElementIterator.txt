@@ -1,0 +1,29 @@
+FL:java.text.CollationElementIterator
+------------------------------------------------------------------------------------------------------------------------------
+java.text.CollationElementIterator(java.text.CharacterIterator,java.text.RuleBasedCollator)
+java.text.CollationElementIterator(java.lang.String,java.text.RuleBasedCollator)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.text.CollationElementIterator
+------------------------------------------------------------------------------------------------------------------------------
+NULLORDER                                                          \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.text.CollationElementIterator
+------------------------------------------------------------------------------------------------------------------------------
+getMaxExpansion <int> : int                                        \
+getOffset <> : int                                                 \
+next <> : int                                                      \
+previous <> : int                                                  \
+primaryOrder <int> : int                                           \
+reset <> : void                                                    \
+secondaryOrder <int> : short                                       \
+setOffset <int> : void                                             \
+setText <CharacterIterator> : void                                 \
+setText <String> : void                                            \
+tertiaryOrder <int> : short                                        \
+------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,56 @@
+A:java.text.NumberFormat
+------------------------------------------------------------------------------------------------------------------------------
+protected java.text.NumberFormat()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.text.NumberFormat
+------------------------------------------------------------------------------------------------------------------------------
+INTEGER_FIELD                                                      \
+FRACTION_FIELD                                                     \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.text.NumberFormat
+------------------------------------------------------------------------------------------------------------------------------
+clone <> : Object                                                  \
+equals <Object> : boolean                                          \
+format <Object,StringBuffer,FieldPosition> : StringBuffer          \
+format <double,StringBuffer,FieldPosition> : StringBuffer          \
+format <double> : String                                           \
+format <long,StringBuffer,FieldPosition> : StringBuffer            \
+format <long> : String                                             \
+getAvailableLocales <> : Locale[]                                  \
+getCurrency <> : Currency                                          \
+getCurrencyInstance <> : NumberFormat                              \
+getCurrencyInstance <Locale> : NumberFormat                        \
+getInstance <> : NumberFormat                                      \
+getInstance <Locale> : NumberFormat                                \
+getIntegerInstance <> : NumberFormat                               \
+getIntegerInstance <Locale> : NumberFormat                         \
+getMaximumFractionDigits <> : int                                  \
+getMaximumIntegerDigits <> : int                                   \
+getMinimumFractionDigits <> : int                                  \
+getMinimumIntegerDigits <> : int                                   \
+getNumberInstance <> : NumberFormat                                \
+getNumberInstance <Locale> : NumberFormat                          \
+getPercentInstance <> : NumberFormat                               \
+getPercentInstance <Locale> : NumberFormat                         \
+getRoundingMode <> : RoundingMode                                  \
+hashCode <> : int                                                  \
+isGroupingUsed <> : boolean                                        \
+isParseIntegerOnly <> : boolean                                    \
+parse <String,ParsePosition> : Number                              \
+parse <String> : Number                                            \
+parseObject <String,ParsePosition> : Object                        \
+setCurrency <Currency> : void                                      \
+setGroupingUsed <boolean> : void                                   \
+setMaximumFractionDigits <int> : void                              \
+setMaximumIntegerDigits <int> : void                               \
+setMinimumFractionDigits <int> : void                              \
+setMinimumIntegerDigits <int> : void                               \
+setParseIntegerOnly <boolean> : void                               \
+setRoundingMode <RoundingMode> : void                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

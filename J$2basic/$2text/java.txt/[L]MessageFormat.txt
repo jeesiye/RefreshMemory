@@ -1,0 +1,38 @@
+L:java.text.MessageFormat
+------------------------------------------------------------------------------------------------------------------------------
+public java.text.MessageFormat(java.lang.String,java.util.Locale)
+public java.text.MessageFormat(java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.MessageFormat
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.MessageFormat
+------------------------------------------------------------------------------------------------------------------------------
+applyPattern <String> : void                                       \
+clone <> : Object                                                  \
+equals <Object> : boolean                                          \
+format <Object,StringBuffer,FieldPosition> : StringBuffer          \
+format <Object[],StringBuffer,FieldPosition> : StringBuffer        \
+format <String,Object[]> : String                                  \
+formatToCharacterIterator <Object> : AttributedCharacterIterator   \
+getFormats <> : Format[]                                           \
+getFormatsByArgumentIndex <> : Format[]                            \
+getLocale <> : Locale                                              \
+hashCode <> : int                                                  \
+parse <String,ParsePosition> : Object[]                            \
+parse <String> : Object[]                                          \
+parseObject <String,ParsePosition> : Object                        \
+setFormat <int,Format> : void                                      \
+setFormatByArgumentIndex <int,Format> : void                       \
+setFormats <Format[]> : void                                       \
+setFormatsByArgumentIndex <Format[]> : void                        \
+setLocale <Locale> : void                                          \
+toPattern <> : String                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

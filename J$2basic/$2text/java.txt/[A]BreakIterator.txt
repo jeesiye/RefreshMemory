@@ -1,0 +1,39 @@
+A:java.text.BreakIterator
+------------------------------------------------------------------------------------------------------------------------------
+protected java.text.BreakIterator()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.text.BreakIterator
+------------------------------------------------------------------------------------------------------------------------------
+DONE                                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.text.BreakIterator
+------------------------------------------------------------------------------------------------------------------------------
+clone <> : Object                                                  \
+current <> : int                                                   \
+first <> : int                                                     \
+following <int> : int                                              \
+getAvailableLocales <> : Locale[]                                  \
+getCharacterInstance <> : BreakIterator                            \
+getCharacterInstance <Locale> : BreakIterator                      \
+getLineInstance <> : BreakIterator                                 \
+getLineInstance <Locale> : BreakIterator                           \
+getSentenceInstance <> : BreakIterator                             \
+getSentenceInstance <Locale> : BreakIterator                       \
+getText <> : CharacterIterator                                     \
+getWordInstance <> : BreakIterator                                 \
+getWordInstance <Locale> : BreakIterator                           \
+isBoundary <int> : boolean                                         \
+last <> : int                                                      \
+next <> : int                                                      \
+next <int> : int                                                   \
+preceding <int> : int                                              \
+previous <> : int                                                  \
+setText <CharacterIterator> : void                                 \
+setText <String> : void                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+

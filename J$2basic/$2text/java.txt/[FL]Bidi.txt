@@ -1,0 +1,37 @@
+FL:java.text.Bidi
+------------------------------------------------------------------------------------------------------------------------------
+public java.text.Bidi(java.text.AttributedCharacterIterator)
+public java.text.Bidi(char[],int,byte[],int,int,int)
+public java.text.Bidi(java.lang.String,int)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.text.Bidi
+------------------------------------------------------------------------------------------------------------------------------
+DIRECTION_LEFT_TO_RIGHT                                            \
+DIRECTION_RIGHT_TO_LEFT                                            \
+DIRECTION_DEFAULT_LEFT_TO_RIGHT                                    \
+DIRECTION_DEFAULT_RIGHT_TO_LEFT                                    \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.text.Bidi
+------------------------------------------------------------------------------------------------------------------------------
+baseIsLeftToRight <> : boolean                                     \
+createLineBidi <int,int> : Bidi                                    \
+getBaseLevel <> : int                                              \
+getLength <> : int                                                 \
+getLevelAt <int> : int                                             \
+getRunCount <> : int                                               \
+getRunLevel <int> : int                                            \
+getRunLimit <int> : int                                            \
+getRunStart <int> : int                                            \
+isLeftToRight <> : boolean                                         \
+isMixed <> : boolean                                               \
+isRightToLeft <> : boolean                                         \
+reorderVisually <byte[],int,Object[],int,int> : void               \
+requiresBidi <char[],int,int> : boolean                            \
+toString <> : String                                               \
+------------------------------------------------------------------------------------------------------------------------------
+
+

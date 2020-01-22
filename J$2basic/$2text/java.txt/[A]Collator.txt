@@ -1,0 +1,37 @@
+A:java.text.Collator
+------------------------------------------------------------------------------------------------------------------------------
+protected java.text.Collator()
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.text.Collator
+------------------------------------------------------------------------------------------------------------------------------
+PRIMARY                                                            \
+SECONDARY                                                          \
+TERTIARY                                                           \
+IDENTICAL                                                          \
+NO_DECOMPOSITION                                                   \
+CANONICAL_DECOMPOSITION                                            \
+FULL_DECOMPOSITION                                                 \
+------------------------------------------------------------------------------------------------------------------------------
+
+
+A:java.text.Collator
+------------------------------------------------------------------------------------------------------------------------------
+clone <> : Object                                                  \
+compare <Object,Object> : int                                      \
+compare <String,String> : int                                      \
+equals <Object> : boolean                                          \
+equals <String,String> : boolean                                   \
+getAvailableLocales <> : Locale[]                                  \
+getCollationKey <String> : CollationKey                            \
+getDecomposition <> : int                                          \
+getInstance <> : Collator                                          \
+getInstance <Locale> : Collator                                    \
+getStrength <> : int                                               \
+hashCode <> : int                                                  \
+setDecomposition <int> : void                                      \
+setStrength <int> : void                                           \
+------------------------------------------------------------------------------------------------------------------------------
+
+

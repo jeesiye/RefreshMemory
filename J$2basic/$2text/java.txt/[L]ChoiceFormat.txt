@@ -1,0 +1,31 @@
+L:java.text.ChoiceFormat
+------------------------------------------------------------------------------------------------------------------------------
+public java.text.ChoiceFormat(double[],java.lang.String[])
+public java.text.ChoiceFormat(java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.ChoiceFormat
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.ChoiceFormat
+------------------------------------------------------------------------------------------------------------------------------
+applyPattern <String> : void                                       \
+clone <> : Object                                                  \
+equals <Object> : boolean                                          \
+format <double,StringBuffer,FieldPosition> : StringBuffer          \
+format <long,StringBuffer,FieldPosition> : StringBuffer            \
+getFormats <> : Object[]                                           \
+getLimits <> : double[]                                            \
+hashCode <> : int                                                  \
+nextDouble <double,boolean> : double                               \
+nextDouble <double> : double                                       \
+parse <String,ParsePosition> : Number                              \
+previousDouble <double> : double                                   \
+setChoices <double[],String[]> : void                              \
+toPattern <> : String                                              \
+------------------------------------------------------------------------------------------------------------------------------
+
+

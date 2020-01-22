@@ -1,0 +1,28 @@
+L:java.text.AttributedString
+------------------------------------------------------------------------------------------------------------------------------
+public java.text.AttributedString(java.lang.String)
+java.text.AttributedString(java.text.AttributedCharacterIterator[])
+public java.text.AttributedString(java.lang.String,java.util.Map)
+public java.text.AttributedString(java.text.AttributedCharacterIterator,int,int)
+public java.text.AttributedString(java.text.AttributedCharacterIterator)
+public java.text.AttributedString(java.text.AttributedCharacterIterator,int,int,java.text.AttributedCharacterIterator$Attribute[])
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.AttributedString
+------------------------------------------------------------------------------------------------------------------------------
+\
+------------------------------------------------------------------------------------------------------------------------------
+
+
+L:java.text.AttributedString
+------------------------------------------------------------------------------------------------------------------------------
+addAttribute <Attribute,Object,int,int> : void                     \
+addAttribute <Attribute,Object> : void                             \
+addAttributes <Map,int,int> : void                                 \
+getIterator <> : AttributedCharacterIterator                       \
+getIterator <Attribute[],int,int> : AttributedCharacterIterator    \
+getIterator <Attribute[]> : AttributedCharacterIterator            \
+------------------------------------------------------------------------------------------------------------------------------
+
+

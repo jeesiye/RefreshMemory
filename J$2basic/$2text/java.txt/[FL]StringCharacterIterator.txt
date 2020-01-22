@@ -1,0 +1,31 @@
+FL:java.text.StringCharacterIterator
+------------------------------------------------------------------------------------------------------------------------------
+public java.text.StringCharacterIterator(java.lang.String,int,int,int)
+public java.text.StringCharacterIterator(java.lang.String,int)
+public java.text.StringCharacterIterator(java.lang.String)
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.text.StringCharacterIterator
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+
+FL:java.text.StringCharacterIterator
+------------------------------------------------------------------------------------------------------------------------------
+clone <> : Object                                                  \
+current <> : char                                                  \
+equals <Object> : boolean                                          \
+first <> : char                                                    \
+getBeginIndex <> : int                                             \
+getEndIndex <> : int                                               \
+getIndex <> : int                                                  \
+hashCode <> : int                                                  \
+last <> : char                                                     \
+next <> : char                                                     \
+previous <> : char                                                 \
+setIndex <int> : char                                              \
+setText <String> : void                                            \
+------------------------------------------------------------------------------------------------------------------------------
+
+
